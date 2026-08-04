@@ -20,6 +20,9 @@ Convention
 - On failure / inapplicability it returns ``False``.
 """
 
+from .utils import get_radius_node
+
+
 # ---------------------------------------------------------------------------
 # ① TOP-LEVEL TASK: build_web
 # ---------------------------------------------------------------------------
@@ -346,7 +349,7 @@ def build_radii_method(state):
 
 def build_auxiliary_spiral_method(state):
     """
-    Build the auxiliary (temporary) spiral working outward from the hub.
+    Build the auxiliary (temporary) spiral working outward from the hub in a continuous Archimedean spiral.
 
     Zschokke (Fig. 2J): "Circling of the hub changes suddenly without
     interruption into the construction of the auxiliary spiral."
@@ -356,23 +359,32 @@ def build_auxiliary_spiral_method(state):
 
     hub = state.proto_hub_pos or "proto_hub"
 
-    # Simplified spiral: segments at increasing radii
-    spiral_nodes = [
-        "anchor_top_center", "anchor_right_upper",
-        "anchor_right_lower", "anchor_bottom_center",
-        "anchor_bottom_left", "anchor_left_lower",
+    radii_anchors = [
+        "anchor_top_center",
+        "anchor_right_upper",
+        "anchor_right_lower",
+        "anchor_bottom_right",
+        "anchor_bottom_center",
+        "anchor_bottom_left",
+        "anchor_left_lower",
         "anchor_left_upper",
     ]
 
-    subtasks = [("walk", hub, hub)]  # start circling from hub
-    prev = hub
-    for node in spiral_nodes:
-        subtasks.append(
-            ("build_spiral_segment", prev, node, "auxiliary_spiral")
-        )
-        prev = node
+    turns = 4
+    total_steps = turns * len(radii_anchors)
+    t_start, t_end = 0.20, 0.80
 
-    subtasks.append(("walk", prev, hub))
+    subtasks = []
+    prev_node = hub
+
+    for step_i in range(total_steps):
+        frac = t_start + step_i * (t_end - t_start) / (total_steps - 1)
+        anchor = radii_anchors[step_i % len(radii_anchors)]
+        curr_node = get_radius_node(anchor, frac)
+        subtasks.append(("build_spiral_segment", prev_node, curr_node, "auxiliary_spiral"))
+        prev_node = curr_node
+
+    subtasks.append(("walk", prev_node, hub))
     subtasks.append(("mark_auxiliary_spiral_done",))
     return subtasks
 
@@ -383,7 +395,7 @@ def build_auxiliary_spiral_method(state):
 
 def build_capture_spiral_method(state):
     """
-    Build the capture (sticky) spiral working inward toward the hub.
+    Build the capture (sticky) spiral working inward toward the hub in a continuous Archimedean spiral.
 
     Zschokke (Fig. 2K): "The spider finally completes the web by building the
     capture spiral."
@@ -393,23 +405,32 @@ def build_capture_spiral_method(state):
 
     hub = state.proto_hub_pos or "proto_hub"
 
-    # Capture spiral goes inward (reverse of auxiliary spiral order)
-    spiral_nodes = [
-        "anchor_left_upper", "anchor_left_lower",
-        "anchor_bottom_left", "anchor_bottom_center",
-        "anchor_right_lower", "anchor_right_upper",
+    radii_anchors = [
         "anchor_top_center",
+        "anchor_right_upper",
+        "anchor_right_lower",
+        "anchor_bottom_right",
+        "anchor_bottom_center",
+        "anchor_bottom_left",
+        "anchor_left_lower",
+        "anchor_left_upper",
     ]
 
-    subtasks = []
-    prev = hub
-    for node in spiral_nodes:
-        subtasks.append(
-            ("build_spiral_segment", prev, node, "capture_spiral")
-        )
-        prev = node
+    turns = 5
+    total_steps = turns * len(radii_anchors)
+    t_start, t_end = 0.85, 0.20
 
-    subtasks.append(("walk", prev, hub))
+    subtasks = []
+    prev_node = hub
+
+    for step_i in range(total_steps):
+        frac = t_start - step_i * (t_start - t_end) / (total_steps - 1)
+        anchor = radii_anchors[step_i % len(radii_anchors)]
+        curr_node = get_radius_node(anchor, frac)
+        subtasks.append(("build_spiral_segment", prev_node, curr_node, "capture_spiral"))
+        prev_node = curr_node
+
+    subtasks.append(("walk", prev_node, hub))
     subtasks.append(("mark_capture_spiral_done",))
     return subtasks
 

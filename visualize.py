@@ -15,7 +15,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 from spider_web_htn.main import setup_domain
 from spider_web_htn.state import create_initial_state
-from spider_web_htn.utils import NODE_COORDS, calculate_distance
+from spider_web_htn.utils import NODE_COORDS, calculate_distance, get_node_coord
 import gtpyhop
 
 
@@ -102,6 +102,10 @@ def export_plan_data():
         prev_phase = macro_phase
 
     coords = {name: list(xy) for name, xy in NODE_COORDS.items()}
+    for step in steps:
+        for arg in step["args"]:
+            if isinstance(arg, str) and arg not in coords:
+                coords[arg] = list(get_node_coord(arg))
 
     return {
         "node_coords": coords,

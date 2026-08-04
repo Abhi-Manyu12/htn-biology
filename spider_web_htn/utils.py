@@ -49,6 +49,37 @@ NODE_COORDS = {
 }
 
 
+def get_node_coord(node_name):
+    """
+    Get (x, y) coordinates for a static node or dynamic spiral node (anchor@fraction).
+    """
+    if node_name in NODE_COORDS:
+        return NODE_COORDS[node_name]
+
+    if "@" in node_name:
+        parts = node_name.split("@")
+        anchor_name = parts[0]
+        try:
+            fraction = float(parts[1])
+            hub_c = NODE_COORDS.get("proto_hub", (8.0, 12.0))
+            anchor_c = NODE_COORDS.get(anchor_name)
+            if anchor_c:
+                x = hub_c[0] + fraction * (anchor_c[0] - hub_c[0])
+                y = hub_c[1] + fraction * (anchor_c[1] - hub_c[1])
+                return (x, y)
+        except ValueError:
+            pass
+
+    return (8.0, 12.0)
+
+
+def get_radius_node(anchor_name, fraction):
+    """
+    Helper to generate a dynamic node name for a position along a radius at a fraction [0, 1].
+    """
+    return f"{anchor_name}@{fraction:.2f}"
+
+
 def calculate_distance(node1, node2):
     """
     Euclidean distance between two nodes (in cm).
@@ -61,7 +92,7 @@ def calculate_distance(node1, node2):
     Parameters
     ----------
     node1, node2 : str
-        Node names present in NODE_COORDS.
+        Node names present in NODE_COORDS or dynamic spiral nodes (anchor@fraction).
 
     Returns
     -------
@@ -71,12 +102,8 @@ def calculate_distance(node1, node2):
     if node1 == node2:
         return 0.0
 
-    c1 = NODE_COORDS.get(node1)
-    c2 = NODE_COORDS.get(node2)
-
-    if c1 is None or c2 is None:
-        # Fallback for dynamically created nodes — use a default cost
-        return 2.0
+    c1 = get_node_coord(node1)
+    c2 = get_node_coord(node2)
 
     return math.sqrt((c1[0] - c2[0]) ** 2 + (c1[1] - c2[1]) ** 2)
 

@@ -273,6 +273,8 @@ def build_spiral_segment(state, n1, n2, spiral_type):
     if state.spider_pos != n1:
         return False
 
+    state.nodes.add(n1)
+    state.nodes.add(n2)
     state.threads.append((n1, n2, spiral_type))
     dist = calculate_distance(n1, n2)
     state.energy_expended += dist
