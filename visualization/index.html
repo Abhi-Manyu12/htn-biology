@@ -493,7 +493,19 @@ const MAX_Y = 18;
 function toCanvasX(x) { return PADDING + x * SCALE; }
 function toCanvasY(y) { return PADDING + (MAX_Y - y) * SCALE; }
 function nodeToCanvas(name) {
-  const c = PLAN_DATA.node_coords[name];
+  let c = PLAN_DATA.node_coords[name];
+  if (!c && name && typeof name === 'string' && name.includes('@')) {
+    const parts = name.split('@');
+    const anchorC = PLAN_DATA.node_coords[parts[0]];
+    const hubC = PLAN_DATA.node_coords['proto_hub'] || [8.0, 12.0];
+    const frac = parseFloat(parts[1]);
+    if (anchorC && !isNaN(frac)) {
+      c = [
+        hubC[0] + frac * (anchorC[0] - hubC[0]),
+        hubC[1] + frac * (anchorC[1] - hubC[1])
+      ];
+    }
+  }
   return c ? [toCanvasX(c[0]), toCanvasY(c[1])] : [canvas.width/2, canvas.height/2];
 }
 
