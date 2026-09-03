@@ -1,0 +1,223 @@
+# config.yaml — Environment and domain configuration for the Zschokke 1996
+# orb web construction HTN model.
+#
+# Splitting this out lets the SAME planner/methods code run against different
+# environments (e.g. varying anchor point distances, frame dimensions) purely
+# by editing this file — no changes to operators.py / methods.py needed.
+#
+# Two top-level sections:
+#   environment: physical geometry of the supporting structure (the "world")
+#   domain:      HTN construction knowledge/parameters (the "spider's plan")
+
+environment:
+  # Overall frame dimensions in cm (Zschokke 1996, Fig. 1A: 18cm high, 16cm wide)
+  frame_width: 16.0
+  frame_height: 18.0
+
+  # Node coordinates (x, y) in cm. Origin at bottom-left, x right, y up.
+  # Expressed as [x, y] pairs. These can be edited/regenerated to model
+  # different supporting-structure geometries (e.g. wider/taller frames,
+  # different anchor spacing) without touching any Python logic.
+  nodes:
+    right_stick_top:      [16.0, 18.0]
+    right_stick_mid:      [16.0, 12.0]
+    right_stick_bottom:   [16.0,  0.0]
+    left_stick_top:       [ 0.0, 18.0]
+    left_stick_mid:       [ 0.0, 12.0]
+    left_stick_bottom:    [ 0.0,  0.0]
+
+    crossbar_right:       [16.0,  9.0]
+    crossbar_left:        [ 0.0,  9.0]
+
+    bottom_path:          [ 8.0,  0.0]
+
+    proto_hub:            [ 8.0, 12.0]
+
+    anchor_top_center:    [ 8.0, 18.0]
+    anchor_left_upper:    [ 0.0, 15.0]
+    anchor_left_lower:    [ 0.0,  6.0]
+    anchor_right_upper:   [16.0, 15.0]
+    anchor_right_lower:   [16.0,  6.0]
+    anchor_bottom_left:   [ 3.0,  0.0]
+    anchor_bottom_center: [ 8.0,  0.0]
+    anchor_bottom_right:  [13.0,  0.0]
+
+  # Default cost (cm) used when a distance is requested between a node that
+  # is not in `nodes` (e.g. dynamically created at runtime) and another node.
+  default_distance: 2.0
+
+  # Physical connections along the supporting structure the spider can walk
+  # without needing a silk thread. Each entry is [node_a, node_b].
+  walkable_edges:
+    - [right_stick_top, right_stick_mid]
+    - [right_stick_mid, crossbar_right]
+    - [crossbar_right, right_stick_bottom]
+    - [right_stick_bottom, bottom_path]
+    - [bottom_path, left_stick_bottom]
+    - [left_stick_bottom, crossbar_left]
+    - [crossbar_left, left_stick_mid]
+    - [left_stick_mid, left_stick_top]
+    - [right_stick_top, crossbar_right]
+    - [right_stick_top, right_stick_bottom]
+    - [left_stick_top, crossbar_left]
+    - [left_stick_top, left_stick_bottom]
+    - [right_stick_mid, right_stick_bottom]
+    - [left_stick_mid, left_stick_bottom]
+    - [left_stick_top, anchor_left_upper]
+    - [anchor_left_upper, left_stick_mid]
+    - [left_stick_mid, anchor_left_lower]
+    - [anchor_left_lower, crossbar_left]
+    - [anchor_left_lower, left_stick_bottom]
+    - [right_stick_top, anchor_right_upper]
+    - [anchor_right_upper, right_stick_mid]
+    - [right_stick_mid, anchor_right_lower]
+    - [anchor_right_lower, crossbar_right]
+    - [anchor_right_lower, right_stick_bottom]
+    - [left_stick_bottom, anchor_bottom_left]
+    - [anchor_bottom_left, anchor_bottom_center]
+    - [anchor_bottom_center, bottom_path]
+    - [anchor_bottom_center, anchor_bottom_right]
+    - [anchor_bottom_right, right_stick_bottom]
+    - [left_stick_top, anchor_top_center]
+    - [anchor_top_center, right_stick_top]
+
+  # Node the spider starts on.
+  spider_start_pos: right_stick_top
+
+  # Set of nodes that exist in the world from the outset (before any
+  # construction). Everything else is created dynamically during planning
+  # (e.g. "proto_hub" is added via the `anchor` operator).
+  structure_nodes:
+    - right_stick_top
+    - right_stick_mid
+    - right_stick_bottom
+    - left_stick_top
+    - left_stick_mid
+    - left_stick_bottom
+    - crossbar_right
+    - crossbar_left
+    - bottom_path
+    - anchor_left_upper
+    - anchor_left_lower
+    - anchor_right_upper
+    - anchor_right_lower
+    - anchor_top_center
+    - anchor_bottom_left
+    - anchor_bottom_center
+    - anchor_bottom_right
+
+domain:
+  # Minimum number of proto-radii that must converge at a point before it
+  # can be marked as the proto-hub.
+  min_proto_radii: 4
+
+  # Target number of definitive radii / frame threads for a "complete" web.
+  target_radii_count: 8
+  target_frame_count: 4
+
+  # Frame construction order: (n1, n2) pairs, walked from hub in this order.
+  # First pair is always the top frame (Zschokke 1996).
+  frame_pairs:
+    - [left_stick_top, right_stick_top]        # top frame
+    - [left_stick_top, anchor_left_lower]      # left frame
+    - [anchor_left_lower, anchor_right_lower]  # bottom frame
+    - [anchor_right_lower, right_stick_top]    # right frame
+
+  # Anchor targets for definitive radii, in construction order (circling hub).
+  radii_anchor_order:
+    - anchor_top_center
+    - anchor_left_upper
+    - anchor_left_lower
+    - anchor_bottom_left
+    - anchor_bottom_center
+    - anchor_bottom_right
+    - anchor_right_lower
+    - anchor_right_upper
+
+  # Anchor cycles used by the three alternative proto-hub establishment
+  # methods (Zschokke's observed variability). Selected via
+  # `proto_radii_count % len(list)`.
+  proto_hub_anchors:
+    via_walk:
+      - anchor_left_upper
+      - anchor_right_upper
+      - anchor_left_lower
+      - anchor_right_lower
+      - left_stick_top
+      - right_stick_top
+      - crossbar_left
+      - crossbar_right
+    via_drop:
+      - anchor_right_lower
+      - anchor_left_lower
+      - crossbar_right
+      - crossbar_left
+      - anchor_bottom_center
+      - anchor_bottom_left
+    via_tarzan:
+      - anchor_left_upper
+      - anchor_right_lower
+      - left_stick_mid
+      - right_stick_mid
+      - anchor_bottom_right
+      - anchor_top_center
+
+  # Spiral traversal order (outward for auxiliary, inward for capture).
+  spiral_nodes:
+    auxiliary:
+      - anchor_top_center
+      - anchor_right_upper
+      - anchor_right_lower
+      - anchor_bottom_center
+      - anchor_bottom_left
+      - anchor_left_lower
+      - anchor_left_upper
+    capture:
+      - anchor_left_upper
+      - anchor_left_lower
+      - anchor_bottom_left
+      - anchor_bottom_center
+      - anchor_right_lower
+      - anchor_right_upper
+      - anchor_top_center
+
+  # Name used for the proto-hub node when none is set yet on the state.
+  default_hub_name: proto_hub
+
+# ---------------------------------------------------------------------------
+# stochastic: environmental noise & reproducibility (Way-Forward Step 6).
+#
+# Disabled by default so the baseline deterministic plan/energy used in the
+# regression tests (test_planner.py) is unaffected. Flip `enabled: true`
+# (and the sub-flags you want) to introduce variability for the upcoming
+# sensitivity-analysis / baseline-comparison experiments (Steps 4-5).
+#
+# Everything is driven off a single seeded RNG, so re-running with the same
+# `seed` reproduces an identical run bit-for-bit.
+# ---------------------------------------------------------------------------
+stochastic:
+  enabled: false
+  seed: 42
+
+  # Multiplicative noise applied to every movement/thread-laying distance,
+  # modelling wind disturbance during construction.
+  wind:
+    enabled: false
+    noise_std: 0.08          # relative std-dev, e.g. 0.08 = +/-8% typical gust
+
+  # Randomly removes some anchor points before a run starts, modelling
+  # reduced anchor availability in a harsher environment. The supporting
+  # structure (sticks, crossbars) is never touched — only the nodes listed
+  # in `removable_nodes` are ever candidates.
+  anchor_availability:
+    enabled: false
+    removal_prob: 0.2
+    removable_nodes:
+      - anchor_top_center
+      - anchor_left_upper
+      - anchor_left_lower
+      - anchor_right_upper
+      - anchor_right_lower
+      - anchor_bottom_left
+      - anchor_bottom_center
+      - anchor_bottom_right

@@ -225,53 +225,6 @@ const PLAN_DATA = {
       "action": [
         "lay_thread",
         "proto_hub",
-        "left_stick_top",
-        "dragline"
-      ],
-      "name": "lay_thread",
-      "args": [
-        "proto_hub",
-        "left_stick_top",
-        "dragline"
-      ],
-      "phase": "proto_hub",
-      "energy": 10.0,
-      "cumulative_energy": 112.2
-    },
-    {
-      "action": [
-        "reel_up",
-        "left_stick_top",
-        "proto_hub"
-      ],
-      "name": "reel_up",
-      "args": [
-        "left_stick_top",
-        "proto_hub"
-      ],
-      "phase": "proto_hub",
-      "energy": 10.0,
-      "cumulative_energy": 122.2
-    },
-    {
-      "action": [
-        "insert_radius",
-        "left_stick_top",
-        "proto_hub"
-      ],
-      "name": "insert_radius",
-      "args": [
-        "left_stick_top",
-        "proto_hub"
-      ],
-      "phase": "proto_hub",
-      "energy": 0.0,
-      "cumulative_energy": 122.2
-    },
-    {
-      "action": [
-        "lay_thread",
-        "proto_hub",
         "anchor_left_upper",
         "dragline"
       ],
@@ -283,7 +236,7 @@ const PLAN_DATA = {
       ],
       "phase": "proto_hub",
       "energy": 8.5,
-      "cumulative_energy": 130.7
+      "cumulative_energy": 110.7
     },
     {
       "action": [
@@ -298,7 +251,7 @@ const PLAN_DATA = {
       ],
       "phase": "proto_hub",
       "energy": 8.5,
-      "cumulative_energy": 139.3
+      "cumulative_energy": 119.3
     },
     {
       "action": [
@@ -313,7 +266,101 @@ const PLAN_DATA = {
       ],
       "phase": "proto_hub",
       "energy": 0.0,
-      "cumulative_energy": 139.3
+      "cumulative_energy": 119.3
+    },
+    {
+      "action": [
+        "lay_thread",
+        "proto_hub",
+        "anchor_right_upper",
+        "dragline"
+      ],
+      "name": "lay_thread",
+      "args": [
+        "proto_hub",
+        "anchor_right_upper",
+        "dragline"
+      ],
+      "phase": "proto_hub",
+      "energy": 8.5,
+      "cumulative_energy": 127.8
+    },
+    {
+      "action": [
+        "reel_up",
+        "anchor_right_upper",
+        "proto_hub"
+      ],
+      "name": "reel_up",
+      "args": [
+        "anchor_right_upper",
+        "proto_hub"
+      ],
+      "phase": "proto_hub",
+      "energy": 8.5,
+      "cumulative_energy": 136.4
+    },
+    {
+      "action": [
+        "insert_radius",
+        "anchor_right_upper",
+        "proto_hub"
+      ],
+      "name": "insert_radius",
+      "args": [
+        "anchor_right_upper",
+        "proto_hub"
+      ],
+      "phase": "proto_hub",
+      "energy": 0.0,
+      "cumulative_energy": 136.4
+    },
+    {
+      "action": [
+        "lay_thread",
+        "proto_hub",
+        "anchor_left_lower",
+        "dragline"
+      ],
+      "name": "lay_thread",
+      "args": [
+        "proto_hub",
+        "anchor_left_lower",
+        "dragline"
+      ],
+      "phase": "proto_hub",
+      "energy": 10.0,
+      "cumulative_energy": 146.4
+    },
+    {
+      "action": [
+        "reel_up",
+        "anchor_left_lower",
+        "proto_hub"
+      ],
+      "name": "reel_up",
+      "args": [
+        "anchor_left_lower",
+        "proto_hub"
+      ],
+      "phase": "proto_hub",
+      "energy": 10.0,
+      "cumulative_energy": 156.4
+    },
+    {
+      "action": [
+        "insert_radius",
+        "anchor_left_lower",
+        "proto_hub"
+      ],
+      "name": "insert_radius",
+      "args": [
+        "anchor_left_lower",
+        "proto_hub"
+      ],
+      "phase": "proto_hub",
+      "energy": 0.0,
+      "cumulative_energy": 156.4
     },
     {
       "action": [
@@ -330,7 +377,7 @@ const PLAN_DATA = {
       ],
       "phase": "proto_hub",
       "energy": 10.0,
-      "cumulative_energy": 149.3
+      "cumulative_energy": 166.4
     },
     {
       "action": [
@@ -345,7 +392,7 @@ const PLAN_DATA = {
       ],
       "phase": "proto_hub",
       "energy": 10.0,
-      "cumulative_energy": 159.3
+      "cumulative_energy": 176.4
     },
     {
       "action": [
@@ -360,54 +407,7 @@ const PLAN_DATA = {
       ],
       "phase": "proto_hub",
       "energy": 0.0,
-      "cumulative_energy": 159.3
-    },
-    {
-      "action": [
-        "lay_thread",
-        "proto_hub",
-        "right_stick_top",
-        "dragline"
-      ],
-      "name": "lay_thread",
-      "args": [
-        "proto_hub",
-        "right_stick_top",
-        "dragline"
-      ],
-      "phase": "proto_hub",
-      "energy": 10.0,
-      "cumulative_energy": 169.3
-    },
-    {
-      "action": [
-        "reel_up",
-        "right_stick_top",
-        "proto_hub"
-      ],
-      "name": "reel_up",
-      "args": [
-        "right_stick_top",
-        "proto_hub"
-      ],
-      "phase": "proto_hub",
-      "energy": 10.0,
-      "cumulative_energy": 179.3
-    },
-    {
-      "action": [
-        "insert_radius",
-        "right_stick_top",
-        "proto_hub"
-      ],
-      "name": "insert_radius",
-      "args": [
-        "right_stick_top",
-        "proto_hub"
-      ],
-      "phase": "proto_hub",
-      "energy": 0.0,
-      "cumulative_energy": 179.3
+      "cumulative_energy": 176.4
     },
     {
       "action": [
@@ -420,22 +420,7 @@ const PLAN_DATA = {
       ],
       "phase": "proto_hub",
       "energy": 0.0,
-      "cumulative_energy": 179.3
-    },
-    {
-      "action": [
-        "relocate_hub",
-        "proto_hub",
-        "proto_hub"
-      ],
-      "name": "relocate_hub",
-      "args": [
-        "proto_hub",
-        "proto_hub"
-      ],
-      "phase": "hub_relocate",
-      "energy": 6.0,
-      "cumulative_energy": 185.3
+      "cumulative_energy": 176.4
     },
     {
       "action": [
@@ -448,9 +433,9 @@ const PLAN_DATA = {
         "proto_hub",
         "left_stick_top"
       ],
-      "phase": "hub_relocate",
+      "phase": "proto_hub",
       "energy": 10.0,
-      "cumulative_energy": 195.3
+      "cumulative_energy": 186.4
     },
     {
       "action": [
@@ -463,9 +448,9 @@ const PLAN_DATA = {
         "left_stick_top",
         "right_stick_top"
       ],
-      "phase": "hub_relocate",
+      "phase": "frame",
       "energy": 16.0,
-      "cumulative_energy": 211.3
+      "cumulative_energy": 202.4
     },
     {
       "action": [
@@ -478,76 +463,174 @@ const PLAN_DATA = {
         "right_stick_top",
         "proto_hub"
       ],
-      "phase": "hub_relocate",
+      "phase": "frame",
       "energy": 10.0,
-      "cumulative_energy": 221.3
+      "cumulative_energy": 212.4
     },
     {
       "action": [
-        "mark_top_frame_done"
-      ],
-      "name": "mark_top_frame_done",
-      "args": [],
-      "phase": "hub_relocate",
-      "energy": 0.0,
-      "cumulative_energy": 221.3
-    },
-    {
-      "action": [
-        "construct_frame_with_radius",
+        "walk",
         "proto_hub",
-        "anchor_left_upper",
-        "anchor_left_lower",
-        null
+        "left_stick_top"
       ],
-      "name": "construct_frame_with_radius",
+      "name": "walk",
       "args": [
         "proto_hub",
-        "anchor_left_upper",
-        "anchor_left_lower",
-        null
+        "left_stick_top"
       ],
       "phase": "frame",
-      "energy": 27.5,
-      "cumulative_energy": 248.8
+      "energy": 10.0,
+      "cumulative_energy": 222.4
     },
     {
       "action": [
-        "construct_frame_with_radius",
-        "proto_hub",
-        "anchor_left_lower",
-        "anchor_right_lower",
-        null
+        "lay_frame_thread",
+        "left_stick_top",
+        "anchor_left_lower"
       ],
-      "name": "construct_frame_with_radius",
+      "name": "lay_frame_thread",
+      "args": [
+        "left_stick_top",
+        "anchor_left_lower"
+      ],
+      "phase": "frame",
+      "energy": 12.0,
+      "cumulative_energy": 234.4
+    },
+    {
+      "action": [
+        "walk",
+        "anchor_left_lower",
+        "proto_hub"
+      ],
+      "name": "walk",
+      "args": [
+        "anchor_left_lower",
+        "proto_hub"
+      ],
+      "phase": "frame",
+      "energy": 10.0,
+      "cumulative_energy": 244.4
+    },
+    {
+      "action": [
+        "walk",
+        "proto_hub",
+        "anchor_left_lower"
+      ],
+      "name": "walk",
       "args": [
         "proto_hub",
-        "anchor_left_lower",
-        "anchor_right_lower",
-        null
+        "anchor_left_lower"
       ],
       "phase": "frame",
-      "energy": 36.0,
-      "cumulative_energy": 284.8
+      "energy": 10.0,
+      "cumulative_energy": 254.4
     },
     {
       "action": [
-        "construct_frame_with_radius",
-        "proto_hub",
+        "lay_frame_thread",
+        "anchor_left_lower",
+        "anchor_right_lower"
+      ],
+      "name": "lay_frame_thread",
+      "args": [
+        "anchor_left_lower",
+        "anchor_right_lower"
+      ],
+      "phase": "frame",
+      "energy": 16.0,
+      "cumulative_energy": 270.4
+    },
+    {
+      "action": [
+        "walk",
         "anchor_right_lower",
+        "proto_hub"
+      ],
+      "name": "walk",
+      "args": [
+        "anchor_right_lower",
+        "proto_hub"
+      ],
+      "phase": "frame",
+      "energy": 10.0,
+      "cumulative_energy": 280.4
+    },
+    {
+      "action": [
+        "walk",
+        "proto_hub",
+        "anchor_right_lower"
+      ],
+      "name": "walk",
+      "args": [
+        "proto_hub",
+        "anchor_right_lower"
+      ],
+      "phase": "frame",
+      "energy": 10.0,
+      "cumulative_energy": 290.4
+    },
+    {
+      "action": [
+        "lay_frame_thread",
+        "anchor_right_lower",
+        "right_stick_top"
+      ],
+      "name": "lay_frame_thread",
+      "args": [
+        "anchor_right_lower",
+        "right_stick_top"
+      ],
+      "phase": "frame",
+      "energy": 12.0,
+      "cumulative_energy": 302.4
+    },
+    {
+      "action": [
+        "walk",
         "right_stick_top",
-        null
+        "proto_hub"
       ],
-      "name": "construct_frame_with_radius",
+      "name": "walk",
       "args": [
-        "proto_hub",
-        "anchor_right_lower",
         "right_stick_top",
-        null
+        "proto_hub"
       ],
       "phase": "frame",
-      "energy": 32.0,
-      "cumulative_energy": 316.8
+      "energy": 10.0,
+      "cumulative_energy": 312.4
+    },
+    {
+      "action": [
+        "lay_radius",
+        "proto_hub",
+        "anchor_top_center"
+      ],
+      "name": "lay_radius",
+      "args": [
+        "proto_hub",
+        "anchor_top_center"
+      ],
+      "phase": "radii",
+      "energy": 6.0,
+      "cumulative_energy": 318.4
+    },
+    {
+      "action": [
+        "walk",
+        "anchor_top_center",
+        "proto_hub"
+      ],
+      "name": "walk",
+      "args": [
+        "anchor_top_center",
+        "proto_hub"
+      ],
+      "phase": "radii",
+      "energy": 6.0,
+      "cumulative_energy": 324.4
     },
     {
       "action": [
@@ -562,7 +645,7 @@ const PLAN_DATA = {
       ],
       "phase": "radii",
       "energy": 8.5,
-      "cumulative_energy": 325.4
+      "cumulative_energy": 332.9
     },
     {
       "action": [
@@ -577,67 +660,7 @@ const PLAN_DATA = {
       ],
       "phase": "radii",
       "energy": 8.5,
-      "cumulative_energy": 333.9
-    },
-    {
-      "action": [
-        "lay_radius",
-        "proto_hub",
-        "anchor_bottom_right"
-      ],
-      "name": "lay_radius",
-      "args": [
-        "proto_hub",
-        "anchor_bottom_right"
-      ],
-      "phase": "radii",
-      "energy": 13.0,
-      "cumulative_energy": 346.9
-    },
-    {
-      "action": [
-        "walk",
-        "anchor_bottom_right",
-        "proto_hub"
-      ],
-      "name": "walk",
-      "args": [
-        "anchor_bottom_right",
-        "proto_hub"
-      ],
-      "phase": "radii",
-      "energy": 13.0,
-      "cumulative_energy": 359.9
-    },
-    {
-      "action": [
-        "lay_radius",
-        "proto_hub",
-        "anchor_right_upper"
-      ],
-      "name": "lay_radius",
-      "args": [
-        "proto_hub",
-        "anchor_right_upper"
-      ],
-      "phase": "radii",
-      "energy": 8.5,
-      "cumulative_energy": 368.4
-    },
-    {
-      "action": [
-        "walk",
-        "anchor_right_upper",
-        "proto_hub"
-      ],
-      "name": "walk",
-      "args": [
-        "anchor_right_upper",
-        "proto_hub"
-      ],
-      "phase": "radii",
-      "energy": 8.5,
-      "cumulative_energy": 377.0
+      "cumulative_energy": 341.4
     },
     {
       "action": [
@@ -652,7 +675,7 @@ const PLAN_DATA = {
       ],
       "phase": "radii",
       "energy": 10.0,
-      "cumulative_energy": 387.0
+      "cumulative_energy": 351.4
     },
     {
       "action": [
@@ -667,37 +690,7 @@ const PLAN_DATA = {
       ],
       "phase": "radii",
       "energy": 10.0,
-      "cumulative_energy": 397.0
-    },
-    {
-      "action": [
-        "lay_radius",
-        "proto_hub",
-        "anchor_right_lower"
-      ],
-      "name": "lay_radius",
-      "args": [
-        "proto_hub",
-        "anchor_right_lower"
-      ],
-      "phase": "radii",
-      "energy": 10.0,
-      "cumulative_energy": 407.0
-    },
-    {
-      "action": [
-        "walk",
-        "anchor_right_lower",
-        "proto_hub"
-      ],
-      "name": "walk",
-      "args": [
-        "anchor_right_lower",
-        "proto_hub"
-      ],
-      "phase": "radii",
-      "energy": 10.0,
-      "cumulative_energy": 417.0
+      "cumulative_energy": 361.4
     },
     {
       "action": [
@@ -712,7 +705,7 @@ const PLAN_DATA = {
       ],
       "phase": "radii",
       "energy": 13.0,
-      "cumulative_energy": 430.0
+      "cumulative_energy": 374.4
     },
     {
       "action": [
@@ -727,7 +720,7 @@ const PLAN_DATA = {
       ],
       "phase": "radii",
       "energy": 13.0,
-      "cumulative_energy": 443.0
+      "cumulative_energy": 387.4
     },
     {
       "action": [
@@ -742,7 +735,7 @@ const PLAN_DATA = {
       ],
       "phase": "radii",
       "energy": 12.0,
-      "cumulative_energy": 455.0
+      "cumulative_energy": 399.4
     },
     {
       "action": [
@@ -757,7 +750,97 @@ const PLAN_DATA = {
       ],
       "phase": "radii",
       "energy": 12.0,
-      "cumulative_energy": 467.0
+      "cumulative_energy": 411.4
+    },
+    {
+      "action": [
+        "lay_radius",
+        "proto_hub",
+        "anchor_bottom_right"
+      ],
+      "name": "lay_radius",
+      "args": [
+        "proto_hub",
+        "anchor_bottom_right"
+      ],
+      "phase": "radii",
+      "energy": 13.0,
+      "cumulative_energy": 424.4
+    },
+    {
+      "action": [
+        "walk",
+        "anchor_bottom_right",
+        "proto_hub"
+      ],
+      "name": "walk",
+      "args": [
+        "anchor_bottom_right",
+        "proto_hub"
+      ],
+      "phase": "radii",
+      "energy": 13.0,
+      "cumulative_energy": 437.4
+    },
+    {
+      "action": [
+        "lay_radius",
+        "proto_hub",
+        "anchor_right_lower"
+      ],
+      "name": "lay_radius",
+      "args": [
+        "proto_hub",
+        "anchor_right_lower"
+      ],
+      "phase": "radii",
+      "energy": 10.0,
+      "cumulative_energy": 447.4
+    },
+    {
+      "action": [
+        "walk",
+        "anchor_right_lower",
+        "proto_hub"
+      ],
+      "name": "walk",
+      "args": [
+        "anchor_right_lower",
+        "proto_hub"
+      ],
+      "phase": "radii",
+      "energy": 10.0,
+      "cumulative_energy": 457.4
+    },
+    {
+      "action": [
+        "lay_radius",
+        "proto_hub",
+        "anchor_right_upper"
+      ],
+      "name": "lay_radius",
+      "args": [
+        "proto_hub",
+        "anchor_right_upper"
+      ],
+      "phase": "radii",
+      "energy": 8.5,
+      "cumulative_energy": 466.0
+    },
+    {
+      "action": [
+        "walk",
+        "anchor_right_upper",
+        "proto_hub"
+      ],
+      "name": "walk",
+      "args": [
+        "anchor_right_upper",
+        "proto_hub"
+      ],
+      "phase": "radii",
+      "energy": 8.5,
+      "cumulative_energy": 474.5
     },
     {
       "action": [
@@ -774,7 +857,7 @@ const PLAN_DATA = {
       ],
       "phase": "auxiliary_spiral",
       "energy": 6.0,
-      "cumulative_energy": 473.0
+      "cumulative_energy": 480.5
     },
     {
       "action": [
@@ -791,7 +874,7 @@ const PLAN_DATA = {
       ],
       "phase": "auxiliary_spiral",
       "energy": 8.5,
-      "cumulative_energy": 481.5
+      "cumulative_energy": 489.1
     },
     {
       "action": [
@@ -808,41 +891,24 @@ const PLAN_DATA = {
       ],
       "phase": "auxiliary_spiral",
       "energy": 9.0,
-      "cumulative_energy": 490.5
+      "cumulative_energy": 498.1
     },
     {
       "action": [
         "build_spiral_segment",
         "anchor_right_lower",
-        "anchor_bottom_right",
+        "anchor_bottom_center",
         "auxiliary_spiral"
       ],
       "name": "build_spiral_segment",
       "args": [
         "anchor_right_lower",
-        "anchor_bottom_right",
-        "auxiliary_spiral"
-      ],
-      "phase": "auxiliary_spiral",
-      "energy": 6.7,
-      "cumulative_energy": 497.2
-    },
-    {
-      "action": [
-        "build_spiral_segment",
-        "anchor_bottom_right",
-        "anchor_bottom_center",
-        "auxiliary_spiral"
-      ],
-      "name": "build_spiral_segment",
-      "args": [
-        "anchor_bottom_right",
         "anchor_bottom_center",
         "auxiliary_spiral"
       ],
       "phase": "auxiliary_spiral",
-      "energy": 5.0,
-      "cumulative_energy": 502.2
+      "energy": 10.0,
+      "cumulative_energy": 508.1
     },
     {
       "action": [
@@ -859,7 +925,7 @@ const PLAN_DATA = {
       ],
       "phase": "auxiliary_spiral",
       "energy": 5.0,
-      "cumulative_energy": 507.2
+      "cumulative_energy": 513.1
     },
     {
       "action": [
@@ -876,7 +942,7 @@ const PLAN_DATA = {
       ],
       "phase": "auxiliary_spiral",
       "energy": 6.7,
-      "cumulative_energy": 513.9
+      "cumulative_energy": 519.8
     },
     {
       "action": [
@@ -893,7 +959,7 @@ const PLAN_DATA = {
       ],
       "phase": "auxiliary_spiral",
       "energy": 9.0,
-      "cumulative_energy": 522.9
+      "cumulative_energy": 528.8
     },
     {
       "action": [
@@ -908,7 +974,7 @@ const PLAN_DATA = {
       ],
       "phase": "auxiliary_spiral",
       "energy": 8.5,
-      "cumulative_energy": 531.5
+      "cumulative_energy": 537.3
     },
     {
       "action": [
@@ -918,7 +984,7 @@ const PLAN_DATA = {
       "args": [],
       "phase": "auxiliary_spiral",
       "energy": 0.0,
-      "cumulative_energy": 531.5
+      "cumulative_energy": 537.3
     },
     {
       "action": [
@@ -935,22 +1001,7 @@ const PLAN_DATA = {
       ],
       "phase": "capture_spiral",
       "energy": 8.5,
-      "cumulative_energy": 540.0
-    },
-    {
-      "action": [
-        "remove_auxiliary_spiral_segment",
-        "anchor_left_upper",
-        "anchor_left_lower"
-      ],
-      "name": "remove_auxiliary_spiral_segment",
-      "args": [
-        "anchor_left_upper",
-        "anchor_left_lower"
-      ],
-      "phase": "capture_spiral",
-      "energy": 0.0,
-      "cumulative_energy": 540.0
+      "cumulative_energy": 545.9
     },
     {
       "action": [
@@ -967,22 +1018,7 @@ const PLAN_DATA = {
       ],
       "phase": "capture_spiral",
       "energy": 9.0,
-      "cumulative_energy": 549.0
-    },
-    {
-      "action": [
-        "remove_auxiliary_spiral_segment",
-        "anchor_left_lower",
-        "anchor_bottom_left"
-      ],
-      "name": "remove_auxiliary_spiral_segment",
-      "args": [
-        "anchor_left_lower",
-        "anchor_bottom_left"
-      ],
-      "phase": "capture_spiral",
-      "energy": 0.0,
-      "cumulative_energy": 549.0
+      "cumulative_energy": 554.9
     },
     {
       "action": [
@@ -999,22 +1035,7 @@ const PLAN_DATA = {
       ],
       "phase": "capture_spiral",
       "energy": 6.7,
-      "cumulative_energy": 555.7
-    },
-    {
-      "action": [
-        "remove_auxiliary_spiral_segment",
-        "anchor_bottom_left",
-        "anchor_bottom_center"
-      ],
-      "name": "remove_auxiliary_spiral_segment",
-      "args": [
-        "anchor_bottom_left",
-        "anchor_bottom_center"
-      ],
-      "phase": "capture_spiral",
-      "energy": 0.0,
-      "cumulative_energy": 555.7
+      "cumulative_energy": 561.6
     },
     {
       "action": [
@@ -1031,86 +1052,24 @@ const PLAN_DATA = {
       ],
       "phase": "capture_spiral",
       "energy": 5.0,
-      "cumulative_energy": 560.7
-    },
-    {
-      "action": [
-        "remove_auxiliary_spiral_segment",
-        "anchor_bottom_center",
-        "anchor_bottom_right"
-      ],
-      "name": "remove_auxiliary_spiral_segment",
-      "args": [
-        "anchor_bottom_center",
-        "anchor_bottom_right"
-      ],
-      "phase": "capture_spiral",
-      "energy": 0.0,
-      "cumulative_energy": 560.7
+      "cumulative_energy": 566.6
     },
     {
       "action": [
         "build_spiral_segment",
         "anchor_bottom_center",
-        "anchor_bottom_right",
+        "anchor_right_lower",
         "capture_spiral"
       ],
       "name": "build_spiral_segment",
       "args": [
         "anchor_bottom_center",
-        "anchor_bottom_right",
-        "capture_spiral"
-      ],
-      "phase": "capture_spiral",
-      "energy": 5.0,
-      "cumulative_energy": 565.7
-    },
-    {
-      "action": [
-        "remove_auxiliary_spiral_segment",
-        "anchor_bottom_right",
-        "anchor_right_lower"
-      ],
-      "name": "remove_auxiliary_spiral_segment",
-      "args": [
-        "anchor_bottom_right",
-        "anchor_right_lower"
-      ],
-      "phase": "capture_spiral",
-      "energy": 0.0,
-      "cumulative_energy": 565.7
-    },
-    {
-      "action": [
-        "build_spiral_segment",
-        "anchor_bottom_right",
-        "anchor_right_lower",
-        "capture_spiral"
-      ],
-      "name": "build_spiral_segment",
-      "args": [
-        "anchor_bottom_right",
         "anchor_right_lower",
         "capture_spiral"
       ],
       "phase": "capture_spiral",
-      "energy": 6.7,
-      "cumulative_energy": 572.4
-    },
-    {
-      "action": [
-        "remove_auxiliary_spiral_segment",
-        "anchor_right_lower",
-        "anchor_right_upper"
-      ],
-      "name": "remove_auxiliary_spiral_segment",
-      "args": [
-        "anchor_right_lower",
-        "anchor_right_upper"
-      ],
-      "phase": "capture_spiral",
-      "energy": 0.0,
-      "cumulative_energy": 572.4
+      "energy": 10.0,
+      "cumulative_energy": 576.6
     },
     {
       "action": [
@@ -1127,22 +1086,7 @@ const PLAN_DATA = {
       ],
       "phase": "capture_spiral",
       "energy": 9.0,
-      "cumulative_energy": 581.4
-    },
-    {
-      "action": [
-        "remove_auxiliary_spiral_segment",
-        "anchor_right_upper",
-        "anchor_top_center"
-      ],
-      "name": "remove_auxiliary_spiral_segment",
-      "args": [
-        "anchor_right_upper",
-        "anchor_top_center"
-      ],
-      "phase": "capture_spiral",
-      "energy": 0.0,
-      "cumulative_energy": 581.4
+      "cumulative_energy": 585.6
     },
     {
       "action": [
@@ -1159,7 +1103,7 @@ const PLAN_DATA = {
       ],
       "phase": "capture_spiral",
       "energy": 8.5,
-      "cumulative_energy": 590.0
+      "cumulative_energy": 594.1
     },
     {
       "action": [
@@ -1174,7 +1118,7 @@ const PLAN_DATA = {
       ],
       "phase": "capture_spiral",
       "energy": 6.0,
-      "cumulative_energy": 596.0
+      "cumulative_energy": 600.1
     },
     {
       "action": [
@@ -1184,7 +1128,7 @@ const PLAN_DATA = {
       "args": [],
       "phase": "capture_spiral",
       "energy": 0.0,
-      "cumulative_energy": 596.0
+      "cumulative_energy": 600.1
     },
     {
       "action": [
@@ -1194,9 +1138,9 @@ const PLAN_DATA = {
       "args": [],
       "phase": "complete",
       "energy": 0.0,
-      "cumulative_energy": 596.0
+      "cumulative_energy": 600.1
     }
   ],
-  "total_steps": 73,
-  "total_energy": 596.0
+  "total_steps": 70,
+  "total_energy": 600.1
 };

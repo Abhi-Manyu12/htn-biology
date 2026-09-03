@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orb Web Construction — Zschokke 1996 HTN Planner</title>
+<meta name="description" content="Interactive visualization of spider orb web construction using HTN planning, based on Zschokke 1996.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0b14;
+  --bg-panel: rgba(16, 18, 32, 0.85);
+  --bg-card: rgba(30, 33, 55, 0.7);
+  --border: rgba(100, 116, 180, 0.15);
+  --text: #e2e8f0;
+  --text-dim: #8892b0;
+  --text-bright: #f8fafc;
+  --accent: #818cf8;
+  --accent-glow: rgba(129, 140, 248, 0.25);
+  --exploration: #3b82f6;
+  --proto-hub: #a78bfa;
+  --hub-relocate: #818cf8;
+  --frame: #34d399;
+  --radii: #22d3ee;
+  --aux-spiral: #fbbf24;
+  --capture-spiral: #f472b6;
+  --complete: #fbbf24;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: var(--bg-panel);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(20px);
+  flex-shrink: 0;
+}
+header h1 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, var(--accent), #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header .subtitle {
+  font-size: 12px;
+  color: var(--text-dim);
+  font-weight: 400;
+}
+main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+.canvas-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  position: relative;
+  min-width: 0;
+}
+canvas {
+  border-radius: 12px;
+  background: radial-gradient(ellipse at center, #111425 0%, #0a0b14 70%);
+  box-shadow: 0 0 60px rgba(129, 140, 248, 0.06), inset 0 0 40px rgba(0,0,0,0.3);
+  max-width: 100%;
+  max-height: 100%;
+}
+.legend {
+  display: flex;
+  gap: 14px;
+  padding: 10px 16px;
+  margin-top: 10px;
+  background: var(--bg-card);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: var(--text-dim);
+}
+.legend-swatch {
+  width: 18px;
+  height: 3px;
+  border-radius: 2px;
+}
+.info-panel {
+  width: 320px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  background: var(--bg-panel);
+  border-left: 1px solid var(--border);
+  backdrop-filter: blur(20px);
+  overflow-y: auto;
+}
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+}
+.card-title {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  margin-bottom: 10px;
+}
+.step-counter {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: -0.03em;
+  color: var(--text-bright);
+}
+.step-total {
+  font-size: 14px;
+  color: var(--text-dim);
+  font-weight: 400;
+}
+.phase-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+.phase-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+.action-display {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--accent);
+  background: rgba(129, 140, 248, 0.08);
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-top: 8px;
+  word-break: break-all;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 8px;
+}
+.stat {
+  text-align: center;
+  padding: 8px;
+  background: rgba(255,255,255,0.02);
+  border-radius: 6px;
+}
+.stat-value {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text-bright);
+}
+.stat-label {
+  font-size: 10px;
+  color: var(--text-dim);
+  margin-top: 2px;
+}
+.phase-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.phase-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: var(--text-dim);
+  transition: all 0.25s ease;
+}
+.phase-item.active {
+  background: rgba(129, 140, 248, 0.1);
+  color: var(--text-bright);
+}
+.phase-item.completed {
+  color: var(--text-dim);
+  opacity: 0.6;
+}
+.phase-icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid var(--text-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  flex-shrink: 0;
+  transition: all 0.25s ease;
+}
+.phase-item.active .phase-icon {
+  border-color: var(--accent);
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent-glow);
+}
+.phase-item.completed .phase-icon {
+  border-color: #4ade80;
+  background: #4ade80;
+  color: var(--bg);
+}
+.controls-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 24px;
+  background: var(--bg-panel);
+  border-top: 1px solid var(--border);
+  backdrop-filter: blur(20px);
+  flex-shrink: 0;
+}
+.playback-btns {
+  display: flex;
+  gap: 4px;
+}
+.btn {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn:hover { background: rgba(129, 140, 248, 0.15); border-color: var(--accent); }
+.btn:active { transform: scale(0.95); }
+.btn.primary {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+  min-width: 44px;
+}
+.btn.primary:hover { background: #6366f1; }
+.timeline-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.timeline {
+  flex: 1;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(255,255,255,0.08);
+  outline: none;
+  cursor: pointer;
+}
+.timeline::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent-glow);
+  cursor: pointer;
+}
+.timeline::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: none;
+  cursor: pointer;
+}
+.speed-btns {
+  display: flex;
+  gap: 2px;
+}
+.speed-btn {
+  padding: 5px 10px;
+  font-size: 11px;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-dim);
+  cursor: pointer;
+  font-family: 'JetBrains Mono', monospace;
+  transition: all 0.15s;
+}
+.speed-btn:hover { color: var(--text); }
+.speed-btn.active {
+  background: var(--bg-card);
+  border-color: var(--border);
+  color: var(--accent);
+}
+.kbd {
+  font-size: 10px;
+  color: var(--text-dim);
+  opacity: 0.5;
+}
+@media (max-width: 900px) {
+  main { flex-direction: column; }
+  .info-panel { width: 100%; flex-direction: row; flex-wrap: wrap; border-left: none; border-top: 1px solid var(--border); max-height: 200px; }
+  .card { flex: 1; min-width: 150px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Orb Web Construction — Zschokke 1996</h1>
+    <div class="subtitle">Araneus diadematus · HTN Planner Visualization</div>
+  </div>
+  <div class="kbd">Space: play/pause · ← →: step · R: reset</div>
+</header>
+
+<main>
+  <div class="canvas-panel">
+    <canvas id="webCanvas" width="600" height="670"></canvas>
+    <div class="legend" id="legend"></div>
+  </div>
+
+  <div class="info-panel">
+    <div class="card">
+      <div class="card-title">Current Step</div>
+      <div><span class="step-counter" id="stepNum">0</span><span class="step-total" id="stepTotal"> / 73</span></div>
+      <div id="phaseBadge" class="phase-badge" style="background:rgba(59,130,246,0.15);color:#3b82f6">
+        <span class="phase-dot" style="background:#3b82f6"></span>
+        <span id="phaseText">Ready</span>
+      </div>
+      <div class="action-display" id="actionDisplay">—</div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Statistics</div>
+      <div class="stats-grid">
+        <div class="stat">
+          <div class="stat-value" id="energyStat">0</div>
+          <div class="stat-label">cm walked</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value" id="threadsStat">0</div>
+          <div class="stat-label">threads</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="flex:1;overflow-y:auto">
+      <div class="card-title">HTN Task Decomposition</div>
+      <ul class="phase-list" id="phaseList">
+        <li class="phase-item active" data-phase="exploration">
+          <span class="phase-icon"></span> Exploration & Bridging
+        </li>
+        <li class="phase-item" data-phase="proto_hub">
+          <span class="phase-icon"></span> Proto-hub Establishment
+        </li>
+        <li class="phase-item" data-phase="hub_relocate">
+          <span class="phase-icon"></span> Hub Relocation
+        </li>
+        <li class="phase-item" data-phase="frame">
+          <span class="phase-icon"></span> Frame Construction
+        </li>
+        <li class="phase-item" data-phase="radii">
+          <span class="phase-icon"></span> Radii Construction
+        </li>
+        <li class="phase-item" data-phase="auxiliary_spiral">
+          <span class="phase-icon"></span> Auxiliary Spiral
+        </li>
+        <li class="phase-item" data-phase="capture_spiral">
+          <span class="phase-icon"></span> Capture Spiral
+        </li>
+        <li class="phase-item" data-phase="complete">
+          <span class="phase-icon"></span> Complete
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer class="controls-bar">
+  <div class="playback-btns">
+    <button class="btn" id="btnPrev" title="Previous step (←)">◀</button>
+    <button class="btn primary" id="btnPlay" title="Play/Pause (Space)">▶</button>
+    <button class="btn" id="btnNext" title="Next step (→)">▶</button>
+    <button class="btn" id="btnReset" title="Reset (R)">⏮</button>
+  </div>
+  <div class="timeline-container">
+    <input type="range" class="timeline" id="timeline" min="-1" max="72" value="-1" step="1">
+  </div>
+  <div class="speed-btns">
+    <button class="speed-btn" data-speed="0.5">0.5×</button>
+    <button class="speed-btn active" data-speed="1">1×</button>
+    <button class="speed-btn" data-speed="2">2×</button>
+    <button class="speed-btn" data-speed="4">4×</button>
+  </div>
+</footer>
+
+<script src="plan_data_astar.js"></script>
+<script>
+// ═══════════════════════════════════════════════════════════════════
+// CONSTANTS
+// ═══════════════════════════════════════════════════════════════════
+const THREAD_COLORS = {
+  bridge:           '#FFD700',
+  dragline:         '#78909C',
+  proto_radius:     '#64B5F6',
+  radius:           '#E0E0E0',
+  frame:            '#66BB6A',
+  auxiliary_spiral: '#FFB74D',
+  capture_spiral:   '#CE93D8',
+};
+const THREAD_WIDTHS = {
+  bridge: 2, dragline: 1.5, proto_radius: 2, radius: 2.5,
+  frame: 3, auxiliary_spiral: 1.5, capture_spiral: 2,
+};
+const THREAD_DASH = {
+  dragline: [5, 5], auxiliary_spiral: [4, 4],
+};
+const PHASE_COLORS = {
+  exploration: '#3b82f6', proto_hub: '#a78bfa', hub_relocate: '#818cf8',
+  frame: '#34d399', radii: '#22d3ee', auxiliary_spiral: '#fbbf24',
+  capture_spiral: '#f472b6', complete: '#fbbf24',
+};
+const PHASE_NAMES = {
+  exploration: 'Exploration', proto_hub: 'Proto-hub', hub_relocate: 'Hub Relocate',
+  frame: 'Frame', radii: 'Radii', auxiliary_spiral: 'Aux. Spiral',
+  capture_spiral: 'Capture Spiral', complete: 'Complete',
+};
+const PHASE_ORDER = [
+  'exploration','proto_hub','hub_relocate','frame','radii',
+  'auxiliary_spiral','capture_spiral','complete'
+];
+const STRUCTURE_EDGES = [
+  ['left_stick_top','left_stick_bottom'],
+  ['right_stick_top','right_stick_bottom'],
+  ['left_stick_bottom','right_stick_bottom'],
+  ['crossbar_left','crossbar_right'],
+];
+
+// ═══════════════════════════════════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════════════════════════════════
+let currentStep = -1;
+let isPlaying = false;
+let playSpeed = 1;
+let playTimer = null;
+let stateHistory = [];
+let spiderAnim = { x: 0, y: 0, targetX: 0, targetY: 0, progress: 1 };
+let animFrame = null;
+const canvas = document.getElementById('webCanvas');
+const ctx = canvas.getContext('2d');
+
+// Canvas geometry
+const PADDING = 50;
+const SCALE = (canvas.width - 2 * PADDING) / 16;
+const MAX_Y = 18;
+
+function toCanvasX(x) { return PADDING + x * SCALE; }
+function toCanvasY(y) { return PADDING + (MAX_Y - y) * SCALE; }
+function nodeToCanvas(name) {
+  const c = PLAN_DATA.node_coords[name];
+  return c ? [toCanvasX(c[0]), toCanvasY(c[1])] : [canvas.width/2, canvas.height/2];
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// STATE PRECOMPUTATION
+// ═══════════════════════════════════════════════════════════════════
+function applyAction(action, threads, spiderPos) {
+  const name = action[0];
+  const args = action.slice(1);
+  let t = threads.map(th => [...th]);
+  let pos = spiderPos;
+
+  switch (name) {
+    case 'walk': pos = args[1]; break;
+    case 'anchor': pos = args[0]; break;
+    case 'attach_dragline': pos = args[0]; break;
+    case 'lay_thread':
+      t.push([args[0], args[1], args[2]]);
+      pos = args[1]; break;
+    case 'lay_frame_thread':
+      t.push([args[0], args[1], 'frame']);
+      pos = args[1]; break;
+    case 'lay_radius':
+      t.push([args[0], args[1], 'radius']);
+      pos = args[1]; break;
+    case 'drop_down':
+      t.push([args[0], args[1], 'dragline']);
+      pos = args[1]; break;
+    case 'swing_tarzan':
+      t.push([args[0], args[1], 'dragline']);
+      pos = args[1]; break;
+    case 'reel_up': pos = args[1]; break;
+    case 'insert_radius': {
+      const idx = t.findIndex(th => th[2] === 'dragline' &&
+        ((th[0] === args[0] && th[1] === args[1]) || (th[0] === args[1] && th[1] === args[0])));
+      if (idx >= 0) t.splice(idx, 1);
+      t.push([args[1], args[0], 'proto_radius']);
+      break;
+    }
+    case 'build_spiral_segment':
+      t.push([args[0], args[1], args[2]]);
+      pos = args[1]; break;
+    case 'remove_auxiliary_spiral_segment': {
+      const ri = t.findIndex(th => th[2] === 'auxiliary_spiral' &&
+        ((th[0] === args[0] && th[1] === args[1]) || (th[0] === args[1] && th[1] === args[0])));
+      if (ri >= 0) t.splice(ri, 1);
+      break;
+    }
+    case 'construct_frame_with_radius':
+      t.push([args[1], args[2], 'frame']);
+      if (args[3] !== null && args[3] !== undefined && args[3] !== 'None') {
+        t.push([args[0], args[3], 'radius']);
+      }
+      pos = args[0]; break;
+    case 'construct_secondary_radius':
+      t.push([args[0], args[2], 'radius']);
+      pos = args[0]; break;
+    case 'relocate_hub':
+      t.push([args[1], 'anchor_top_center', 'radius']);
+      pos = args[1]; break;
+    case 'remove_thread': {
+      const rti = t.findIndex(th =>
+        (th[0] === args[0] && th[1] === args[1]) || (th[0] === args[1] && th[1] === args[0]));
+      if (rti >= 0) t.splice(rti, 1);
+      break;
+    }
+  }
+  return [t, pos];
+}
+
+function precomputeStates() {
+  stateHistory = [];
+  let threads = [];
+  let pos = 'right_stick_top';
+  stateHistory.push({ threads: threads.map(t => [...t]), spiderPos: pos });
+
+  for (const step of PLAN_DATA.steps) {
+    [threads, pos] = applyAction(step.action, threads, pos);
+    stateHistory.push({ threads: threads.map(t => [...t]), spiderPos: pos });
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// CANVAS RENDERING
+// ═══════════════════════════════════════════════════════════════════
+function draw() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  drawStructure();
+  const stIdx = currentStep + 1;
+  if (stIdx < stateHistory.length) {
+    drawThreads(stateHistory[stIdx].threads);
+    drawNodes(stateHistory[stIdx].threads);
+    drawSpider();
+  }
+}
+
+function drawStructure() {
+  ctx.save();
+  ctx.strokeStyle = 'rgba(100, 116, 180, 0.2)';
+  ctx.lineWidth = 2;
+  ctx.setLineDash([6, 6]);
+  for (const [n1, n2] of STRUCTURE_EDGES) {
+    const [x1, y1] = nodeToCanvas(n1);
+    const [x2, y2] = nodeToCanvas(n2);
+    ctx.beginPath();
+    ctx.moveTo(x1, y1);
+    ctx.lineTo(x2, y2);
+    ctx.stroke();
+  }
+  ctx.setLineDash([]);
+  // Draw stick labels
+  ctx.fillStyle = 'rgba(100, 116, 180, 0.35)';
+  ctx.font = '10px Inter';
+  ctx.textAlign = 'center';
+  const [lx, ly] = nodeToCanvas('left_stick_top');
+  const [rx, ry] = nodeToCanvas('right_stick_top');
+  ctx.fillText('L', lx - 16, ly);
+  ctx.fillText('R', rx + 16, ry);
+  ctx.restore();
+}
+
+function drawThreads(threads) {
+  // Draw in order: older threads first
+  for (let i = 0; i < threads.length; i++) {
+    const [n1, n2, type] = threads[i];
+    const [x1, y1] = nodeToCanvas(n1);
+    const [x2, y2] = nodeToCanvas(n2);
+    const isNew = (i === threads.length - 1 && currentStep >= 0);
+
+    ctx.save();
+    ctx.strokeStyle = THREAD_COLORS[type] || '#888';
+    ctx.lineWidth = THREAD_WIDTHS[type] || 2;
+    ctx.globalAlpha = isNew ? 1.0 : 0.75;
+    if (THREAD_DASH[type]) ctx.setLineDash(THREAD_DASH[type]);
+
+    // Glow for new thread
+    if (isNew) {
+      ctx.shadowColor = THREAD_COLORS[type] || '#888';
+      ctx.shadowBlur = 12;
+    }
+
+    ctx.beginPath();
+    ctx.moveTo(x1, y1);
+    ctx.lineTo(x2, y2);
+    ctx.stroke();
+    ctx.restore();
+  }
+}
+
+function drawNodes(threads) {
+  // Collect active nodes from threads
+  const activeNodes = new Set();
+  for (const [n1, n2] of threads) {
+    activeNodes.add(n1);
+    activeNodes.add(n2);
+  }
+  // Always show structure nodes faintly
+  const structureNodes = ['left_stick_top','left_stick_bottom','right_stick_top',
+    'right_stick_bottom','crossbar_left','crossbar_right','bottom_path'];
+
+  ctx.save();
+  for (const name of structureNodes) {
+    const [x, y] = nodeToCanvas(name);
+    ctx.fillStyle = 'rgba(100, 116, 180, 0.25)';
+    ctx.beginPath();
+    ctx.arc(x, y, 3, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  // Active nodes
+  for (const name of activeNodes) {
+    const [x, y] = nodeToCanvas(name);
+    const isHub = name === 'proto_hub';
+    ctx.fillStyle = isHub ? '#818cf8' : 'rgba(200, 210, 240, 0.6)';
+    ctx.beginPath();
+    ctx.arc(x, y, isHub ? 5 : 3, 0, Math.PI * 2);
+    ctx.fill();
+    if (isHub) {
+      ctx.strokeStyle = 'rgba(129, 140, 248, 0.3)';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.arc(x, y, 9, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.fillStyle = '#818cf8';
+      ctx.font = '600 9px Inter';
+      ctx.textAlign = 'center';
+      ctx.fillText('HUB', x, y - 13);
+    }
+  }
+  ctx.restore();
+}
+
+function drawSpider() {
+  const x = spiderAnim.x;
+  const y = spiderAnim.y;
+
+  ctx.save();
+  // Outer glow
+  const glow = ctx.createRadialGradient(x, y, 0, x, y, 18);
+  glow.addColorStop(0, 'rgba(255, 100, 50, 0.3)');
+  glow.addColorStop(1, 'rgba(255, 100, 50, 0)');
+  ctx.fillStyle = glow;
+  ctx.beginPath();
+  ctx.arc(x, y, 18, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Spider body
+  const grad = ctx.createRadialGradient(x, y, 0, x, y, 6);
+  grad.addColorStop(0, '#ff6b35');
+  grad.addColorStop(1, '#c0392b');
+  ctx.fillStyle = grad;
+  ctx.beginPath();
+  ctx.arc(x, y, 6, 0, Math.PI * 2);
+  ctx.fill();
+
+  // White center
+  ctx.fillStyle = 'rgba(255,255,255,0.7)';
+  ctx.beginPath();
+  ctx.arc(x, y, 2, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Label
+  ctx.fillStyle = 'rgba(255, 107, 53, 0.8)';
+  ctx.font = '500 9px Inter';
+  ctx.textAlign = 'center';
+  ctx.fillText('🕷', x, y - 12);
+  ctx.restore();
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// ANIMATION
+// ═══════════════════════════════════════════════════════════════════
+function animateSpiderTo(tx, ty, instant) {
+  spiderAnim.targetX = tx;
+  spiderAnim.targetY = ty;
+  if (instant) {
+    spiderAnim.x = tx;
+    spiderAnim.y = ty;
+    spiderAnim.progress = 1;
+    draw();
+    return;
+  }
+  spiderAnim.startX = spiderAnim.x;
+  spiderAnim.startY = spiderAnim.y;
+  spiderAnim.progress = 0;
+  spiderAnim.startTime = performance.now();
+  if (animFrame) cancelAnimationFrame(animFrame);
+  tickAnimation();
+}
+
+function tickAnimation() {
+  const elapsed = performance.now() - spiderAnim.startTime;
+  const duration = 200 / playSpeed;
+  const t = Math.min(1, elapsed / duration);
+  const ease = 1 - Math.pow(1 - t, 3);
+  spiderAnim.x = spiderAnim.startX + (spiderAnim.targetX - spiderAnim.startX) * ease;
+  spiderAnim.y = spiderAnim.startY + (spiderAnim.targetY - spiderAnim.startY) * ease;
+  spiderAnim.progress = t;
+  draw();
+  if (t < 1) {
+    animFrame = requestAnimationFrame(tickAnimation);
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// NAVIGATION
+// ═══════════════════════════════════════════════════════════════════
+function goToStep(n, instant) {
+  n = Math.max(-1, Math.min(n, PLAN_DATA.total_steps - 1));
+  currentStep = n;
+  const stIdx = n + 1;
+  if (stIdx < stateHistory.length) {
+    const [tx, ty] = nodeToCanvas(stateHistory[stIdx].spiderPos);
+    animateSpiderTo(tx, ty, instant !== false);
+  }
+  updateUI();
+}
+
+function stepForward() {
+  if (currentStep < PLAN_DATA.total_steps - 1) {
+    currentStep++;
+    const stIdx = currentStep + 1;
+    const [tx, ty] = nodeToCanvas(stateHistory[stIdx].spiderPos);
+    animateSpiderTo(tx, ty, false);
+    updateUI();
+  } else {
+    pause();
+  }
+}
+
+function stepBackward() {
+  if (currentStep > -1) {
+    goToStep(currentStep - 1, true);
+  }
+}
+
+function play() {
+  if (currentStep >= PLAN_DATA.total_steps - 1) goToStep(-1, true);
+  isPlaying = true;
+  updatePlayButton();
+  playTimer = setInterval(() => {
+    if (currentStep >= PLAN_DATA.total_steps - 1) { pause(); return; }
+    stepForward();
+  }, 600 / playSpeed);
+}
+
+function pause() {
+  isPlaying = false;
+  updatePlayButton();
+  if (playTimer) { clearInterval(playTimer); playTimer = null; }
+}
+
+function togglePlay() { isPlaying ? pause() : play(); }
+
+function setSpeed(s) {
+  playSpeed = s;
+  document.querySelectorAll('.speed-btn').forEach(b => {
+    b.classList.toggle('active', parseFloat(b.dataset.speed) === s);
+  });
+  if (isPlaying) {
+    clearInterval(playTimer);
+    playTimer = setInterval(() => {
+      if (currentStep >= PLAN_DATA.total_steps - 1) { pause(); return; }
+      stepForward();
+    }, 600 / playSpeed);
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// UI UPDATES
+// ═══════════════════════════════════════════════════════════════════
+function updateUI() {
+  // Step counter
+  document.getElementById('stepNum').textContent = currentStep < 0 ? '—' : currentStep + 1;
+  document.getElementById('stepTotal').textContent = ` / ${PLAN_DATA.total_steps}`;
+
+  // Timeline
+  document.getElementById('timeline').value = currentStep;
+
+  // Phase & action
+  let phase = 'exploration';
+  let actionText = 'Initial state — spider at right stick top';
+  let energy = 0;
+  let threadCount = 0;
+
+  if (currentStep >= 0 && currentStep < PLAN_DATA.steps.length) {
+    const step = PLAN_DATA.steps[currentStep];
+    phase = step.phase;
+    const args = step.args.filter(a => a !== null).join(', ');
+    actionText = `${step.name}(${args})`;
+    energy = step.cumulative_energy;
+  }
+
+  const stIdx = currentStep + 1;
+  if (stIdx < stateHistory.length) {
+    threadCount = stateHistory[stIdx].threads.length;
+  }
+
+  const phaseColor = PHASE_COLORS[phase] || '#888';
+  const phaseName = PHASE_NAMES[phase] || phase;
+
+  const badge = document.getElementById('phaseBadge');
+  badge.style.background = phaseColor + '20';
+  badge.style.color = phaseColor;
+  badge.querySelector('.phase-dot').style.background = phaseColor;
+  document.getElementById('phaseText').textContent = phaseName;
+  document.getElementById('actionDisplay').textContent = actionText;
+  document.getElementById('energyStat').textContent = energy.toFixed(0);
+  document.getElementById('threadsStat').textContent = threadCount;
+
+  // Phase list
+  const currentPhaseIdx = PHASE_ORDER.indexOf(phase);
+  document.querySelectorAll('.phase-item').forEach((item, i) => {
+    item.classList.remove('active', 'completed');
+    if (i < currentPhaseIdx) item.classList.add('completed');
+    else if (i === currentPhaseIdx) item.classList.add('active');
+    const icon = item.querySelector('.phase-icon');
+    if (i < currentPhaseIdx) icon.textContent = '✓';
+    else if (i === currentPhaseIdx) icon.textContent = '';
+    else icon.textContent = '';
+  });
+}
+
+function updatePlayButton() {
+  document.getElementById('btnPlay').textContent = isPlaying ? '⏸' : '▶';
+}
+
+function buildLegend() {
+  const legend = document.getElementById('legend');
+  const types = [
+    ['Bridge', 'bridge'], ['Dragline', 'dragline'], ['Proto-radius', 'proto_radius'],
+    ['Radius', 'radius'], ['Frame', 'frame'], ['Aux. Spiral', 'auxiliary_spiral'],
+    ['Capture Spiral', 'capture_spiral'],
+  ];
+  for (const [label, type] of types) {
+    const item = document.createElement('div');
+    item.className = 'legend-item';
+    const swatch = document.createElement('span');
+    swatch.className = 'legend-swatch';
+    swatch.style.background = THREAD_COLORS[type];
+    if (THREAD_DASH[type]) swatch.style.opacity = '0.7';
+    item.appendChild(swatch);
+    item.appendChild(document.createTextNode(label));
+    legend.appendChild(item);
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// EVENT LISTENERS
+// ═══════════════════════════════════════════════════════════════════
+document.getElementById('btnPlay').addEventListener('click', togglePlay);
+document.getElementById('btnNext').addEventListener('click', stepForward);
+document.getElementById('btnPrev').addEventListener('click', stepBackward);
+document.getElementById('btnReset').addEventListener('click', () => { pause(); goToStep(-1, true); });
+
+document.getElementById('timeline').addEventListener('input', (e) => {
+  pause();
+  goToStep(parseInt(e.target.value), true);
+});
+
+document.querySelectorAll('.speed-btn').forEach(btn => {
+  btn.addEventListener('click', () => setSpeed(parseFloat(btn.dataset.speed)));
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.code === 'Space') { e.preventDefault(); togglePlay(); }
+  else if (e.code === 'ArrowRight') { e.preventDefault(); pause(); stepForward(); }
+  else if (e.code === 'ArrowLeft') { e.preventDefault(); pause(); stepBackward(); }
+  else if (e.code === 'KeyR') { pause(); goToStep(-1, true); }
+});
+
+// ═══════════════════════════════════════════════════════════════════
+// INITIALIZATION
+// ═══════════════════════════════════════════════════════════════════
+function init() {
+  if (typeof PLAN_DATA === 'undefined') {
+    document.body.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100vh;color:#f87171;font-family:Inter,sans-serif;text-align:center;padding:40px"><div><h2>Plan data not found</h2><p style="color:#94a3b8;margin-top:12px">Run <code style="background:#1e293b;padding:4px 8px;border-radius:4px">python3 visualize.py</code> first to generate the data.</p></div></div>';
+    return;
+  }
+  document.getElementById('timeline').max = PLAN_DATA.total_steps - 1;
+  buildLegend();
+  precomputeStates();
+
+  // Set initial spider position
+  const [sx, sy] = nodeToCanvas('right_stick_top');
+  spiderAnim.x = sx; spiderAnim.y = sy;
+  spiderAnim.targetX = sx; spiderAnim.targetY = sy;
+
+  goToStep(-1, true);
+}
+
+init();
+</script>
+</body>
+</html>
