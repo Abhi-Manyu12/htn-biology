@@ -9,6 +9,7 @@ import gtpyhop
 from .state import create_initial_state
 from . import operators as ops
 from . import methods as mtd
+from .operators import _movement_cost
 
 
 # ---------------------------------------------------------------------------
@@ -218,8 +219,6 @@ def _estimate_energy(plan, initial_state):
     Replay the plan on a fresh state copy to compute total energy.
     Returns the total distance or None on failure.
     """
-    from .utils import calculate_distance
-
     total = 0.0
     pos = initial_state.spider_pos
     for action in plan:
@@ -229,7 +228,7 @@ def _estimate_energy(plan, initial_state):
                      "build_spiral_segment"):
             if len(action) >= 3:
                 n1, n2 = action[1], action[2]
-                total += calculate_distance(n1, n2)
+                total += _movement_cost(initial_state, n1, n2)
                 pos = n2
 
     return total

@@ -87,6 +87,17 @@ def _can_reach(state, target):
 
     return False
 
+def _is_available(state, node):
+    """
+    Check if a node is available for interaction.
+    Structural nodes must be present in state.nodes (meaning they weren't
+    removed stochastically). Dynamic nodes (like the hub) are available
+    once they have been created.
+    """
+    if node in rigid.structure_nodes:
+        return node in state.nodes
+    return True
+
 
 # ── primitive operators ─────────────────────────────────────────────────────
 
@@ -116,6 +127,8 @@ def anchor(state, node):
     need to travel — it is defining where it already is (or very close by)
     as a new node.
     """
+    if not _is_available(state, node):
+        return False
     state.nodes.add(node)
     state.spider_pos = node
     return state
@@ -130,6 +143,8 @@ def lay_thread(state, n1, n2, thread_type):
     """
     if state.spider_pos != n1:
         return False
+    if not _is_available(state, n2):
+        return False
 
     state.nodes.add(n1)
     state.nodes.add(n2)
@@ -143,6 +158,8 @@ def lay_thread(state, n1, n2, thread_type):
 def attach_dragline(state, node):
     """Tighten and attach the trailing dragline at *node*."""
     if state.spider_pos != node:
+        return False
+    if not _is_available(state, node):
         return False
 
     state.nodes.add(node)
@@ -172,6 +189,8 @@ def drop_down(state, from_node, to_node):
     """
     if state.spider_pos != from_node:
         return False
+    if not _is_available(state, to_node):
+        return False
 
     state.nodes.add(to_node)
     state.threads.append((from_node, to_node, "dragline"))
@@ -191,6 +210,8 @@ def swing_tarzan(state, from_node, to_node):
     dragline is attached."
     """
     if state.spider_pos != from_node:
+        return False
+    if not _is_available(state, to_node):
         return False
 
     state.nodes.add(to_node)
@@ -251,6 +272,8 @@ def mark_proto_hub(state, hub_node):
     """
     if state.proto_radii_count < _MIN_PROTO_RADII:
         return False
+    if not _is_available(state, hub_node):
+        return False
 
     state.proto_hub_exists = True
     state.proto_hub_pos = hub_node
@@ -261,6 +284,8 @@ def mark_proto_hub(state, hub_node):
 def lay_frame_thread(state, n1, n2):
     """Lay a frame thread between *n1* and *n2*."""
     if state.spider_pos != n1:
+        return False
+    if not _is_available(state, n2):
         return False
 
     state.nodes.add(n2)
@@ -275,6 +300,8 @@ def lay_frame_thread(state, n1, n2):
 def lay_radius(state, hub, anchor_node):
     """Lay a definitive radius from hub to anchor_node."""
     if state.spider_pos != hub:
+        return False
+    if not _is_available(state, anchor_node):
         return False
 
     state.threads.append((hub, anchor_node, "radius"))
@@ -293,6 +320,8 @@ def build_spiral_segment(state, n1, n2, spiral_type):
     auxiliary spiral → capture spiral (Figs. 2I–K).
     """
     if state.spider_pos != n1:
+        return False
+    if not _is_available(state, n2):
         return False
 
     state.threads.append((n1, n2, spiral_type))

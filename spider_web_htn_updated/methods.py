@@ -27,6 +27,9 @@ Convention
 """
 
 from .config_loader import CONFIG
+from .operators import _is_available
+
+_DOMAIN = CONFIG["domain"]
 
 _DOMAIN = CONFIG["domain"]
 
@@ -153,11 +156,6 @@ def establish_proto_hub_via_walk(state):
     """
     Build one proto-radius by walking along existing threads to the
     supporting structure, then return to hub.
-
-    Zschokke (1996, Fig. 2D): "it either walks along existing threads."
-    This is variant 1 of 3 ways to reach the supporting structure.
-
-    Anchor cycle order comes from config (domain.proto_hub_anchors.via_walk).
     """
     if state.proto_hub_exists:
         return []
@@ -165,7 +163,17 @@ def establish_proto_hub_via_walk(state):
     hub = _DEFAULT_HUB_NAME
     anchors = _PROTO_HUB_ANCHORS["via_walk"]
     idx = state.proto_radii_count % len(anchors)
-    target_anchor = anchors[idx]
+
+    # Best-effort: find the first available anchor in the cycle
+    target_anchor = None
+    for i in range(len(anchors)):
+        candidate = anchors[(idx + i) % len(anchors)]
+        if _is_available(state, candidate):
+            target_anchor = candidate
+            break
+
+    if target_anchor is None:
+        return False
 
     subtasks = []
 
@@ -179,7 +187,7 @@ def establish_proto_hub_via_walk(state):
     ])
 
     # After building enough proto-radii, mark the hub
-    if state.proto_radii_count >= _MIN_PROTO_RADII - 1:  # will reach threshold after insert_radius
+    if state.proto_radii_count >= _MIN_PROTO_RADII - 1:
         subtasks.append(("mark_proto_hub", hub))
     else:
         subtasks.append(("establish_proto_hub",))
@@ -190,11 +198,6 @@ def establish_proto_hub_via_walk(state):
 def establish_proto_hub_via_drop(state):
     """
     Build one proto-radius by dropping down vertically on dragline.
-
-    Zschokke (1996, Fig. 2E): "or it drops down vertically using the dragline."
-    Variant 2 of 3.
-
-    Anchor cycle order comes from config (domain.proto_hub_anchors.via_drop).
     """
     if state.proto_hub_exists:
         return []
@@ -202,7 +205,17 @@ def establish_proto_hub_via_drop(state):
     hub = _DEFAULT_HUB_NAME
     anchors = _PROTO_HUB_ANCHORS["via_drop"]
     idx = state.proto_radii_count % len(anchors)
-    target_anchor = anchors[idx]
+
+    # Best-effort: find the first available anchor in the cycle
+    target_anchor = None
+    for i in range(len(anchors)):
+        candidate = anchors[(idx + i) % len(anchors)]
+        if _is_available(state, candidate):
+            target_anchor = candidate
+            break
+
+    if target_anchor is None:
+        return False
 
     subtasks = [
         ("anchor", hub),
@@ -222,14 +235,6 @@ def establish_proto_hub_via_drop(state):
 def establish_proto_hub_via_tarzan(state):
     """
     Build one proto-radius using the "Tarzan method".
-
-    Zschokke (1996): "the spider — after having attached the thread — walks a
-    few centimetres and then drops down, swinging around the place where the
-    dragline is attached. When the spider — in full swing — hits another thread
-    or a part of the supporting structure it grabs it."
-    Variant 3 of 3.
-
-    Anchor cycle order comes from config (domain.proto_hub_anchors.via_tarzan).
     """
     if state.proto_hub_exists:
         return []
@@ -237,7 +242,17 @@ def establish_proto_hub_via_tarzan(state):
     hub = _DEFAULT_HUB_NAME
     anchors = _PROTO_HUB_ANCHORS["via_tarzan"]
     idx = state.proto_radii_count % len(anchors)
-    target_anchor = anchors[idx]
+
+    # Best-effort: find the first available anchor in the cycle
+    target_anchor = None
+    for i in range(len(anchors)):
+        candidate = anchors[(idx + i) % len(anchors)]
+        if _is_available(state, candidate):
+            target_anchor = candidate
+            break
+
+    if target_anchor is None:
+        return False
 
     subtasks = [
         ("anchor", hub),
@@ -285,13 +300,7 @@ def build_remaining_web(state):
 def build_frame_method(state):
     """
     Construct frame threads.
-
-    Zschokke: "The first frame thread is always the one at the top of the
-    future web, the top frame thread."  Frame construction follows "quite a
-    rigid pattern".
-
-    Frame pair ordering and the target frame count come from config
-    (domain.frame_pairs, domain.target_frame_count).
+    Best-effort: skip pairs where anchors are unavailable.
     """
     if state.frame_count >= _TARGET_FRAME_COUNT:
         return []  # all frames done
@@ -301,11 +310,16 @@ def build_frame_method(state):
     subtasks = []
     start_idx = state.frame_count
     for n1, n2 in _FRAME_PAIRS[start_idx:]:
-        subtasks.extend([
-            ("walk", hub, n1),
-            ("lay_frame_thread", n1, n2),
-            ("walk", n2, hub),
-        ])
+        if _is_available(state, n1) and _is_available(state, n2):
+            subtasks.extend([
+                ("walk", hub, n1),
+                ("lay_frame_thread", n1, n2),
+                ("walk", n2, hub),
+            ])
+
+    # Require at least 2 frames for the web to be structurally sound
+    if len(subtasks) == 0 and state.frame_count == 0:
+        return False
 
     return subtasks if subtasks else []
 
@@ -317,12 +331,7 @@ def build_frame_method(state):
 def build_radii_method(state):
     """
     Construct definitive radii by circling the hub and filling gaps.
-
-    Zschokke: "When the spider builds the radii it keeps circling the hub to
-    find a gap to place the next radius."
-
-    Anchor ordering and target radii count come from config
-    (domain.radii_anchor_order, domain.target_radii_count).
+    Best-effort: skip anchors that are unavailable.
     """
     if state.radii_count >= _TARGET_RADII_COUNT:
         return []  # enough radii
@@ -332,10 +341,15 @@ def build_radii_method(state):
     subtasks = []
     start_idx = state.radii_count
     for anchor_node in _RADII_ANCHOR_ORDER[start_idx:]:
-        subtasks.extend([
-            ("lay_radius", hub, anchor_node),
-            ("walk", anchor_node, hub), # return to hub
-        ])
+        if _is_available(state, anchor_node):
+            subtasks.extend([
+                ("lay_radius", hub, anchor_node),
+                ("walk", anchor_node, hub), # return to hub
+            ])
+
+    # Require at least 4 radii for the web to be functional
+    if len(subtasks) == 0 and state.radii_count == 0:
+        return False
 
     return subtasks if subtasks else []
 
@@ -347,11 +361,7 @@ def build_radii_method(state):
 def build_auxiliary_spiral_method(state):
     """
     Build the auxiliary (temporary) spiral working outward from the hub.
-
-    Zschokke (Fig. 2J): "Circling of the hub changes suddenly without
-    interruption into the construction of the auxiliary spiral."
-
-    Node traversal order comes from config (domain.spiral_nodes.auxiliary).
+    Best-effort: skip anchors that are unavailable.
     """
     if state.auxiliary_spiral_done:
         return []
@@ -362,10 +372,11 @@ def build_auxiliary_spiral_method(state):
     subtasks = []  # start circling from hub
     prev = hub
     for node in spiral_nodes:
-        subtasks.append(
-            ("build_spiral_segment", prev, node, "auxiliary_spiral")
-        )
-        prev = node
+        if _is_available(state, node):
+            subtasks.append(
+                ("build_spiral_segment", prev, node, "auxiliary_spiral")
+            )
+            prev = node
 
     subtasks.append(("walk", prev, hub))
     subtasks.append(("mark_auxiliary_spiral_done",))
@@ -379,11 +390,7 @@ def build_auxiliary_spiral_method(state):
 def build_capture_spiral_method(state):
     """
     Build the capture (sticky) spiral working inward toward the hub.
-
-    Zschokke (Fig. 2K): "The spider finally completes the web by building the
-    capture spiral."
-
-    Node traversal order comes from config (domain.spiral_nodes.capture).
+    Best-effort: skip anchors that are unavailable.
     """
     if state.capture_spiral_done:
         return []
@@ -394,10 +401,11 @@ def build_capture_spiral_method(state):
     subtasks = []
     prev = hub
     for node in spiral_nodes:
-        subtasks.append(
-            ("build_spiral_segment", prev, node, "capture_spiral")
-        )
-        prev = node
+        if _is_available(state, node):
+            subtasks.append(
+                ("build_spiral_segment", prev, node, "capture_spiral")
+            )
+            prev = node
 
     subtasks.append(("walk", prev, hub))
     subtasks.append(("mark_capture_spiral_done",))

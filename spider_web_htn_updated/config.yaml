@@ -212,8 +212,8 @@ empirical:
     complex: 14.37
 
 stochastic:
-  enabled: false
-  seed: 42
+  enabled: true
+  seed: 7107
 
   # Multiplicative noise applied to every movement/thread-laying distance,
   # modelling wind disturbance during construction.
@@ -226,7 +226,7 @@ stochastic:
   # structure (sticks, crossbars) is never touched — only the nodes listed
   # in `removable_nodes` are ever candidates.
   anchor_availability:
-    enabled: false
+    enabled: true
     removal_prob: 0.2
     removable_nodes:
       - anchor_top_center
