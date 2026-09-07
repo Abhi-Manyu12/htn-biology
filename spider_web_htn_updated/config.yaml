@@ -195,6 +195,22 @@ domain:
 # Everything is driven off a single seeded RNG, so re-running with the same
 # `seed` reproduces an identical run bit-for-bit.
 # ---------------------------------------------------------------------------
+empirical:
+  area_web_cm2: 239.0
+  area_web_se_cm2: 16.0
+  radial_length_cm: 284.0
+  radial_length_se_cm: 14.0
+  capture_spiral_length_cm: 1083.0
+  capture_spiral_length_se_cm: 72.0
+  mesh_size_mm: 2.33
+  eccentricity: 0.47
+  exploration_distance_median_m:
+    simple: 5.61
+    complex: 27.60
+  construction_distance_median_m:
+    simple: 13.64
+    complex: 14.37
+
 stochastic:
   enabled: false
   seed: 42

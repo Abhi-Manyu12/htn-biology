@@ -5,7 +5,6 @@ Creates the GTPyhop domain, registers all operators and methods, builds the
 initial state, and runs the planner to produce a web-construction plan.
 """
 
-from attrs import inspect
 import gtpyhop
 from .state import create_initial_state
 from . import operators as ops

@@ -38,6 +38,13 @@ def _require(d, key, context):
 #       deterministic behaviour exactly.
 # ---------------------------------------------------------------------------
 
+_EMPIRICAL_DEFAULTS = {
+    # Falls back to the Hesselberg & Vollrath 2004 control-web figure if a
+    # config omits `empirical:` entirely, so eta = S_used / area_web_cm2 is
+    # always computable.
+    "area_web_cm2": 239.0,
+}
+
 _STOCHASTIC_DEFAULTS = {
     "enabled": False,
     "seed": 42,
@@ -111,6 +118,10 @@ def load_config(path=None):
     # Stochastic section is optional; merge with defaults either way so
     # downstream code can always do CONFIG["stochastic"][...] safely.
     cfg["stochastic"] = _merge_defaults(cfg.get("stochastic"), _STOCHASTIC_DEFAULTS)
+    # Empirical section is likewise optional; merge with defaults so
+    # CONFIG["empirical"]["area_web_cm2"] is always safe to read (used by
+    # the eta = S_used / area_web efficiency metric).
+    cfg["empirical"] = _merge_defaults(cfg.get("empirical"), _EMPIRICAL_DEFAULTS)
 
     return cfg
 

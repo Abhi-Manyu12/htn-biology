@@ -143,7 +143,6 @@ def lay_thread(state, n1, n2, thread_type):
 def attach_dragline(state, node):
     """Tighten and attach the trailing dragline at *node*."""
     if state.spider_pos != node:
-        print("Yes")
         return False
 
     state.nodes.add(node)
