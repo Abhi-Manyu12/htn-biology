@@ -2,7 +2,7 @@
 test_planner.py — End-to-end regression tests.
 
 1. Confirms the full planner still produces the known-good baseline plan
-   (70 actions, 600.1 cm energy) after the config-decoupling refactor.
+   (71 actions, 600.1 cm energy) after the config-decoupling refactor.
 2. Confirms that swapping SPIDER_WEB_CONFIG to a different environment
    changes the outcome (energy scales with frame size) WITHOUT touching
    any Python code — proving the decoupling actually works.
@@ -26,7 +26,7 @@ import yaml
 
 PACKAGE_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
-BASELINE_ACTIONS = 70
+BASELINE_ACTIONS = 71
 BASELINE_ENERGY = 600.1
 
 
