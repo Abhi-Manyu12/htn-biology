@@ -6,7 +6,11 @@ import os
 import sys
 
 # Make the spider_web_htn package (living one level up from tests/) importable.
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+
+print("DEBUG __file__:", __file__)
+print("DEBUG sys.path[0]:", sys.path[0])
+print("DEBUG contents:", os.listdir(sys.path[0]))
 
 import pytest
 
