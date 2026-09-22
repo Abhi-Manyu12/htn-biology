@@ -32,8 +32,15 @@ _TESTS_DIR = os.path.abspath(os.path.dirname(__file__))
 PACKAGE_DIR = os.path.abspath(os.path.join(_TESTS_DIR, ".."))
 SYS_PATH_ROOT = os.path.abspath(os.path.join(_TESTS_DIR, "..", ".."))
 
-BASELINE_ACTIONS = 71
-BASELINE_ENERGY = 600.1
+# Updated for the logarithmic auxiliary / Archimedean capture spiral
+# geometry (spiral_geometry.py) — the multi-turn waypoint spirals replace
+# the old single-pass-through-7-anchors approximation, so both the action
+# count and energy total shifted from the pre-refactor baseline (71 / 600.1).
+# Energy shifted again (666.9 -> 701.6) when domain.spiral.start_radius_fraction
+# was raised 0.08 -> 0.20 to smooth the log spiral's late-turn rush to the
+# outer edge (see the comment on that config key).
+BASELINE_ACTIONS = 105
+BASELINE_ENERGY = 701.6
 
 
 def _run_planner_subprocess(config_path=None, env_overrides=None):

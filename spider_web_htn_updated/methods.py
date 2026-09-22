@@ -28,6 +28,7 @@ Convention
 
 from .config_loader import CONFIG
 from .operators import _is_available
+from .utils import AUXILIARY_SPIRAL_WAYPOINTS, CAPTURE_SPIRAL_WAYPOINTS
 
 _DOMAIN = CONFIG["domain"]
 
@@ -39,7 +40,6 @@ _TARGET_FRAME_COUNT = _DOMAIN["target_frame_count"]
 _FRAME_PAIRS = _DOMAIN["frame_pairs"]
 _RADII_ANCHOR_ORDER = _DOMAIN["radii_anchor_order"]
 _PROTO_HUB_ANCHORS = _DOMAIN["proto_hub_anchors"]
-_SPIRAL_NODES = _DOMAIN["spiral_nodes"]
 _DEFAULT_HUB_NAME = _DOMAIN["default_hub_name"]
 
 
@@ -361,22 +361,29 @@ def build_radii_method(state):
 def build_auxiliary_spiral_method(state):
     """
     Build the auxiliary (temporary) spiral working outward from the hub.
-    Best-effort: skip anchors that are unavailable.
+
+    Traverses AUXILIARY_SPIRAL_WAYPOINTS (spiral_geometry.py), a multi-turn
+    sequence of points whose radius grows LOGARITHMICALLY (equiangular
+    growth) turn over turn, matching the real construction geometry
+    (Zschokke 1996; Vollrath & Mohren 1985) rather than a single straight
+    pass between the boundary anchors.
+
+    Best-effort: an entire spoke is skipped if its source anchor is
+    stochastically unavailable, same as before.
     """
     if state.auxiliary_spiral_done:
         return []
 
     hub = state.proto_hub_pos or _DEFAULT_HUB_NAME
-    spiral_nodes = _SPIRAL_NODES["auxiliary"]
 
     subtasks = []  # start circling from hub
     prev = hub
-    for node in spiral_nodes:
-        if _is_available(state, node):
+    for wp_name, _xy, source_anchor in AUXILIARY_SPIRAL_WAYPOINTS:
+        if _is_available(state, source_anchor):
             subtasks.append(
-                ("build_spiral_segment", prev, node, "auxiliary_spiral")
+                ("build_spiral_segment", prev, wp_name, "auxiliary_spiral")
             )
-            prev = node
+            prev = wp_name
 
     subtasks.append(("walk", prev, hub))
     subtasks.append(("mark_auxiliary_spiral_done",))
@@ -390,22 +397,29 @@ def build_auxiliary_spiral_method(state):
 def build_capture_spiral_method(state):
     """
     Build the capture (sticky) spiral working inward toward the hub.
-    Best-effort: skip anchors that are unavailable.
+
+    Traverses CAPTURE_SPIRAL_WAYPOINTS (spiral_geometry.py), a multi-turn
+    sequence of points whose radius shrinks with constant (ARCHIMEDEAN)
+    pitch turn over turn, matching the real construction geometry
+    (Zschokke 1996; Vollrath & Mohren 1985) rather than a single straight
+    pass between the boundary anchors.
+
+    Best-effort: an entire spoke is skipped if its source anchor is
+    stochastically unavailable, same as before.
     """
     if state.capture_spiral_done:
         return []
 
     hub = state.proto_hub_pos or _DEFAULT_HUB_NAME
-    spiral_nodes = _SPIRAL_NODES["capture"]
 
     subtasks = []
     prev = hub
-    for node in spiral_nodes:
-        if _is_available(state, node):
+    for wp_name, _xy, source_anchor in CAPTURE_SPIRAL_WAYPOINTS:
+        if _is_available(state, source_anchor):
             subtasks.append(
-                ("build_spiral_segment", prev, node, "capture_spiral")
+                ("build_spiral_segment", prev, wp_name, "capture_spiral")
             )
-            prev = node
+            prev = wp_name
 
     subtasks.append(("walk", prev, hub))
     subtasks.append(("mark_capture_spiral_done",))

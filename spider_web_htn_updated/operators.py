@@ -324,6 +324,7 @@ def build_spiral_segment(state, n1, n2, spiral_type):
     if not _is_available(state, n2):
         return False
 
+    state.nodes.add(n2)
     state.threads.append((n1, n2, spiral_type))
     dist = _movement_cost(state, n1, n2)
     state.energy_expended += dist
