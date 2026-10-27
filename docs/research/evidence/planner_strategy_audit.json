@@ -1,0 +1,33 @@
+{
+  "audit_date": "2026-10-20",
+  "gtpyhop_version": "1.9.7",
+  "installed_default_strategy": "seek_plan_iterative",
+  "engine_source_sha256": "394cc94208c82579a811b1e117e3a6a920b5e51b2737bcaad80e83555ab54eae",
+  "probe_source_sha256": "f2db40f59b7f868e18231913689961dbae0924f23c7b97828a11c64bf9ff332d",
+  "observations": [
+    {
+      "configuration": "installed_default",
+      "strategy_function": "seek_plan_iterative",
+      "plan": false,
+      "methods_called": [
+        "first_method"
+      ],
+      "live_state_mutated": false
+    },
+    {
+      "configuration": "iterative_dfs_backtracking",
+      "strategy_function": "seek_plan_iterative_backtracking",
+      "plan": [
+        [
+          "finish"
+        ]
+      ],
+      "methods_called": [
+        "first_method",
+        "second_method"
+      ],
+      "live_state_mutated": false
+    }
+  ],
+  "qualification": "Standalone toy audit, not an IPyHOP implementation or a rerun of the Mulder study."
+}

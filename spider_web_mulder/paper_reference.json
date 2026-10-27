@@ -1,0 +1,15 @@
+{
+  "doi": "10.1007/s00114-021-01725-1",
+  "source_url": "https://link.springer.com/article/10.1007/s00114-021-01725-1",
+  "title": "Dynamic environments do not appear to constrain spider web building behaviour",
+  "apparatus": {"frame_width_cm": 30, "frame_height_cm": 30, "frequency_hz": 0.05, "bottom_motion_description": "approximately 10 cm left and right", "reported_shear_between_extrema_degrees": 40, "inferred_peak_amplitude_from_shear_cm": 10.919107, "preferred_peak_amplitude_cm": 10, "amplitude_convention_note": "For affine shear, a 40 degree swing gives 30*tan(20 degrees) = 10.92 cm peak displacement. This supports the approximately 10 cm peak convention; 5 cm remains an apparatus-sensitivity condition. Flexible-frame deformation is not exactly affine."},
+  "sampling_interval_s": 10,
+  "design": "RRMRM repeated builds; five spiders completed the full regime",
+  "sample_sizes": {"spiders_attempted": 26, "spiders_completing_regime": 5, "temporal_rigid": 15, "temporal_moving": 9, "spatial_rigid": 15, "spatial_moving": 10, "geometry_rigid": 11, "geometry_moving": 9},
+  "published_p_values": {"elapsed_s": 0.65, "travel_cm": 0.61, "radials_time_pct": 0.82, "auxiliary_time_pct": 0.67, "capture_time_pct": 0.83, "web_area_cm2": 0.11, "capture_spiral_area_cm2": 0.02, "eccentricity": 0.07, "mean_mesh_space_cm": 0.98, "mean_capture_spiral_count": 0.34, "radial_count_measured": 0.13},
+  "geometry_significance_threshold": 0.008,
+  "raw_data_status": "Not supplied with this repository. The publication states data are available from the corresponding author upon reasonable request.",
+  "quantitative_calibration_status": "unavailable_without_reference_data",
+  "measurement_notes": {"eccentricity": "sqrt((1 - web_width / web_height)^2), Table 1; not conic eccentricity", "mean_mesh_space_cm": "(north capture width + south capture width) / (north capture count + south capture count - 2)", "capture_spiral_area_cm2": "hub plus capture spiral area minus hub area"},
+  "provenance": "Apparatus and sampling: pages 2-3; Table 1: page 3; sample sizes and results: pages 4-6; data availability: page 7. Checked against the supplied PDF."
+}

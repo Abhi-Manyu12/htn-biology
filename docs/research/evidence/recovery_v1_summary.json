@@ -1,0 +1,1190 @@
+{
+  "snapshot_date": "2026-10-20",
+  "recovery_model_version": 1,
+  "total_trials": 2240,
+  "pooled_descriptive_outcomes": [
+    {
+      "scenario": "clean",
+      "backend": "fresh_root",
+      "trials": 80,
+      "successes": 80,
+      "events_fired": 0,
+      "mean_method_calls": 117,
+      "mean_repairs": 0,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "clean",
+      "backend": "component",
+      "trials": 80,
+      "successes": 80,
+      "events_fired": 0,
+      "mean_method_calls": 117,
+      "mean_repairs": 0,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "clean",
+      "backend": "ipyhop_fresh",
+      "trials": 80,
+      "successes": 80,
+      "events_fired": 0,
+      "mean_method_calls": 81,
+      "mean_repairs": 0,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "clean",
+      "backend": "ipyhop",
+      "trials": 80,
+      "successes": 80,
+      "events_fired": 0,
+      "mean_method_calls": 81,
+      "mean_repairs": 0,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "transient_attachment",
+      "backend": "fresh_root",
+      "trials": 80,
+      "successes": 80,
+      "events_fired": 80,
+      "mean_method_calls": 117,
+      "mean_repairs": 0,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "transient_attachment",
+      "backend": "component",
+      "trials": 80,
+      "successes": 80,
+      "events_fired": 80,
+      "mean_method_calls": 117,
+      "mean_repairs": 0,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "transient_attachment",
+      "backend": "ipyhop_fresh",
+      "trials": 80,
+      "successes": 80,
+      "events_fired": 80,
+      "mean_method_calls": 81,
+      "mean_repairs": 0,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "transient_attachment",
+      "backend": "ipyhop",
+      "trials": 80,
+      "successes": 80,
+      "events_fired": 80,
+      "mean_method_calls": 81,
+      "mean_repairs": 0,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "permanent_anchor",
+      "backend": "fresh_root",
+      "trials": 80,
+      "successes": 80,
+      "events_fired": 80,
+      "mean_method_calls": 219.6,
+      "mean_repairs": 1,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "permanent_anchor",
+      "backend": "component",
+      "trials": 80,
+      "successes": 80,
+      "events_fired": 80,
+      "mean_method_calls": 138,
+      "mean_repairs": 3,
+      "mean_stale_preconditions": 2
+    },
+    {
+      "scenario": "permanent_anchor",
+      "backend": "ipyhop_fresh",
+      "trials": 80,
+      "successes": 80,
+      "events_fired": 80,
+      "mean_method_calls": 151,
+      "mean_repairs": 1,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "permanent_anchor",
+      "backend": "ipyhop",
+      "trials": 80,
+      "successes": 80,
+      "events_fired": 80,
+      "mean_method_calls": 138.8,
+      "mean_repairs": 1,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "route_block",
+      "backend": "fresh_root",
+      "trials": 80,
+      "successes": 80,
+      "events_fired": 80,
+      "mean_method_calls": 231,
+      "mean_repairs": 1,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "route_block",
+      "backend": "component",
+      "trials": 80,
+      "successes": 80,
+      "events_fired": 80,
+      "mean_method_calls": 144,
+      "mean_repairs": 3,
+      "mean_stale_preconditions": 2
+    },
+    {
+      "scenario": "route_block",
+      "backend": "ipyhop_fresh",
+      "trials": 80,
+      "successes": 80,
+      "events_fired": 80,
+      "mean_method_calls": 159.5,
+      "mean_repairs": 1,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "route_block",
+      "backend": "ipyhop",
+      "trials": 80,
+      "successes": 80,
+      "events_fired": 80,
+      "mean_method_calls": 151,
+      "mean_repairs": 1,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "unreachable",
+      "backend": "fresh_root",
+      "trials": 80,
+      "successes": 0,
+      "events_fired": 80,
+      "mean_method_calls": 132.5,
+      "mean_repairs": 1,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "unreachable",
+      "backend": "component",
+      "trials": 80,
+      "successes": 0,
+      "events_fired": 80,
+      "mean_method_calls": 126,
+      "mean_repairs": 1,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "unreachable",
+      "backend": "ipyhop_fresh",
+      "trials": 80,
+      "successes": 0,
+      "events_fired": 80,
+      "mean_method_calls": 95.5,
+      "mean_repairs": 1,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "unreachable",
+      "backend": "ipyhop",
+      "trials": 80,
+      "successes": 0,
+      "events_fired": 80,
+      "mean_method_calls": 87.5,
+      "mean_repairs": 1,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "silk_depletion",
+      "backend": "fresh_root",
+      "trials": 80,
+      "successes": 0,
+      "events_fired": 80,
+      "mean_method_calls": 118,
+      "mean_repairs": 1,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "silk_depletion",
+      "backend": "component",
+      "trials": 80,
+      "successes": 0,
+      "events_fired": 80,
+      "mean_method_calls": 120,
+      "mean_repairs": 1,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "silk_depletion",
+      "backend": "ipyhop_fresh",
+      "trials": 80,
+      "successes": 0,
+      "events_fired": 80,
+      "mean_method_calls": 82,
+      "mean_repairs": 1,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "silk_depletion",
+      "backend": "ipyhop",
+      "trials": 80,
+      "successes": 0,
+      "events_fired": 80,
+      "mean_method_calls": 90.2,
+      "mean_repairs": 1,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "prefix_damage",
+      "backend": "fresh_root",
+      "trials": 80,
+      "successes": 80,
+      "events_fired": 80,
+      "mean_method_calls": 204,
+      "mean_repairs": 1,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "prefix_damage",
+      "backend": "component",
+      "trials": 80,
+      "successes": 80,
+      "events_fired": 80,
+      "mean_method_calls": 142,
+      "mean_repairs": 1,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "prefix_damage",
+      "backend": "ipyhop_fresh",
+      "trials": 80,
+      "successes": 80,
+      "events_fired": 80,
+      "mean_method_calls": 138,
+      "mean_repairs": 1,
+      "mean_stale_preconditions": 0
+    },
+    {
+      "scenario": "prefix_damage",
+      "backend": "ipyhop",
+      "trials": 80,
+      "successes": 80,
+      "events_fired": 80,
+      "mean_method_calls": 116,
+      "mean_repairs": 1,
+      "mean_stale_preconditions": 0
+    }
+  ],
+  "primary_paired_comparisons": [
+    {
+      "scenario": "clean",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "success",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clean",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "method_calls",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clean",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "ipyhop_iterations",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clean",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "planning_wall_s",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": -3.3916567917913196e-05,
+      "ci95": [
+        -0.0003064220893429592,
+        0.00019914596719900133
+      ]
+    },
+    {
+      "scenario": "clean",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "elapsed_s",
+      "paired_n": 10,
+      "conditioning": "both constructions complete",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clean",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "travel_cm",
+      "paired_n": 10,
+      "conditioning": "both constructions complete",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clean",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "silk_used_cm",
+      "paired_n": 10,
+      "conditioning": "both constructions complete",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "transient_attachment",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "success",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "transient_attachment",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "method_calls",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "transient_attachment",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "ipyhop_iterations",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "transient_attachment",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "planning_wall_s",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": -0.00026683767791837456,
+      "ci95": [
+        -0.0010430859550251625,
+        0.00030502924986649285
+      ]
+    },
+    {
+      "scenario": "transient_attachment",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "elapsed_s",
+      "paired_n": 10,
+      "conditioning": "both constructions complete",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "transient_attachment",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "travel_cm",
+      "paired_n": 10,
+      "conditioning": "both constructions complete",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "transient_attachment",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "silk_used_cm",
+      "paired_n": 10,
+      "conditioning": "both constructions complete",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "permanent_anchor",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "success",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "permanent_anchor",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "method_calls",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": -19.6,
+      "ci95": [
+        -24.8,
+        -14.4
+      ]
+    },
+    {
+      "scenario": "permanent_anchor",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "ipyhop_iterations",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": -31.2,
+      "ci95": [
+        -41.6,
+        -20.8
+      ]
+    },
+    {
+      "scenario": "permanent_anchor",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "planning_wall_s",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": 0.000905583391431719,
+      "ci95": [
+        0.00023612663091626018,
+        0.0016916871126159063
+      ]
+    },
+    {
+      "scenario": "permanent_anchor",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "elapsed_s",
+      "paired_n": 10,
+      "conditioning": "both constructions complete",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "permanent_anchor",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "travel_cm",
+      "paired_n": 10,
+      "conditioning": "both constructions complete",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "permanent_anchor",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "silk_used_cm",
+      "paired_n": 10,
+      "conditioning": "both constructions complete",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "route_block",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "success",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "route_block",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "method_calls",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": -10.0,
+      "ci95": [
+        -11.2,
+        -8.8
+      ]
+    },
+    {
+      "scenario": "route_block",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "ipyhop_iterations",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": -10.0,
+      "ci95": [
+        -12.4,
+        -7.6
+      ]
+    },
+    {
+      "scenario": "route_block",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "planning_wall_s",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": 0.00041516657220199706,
+      "ci95": [
+        0.0002205516814137809,
+        0.0006159461347851901
+      ]
+    },
+    {
+      "scenario": "route_block",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "elapsed_s",
+      "paired_n": 10,
+      "conditioning": "both constructions complete",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "route_block",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "travel_cm",
+      "paired_n": 10,
+      "conditioning": "both constructions complete",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "route_block",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "silk_used_cm",
+      "paired_n": 10,
+      "conditioning": "both constructions complete",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "unreachable",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "success",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "unreachable",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "method_calls",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": -9.5,
+      "ci95": [
+        -9.8,
+        -9.2
+      ]
+    },
+    {
+      "scenario": "unreachable",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "ipyhop_iterations",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": -8.5,
+      "ci95": [
+        -10.0,
+        -7.0
+      ]
+    },
+    {
+      "scenario": "unreachable",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "planning_wall_s",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": 0.0010778791271150111,
+      "ci95": [
+        -0.00023937096266308798,
+        0.003008291123260277
+      ]
+    },
+    {
+      "scenario": "unreachable",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "elapsed_s",
+      "paired_n": 0,
+      "conditioning": "both constructions complete",
+      "mean_difference": null,
+      "ci95": null
+    },
+    {
+      "scenario": "unreachable",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "travel_cm",
+      "paired_n": 0,
+      "conditioning": "both constructions complete",
+      "mean_difference": null,
+      "ci95": null
+    },
+    {
+      "scenario": "unreachable",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "silk_used_cm",
+      "paired_n": 0,
+      "conditioning": "both constructions complete",
+      "mean_difference": null,
+      "ci95": null
+    },
+    {
+      "scenario": "silk_depletion",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "success",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "silk_depletion",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "method_calls",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": 11.2,
+      "ci95": [
+        7.6,
+        14.8
+      ]
+    },
+    {
+      "scenario": "silk_depletion",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "ipyhop_iterations",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": 26.4,
+      "ci95": [
+        19.2,
+        34.2
+      ]
+    },
+    {
+      "scenario": "silk_depletion",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "planning_wall_s",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": 0.0037428830051794647,
+      "ci95": [
+        0.002482223781407811,
+        0.004938415162905585
+      ]
+    },
+    {
+      "scenario": "silk_depletion",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "elapsed_s",
+      "paired_n": 0,
+      "conditioning": "both constructions complete",
+      "mean_difference": null,
+      "ci95": null
+    },
+    {
+      "scenario": "silk_depletion",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "travel_cm",
+      "paired_n": 0,
+      "conditioning": "both constructions complete",
+      "mean_difference": null,
+      "ci95": null
+    },
+    {
+      "scenario": "silk_depletion",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "silk_used_cm",
+      "paired_n": 0,
+      "conditioning": "both constructions complete",
+      "mean_difference": null,
+      "ci95": null
+    },
+    {
+      "scenario": "prefix_damage",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "success",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "prefix_damage",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "method_calls",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": -38.0,
+      "ci95": [
+        -38.0,
+        -38.0
+      ]
+    },
+    {
+      "scenario": "prefix_damage",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "ipyhop_iterations",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": -71.0,
+      "ci95": [
+        -71.0,
+        -71.0
+      ]
+    },
+    {
+      "scenario": "prefix_damage",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "planning_wall_s",
+      "paired_n": 10,
+      "conditioning": "all attempted pairs",
+      "mean_difference": 0.0015811583260074257,
+      "ci95": [
+        0.001256839632987976,
+        0.0019309567089658228
+      ]
+    },
+    {
+      "scenario": "prefix_damage",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "elapsed_s",
+      "paired_n": 10,
+      "conditioning": "both constructions complete",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "prefix_damage",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "travel_cm",
+      "paired_n": 10,
+      "conditioning": "both constructions complete",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "prefix_damage",
+      "sectors": 8,
+      "depth": 2,
+      "amplitude_cm": 10,
+      "contrast": "retained_minus_fresh_IPyHOP",
+      "metric": "silk_used_cm",
+      "paired_n": 10,
+      "conditioning": "both constructions complete",
+      "mean_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "unnecessary_repeats_total": 0,
+  "maximum_silk_conservation_error": 0.0,
+  "original_provenance": {
+    "recovery_model_version": 1,
+    "shared_executor_version": 3,
+    "python": "3.12.0",
+    "gtpyhop": "1.9.7",
+    "networkx": "3.4.2",
+    "upstream": {
+      "repository": "https://github.com/YashBansod/IPyHOP",
+      "revision": "bdda21012b2396aed9a91980af8fbb71dbcb7075",
+      "license": "BSD-3-Clause",
+      "modifications": [],
+      "note": "Upstream source is unmodified. Runtime dependency versions are recorded by our benchmark; historical upstream requirements are retained for provenance, not installed verbatim.",
+      "sha256": {
+        "LICENSE": "e64df5615d242da2cb0bf47a1765a1378e642133fc2a1e5074a4a2b4382da6c5",
+        "README.md": "92762eef59ee7be7e4311dbae0a91740d220cd9384ab534a254955a96026e766",
+        "ipyhop/__init__.py": "0c7f2fa3dc87d9068d52cbcebd5ed702f92cba3d72f0561982a4a67afda4408b",
+        "ipyhop/actions.py": "d2565f1aee5e71b22b451a46f07ab23b16996a1431e94fc6114427b4a6831c3e",
+        "ipyhop/failure_handler.py": "8a8c1655ea1f826ede4e5d30232605a90f7f546567ad154701e24ab36c02bed1",
+        "ipyhop/mc_executor.py": "c8e22d4bee6282a2af2f68bdc678517a6dabebbd5566574b61ab7ae547e284a6",
+        "ipyhop/methods.py": "b86c4ae07cd13fc9a4d31e2bcacc242b969598a40b3be4cb705adf30d988af77",
+        "ipyhop/mulitgoal.py": "a9069b6c431e64535c376ff27158362247b79bf907500e391fed89649e663d99",
+        "ipyhop/planner.py": "ed51aa93e5a14227304b9809ce40aee2303bdfba40d47d070b83991920b4c139",
+        "ipyhop/plotter.py": "b5636a38b238fa195decbb70e2c75a319caccabdddfb1b0bce4ebdf989eeea63",
+        "ipyhop/state.py": "f33dcb60510c6ed4f1dc1cfe2c20ec7c332e6c62f4c439a570c9c662b96b74c8",
+        "requirements.txt": "e391ba51178522e58d202557a3e4e1efdbeadd200d455a6332b47a28cf79a588"
+      }
+    },
+    "fresh_strategy": "iterative_dfs_backtracking",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "configs": [
+      {
+        "sectors": 4,
+        "depth": 0,
+        "silk_cm": 500.0,
+        "speed_cm_s": 1.0,
+        "amplitude_cm": 0,
+        "frequency_hz": 0.05,
+        "max_repairs": 20,
+        "max_attempts": 500,
+        "transient_retries": 2,
+        "max_elapsed_s": 20000.0
+      },
+      {
+        "sectors": 4,
+        "depth": 0,
+        "silk_cm": 500.0,
+        "speed_cm_s": 1.0,
+        "amplitude_cm": 10,
+        "frequency_hz": 0.05,
+        "max_repairs": 20,
+        "max_attempts": 500,
+        "transient_retries": 2,
+        "max_elapsed_s": 20000.0
+      },
+      {
+        "sectors": 4,
+        "depth": 2,
+        "silk_cm": 500.0,
+        "speed_cm_s": 1.0,
+        "amplitude_cm": 0,
+        "frequency_hz": 0.05,
+        "max_repairs": 20,
+        "max_attempts": 500,
+        "transient_retries": 2,
+        "max_elapsed_s": 20000.0
+      },
+      {
+        "sectors": 4,
+        "depth": 2,
+        "silk_cm": 500.0,
+        "speed_cm_s": 1.0,
+        "amplitude_cm": 10,
+        "frequency_hz": 0.05,
+        "max_repairs": 20,
+        "max_attempts": 500,
+        "transient_retries": 2,
+        "max_elapsed_s": 20000.0
+      },
+      {
+        "sectors": 8,
+        "depth": 0,
+        "silk_cm": 500.0,
+        "speed_cm_s": 1.0,
+        "amplitude_cm": 0,
+        "frequency_hz": 0.05,
+        "max_repairs": 20,
+        "max_attempts": 500,
+        "transient_retries": 2,
+        "max_elapsed_s": 20000.0
+      },
+      {
+        "sectors": 8,
+        "depth": 0,
+        "silk_cm": 500.0,
+        "speed_cm_s": 1.0,
+        "amplitude_cm": 10,
+        "frequency_hz": 0.05,
+        "max_repairs": 20,
+        "max_attempts": 500,
+        "transient_retries": 2,
+        "max_elapsed_s": 20000.0
+      },
+      {
+        "sectors": 8,
+        "depth": 2,
+        "silk_cm": 500.0,
+        "speed_cm_s": 1.0,
+        "amplitude_cm": 0,
+        "frequency_hz": 0.05,
+        "max_repairs": 20,
+        "max_attempts": 500,
+        "transient_retries": 2,
+        "max_elapsed_s": 20000.0
+      },
+      {
+        "sectors": 8,
+        "depth": 2,
+        "silk_cm": 500.0,
+        "speed_cm_s": 1.0,
+        "amplitude_cm": 10,
+        "frequency_hz": 0.05,
+        "max_repairs": 20,
+        "max_attempts": 500,
+        "transient_retries": 2,
+        "max_elapsed_s": 20000.0
+      }
+    ],
+    "backends": [
+      "fresh_root",
+      "component",
+      "ipyhop_fresh",
+      "ipyhop"
+    ],
+    "scenarios": [
+      "clean",
+      "transient_attachment",
+      "permanent_anchor",
+      "route_block",
+      "unreachable",
+      "silk_depletion",
+      "prefix_damage"
+    ],
+    "event_protocol": "one logical-action-triggered event per non-clean trial; no random-draw coupling",
+    "source_sha256": {
+      "benchmark.py": "7f1ded13fbb12d064bc16b22c3b37af339ebec0bac65e609d7faf9104557eb29",
+      "domain.py": "7917297492682b0aa00036cec81debe7661d07591c388588b79074a20e2bda9a",
+      "__init__.py": "3933760027f6a3a3dd13d25e4295e55d834928857d5848be79ba164841babe92",
+      "experiment.py": "14b371e4044cc98d86da222476ae7cbfd48d78e9c448e42b9ef1ff89ec111d0a",
+      "backends.py": "9a6b33c8ee39c5e6d60f19245632ccb5b7aa079f7209e187c14449a94a0401d1",
+      "__main__.py": "abb0778dcfc132ad2927f44db319ac79a96edf76b5ffebc16024bf4974efbd39"
+    },
+    "shared_source_sha256": {
+      "model.py": "7255eaf5671dad8e9e0c58b587d8daed6374bb9dea27a93c0c77dffc7fe77a19",
+      "experiment.py": "3885010cd4e736698035ceb781b5364723f71ce5e21a888831c6f9a4b5ae5e82",
+      "tracking.py": "00ec281e150297e0d7a7478d65097c4c03af39860cf2fcd105a4f0ba739af9ac"
+    },
+    "report_regeneration": {
+      "simulation_rerun": false,
+      "report_source_sha256": "a7607667763383cedc3694b6e8493aa8443d78b78371161d30927c9f90ff86fb",
+      "note": "Added a display table of existing paired contrasts. Numerical source hashes above remain those of the executed study."
+    }
+  },
+  "input_directory": "mulder_results/recovery_v1_verified",
+  "input_sha256": {
+    "trials.json": "12a5db87d1b4c3f45c2f77de3e6d70417c106efc4b34abb49c4d90c48c283577",
+    "paired.json": "ad1b2c25a39774da7f138deba245a0f36bdac98d0c33d1da954cebfd6ee49938",
+    "summary.json": "6c35e0c2c6cf2b38f7fcf0a62ccd0aecbf035652d59ef7704ce6330561744a85",
+    "provenance.json": "62d78a86f8b3bae9cff73d66d5935951a769810f8afb87dd55a01d30141bcd07"
+  },
+  "snapshot_generator_sha256": "2aa55ae8a89eafd2dbd7a1ac4d449788808791fd65aab208a0c460cf2cc6f306",
+  "scope": "Authored sector-construction recovery benchmark; not the Mulder v3 geometry/biological study."
+}

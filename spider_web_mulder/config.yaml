@@ -1,0 +1,42 @@
+# Independent of the Zschokke model's config. All lengths cm, times seconds.
+environment:
+  width_cm: 30.0
+  height_cm: 30.0
+  # Peak displacement from centre, NOT peak-to-peak travel. The paper's
+  # approximate 10 cm movement is ambiguous; sweep this parameter.
+  amplitude_cm: 10.0
+  frequency_hz: 0.049
+construction:
+  radial_count: 16
+  auxiliary_turns: 3
+  capture_turns: 8
+  inner_radius_fraction: 0.15
+  outer_radius_fraction: 0.85
+execution:
+  # v3: continuous feedback with bounded locomotion on a moving substrate.
+  # Set endpoint to reproduce the earlier endpoint-only movement rule.
+  execution_mode: tracking
+  method_policy: direct
+  sensor_tau_s: 0.0
+  max_action_time_s: 120.0
+  max_method_wait_s: 5.0
+  speed_cm_s: 1.0
+  attachment_time_s: 0.5
+  integration_step_s: 0.25
+  attachment_tolerance_cm: 0.5
+  # Bounded endpoint correction is a controller abstraction, not a measured
+  # spider parameter. Correction adds travel/time and can itself become stale.
+  correction_limit_cm: 4.0
+  correction_speed_cm_s: 2.0
+  repair_delay_s: 0.2
+  max_repairs_per_action: 3
+  max_elapsed_s: 20000.0
+control:
+  event_threshold_cm: 2.0
+  filter_tau_s: 10.0
+  prediction_samples: 17
+  prediction_horizon_s: 20.0
+experiment:
+  seeds: [0, 1, 2, 3, 4]
+  amplitudes_cm: [0.0, 5.0, 10.0]
+  frequencies_hz: [0.01, 0.05, 0.1]
