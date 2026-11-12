@@ -1,0 +1,2058 @@
+[
+  {
+    "label": "fresh_plan",
+    "failed_node": null,
+    "nodes": [
+      {
+        "id": 0,
+        "info": [
+          "root"
+        ],
+        "kind": "D",
+        "status": "NA",
+        "tag": null,
+        "selected_method": null
+      },
+      {
+        "id": 1,
+        "info": [
+          "build_web"
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "build_web"
+      },
+      {
+        "id": 2,
+        "info": [
+          "radial_phase"
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "radial_phase"
+      },
+      {
+        "id": 3,
+        "info": [
+          "capture_phase"
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "capture_phase"
+      },
+      {
+        "id": 4,
+        "info": [
+          "layer",
+          0,
+          [
+            "build_radius",
+            0,
+            [
+              "radius",
+              0
+            ]
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "layer"
+      },
+      {
+        "id": 5,
+        "info": [
+          "layer",
+          0,
+          [
+            "build_radius",
+            1,
+            [
+              "radius",
+              1
+            ]
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "layer"
+      },
+      {
+        "id": 6,
+        "info": [
+          "layer",
+          0,
+          [
+            "build_radius",
+            2,
+            [
+              "radius",
+              2
+            ]
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "layer"
+      },
+      {
+        "id": 7,
+        "info": [
+          "layer",
+          0,
+          [
+            "build_radius",
+            3,
+            [
+              "radius",
+              3
+            ]
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "layer"
+      },
+      {
+        "id": 8,
+        "info": [
+          "build_radius",
+          0,
+          [
+            "radius",
+            0
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "radius_primary"
+      },
+      {
+        "id": 9,
+        "info": [
+          "travel",
+          "A0",
+          [
+            "radius",
+            0
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "travel_path"
+      },
+      {
+        "id": 10,
+        "info": [
+          "attach",
+          0,
+          "A0",
+          [
+            "radius",
+            0
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 11,
+        "info": [
+          "travel",
+          "hub",
+          [
+            "radius",
+            0
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "travel_path"
+      },
+      {
+        "id": 12,
+        "info": [
+          "move",
+          "hub",
+          "right",
+          [
+            "radius",
+            0
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 13,
+        "info": [
+          "move",
+          "right",
+          "A0",
+          [
+            "radius",
+            0
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 14,
+        "info": [
+          "move",
+          "A0",
+          "hub",
+          [
+            "radius",
+            0
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 15,
+        "info": [
+          "build_radius",
+          1,
+          [
+            "radius",
+            1
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "radius_primary"
+      },
+      {
+        "id": 16,
+        "info": [
+          "travel",
+          "A1",
+          [
+            "radius",
+            1
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "travel_path"
+      },
+      {
+        "id": 17,
+        "info": [
+          "attach",
+          1,
+          "A1",
+          [
+            "radius",
+            1
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 18,
+        "info": [
+          "travel",
+          "hub",
+          [
+            "radius",
+            1
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "travel_path"
+      },
+      {
+        "id": 19,
+        "info": [
+          "move",
+          "hub",
+          "left",
+          [
+            "radius",
+            1
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 20,
+        "info": [
+          "move",
+          "left",
+          "A1",
+          [
+            "radius",
+            1
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 21,
+        "info": [
+          "move",
+          "A1",
+          "hub",
+          [
+            "radius",
+            1
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 22,
+        "info": [
+          "build_radius",
+          2,
+          [
+            "radius",
+            2
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "radius_primary"
+      },
+      {
+        "id": 23,
+        "info": [
+          "travel",
+          "A2",
+          [
+            "radius",
+            2
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "travel_path"
+      },
+      {
+        "id": 24,
+        "info": [
+          "attach",
+          2,
+          "A2",
+          [
+            "radius",
+            2
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 25,
+        "info": [
+          "travel",
+          "hub",
+          [
+            "radius",
+            2
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "travel_path"
+      },
+      {
+        "id": 26,
+        "info": [
+          "move",
+          "hub",
+          "left",
+          [
+            "radius",
+            2
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 27,
+        "info": [
+          "move",
+          "left",
+          "A2",
+          [
+            "radius",
+            2
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 28,
+        "info": [
+          "move",
+          "A2",
+          "hub",
+          [
+            "radius",
+            2
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 29,
+        "info": [
+          "build_radius",
+          3,
+          [
+            "radius",
+            3
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "radius_primary"
+      },
+      {
+        "id": 30,
+        "info": [
+          "travel",
+          "A3",
+          [
+            "radius",
+            3
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "travel_path"
+      },
+      {
+        "id": 31,
+        "info": [
+          "attach",
+          3,
+          "A3",
+          [
+            "radius",
+            3
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 32,
+        "info": [
+          "travel",
+          "hub",
+          [
+            "radius",
+            3
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "travel_path"
+      },
+      {
+        "id": 33,
+        "info": [
+          "move",
+          "hub",
+          "right",
+          [
+            "radius",
+            3
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 34,
+        "info": [
+          "move",
+          "right",
+          "A3",
+          [
+            "radius",
+            3
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 35,
+        "info": [
+          "move",
+          "A3",
+          "hub",
+          [
+            "radius",
+            3
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 36,
+        "info": [
+          "layer",
+          0,
+          [
+            "build_capture",
+            0,
+            [
+              "capture",
+              0
+            ]
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "layer"
+      },
+      {
+        "id": 37,
+        "info": [
+          "layer",
+          0,
+          [
+            "build_capture",
+            1,
+            [
+              "capture",
+              1
+            ]
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "layer"
+      },
+      {
+        "id": 38,
+        "info": [
+          "layer",
+          0,
+          [
+            "build_capture",
+            2,
+            [
+              "capture",
+              2
+            ]
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "layer"
+      },
+      {
+        "id": 39,
+        "info": [
+          "layer",
+          0,
+          [
+            "build_capture",
+            3,
+            [
+              "capture",
+              3
+            ]
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "layer"
+      },
+      {
+        "id": 40,
+        "info": [
+          "build_capture",
+          0,
+          [
+            "capture",
+            0
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "capture_direct"
+      },
+      {
+        "id": 41,
+        "info": [
+          "travel",
+          "hub",
+          [
+            "capture",
+            0
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "travel_done"
+      },
+      {
+        "id": 42,
+        "info": [
+          "capture",
+          0,
+          "A0",
+          "A3",
+          [
+            "capture",
+            0
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 43,
+        "info": [
+          "build_capture",
+          1,
+          [
+            "capture",
+            1
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "capture_direct"
+      },
+      {
+        "id": 44,
+        "info": [
+          "travel",
+          "hub",
+          [
+            "capture",
+            1
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "travel_done"
+      },
+      {
+        "id": 45,
+        "info": [
+          "capture",
+          1,
+          "A1",
+          "A0",
+          [
+            "capture",
+            1
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 46,
+        "info": [
+          "build_capture",
+          2,
+          [
+            "capture",
+            2
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "capture_direct"
+      },
+      {
+        "id": 47,
+        "info": [
+          "travel",
+          "hub",
+          [
+            "capture",
+            2
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "travel_done"
+      },
+      {
+        "id": 48,
+        "info": [
+          "capture",
+          2,
+          "A2",
+          "A1",
+          [
+            "capture",
+            2
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 49,
+        "info": [
+          "build_capture",
+          3,
+          [
+            "capture",
+            3
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "capture_direct"
+      },
+      {
+        "id": 50,
+        "info": [
+          "travel",
+          "hub",
+          [
+            "capture",
+            3
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "travel_done"
+      },
+      {
+        "id": 51,
+        "info": [
+          "capture",
+          3,
+          "A3",
+          "A2",
+          [
+            "capture",
+            3
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      }
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        36
+      ],
+      [
+        3,
+        37
+      ],
+      [
+        3,
+        38
+      ],
+      [
+        3,
+        39
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        15
+      ],
+      [
+        6,
+        22
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        11,
+        14
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        15,
+        17
+      ],
+      [
+        15,
+        18
+      ],
+      [
+        16,
+        19
+      ],
+      [
+        16,
+        20
+      ],
+      [
+        18,
+        21
+      ],
+      [
+        22,
+        23
+      ],
+      [
+        22,
+        24
+      ],
+      [
+        22,
+        25
+      ],
+      [
+        23,
+        26
+      ],
+      [
+        23,
+        27
+      ],
+      [
+        25,
+        28
+      ],
+      [
+        29,
+        30
+      ],
+      [
+        29,
+        31
+      ],
+      [
+        29,
+        32
+      ],
+      [
+        30,
+        33
+      ],
+      [
+        30,
+        34
+      ],
+      [
+        32,
+        35
+      ],
+      [
+        36,
+        40
+      ],
+      [
+        37,
+        43
+      ],
+      [
+        38,
+        46
+      ],
+      [
+        39,
+        49
+      ],
+      [
+        40,
+        41
+      ],
+      [
+        40,
+        42
+      ],
+      [
+        43,
+        44
+      ],
+      [
+        43,
+        45
+      ],
+      [
+        46,
+        47
+      ],
+      [
+        46,
+        48
+      ],
+      [
+        49,
+        50
+      ],
+      [
+        49,
+        51
+      ]
+    ]
+  },
+  {
+    "label": "replan",
+    "failed_node": 31,
+    "nodes": [
+      {
+        "id": 0,
+        "info": [
+          "root"
+        ],
+        "kind": "D",
+        "status": "NA",
+        "tag": null,
+        "selected_method": null
+      },
+      {
+        "id": 1,
+        "info": [
+          "build_web"
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "old",
+        "selected_method": "build_web"
+      },
+      {
+        "id": 2,
+        "info": [
+          "radial_phase"
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "old",
+        "selected_method": "radial_phase"
+      },
+      {
+        "id": 3,
+        "info": [
+          "capture_phase"
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "capture_phase"
+      },
+      {
+        "id": 4,
+        "info": [
+          "layer",
+          0,
+          [
+            "build_radius",
+            0,
+            [
+              "radius",
+              0
+            ]
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "old",
+        "selected_method": "layer"
+      },
+      {
+        "id": 5,
+        "info": [
+          "layer",
+          0,
+          [
+            "build_radius",
+            1,
+            [
+              "radius",
+              1
+            ]
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "old",
+        "selected_method": "layer"
+      },
+      {
+        "id": 6,
+        "info": [
+          "layer",
+          0,
+          [
+            "build_radius",
+            2,
+            [
+              "radius",
+              2
+            ]
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "old",
+        "selected_method": "layer"
+      },
+      {
+        "id": 7,
+        "info": [
+          "layer",
+          0,
+          [
+            "build_radius",
+            3,
+            [
+              "radius",
+              3
+            ]
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "old",
+        "selected_method": "layer"
+      },
+      {
+        "id": 8,
+        "info": [
+          "build_radius",
+          0,
+          [
+            "radius",
+            0
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "old",
+        "selected_method": "radius_primary"
+      },
+      {
+        "id": 9,
+        "info": [
+          "travel",
+          "A0",
+          [
+            "radius",
+            0
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "old",
+        "selected_method": "travel_path"
+      },
+      {
+        "id": 10,
+        "info": [
+          "attach",
+          0,
+          "A0",
+          [
+            "radius",
+            0
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "old",
+        "selected_method": null
+      },
+      {
+        "id": 11,
+        "info": [
+          "travel",
+          "hub",
+          [
+            "radius",
+            0
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "old",
+        "selected_method": "travel_path"
+      },
+      {
+        "id": 12,
+        "info": [
+          "move",
+          "hub",
+          "right",
+          [
+            "radius",
+            0
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "old",
+        "selected_method": null
+      },
+      {
+        "id": 13,
+        "info": [
+          "move",
+          "right",
+          "A0",
+          [
+            "radius",
+            0
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "old",
+        "selected_method": null
+      },
+      {
+        "id": 14,
+        "info": [
+          "move",
+          "A0",
+          "hub",
+          [
+            "radius",
+            0
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "old",
+        "selected_method": null
+      },
+      {
+        "id": 15,
+        "info": [
+          "build_radius",
+          1,
+          [
+            "radius",
+            1
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "old",
+        "selected_method": "radius_primary"
+      },
+      {
+        "id": 16,
+        "info": [
+          "travel",
+          "A1",
+          [
+            "radius",
+            1
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "old",
+        "selected_method": "travel_path"
+      },
+      {
+        "id": 17,
+        "info": [
+          "attach",
+          1,
+          "A1",
+          [
+            "radius",
+            1
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "old",
+        "selected_method": null
+      },
+      {
+        "id": 18,
+        "info": [
+          "travel",
+          "hub",
+          [
+            "radius",
+            1
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "old",
+        "selected_method": "travel_path"
+      },
+      {
+        "id": 19,
+        "info": [
+          "move",
+          "hub",
+          "left",
+          [
+            "radius",
+            1
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "old",
+        "selected_method": null
+      },
+      {
+        "id": 20,
+        "info": [
+          "move",
+          "left",
+          "A1",
+          [
+            "radius",
+            1
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "old",
+        "selected_method": null
+      },
+      {
+        "id": 21,
+        "info": [
+          "move",
+          "A1",
+          "hub",
+          [
+            "radius",
+            1
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "old",
+        "selected_method": null
+      },
+      {
+        "id": 22,
+        "info": [
+          "build_radius",
+          2,
+          [
+            "radius",
+            2
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "old",
+        "selected_method": "radius_primary"
+      },
+      {
+        "id": 23,
+        "info": [
+          "travel",
+          "A2",
+          [
+            "radius",
+            2
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "old",
+        "selected_method": "travel_path"
+      },
+      {
+        "id": 24,
+        "info": [
+          "attach",
+          2,
+          "A2",
+          [
+            "radius",
+            2
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "old",
+        "selected_method": null
+      },
+      {
+        "id": 25,
+        "info": [
+          "travel",
+          "hub",
+          [
+            "radius",
+            2
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "old",
+        "selected_method": "travel_path"
+      },
+      {
+        "id": 26,
+        "info": [
+          "move",
+          "hub",
+          "left",
+          [
+            "radius",
+            2
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "old",
+        "selected_method": null
+      },
+      {
+        "id": 27,
+        "info": [
+          "move",
+          "left",
+          "A2",
+          [
+            "radius",
+            2
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "old",
+        "selected_method": null
+      },
+      {
+        "id": 28,
+        "info": [
+          "move",
+          "A2",
+          "hub",
+          [
+            "radius",
+            2
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "old",
+        "selected_method": null
+      },
+      {
+        "id": 29,
+        "info": [
+          "build_radius",
+          3,
+          [
+            "radius",
+            3
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "old",
+        "selected_method": "radius_backup"
+      },
+      {
+        "id": 36,
+        "info": [
+          "travel",
+          "B3",
+          [
+            "radius",
+            3
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "travel_path"
+      },
+      {
+        "id": 37,
+        "info": [
+          "attach",
+          3,
+          "B3",
+          [
+            "radius",
+            3
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 38,
+        "info": [
+          "travel",
+          "hub",
+          [
+            "radius",
+            3
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "travel_path"
+      },
+      {
+        "id": 39,
+        "info": [
+          "move",
+          "A3",
+          "right",
+          [
+            "radius",
+            3
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 40,
+        "info": [
+          "move",
+          "right",
+          "B3",
+          [
+            "radius",
+            3
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 41,
+        "info": [
+          "move",
+          "B3",
+          "hub",
+          [
+            "radius",
+            3
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 42,
+        "info": [
+          "layer",
+          0,
+          [
+            "build_capture",
+            0,
+            [
+              "capture",
+              0
+            ]
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "layer"
+      },
+      {
+        "id": 43,
+        "info": [
+          "layer",
+          0,
+          [
+            "build_capture",
+            1,
+            [
+              "capture",
+              1
+            ]
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "layer"
+      },
+      {
+        "id": 44,
+        "info": [
+          "layer",
+          0,
+          [
+            "build_capture",
+            2,
+            [
+              "capture",
+              2
+            ]
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "layer"
+      },
+      {
+        "id": 45,
+        "info": [
+          "layer",
+          0,
+          [
+            "build_capture",
+            3,
+            [
+              "capture",
+              3
+            ]
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "layer"
+      },
+      {
+        "id": 46,
+        "info": [
+          "build_capture",
+          0,
+          [
+            "capture",
+            0
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "capture_direct"
+      },
+      {
+        "id": 47,
+        "info": [
+          "travel",
+          "hub",
+          [
+            "capture",
+            0
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "travel_done"
+      },
+      {
+        "id": 48,
+        "info": [
+          "capture",
+          0,
+          "A0",
+          "B3",
+          [
+            "capture",
+            0
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 49,
+        "info": [
+          "build_capture",
+          1,
+          [
+            "capture",
+            1
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "capture_direct"
+      },
+      {
+        "id": 50,
+        "info": [
+          "travel",
+          "hub",
+          [
+            "capture",
+            1
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "travel_done"
+      },
+      {
+        "id": 51,
+        "info": [
+          "capture",
+          1,
+          "A1",
+          "A0",
+          [
+            "capture",
+            1
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 52,
+        "info": [
+          "build_capture",
+          2,
+          [
+            "capture",
+            2
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "capture_direct"
+      },
+      {
+        "id": 53,
+        "info": [
+          "travel",
+          "hub",
+          [
+            "capture",
+            2
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "travel_done"
+      },
+      {
+        "id": 54,
+        "info": [
+          "capture",
+          2,
+          "A2",
+          "A1",
+          [
+            "capture",
+            2
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      },
+      {
+        "id": 55,
+        "info": [
+          "build_capture",
+          3,
+          [
+            "capture",
+            3
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "capture_direct"
+      },
+      {
+        "id": 56,
+        "info": [
+          "travel",
+          "hub",
+          [
+            "capture",
+            3
+          ]
+        ],
+        "kind": "T",
+        "status": "C",
+        "tag": "new",
+        "selected_method": "travel_done"
+      },
+      {
+        "id": 57,
+        "info": [
+          "capture",
+          3,
+          "B3",
+          "A2",
+          [
+            "capture",
+            3
+          ]
+        ],
+        "kind": "A",
+        "status": "C",
+        "tag": "new",
+        "selected_method": null
+      }
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        42
+      ],
+      [
+        3,
+        43
+      ],
+      [
+        3,
+        44
+      ],
+      [
+        3,
+        45
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        15
+      ],
+      [
+        6,
+        22
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        11,
+        14
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        15,
+        17
+      ],
+      [
+        15,
+        18
+      ],
+      [
+        16,
+        19
+      ],
+      [
+        16,
+        20
+      ],
+      [
+        18,
+        21
+      ],
+      [
+        22,
+        23
+      ],
+      [
+        22,
+        24
+      ],
+      [
+        22,
+        25
+      ],
+      [
+        23,
+        26
+      ],
+      [
+        23,
+        27
+      ],
+      [
+        25,
+        28
+      ],
+      [
+        29,
+        36
+      ],
+      [
+        29,
+        37
+      ],
+      [
+        29,
+        38
+      ],
+      [
+        36,
+        39
+      ],
+      [
+        36,
+        40
+      ],
+      [
+        38,
+        41
+      ],
+      [
+        42,
+        46
+      ],
+      [
+        43,
+        49
+      ],
+      [
+        44,
+        52
+      ],
+      [
+        45,
+        55
+      ],
+      [
+        46,
+        47
+      ],
+      [
+        46,
+        48
+      ],
+      [
+        49,
+        50
+      ],
+      [
+        49,
+        51
+      ],
+      [
+        52,
+        53
+      ],
+      [
+        52,
+        54
+      ],
+      [
+        55,
+        56
+      ],
+      [
+        55,
+        57
+      ]
+    ]
+  }
+]

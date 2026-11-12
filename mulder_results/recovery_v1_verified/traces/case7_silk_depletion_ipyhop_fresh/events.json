@@ -1,0 +1,1806 @@
+[
+  {
+    "event": "action",
+    "attempt": 1,
+    "generation": 1,
+    "node_id": 18,
+    "action": [
+      "move",
+      "hub",
+      "right",
+      [
+        "radius",
+        0
+      ]
+    ],
+    "owner": [
+      "radius",
+      0
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "hub",
+      "position_material": [
+        15.0,
+        15.0
+      ],
+      "clock_s": 0.0,
+      "silk_remaining": 500.0,
+      "silk_used": 0.0,
+      "silk_lost": 0.0,
+      "radii": {},
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "right",
+      "position_material": [
+        25.0,
+        15.0
+      ],
+      "clock_s": 10.5,
+      "silk_remaining": 500.0,
+      "silk_used": 0.0,
+      "silk_lost": 0.0,
+      "radii": {},
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 10.0,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 2,
+    "generation": 1,
+    "node_id": 19,
+    "action": [
+      "move",
+      "right",
+      "A0",
+      [
+        "radius",
+        0
+      ]
+    ],
+    "owner": [
+      "radius",
+      0
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "right",
+      "position_material": [
+        25.0,
+        15.0
+      ],
+      "clock_s": 10.5,
+      "silk_remaining": 500.0,
+      "silk_used": 0.0,
+      "silk_lost": 0.0,
+      "radii": {},
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "A0",
+      "position_material": [
+        15.0,
+        29.0
+      ],
+      "clock_s": 27.83830577260562,
+      "silk_remaining": 500.0,
+      "silk_used": 0.0,
+      "silk_lost": 0.0,
+      "radii": {},
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 17.204650534085243,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 3,
+    "generation": 1,
+    "node_id": 16,
+    "action": [
+      "attach",
+      0,
+      "A0",
+      [
+        "radius",
+        0
+      ]
+    ],
+    "owner": [
+      "radius",
+      0
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "A0",
+      "position_material": [
+        15.0,
+        29.0
+      ],
+      "clock_s": 27.83830577260562,
+      "silk_remaining": 500.0,
+      "silk_used": 0.0,
+      "silk_lost": 0.0,
+      "radii": {},
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "A0",
+      "position_material": [
+        15.0,
+        29.0
+      ],
+      "clock_s": 28.33830577260562,
+      "silk_remaining": 486.0,
+      "silk_used": 14.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 0.0,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 4,
+    "generation": 1,
+    "node_id": 20,
+    "action": [
+      "move",
+      "A0",
+      "hub",
+      [
+        "radius",
+        0
+      ]
+    ],
+    "owner": [
+      "radius",
+      0
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "A0",
+      "position_material": [
+        15.0,
+        29.0
+      ],
+      "clock_s": 28.33830577260562,
+      "silk_remaining": 486.0,
+      "silk_used": 14.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "hub",
+      "position_material": [
+        15.0,
+        15.0
+      ],
+      "clock_s": 43.23813732536124,
+      "silk_remaining": 486.0,
+      "silk_used": 14.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 13.999999999999998,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 5,
+    "generation": 1,
+    "node_id": 27,
+    "action": [
+      "move",
+      "hub",
+      "left",
+      [
+        "radius",
+        1
+      ]
+    ],
+    "owner": [
+      "radius",
+      1
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "hub",
+      "position_material": [
+        15.0,
+        15.0
+      ],
+      "clock_s": 43.23813732536124,
+      "silk_remaining": 486.0,
+      "silk_used": 14.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "left",
+      "position_material": [
+        5.0,
+        15.0
+      ],
+      "clock_s": 53.73813732536124,
+      "silk_remaining": 486.0,
+      "silk_used": 14.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 10.0,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 6,
+    "generation": 1,
+    "node_id": 28,
+    "action": [
+      "move",
+      "left",
+      "A1",
+      [
+        "radius",
+        1
+      ]
+    ],
+    "owner": [
+      "radius",
+      1
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "left",
+      "position_material": [
+        5.0,
+        15.0
+      ],
+      "clock_s": 53.73813732536124,
+      "silk_remaining": 486.0,
+      "silk_used": 14.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "A1",
+      "position_material": [
+        5.100505063388336,
+        24.899494936611667
+      ],
+      "clock_s": 64.43267260742499,
+      "silk_remaining": 486.0,
+      "silk_used": 14.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 9.900005114532357,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 7,
+    "generation": 1,
+    "node_id": 25,
+    "action": [
+      "attach",
+      1,
+      "A1",
+      [
+        "radius",
+        1
+      ]
+    ],
+    "owner": [
+      "radius",
+      1
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "A1",
+      "position_material": [
+        5.100505063388336,
+        24.899494936611667
+      ],
+      "clock_s": 64.43267260742499,
+      "silk_remaining": 486.0,
+      "silk_used": 14.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "A1",
+      "position_material": [
+        5.100505063388336,
+        24.899494936611667
+      ],
+      "clock_s": 64.93267260742499,
+      "silk_remaining": 472.0,
+      "silk_used": 28.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 0.0,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 8,
+    "generation": 1,
+    "node_id": 29,
+    "action": [
+      "move",
+      "A1",
+      "hub",
+      [
+        "radius",
+        1
+      ]
+    ],
+    "owner": [
+      "radius",
+      1
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "A1",
+      "position_material": [
+        5.100505063388336,
+        24.899494936611667
+      ],
+      "clock_s": 64.93267260742499,
+      "silk_remaining": 472.0,
+      "silk_used": 28.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "hub",
+      "position_material": [
+        15.0,
+        15.0
+      ],
+      "clock_s": 79.64935345256289,
+      "silk_remaining": 472.0,
+      "silk_used": 28.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 14.000000000000005,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 9,
+    "generation": 1,
+    "node_id": 36,
+    "action": [
+      "move",
+      "hub",
+      "left",
+      [
+        "radius",
+        2
+      ]
+    ],
+    "owner": [
+      "radius",
+      2
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "hub",
+      "position_material": [
+        15.0,
+        15.0
+      ],
+      "clock_s": 79.64935345256289,
+      "silk_remaining": 472.0,
+      "silk_used": 28.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "left",
+      "position_material": [
+        5.000000000000001,
+        15.0
+      ],
+      "clock_s": 90.14935345256289,
+      "silk_remaining": 472.0,
+      "silk_used": 28.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 10.0,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 10,
+    "generation": 1,
+    "node_id": 37,
+    "action": [
+      "move",
+      "left",
+      "A2",
+      [
+        "radius",
+        2
+      ]
+    ],
+    "owner": [
+      "radius",
+      2
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "left",
+      "position_material": [
+        5.000000000000001,
+        15.0
+      ],
+      "clock_s": 90.14935345256289,
+      "silk_remaining": 472.0,
+      "silk_used": 28.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "A2",
+      "position_material": [
+        1.0000000000000007,
+        15.000000000000002
+      ],
+      "clock_s": 94.64935345256289,
+      "silk_remaining": 472.0,
+      "silk_used": 28.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 4.0,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 11,
+    "generation": 1,
+    "node_id": 34,
+    "action": [
+      "attach",
+      2,
+      "A2",
+      [
+        "radius",
+        2
+      ]
+    ],
+    "owner": [
+      "radius",
+      2
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "A2",
+      "position_material": [
+        1.0000000000000007,
+        15.000000000000002
+      ],
+      "clock_s": 94.64935345256289,
+      "silk_remaining": 472.0,
+      "silk_used": 28.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "A2",
+      "position_material": [
+        1.0000000000000007,
+        15.000000000000002
+      ],
+      "clock_s": 95.14935345256289,
+      "silk_remaining": 458.0,
+      "silk_used": 42.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 0.0,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 12,
+    "generation": 1,
+    "node_id": 38,
+    "action": [
+      "move",
+      "A2",
+      "hub",
+      [
+        "radius",
+        2
+      ]
+    ],
+    "owner": [
+      "radius",
+      2
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "A2",
+      "position_material": [
+        1.0000000000000007,
+        15.000000000000002
+      ],
+      "clock_s": 95.14935345256289,
+      "silk_remaining": 458.0,
+      "silk_used": 42.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "hub",
+      "position_material": [
+        15.0,
+        15.0
+      ],
+      "clock_s": 109.64935345256289,
+      "silk_remaining": 458.0,
+      "silk_used": 42.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 14.0,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 13,
+    "generation": 1,
+    "node_id": 45,
+    "action": [
+      "move",
+      "hub",
+      "left",
+      [
+        "radius",
+        3
+      ]
+    ],
+    "owner": [
+      "radius",
+      3
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "hub",
+      "position_material": [
+        15.0,
+        15.0
+      ],
+      "clock_s": 109.64935345256289,
+      "silk_remaining": 458.0,
+      "silk_used": 42.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "left",
+      "position_material": [
+        5.0,
+        15.0
+      ],
+      "clock_s": 120.14935345256289,
+      "silk_remaining": 458.0,
+      "silk_used": 42.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 10.0,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 14,
+    "generation": 1,
+    "node_id": 46,
+    "action": [
+      "move",
+      "left",
+      "A3",
+      [
+        "radius",
+        3
+      ]
+    ],
+    "owner": [
+      "radius",
+      3
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "left",
+      "position_material": [
+        5.0,
+        15.0
+      ],
+      "clock_s": 120.14935345256289,
+      "silk_remaining": 458.0,
+      "silk_used": 42.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "A3",
+      "position_material": [
+        5.100505063388332,
+        5.100505063388336
+      ],
+      "clock_s": 130.84203391911961,
+      "silk_remaining": 458.0,
+      "silk_used": 42.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 9.900005114532352,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 15,
+    "generation": 1,
+    "node_id": 43,
+    "action": [
+      "attach",
+      3,
+      "A3",
+      [
+        "radius",
+        3
+      ]
+    ],
+    "owner": [
+      "radius",
+      3
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "A3",
+      "position_material": [
+        5.100505063388332,
+        5.100505063388336
+      ],
+      "clock_s": 130.84203391911961,
+      "silk_remaining": 458.0,
+      "silk_used": 42.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "A3",
+      "position_material": [
+        5.100505063388332,
+        5.100505063388336
+      ],
+      "clock_s": 131.34203391911961,
+      "silk_remaining": 444.0,
+      "silk_used": 56.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 0.0,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 16,
+    "generation": 1,
+    "node_id": 47,
+    "action": [
+      "move",
+      "A3",
+      "hub",
+      [
+        "radius",
+        3
+      ]
+    ],
+    "owner": [
+      "radius",
+      3
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "A3",
+      "position_material": [
+        5.100505063388332,
+        5.100505063388336
+      ],
+      "clock_s": 131.34203391911961,
+      "silk_remaining": 444.0,
+      "silk_used": 56.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "hub",
+      "position_material": [
+        15.0,
+        15.0
+      ],
+      "clock_s": 146.58796324612595,
+      "silk_remaining": 444.0,
+      "silk_used": 56.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 14.000000000000004,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 17,
+    "generation": 1,
+    "node_id": 54,
+    "action": [
+      "move",
+      "hub",
+      "left",
+      [
+        "radius",
+        4
+      ]
+    ],
+    "owner": [
+      "radius",
+      4
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "hub",
+      "position_material": [
+        15.0,
+        15.0
+      ],
+      "clock_s": 146.58796324612595,
+      "silk_remaining": 444.0,
+      "silk_used": 56.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "left",
+      "position_material": [
+        5.0,
+        15.0
+      ],
+      "clock_s": 157.08796324612595,
+      "silk_remaining": 444.0,
+      "silk_used": 56.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 10.0,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 18,
+    "generation": 1,
+    "node_id": 55,
+    "action": [
+      "move",
+      "left",
+      "A4",
+      [
+        "radius",
+        4
+      ]
+    ],
+    "owner": [
+      "radius",
+      4
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "left",
+      "position_material": [
+        5.0,
+        15.0
+      ],
+      "clock_s": 157.08796324612595,
+      "silk_remaining": 444.0,
+      "silk_used": 56.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "A4",
+      "position_material": [
+        14.999999999999998,
+        1.0
+      ],
+      "clock_s": 175.1453004267884,
+      "silk_remaining": 444.0,
+      "silk_used": 56.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 17.204650534085253,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 19,
+    "generation": 1,
+    "node_id": 52,
+    "action": [
+      "attach",
+      4,
+      "A4",
+      [
+        "radius",
+        4
+      ]
+    ],
+    "owner": [
+      "radius",
+      4
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "A4",
+      "position_material": [
+        14.999999999999998,
+        1.0
+      ],
+      "clock_s": 175.1453004267884,
+      "silk_remaining": 444.0,
+      "silk_used": 56.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "A4",
+      "position_material": [
+        14.999999999999998,
+        1.0
+      ],
+      "clock_s": 175.6453004267884,
+      "silk_remaining": 430.0,
+      "silk_used": 70.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3",
+        "4": "A4"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 0.0,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 20,
+    "generation": 1,
+    "node_id": 56,
+    "action": [
+      "move",
+      "A4",
+      "hub",
+      [
+        "radius",
+        4
+      ]
+    ],
+    "owner": [
+      "radius",
+      4
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "A4",
+      "position_material": [
+        14.999999999999998,
+        1.0
+      ],
+      "clock_s": 175.6453004267884,
+      "silk_remaining": 430.0,
+      "silk_used": 70.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3",
+        "4": "A4"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "hub",
+      "position_material": [
+        15.0,
+        15.0
+      ],
+      "clock_s": 190.62127592425142,
+      "silk_remaining": 430.0,
+      "silk_used": 70.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3",
+        "4": "A4"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 14.0,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 21,
+    "generation": 1,
+    "node_id": 63,
+    "action": [
+      "move",
+      "hub",
+      "right",
+      [
+        "radius",
+        5
+      ]
+    ],
+    "owner": [
+      "radius",
+      5
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "hub",
+      "position_material": [
+        15.0,
+        15.0
+      ],
+      "clock_s": 190.62127592425142,
+      "silk_remaining": 430.0,
+      "silk_used": 70.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3",
+        "4": "A4"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "right",
+      "position_material": [
+        25.0,
+        15.0
+      ],
+      "clock_s": 201.12127592425142,
+      "silk_remaining": 430.0,
+      "silk_used": 70.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3",
+        "4": "A4"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 10.0,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 22,
+    "generation": 1,
+    "node_id": 64,
+    "action": [
+      "move",
+      "right",
+      "A5",
+      [
+        "radius",
+        5
+      ]
+    ],
+    "owner": [
+      "radius",
+      5
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "right",
+      "position_material": [
+        25.0,
+        15.0
+      ],
+      "clock_s": 201.12127592425142,
+      "silk_remaining": 430.0,
+      "silk_used": 70.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3",
+        "4": "A4"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "A5",
+      "position_material": [
+        24.899494936611664,
+        5.100505063388333
+      ],
+      "clock_s": 211.7826712771874,
+      "silk_remaining": 430.0,
+      "silk_used": 70.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3",
+        "4": "A4"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 9.900005114532348,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 23,
+    "generation": 1,
+    "node_id": 61,
+    "action": [
+      "attach",
+      5,
+      "A5",
+      [
+        "radius",
+        5
+      ]
+    ],
+    "owner": [
+      "radius",
+      5
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "A5",
+      "position_material": [
+        24.899494936611664,
+        5.100505063388333
+      ],
+      "clock_s": 211.7826712771874,
+      "silk_remaining": 430.0,
+      "silk_used": 70.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3",
+        "4": "A4"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "A5",
+      "position_material": [
+        24.899494936611664,
+        5.100505063388333
+      ],
+      "clock_s": 212.2826712771874,
+      "silk_remaining": 416.0,
+      "silk_used": 84.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3",
+        "4": "A4",
+        "5": "A5"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 0.0,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 24,
+    "generation": 1,
+    "node_id": 65,
+    "action": [
+      "move",
+      "A5",
+      "hub",
+      [
+        "radius",
+        5
+      ]
+    ],
+    "owner": [
+      "radius",
+      5
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "A5",
+      "position_material": [
+        24.899494936611664,
+        5.100505063388333
+      ],
+      "clock_s": 212.2826712771874,
+      "silk_remaining": 416.0,
+      "silk_used": 84.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3",
+        "4": "A4",
+        "5": "A5"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "hub",
+      "position_material": [
+        15.0,
+        15.0
+      ],
+      "clock_s": 225.8712893157446,
+      "silk_remaining": 416.0,
+      "silk_used": 84.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3",
+        "4": "A4",
+        "5": "A5"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 14.000000000000004,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 25,
+    "generation": 1,
+    "node_id": 72,
+    "action": [
+      "move",
+      "hub",
+      "right",
+      [
+        "radius",
+        6
+      ]
+    ],
+    "owner": [
+      "radius",
+      6
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "hub",
+      "position_material": [
+        15.0,
+        15.0
+      ],
+      "clock_s": 225.8712893157446,
+      "silk_remaining": 416.0,
+      "silk_used": 84.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3",
+        "4": "A4",
+        "5": "A5"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "right",
+      "position_material": [
+        25.0,
+        15.0
+      ],
+      "clock_s": 236.3712893157446,
+      "silk_remaining": 416.0,
+      "silk_used": 84.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3",
+        "4": "A4",
+        "5": "A5"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 10.0,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 26,
+    "generation": 1,
+    "node_id": 73,
+    "action": [
+      "move",
+      "right",
+      "A6",
+      [
+        "radius",
+        6
+      ]
+    ],
+    "owner": [
+      "radius",
+      6
+    ],
+    "accepted": true,
+    "reason": null,
+    "injected": null,
+    "before": {
+      "position": "right",
+      "position_material": [
+        25.0,
+        15.0
+      ],
+      "clock_s": 236.3712893157446,
+      "silk_remaining": 416.0,
+      "silk_used": 84.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3",
+        "4": "A4",
+        "5": "A5"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "A6",
+      "position_material": [
+        29.0,
+        14.999999999999996
+      ],
+      "clock_s": 240.8712893157446,
+      "silk_remaining": 416.0,
+      "silk_used": 84.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3",
+        "4": "A4",
+        "5": "A5"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 4.000000000000002,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "action",
+    "attempt": 27,
+    "generation": 1,
+    "node_id": 70,
+    "action": [
+      "attach",
+      6,
+      "A6",
+      [
+        "radius",
+        6
+      ]
+    ],
+    "owner": [
+      "radius",
+      6
+    ],
+    "accepted": false,
+    "reason": "silk_depletion",
+    "injected": {
+      "kind": "silk_depletion",
+      "transient": false,
+      "silk_consumed_cm": 0.2,
+      "invalidated_captures": []
+    },
+    "before": {
+      "position": "A6",
+      "position_material": [
+        29.0,
+        14.999999999999996
+      ],
+      "clock_s": 240.8712893157446,
+      "silk_remaining": 416.0,
+      "silk_used": 84.0,
+      "silk_lost": 0.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3",
+        "4": "A4",
+        "5": "A5"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "A6",
+      "position_material": [
+        29.0,
+        14.999999999999996
+      ],
+      "clock_s": 241.3712893157446,
+      "silk_remaining": 12.8,
+      "silk_used": 84.2,
+      "silk_lost": 403.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3",
+        "4": "A4",
+        "5": "A5"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "travel_cm": 0.0,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "replan",
+    "generation": 2,
+    "backend": "ipyhop_fresh",
+    "failed_node": 70,
+    "owner": [
+      "radius",
+      6
+    ],
+    "observed_state": {
+      "position": "A6",
+      "position_material": [
+        29.0,
+        14.999999999999996
+      ],
+      "clock_s": 241.3712893157446,
+      "silk_remaining": 12.8,
+      "silk_used": 84.2,
+      "silk_lost": 403.0,
+      "radii": {
+        "0": "A0",
+        "1": "A1",
+        "2": "A2",
+        "3": "A3",
+        "4": "A4",
+        "5": "A5"
+      },
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "old_remaining_actions": 14,
+    "new_remaining_actions": null,
+    "retained_node_ids": [],
+    "reason": "silk_depletion"
+  }
+]

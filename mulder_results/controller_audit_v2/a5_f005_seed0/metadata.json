@@ -1,0 +1,41 @@
+{
+  "settings": {
+    "width_cm": 30.0,
+    "height_cm": 30.0,
+    "amplitude_cm": 5.0,
+    "frequency_hz": 0.05,
+    "radial_count": 16,
+    "auxiliary_turns": 3,
+    "capture_turns": 8,
+    "inner_radius_fraction": 0.15,
+    "outer_radius_fraction": 0.85,
+    "speed_cm_s": 1.0,
+    "attachment_time_s": 0.5,
+    "integration_step_s": 0.25,
+    "attachment_tolerance_cm": 0.5,
+    "correction_limit_cm": 4.0,
+    "correction_speed_cm_s": 2.0,
+    "repair_delay_s": 0.2,
+    "max_repairs_per_action": 3,
+    "max_elapsed_s": 20000.0,
+    "event_threshold_cm": 2.0,
+    "filter_tau_s": 10.0,
+    "prediction_samples": 17,
+    "prediction_horizon_s": 20.0
+  },
+  "seed": 0,
+  "controllers": [
+    "fixed",
+    "local",
+    "filtered",
+    "local_repair",
+    "full",
+    "predictive"
+  ],
+  "model_version": 2,
+  "source_sha256": {
+    "model.py": "d35efb3452daa8b91c74137ce69fe308a8b09d3071c494871bc6cbd5b494d961",
+    "experiment.py": "2402012247aa141669bd5637278d1629571443256c234540480172d43021a1af",
+    "diagnostics.py": "da4d56e3ab4ba4e94599b941e783acb87010857275c267622dd9b095cec9c7fa"
+  }
+}

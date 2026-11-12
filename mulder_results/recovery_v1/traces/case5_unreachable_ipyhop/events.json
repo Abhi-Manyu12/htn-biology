@@ -1,0 +1,114 @@
+[
+  {
+    "event": "action",
+    "attempt": 1,
+    "generation": 1,
+    "node_id": 16,
+    "action": [
+      "move",
+      "hub",
+      "right",
+      [
+        "radius",
+        0
+      ]
+    ],
+    "owner": [
+      "radius",
+      0
+    ],
+    "accepted": false,
+    "reason": "unreachable",
+    "injected": {
+      "kind": "unreachable",
+      "transient": false,
+      "silk_consumed_cm": 0.0,
+      "invalidated_captures": []
+    },
+    "before": {
+      "position": "hub",
+      "position_material": [
+        15.0,
+        15.0
+      ],
+      "clock_s": 0.0,
+      "silk_remaining": 500.0,
+      "silk_used": 0.0,
+      "silk_lost": 0.0,
+      "radii": {},
+      "captures": {},
+      "unavailable": [],
+      "blocked": [],
+      "restore_captures": []
+    },
+    "after": {
+      "position": "hub",
+      "position_material": [
+        15.0,
+        15.0
+      ],
+      "clock_s": 0.1,
+      "silk_remaining": 500.0,
+      "silk_used": 0.0,
+      "silk_lost": 0.0,
+      "radii": {},
+      "captures": {},
+      "unavailable": [],
+      "blocked": [
+        [
+          "hub",
+          "left"
+        ],
+        [
+          "hub",
+          "right"
+        ]
+      ],
+      "restore_captures": []
+    },
+    "travel_cm": 0.0,
+    "redundant": false,
+    "legitimate_restoration": false
+  },
+  {
+    "event": "replan",
+    "generation": 2,
+    "backend": "ipyhop",
+    "failed_node": 16,
+    "owner": [
+      "radius",
+      0
+    ],
+    "observed_state": {
+      "position": "hub",
+      "position_material": [
+        15.0,
+        15.0
+      ],
+      "clock_s": 0.1,
+      "silk_remaining": 500.0,
+      "silk_used": 0.0,
+      "silk_lost": 0.0,
+      "radii": {},
+      "captures": {},
+      "unavailable": [],
+      "blocked": [
+        [
+          "hub",
+          "left"
+        ],
+        [
+          "hub",
+          "right"
+        ]
+      ],
+      "restore_captures": []
+    },
+    "old_remaining_actions": 40,
+    "new_remaining_actions": null,
+    "retained_node_ids": [
+      0
+    ],
+    "reason": "unreachable"
+  }
+]

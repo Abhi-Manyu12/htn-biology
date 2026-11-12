@@ -1,0 +1,158 @@
+[
+  {
+    "event": "action",
+    "time_s": 21.713203435596427,
+    "index": 0,
+    "task": "frame_0",
+    "phase": "frame",
+    "accepted": true,
+    "error_cm": 0.0,
+    "correction_cm": 0.0,
+    "travel_cm": 31.485140784369165,
+    "silk": false,
+    "start_material_cm": [
+      15.0,
+      15.0
+    ],
+    "end_material_cm": [
+      0.0,
+      30.0
+    ]
+  },
+  {
+    "event": "action",
+    "time_s": 52.21320343559643,
+    "index": 1,
+    "task": "frame_0",
+    "phase": "frame",
+    "accepted": true,
+    "error_cm": 0.0,
+    "correction_cm": 0.0,
+    "travel_cm": 30.0,
+    "silk": true,
+    "start_material_cm": [
+      0.0,
+      30.0
+    ],
+    "end_material_cm": [
+      30.0,
+      30.0
+    ]
+  },
+  {
+    "event": "repair",
+    "time_s": 52.41320343559643,
+    "index": 2,
+    "task": "frame_1",
+    "scope": "component",
+    "reason": "filtered_drift",
+    "margin_cm": null
+  },
+  {
+    "event": "action",
+    "time_s": 84.47698115310979,
+    "index": 2,
+    "task": "frame_1",
+    "phase": "frame",
+    "accepted": false,
+    "error_cm": 7.36434086869626,
+    "correction_cm": 3.127555435026725,
+    "travel_cm": 77.33748511531851,
+    "silk": true,
+    "start_material_cm": [
+      30.0,
+      30.0
+    ],
+    "end_material_cm": [
+      37.36434086869626,
+      0.0
+    ]
+  },
+  {
+    "event": "repair",
+    "time_s": 84.6769811531098,
+    "index": 2,
+    "task": "frame_1",
+    "scope": "component",
+    "reason": "attachment_miss",
+    "margin_cm": null
+  },
+  {
+    "event": "action",
+    "time_s": 94.54132202180605,
+    "index": 2,
+    "task": "frame_1",
+    "phase": "frame",
+    "accepted": false,
+    "error_cm": 3.7309849643390294,
+    "correction_cm": 4.0,
+    "travel_cm": 46.16624615266299,
+    "silk": true,
+    "start_material_cm": [
+      37.36434086869626,
+      0.0
+    ],
+    "end_material_cm": [
+      33.73098496433903,
+      0.0
+    ]
+  },
+  {
+    "event": "repair",
+    "time_s": 94.74132202180606,
+    "index": 2,
+    "task": "frame_1",
+    "scope": "component",
+    "reason": "attachment_miss",
+    "margin_cm": null
+  },
+  {
+    "event": "action",
+    "time_s": 100.97230698614509,
+    "index": 2,
+    "task": "frame_1",
+    "phase": "frame",
+    "accepted": false,
+    "error_cm": 14.318920870899971,
+    "correction_cm": 4.0,
+    "travel_cm": 25.284041931475574,
+    "silk": true,
+    "start_material_cm": [
+      33.73098496433903,
+      0.0
+    ],
+    "end_material_cm": [
+      15.681079129100029,
+      0.0
+    ]
+  },
+  {
+    "event": "repair",
+    "time_s": 101.17230698614509,
+    "index": 2,
+    "task": "frame_1",
+    "scope": "component",
+    "reason": "attachment_miss",
+    "margin_cm": null
+  },
+  {
+    "event": "action",
+    "time_s": 117.99122785704506,
+    "index": 2,
+    "task": "frame_1",
+    "phase": "frame",
+    "accepted": false,
+    "error_cm": 1.584783689580295,
+    "correction_cm": 4.0,
+    "travel_cm": 77.82185765482426,
+    "silk": true,
+    "start_material_cm": [
+      15.681079129100029,
+      0.0
+    ],
+    "end_material_cm": [
+      31.584783689580295,
+      0.0
+    ]
+  }
+]

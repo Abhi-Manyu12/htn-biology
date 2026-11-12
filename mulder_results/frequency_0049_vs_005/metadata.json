@@ -1,0 +1,64 @@
+{
+  "settings": {
+    "width_cm": 30.0,
+    "height_cm": 30.0,
+    "amplitude_cm": 10.0,
+    "frequency_hz": 0.05,
+    "radial_count": 16,
+    "auxiliary_turns": 3,
+    "capture_turns": 8,
+    "inner_radius_fraction": 0.15,
+    "outer_radius_fraction": 0.85,
+    "speed_cm_s": 1.0,
+    "attachment_time_s": 0.5,
+    "integration_step_s": 0.25,
+    "attachment_tolerance_cm": 0.5,
+    "correction_limit_cm": 4.0,
+    "correction_speed_cm_s": 2.0,
+    "repair_delay_s": 0.2,
+    "max_repairs_per_action": 3,
+    "max_elapsed_s": 20000.0,
+    "event_threshold_cm": 2.0,
+    "filter_tau_s": 10.0,
+    "prediction_samples": 17,
+    "prediction_horizon_s": 20.0
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "controllers": [
+    "fixed",
+    "local",
+    "filtered",
+    "local_repair",
+    "full",
+    "predictive"
+  ],
+  "amplitudes_cm": [
+    0.0,
+    5.0,
+    10.0
+  ],
+  "frequencies_hz": [
+    0.049,
+    0.05
+  ],
+  "paper_doi": "10.1007/s00114-021-01725-1",
+  "model_version": 1,
+  "assumptions": [
+    "affine shear",
+    "known sinusoidal forecast",
+    "pre-established hub and supports",
+    "prescribed counts and spiral waypoints",
+    "no silk mechanics or abandonment policy"
+  ],
+  "python_version": "3.12.0",
+  "source_sha256": {
+    "model.py": "964b1378ba21c7ad83ce010bd663cf18f52873344c57049fece6db8228d43c44",
+    "experiment.py": "9279ea2251115ea3da57f22a6f080409889868b0b46c0a102c9dbbc30cd9a66d"
+  }
+}

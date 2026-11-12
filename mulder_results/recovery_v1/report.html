@@ -1,0 +1,62 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Recovery benchmark</title><style>body{font:15px system-ui;max-width:1250px;margin:30px auto;padding:20px}pre{white-space:pre-wrap;line-height:1.5}</style><pre># Retained-tree recovery benchmark
+
+2240 trials. Actual upstream IPyHOP revision bdda21012b2396aed9a91980af8fbb71dbcb7075; source and BSD license are vendored.
+This is a dependency-changing sector-construction domain, not a rerun of the Mulder geometry/biological study.
+
+## Outcomes by scenario and backend
+
+Counts pool the declared size/depth/amplitude cases for a compact overview; summary.csv retains each stratum.
+
+| Scenario | Backend | Completed / trials | Events fired | Mean repairs | Mean stale preconditions |
+|---|---|---:|---:|---:|---:|
+| clean | fresh_root | 80/80 | 0 | 0.000 | 0.000 |
+| clean | component | 80/80 | 0 | 0.000 | 0.000 |
+| clean | ipyhop_fresh | 80/80 | 0 | 0.000 | 0.000 |
+| clean | ipyhop | 80/80 | 0 | 0.000 | 0.000 |
+| transient_attachment | fresh_root | 80/80 | 80 | 0.000 | 0.000 |
+| transient_attachment | component | 80/80 | 80 | 0.000 | 0.000 |
+| transient_attachment | ipyhop_fresh | 80/80 | 80 | 0.000 | 0.000 |
+| transient_attachment | ipyhop | 80/80 | 80 | 0.000 | 0.000 |
+| permanent_anchor | fresh_root | 80/80 | 80 | 1.000 | 0.000 |
+| permanent_anchor | component | 80/80 | 80 | 3.000 | 2.000 |
+| permanent_anchor | ipyhop_fresh | 80/80 | 80 | 1.000 | 0.000 |
+| permanent_anchor | ipyhop | 80/80 | 80 | 1.000 | 0.000 |
+| route_block | fresh_root | 80/80 | 80 | 1.000 | 0.000 |
+| route_block | component | 80/80 | 80 | 3.000 | 2.000 |
+| route_block | ipyhop_fresh | 80/80 | 80 | 1.000 | 0.000 |
+| route_block | ipyhop | 80/80 | 80 | 1.000 | 0.000 |
+| unreachable | fresh_root | 0/80 | 80 | 1.000 | 0.000 |
+| unreachable | component | 0/80 | 80 | 1.000 | 0.000 |
+| unreachable | ipyhop_fresh | 0/80 | 80 | 1.000 | 0.000 |
+| unreachable | ipyhop | 0/80 | 80 | 1.000 | 0.000 |
+| silk_depletion | fresh_root | 0/80 | 80 | 1.000 | 0.000 |
+| silk_depletion | component | 0/80 | 80 | 1.000 | 0.000 |
+| silk_depletion | ipyhop_fresh | 0/80 | 80 | 1.000 | 0.000 |
+| silk_depletion | ipyhop | 0/80 | 80 | 1.000 | 0.000 |
+| prefix_damage | fresh_root | 80/80 | 80 | 1.000 | 0.000 |
+| prefix_damage | component | 80/80 | 80 | 1.000 | 0.000 |
+| prefix_damage | ipyhop_fresh | 80/80 | 80 | 1.000 | 0.000 |
+| prefix_damage | ipyhop | 80/80 | 80 | 1.000 | 0.000 |
+
+## Interpretation and scope
+
+- fresh_root and component use explicitly pinned GTPyhop iterative DFS backtracking. Their previous greedy default is not used here.
+- ipyhop_fresh and ipyhop use the same upstream engine and domain. The former discards its tree on every planning call; the latter calls replan(observed_state, failed_node_id). This isolates retained-tree recovery more closely than cross-engine comparisons.
+- Every attempted move is checked against current graph edges and starts from the observed position. Radius loss removes its traversable link. Scaffold links are an explicit initial condition, not invented routes after failure.
+- Failed attachment/capture attempts consume resource and time. Resource depletion is observed, not rolled back. History is separate from valid radii/captures; damage can require legitimate reconstruction of earlier work.
+- Transient misses retry the same command within a budget and are not permanently blacklisted. Unreachable/resource-infeasible cases must terminate with failure, not claim success because the planner returns an empty list.
+- Component repair intentionally keeps cached later actions as a diagnostic baseline. A changed anchor can invalidate their explicit preconditions; the actor rejects them and replans rather than performing an invalid construction.
+- This actor uses immediate observed precondition checks and actual action outcomes. It integrates upstream IPyHOP&#x27;s retained-tree algorithm; it is not a verbatim reimplementation or experimental replication of the paper&#x27;s full Run-Lazy-Refineahead setup.
+- Scenarios use declared logical-action triggers, shared across backends for a case. They are not identical absolute-time disturbances; event exposure is recorded. Initial motion phase and target sector vary with seed.
+- Sector capture is an abstract resource-consuming operation. Silk amounts are model units in cm, not validated deposited-silk or metabolic measurements. Physical route tracking reuses the v3 no-slip executor.
+- Method-call counts include shared feasibility guards. GTPyhop&#x27;s eager alternative evaluation differs from IPyHOP; use the same-engine paired contrasts to assess retention. Upstream iterations are reported as supplied by IPyHOP.
+- planning_wall_s includes adapter setup and tree snapshot overhead. Treat it as measured implementation cost, not an isolated planner CPU theorem. Continuous costs compare successful pairs only; intervals are pointwise bootstrap summaries.
+
+## Artifacts
+
+- trials.json / trials.csv: all outcomes, actual terminal state and resource accounting.
+- summary.json / summary.csv: stratified completion, repair and stale-plan measures.
+- paired.json / paired.csv: retained-minus-fresh IPyHOP differences, matched by complete case identity.
+- traces/: representative first-seed action ledgers, before/after observations, replan records, solution trees and tree SVGs when --trace is supplied.
+- provenance.json: backend strategy, upstream revision/hash manifest, runtime and source hashes.
+</pre></html>

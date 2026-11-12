@@ -1,0 +1,158 @@
+[
+  {
+    "event": "action",
+    "time_s": 21.713203435596427,
+    "index": 0,
+    "task": "frame_0",
+    "phase": "frame",
+    "accepted": true,
+    "error_cm": 0.0,
+    "correction_cm": 0.0,
+    "travel_cm": 23.832140911244018,
+    "silk": false,
+    "start_material_cm": [
+      15.0,
+      15.0
+    ],
+    "end_material_cm": [
+      0.0,
+      30.0
+    ]
+  },
+  {
+    "event": "action",
+    "time_s": 52.21320343559643,
+    "index": 1,
+    "task": "frame_0",
+    "phase": "frame",
+    "accepted": true,
+    "error_cm": 0.0,
+    "correction_cm": 0.0,
+    "travel_cm": 30.0,
+    "silk": true,
+    "start_material_cm": [
+      0.0,
+      30.0
+    ],
+    "end_material_cm": [
+      30.0,
+      30.0
+    ]
+  },
+  {
+    "event": "repair",
+    "time_s": 52.41320343559643,
+    "index": 2,
+    "task": "frame_1",
+    "scope": "component",
+    "reason": "filtered_drift",
+    "margin_cm": null
+  },
+  {
+    "event": "action",
+    "time_s": 84.91320343559643,
+    "index": 2,
+    "task": "frame_1",
+    "phase": "frame",
+    "accepted": false,
+    "error_cm": 11.463282519501178,
+    "correction_cm": 4.0,
+    "travel_cm": 54.62270490671294,
+    "silk": true,
+    "start_material_cm": [
+      30.0,
+      30.0
+    ],
+    "end_material_cm": [
+      18.536717480498822,
+      0.0
+    ]
+  },
+  {
+    "event": "repair",
+    "time_s": 85.11320343559643,
+    "index": 2,
+    "task": "frame_1",
+    "scope": "component",
+    "reason": "attachment_miss",
+    "margin_cm": null
+  },
+  {
+    "event": "action",
+    "time_s": 99.07648595509761,
+    "index": 2,
+    "task": "frame_1",
+    "phase": "frame",
+    "accepted": false,
+    "error_cm": 3.8627614037138756,
+    "correction_cm": 4.0,
+    "travel_cm": 37.87889359840076,
+    "silk": true,
+    "start_material_cm": [
+      18.536717480498822,
+      0.0
+    ],
+    "end_material_cm": [
+      26.137238596286124,
+      0.0
+    ]
+  },
+  {
+    "event": "repair",
+    "time_s": 99.27648595509761,
+    "index": 2,
+    "task": "frame_1",
+    "scope": "component",
+    "reason": "attachment_miss",
+    "margin_cm": null
+  },
+  {
+    "event": "action",
+    "time_s": 105.28177884717147,
+    "index": 2,
+    "task": "frame_1",
+    "phase": "frame",
+    "accepted": false,
+    "error_cm": 3.0569108890843495,
+    "correction_cm": 3.2850629767199635,
+    "travel_cm": 10.53130959968938,
+    "silk": true,
+    "start_material_cm": [
+      26.137238596286124,
+      0.0
+    ],
+    "end_material_cm": [
+      33.05691088908435,
+      0.0
+    ]
+  },
+  {
+    "event": "repair",
+    "time_s": 105.48177884717147,
+    "index": 2,
+    "task": "frame_1",
+    "scope": "component",
+    "reason": "attachment_miss",
+    "margin_cm": null
+  },
+  {
+    "event": "action",
+    "time_s": 111.03868973625582,
+    "index": 2,
+    "task": "frame_1",
+    "phase": "frame",
+    "accepted": false,
+    "error_cm": 10.603584814073592,
+    "correction_cm": 4.0,
+    "travel_cm": 8.042760321332644,
+    "silk": true,
+    "start_material_cm": [
+      33.05691088908435,
+      0.0
+    ],
+    "end_material_cm": [
+      40.60358481407359,
+      0.0
+    ]
+  }
+]

@@ -1,0 +1,4258 @@
+[
+  {
+    "scenario": "clean",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 71,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 71,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 47,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 47,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 71,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 71,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 47,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 47,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 133.6,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 15.28186021363412
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 92,
+    "mean_repairs": 3,
+    "mean_stale_preconditions": 2,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 15.28186021363412
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 88,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 15.28186021363412
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 81.2,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 15.28186021363412
+  },
+  {
+    "scenario": "route_block",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 139,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "route_block",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 89,
+    "mean_repairs": 2,
+    "mean_stale_preconditions": 1,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 29.0
+  },
+  {
+    "scenario": "route_block",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 91.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "route_block",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 84.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 85,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 80,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 60,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 53.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 72,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 74,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 48,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 53.2,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 124,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 96,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 10.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 80,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 70,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 10.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 71,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 71,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 47,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 47,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 71,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 71,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 47,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 47,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 133.6,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 15.2818602136341
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 92,
+    "mean_repairs": 3,
+    "mean_stale_preconditions": 2,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 15.2818602136341
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 88,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 15.2818602136341
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 81.2,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 15.2818602136341
+  },
+  {
+    "scenario": "route_block",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 139,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "route_block",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 89,
+    "mean_repairs": 2,
+    "mean_stale_preconditions": 1,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 29.0
+  },
+  {
+    "scenario": "route_block",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 91.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "route_block",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 84.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 85,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 80,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 60,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 53.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 72,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 74,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 48,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 53.2,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 124,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 96,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 10.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 80,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 70,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 10.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 87,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 87,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 63,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 63,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 87,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 87,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 63,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 63,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 165.6,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 15.28186021363412
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 108,
+    "mean_repairs": 3,
+    "mean_stale_preconditions": 2,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 15.28186021363412
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 120,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 15.28186021363412
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 108.4,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 15.28186021363412
+  },
+  {
+    "scenario": "route_block",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 171,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "route_block",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 105,
+    "mean_repairs": 2,
+    "mean_stale_preconditions": 1,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 29.0
+  },
+  {
+    "scenario": "route_block",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 123.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "route_block",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 113.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 104,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 96,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 79,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 69.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 88,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 90,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 64,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 69.2,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 156,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 112,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 10.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 112,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 90,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 10.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 87,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 87,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 63,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 63,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 87,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 87,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 63,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 63,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 165.6,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 15.2818602136341
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 108,
+    "mean_repairs": 3,
+    "mean_stale_preconditions": 2,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 15.2818602136341
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 120,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 15.2818602136341
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 108.4,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 15.2818602136341
+  },
+  {
+    "scenario": "route_block",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 171,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "route_block",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 105,
+    "mean_repairs": 2,
+    "mean_stale_preconditions": 1,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 29.0
+  },
+  {
+    "scenario": "route_block",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 123.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "route_block",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 113.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 104,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 96,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 79,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 69.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 88,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 90,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 64,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 69.2,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "fresh_root",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 156,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "component",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 112,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 10.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "ipyhop_fresh",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 112,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "ipyhop",
+    "sectors": 4,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 90,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 10.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 139,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 139,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 91,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 91,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 139,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 139,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 91,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 91,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 257.6,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 13.180933175536477
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 160,
+    "mean_repairs": 3,
+    "mean_stale_preconditions": 2,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 13.180933175536477
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 166,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 13.180933175536477
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 155.2,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 13.180933175536477
+  },
+  {
+    "scenario": "route_block",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 275,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "route_block",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 175,
+    "mean_repairs": 4,
+    "mean_stale_preconditions": 3,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 70.90000511453235
+  },
+  {
+    "scenario": "route_block",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 179.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "route_block",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 172.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 153,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 148,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 104,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 97.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 140,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 142,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 92,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 103.2,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 236,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 164,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 10.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 148,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 130,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 10.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 139,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 139,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 91,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 91,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 139,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 139,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 91,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 91,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 257.6,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 13.18093317553646
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 160,
+    "mean_repairs": 3,
+    "mean_stale_preconditions": 2,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 13.18093317553646
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 166,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 13.18093317553646
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 155.2,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 13.18093317553646
+  },
+  {
+    "scenario": "route_block",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 275,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "route_block",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 175,
+    "mean_repairs": 4,
+    "mean_stale_preconditions": 3,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 70.90000511453235
+  },
+  {
+    "scenario": "route_block",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 179.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "route_block",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 172.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 153,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 148,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 104,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 97.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 140,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 142,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 92,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 103.2,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 236,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 164,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 10.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 148,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 0,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 130,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 10.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 171,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 171,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 123,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 123,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 171,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 171,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 123,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 123,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 321.6,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 13.180933175536477
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 192,
+    "mean_repairs": 3,
+    "mean_stale_preconditions": 2,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 13.180933175536477
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 230,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 13.180933175536477
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 210.4,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 13.180933175536477
+  },
+  {
+    "scenario": "route_block",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 339,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "route_block",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 207,
+    "mean_repairs": 4,
+    "mean_stale_preconditions": 3,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 70.90000511453235
+  },
+  {
+    "scenario": "route_block",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 243.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "route_block",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 233.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 188,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 180,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 139,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 129.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 172,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 174,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 124,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 135.2,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 300,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 196,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 10.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 212,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 0,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 174,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 10.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 171,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 171,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 123,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "clean",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 0,
+    "mean_method_calls": 123,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 171,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 171,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 123,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "transient_attachment",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 123,
+    "mean_repairs": 0,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 321.6,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 13.18093317553646
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 192,
+    "mean_repairs": 3,
+    "mean_stale_preconditions": 2,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 13.18093317553646
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 230,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 13.18093317553646
+  },
+  {
+    "scenario": "permanent_anchor",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 210.4,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 13.18093317553646
+  },
+  {
+    "scenario": "route_block",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 339,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "route_block",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 207,
+    "mean_repairs": 4,
+    "mean_stale_preconditions": 3,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 70.90000511453235
+  },
+  {
+    "scenario": "route_block",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 243.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "route_block",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 233.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 5.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 188,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 180,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 139,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "unreachable",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 129.5,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 172,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 174,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 124,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "silk_depletion",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.2775327998628892
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 135.2,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "fresh_root",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 300,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "component",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 196,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 10.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "ipyhop_fresh",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 212,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 0.0
+  },
+  {
+    "scenario": "prefix_damage",
+    "backend": "ipyhop",
+    "sectors": 8,
+    "depth": 2,
+    "amplitude_cm": 10,
+    "trials": 10,
+    "successes": 10,
+    "success_ci95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "events_fired": 10,
+    "mean_method_calls": 174,
+    "mean_repairs": 1,
+    "mean_stale_preconditions": 0,
+    "mean_unnecessary_repeats": 0,
+    "mean_recovery_retraced_cm": 10.0
+  }
+]

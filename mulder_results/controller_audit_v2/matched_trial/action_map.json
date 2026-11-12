@@ -1,0 +1,4362 @@
+[
+  {
+    "index": 0,
+    "task": "frame_0",
+    "phase": "frame",
+    "start_material_cm": [
+      15.0,
+      15.0
+    ],
+    "intended_material_cm": [
+      0.0,
+      30.0
+    ],
+    "silk": false,
+    "fixed": "1: accepted",
+    "local": "1: accepted",
+    "filtered": "1: accepted",
+    "local_repair": "1: accepted",
+    "full": "1: accepted",
+    "predictive": "1: accepted"
+  },
+  {
+    "index": 1,
+    "task": "frame_0",
+    "phase": "frame",
+    "start_material_cm": [
+      0.0,
+      30.0
+    ],
+    "intended_material_cm": [
+      30.0,
+      30.0
+    ],
+    "silk": true,
+    "fixed": "1: accepted",
+    "local": "1: accepted",
+    "filtered": "1: accepted",
+    "local_repair": "1: accepted",
+    "full": "1: accepted",
+    "predictive": "1: accepted"
+  },
+  {
+    "index": 2,
+    "task": "frame_1",
+    "phase": "frame",
+    "start_material_cm": [
+      30.0,
+      30.0
+    ],
+    "intended_material_cm": [
+      30.0,
+      0.0
+    ],
+    "silk": true,
+    "fixed": "1: missed",
+    "local": "1: missed",
+    "filtered": "1: missed; 2: missed; 3: accepted",
+    "local_repair": "1: missed; 2: accepted",
+    "full": "1: missed; 2: missed; 3: accepted",
+    "predictive": "1: missed; 2: missed; 3: accepted"
+  },
+  {
+    "index": 3,
+    "task": "frame_2",
+    "phase": "frame",
+    "start_material_cm": [
+      30.0,
+      0.0
+    ],
+    "intended_material_cm": [
+      0.0,
+      0.0
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "1: missed; 2: missed; 3: missed; 4: missed",
+    "local_repair": "1: missed; 2: missed; 3: missed; 4: missed",
+    "full": "1: missed; 2: missed; 3: missed; 4: missed",
+    "predictive": "1: missed; 2: missed; 3: missed; 4: missed"
+  },
+  {
+    "index": 4,
+    "task": "frame_3",
+    "phase": "frame",
+    "start_material_cm": [
+      0.0,
+      0.0
+    ],
+    "intended_material_cm": [
+      0.0,
+      30.0
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 5,
+    "task": "frame_3",
+    "phase": "frame",
+    "start_material_cm": [
+      0.0,
+      30.0
+    ],
+    "intended_material_cm": [
+      15.0,
+      15.0
+    ],
+    "silk": false,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 6,
+    "task": "radius_0",
+    "phase": "radials",
+    "start_material_cm": [
+      15.0,
+      15.0
+    ],
+    "intended_material_cm": [
+      15.000000000000002,
+      30.0
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 7,
+    "task": "radius_0",
+    "phase": "radials",
+    "start_material_cm": [
+      15.000000000000002,
+      30.0
+    ],
+    "intended_material_cm": [
+      15.0,
+      15.0
+    ],
+    "silk": false,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 8,
+    "task": "radius_1",
+    "phase": "radials",
+    "start_material_cm": [
+      15.0,
+      15.0
+    ],
+    "intended_material_cm": [
+      8.786796564403573,
+      30.0
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 9,
+    "task": "radius_1",
+    "phase": "radials",
+    "start_material_cm": [
+      8.786796564403573,
+      30.0
+    ],
+    "intended_material_cm": [
+      15.0,
+      15.0
+    ],
+    "silk": false,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 10,
+    "task": "radius_2",
+    "phase": "radials",
+    "start_material_cm": [
+      15.0,
+      15.0
+    ],
+    "intended_material_cm": [
+      3.552713678800501e-15,
+      30.0
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 11,
+    "task": "radius_2",
+    "phase": "radials",
+    "start_material_cm": [
+      3.552713678800501e-15,
+      30.0
+    ],
+    "intended_material_cm": [
+      15.0,
+      15.0
+    ],
+    "silk": false,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 12,
+    "task": "radius_3",
+    "phase": "radials",
+    "start_material_cm": [
+      15.0,
+      15.0
+    ],
+    "intended_material_cm": [
+      -1.7763568394002505e-15,
+      21.213203435596427
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 13,
+    "task": "radius_3",
+    "phase": "radials",
+    "start_material_cm": [
+      -1.7763568394002505e-15,
+      21.213203435596427
+    ],
+    "intended_material_cm": [
+      15.0,
+      15.0
+    ],
+    "silk": false,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 14,
+    "task": "radius_4",
+    "phase": "radials",
+    "start_material_cm": [
+      15.0,
+      15.0
+    ],
+    "intended_material_cm": [
+      0.0,
+      15.000000000000002
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 15,
+    "task": "radius_4",
+    "phase": "radials",
+    "start_material_cm": [
+      0.0,
+      15.000000000000002
+    ],
+    "intended_material_cm": [
+      15.0,
+      15.0
+    ],
+    "silk": false,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 16,
+    "task": "radius_5",
+    "phase": "radials",
+    "start_material_cm": [
+      15.0,
+      15.0
+    ],
+    "intended_material_cm": [
+      0.0,
+      8.786796564403577
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 17,
+    "task": "radius_5",
+    "phase": "radials",
+    "start_material_cm": [
+      0.0,
+      8.786796564403577
+    ],
+    "intended_material_cm": [
+      15.0,
+      15.0
+    ],
+    "silk": false,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 18,
+    "task": "radius_6",
+    "phase": "radials",
+    "start_material_cm": [
+      15.0,
+      15.0
+    ],
+    "intended_material_cm": [
+      1.7763568394002505e-15,
+      5.329070518200751e-15
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 19,
+    "task": "radius_6",
+    "phase": "radials",
+    "start_material_cm": [
+      1.7763568394002505e-15,
+      5.329070518200751e-15
+    ],
+    "intended_material_cm": [
+      15.0,
+      15.0
+    ],
+    "silk": false,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 20,
+    "task": "radius_7",
+    "phase": "radials",
+    "start_material_cm": [
+      15.0,
+      15.0
+    ],
+    "intended_material_cm": [
+      8.786796564403563,
+      -1.7763568394002505e-15
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 21,
+    "task": "radius_7",
+    "phase": "radials",
+    "start_material_cm": [
+      8.786796564403563,
+      -1.7763568394002505e-15
+    ],
+    "intended_material_cm": [
+      15.0,
+      15.0
+    ],
+    "silk": false,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 22,
+    "task": "radius_8",
+    "phase": "radials",
+    "start_material_cm": [
+      15.0,
+      15.0
+    ],
+    "intended_material_cm": [
+      14.999999999999996,
+      0.0
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 23,
+    "task": "radius_8",
+    "phase": "radials",
+    "start_material_cm": [
+      14.999999999999996,
+      0.0
+    ],
+    "intended_material_cm": [
+      15.0,
+      15.0
+    ],
+    "silk": false,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 24,
+    "task": "radius_9",
+    "phase": "radials",
+    "start_material_cm": [
+      15.0,
+      15.0
+    ],
+    "intended_material_cm": [
+      21.21320343559643,
+      0.0
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 25,
+    "task": "radius_9",
+    "phase": "radials",
+    "start_material_cm": [
+      21.21320343559643,
+      0.0
+    ],
+    "intended_material_cm": [
+      15.0,
+      15.0
+    ],
+    "silk": false,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 26,
+    "task": "radius_10",
+    "phase": "radials",
+    "start_material_cm": [
+      15.0,
+      15.0
+    ],
+    "intended_material_cm": [
+      29.999999999999993,
+      1.7763568394002505e-15
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 27,
+    "task": "radius_10",
+    "phase": "radials",
+    "start_material_cm": [
+      29.999999999999993,
+      1.7763568394002505e-15
+    ],
+    "intended_material_cm": [
+      15.0,
+      15.0
+    ],
+    "silk": false,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 28,
+    "task": "radius_11",
+    "phase": "radials",
+    "start_material_cm": [
+      15.0,
+      15.0
+    ],
+    "intended_material_cm": [
+      30.0,
+      8.786796564403563
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 29,
+    "task": "radius_11",
+    "phase": "radials",
+    "start_material_cm": [
+      30.0,
+      8.786796564403563
+    ],
+    "intended_material_cm": [
+      15.0,
+      15.0
+    ],
+    "silk": false,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 30,
+    "task": "radius_12",
+    "phase": "radials",
+    "start_material_cm": [
+      15.0,
+      15.0
+    ],
+    "intended_material_cm": [
+      30.0,
+      14.999999999999996
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 31,
+    "task": "radius_12",
+    "phase": "radials",
+    "start_material_cm": [
+      30.0,
+      14.999999999999996
+    ],
+    "intended_material_cm": [
+      15.0,
+      15.0
+    ],
+    "silk": false,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 32,
+    "task": "radius_13",
+    "phase": "radials",
+    "start_material_cm": [
+      15.0,
+      15.0
+    ],
+    "intended_material_cm": [
+      30.0,
+      21.21320343559643
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 33,
+    "task": "radius_13",
+    "phase": "radials",
+    "start_material_cm": [
+      30.0,
+      21.21320343559643
+    ],
+    "intended_material_cm": [
+      15.0,
+      15.0
+    ],
+    "silk": false,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 34,
+    "task": "radius_14",
+    "phase": "radials",
+    "start_material_cm": [
+      15.0,
+      15.0
+    ],
+    "intended_material_cm": [
+      30.0,
+      29.999999999999993
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 35,
+    "task": "radius_14",
+    "phase": "radials",
+    "start_material_cm": [
+      30.0,
+      29.999999999999993
+    ],
+    "intended_material_cm": [
+      15.0,
+      15.0
+    ],
+    "silk": false,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 36,
+    "task": "radius_15",
+    "phase": "radials",
+    "start_material_cm": [
+      15.0,
+      15.0
+    ],
+    "intended_material_cm": [
+      21.21320343559644,
+      30.0
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 37,
+    "task": "radius_15",
+    "phase": "radials",
+    "start_material_cm": [
+      21.21320343559644,
+      30.0
+    ],
+    "intended_material_cm": [
+      15.0,
+      15.0
+    ],
+    "silk": false,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 38,
+    "task": "auxiliary_0",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      15.0,
+      15.0
+    ],
+    "intended_material_cm": [
+      15.0,
+      17.25
+    ],
+    "silk": false,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 39,
+    "task": "auxiliary_0",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      15.0,
+      17.25
+    ],
+    "intended_material_cm": [
+      14.033724074909099,
+      17.332796443349064
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 40,
+    "task": "auxiliary_0",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      14.033724074909099,
+      17.332796443349064
+    ],
+    "intended_material_cm": [
+      12.581360335065758,
+      17.41863966493424
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 41,
+    "task": "auxiliary_0",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      12.581360335065758,
+      17.41863966493424
+    ],
+    "intended_material_cm": [
+      12.492358218621524,
+      16.038699235420392
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 42,
+    "task": "auxiliary_0",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      12.492358218621524,
+      16.038699235420392
+    ],
+    "intended_material_cm": [
+      12.400080964980791,
+      15.0
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 43,
+    "task": "auxiliary_0",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      12.400080964980791,
+      15.0
+    ],
+    "intended_material_cm": [
+      12.304408054271848,
+      13.88344925745572
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 44,
+    "task": "auxiliary_0",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      12.304408054271848,
+      13.88344925745572
+    ],
+    "intended_material_cm": [
+      12.205214531682214,
+      12.205214531682214
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 45,
+    "task": "auxiliary_0",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      12.205214531682214,
+      12.205214531682214
+    ],
+    "intended_material_cm": [
+      13.799762704964719,
+      12.10237084425983
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 46,
+    "task": "auxiliary_0",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      13.799762704964719,
+      12.10237084425983
+    ],
+    "intended_material_cm": [
+      15.0,
+      11.995742671708793
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 47,
+    "task": "auxiliary_0",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      15.0,
+      11.995742671708793
+    ],
+    "intended_material_cm": [
+      16.290196235158092,
+      11.885190750958625
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 48,
+    "task": "auxiliary_0",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      16.290196235158092,
+      11.885190750958625
+    ],
+    "intended_material_cm": [
+      18.229429305721993,
+      11.770570694278007
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 49,
+    "task": "auxiliary_0",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      18.229429305721993,
+      11.770570694278007
+    ],
+    "intended_material_cm": [
+      18.34826719930467,
+      13.613102315599024
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 50,
+    "task": "auxiliary_0",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      18.34826719930467,
+      13.613102315599024
+    ],
+    "intended_material_cm": [
+      18.471478139520116,
+      15.0
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 51,
+    "task": "auxiliary_0",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      18.471478139520116,
+      15.0
+    ],
+    "intended_material_cm": [
+      18.599223047571805,
+      16.490847000310065
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 52,
+    "task": "auxiliary_0",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      18.599223047571805,
+      16.490847000310065
+    ],
+    "intended_material_cm": [
+      18.731668766309102,
+      18.731668766309102
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 53,
+    "task": "auxiliary_0",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      18.731668766309102,
+      18.731668766309102
+    ],
+    "intended_material_cm": [
+      16.60258741746585,
+      18.86898827813452
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 54,
+    "task": "auxiliary_1",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      16.60258741746585,
+      18.86898827813452
+    ],
+    "intended_material_cm": [
+      15.0,
+      19.01136093092952
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 55,
+    "task": "auxiliary_1",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      15.0,
+      19.01136093092952
+    ],
+    "intended_material_cm": [
+      13.277297113596699,
+      19.158972672294126
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 56,
+    "task": "auxiliary_1",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      13.277297113596699,
+      19.158972672294126
+    ],
+    "intended_material_cm": [
+      10.687983707593917,
+      19.312016292406085
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 57,
+    "task": "auxiliary_1",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      10.687983707593917,
+      19.312016292406085
+    ],
+    "intended_material_cm": [
+      10.529308324183052,
+      16.85182112531188
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 58,
+    "task": "auxiliary_1",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      10.529308324183052,
+      16.85182112531188
+    ],
+    "intended_material_cm": [
+      10.364793937486205,
+      15.0
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 59,
+    "task": "auxiliary_1",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      10.364793937486205,
+      15.0
+    ],
+    "intended_material_cm": [
+      10.194225681412354,
+      13.009383099536679
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 60,
+    "task": "auxiliary_1",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      10.194225681412354,
+      13.009383099536679
+    ],
+    "intended_material_cm": [
+      10.017380783137984,
+      10.017380783137986
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 61,
+    "task": "auxiliary_1",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      10.017380783137984,
+      10.017380783137986
+    ],
+    "intended_material_cm": [
+      12.860184447489308,
+      9.834028272151818
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 62,
+    "task": "auxiliary_1",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      12.860184447489308,
+      9.834028272151818
+    ],
+    "intended_material_cm": [
+      14.999999999999998,
+      9.643928678592863
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 63,
+    "task": "auxiliary_1",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      14.999999999999998,
+      9.643928678592863
+    ],
+    "intended_material_cm": [
+      17.300196787086904,
+      9.446833720487781
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 64,
+    "task": "auxiliary_1",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      17.300196787086904,
+      9.446833720487781
+    ],
+    "intended_material_cm": [
+      20.75751402052091,
+      9.242485979479085
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 65,
+    "task": "auxiliary_1",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      20.75751402052091,
+      9.242485979479085
+    ],
+    "intended_material_cm": [
+      20.96938143537936,
+      12.52740125048769
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 66,
+    "task": "auxiliary_1",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      20.96938143537936,
+      12.52740125048769
+    ],
+    "intended_material_cm": [
+      21.189045236198623,
+      14.999999999999998
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 67,
+    "task": "auxiliary_1",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      21.189045236198623,
+      14.999999999999998
+    ],
+    "intended_material_cm": [
+      21.416792317658054,
+      17.657922404905452
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 68,
+    "task": "auxiliary_1",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      21.416792317658054,
+      17.657922404905452
+    ],
+    "intended_material_cm": [
+      21.652920131707692,
+      21.65292013170769
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 69,
+    "task": "auxiliary_1",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      21.652920131707692,
+      21.65292013170769
+    ],
+    "intended_material_cm": [
+      17.857136246587444,
+      21.89773707605915
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 70,
+    "task": "auxiliary_2",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      17.857136246587444,
+      21.89773707605915
+    ],
+    "intended_material_cm": [
+      15.0,
+      22.15156289697234
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 71,
+    "task": "auxiliary_2",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      15.0,
+      22.15156289697234
+    ],
+    "intended_material_cm": [
+      11.928718642614347,
+      22.41472910686409
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 72,
+    "task": "auxiliary_2",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      11.928718642614347,
+      22.41472910686409
+    ],
+    "intended_material_cm": [
+      7.312420582715852,
+      22.687579417284148
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 73,
+    "task": "auxiliary_2",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      7.312420582715852,
+      22.687579417284148
+    ],
+    "intended_material_cm": [
+      7.029529812176029,
+      18.30147685028712
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 74,
+    "task": "auxiliary_2",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      7.029529812176029,
+      18.30147685028712
+    ],
+    "intended_material_cm": [
+      6.73622910845533,
+      15.000000000000002
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 75,
+    "task": "auxiliary_2",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      6.73622910845533,
+      15.000000000000002
+    ],
+    "intended_material_cm": [
+      6.432135402468029,
+      11.451074283125958
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 76,
+    "task": "auxiliary_2",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      6.432135402468029,
+      11.451074283125958
+    ],
+    "intended_material_cm": [
+      6.116851528791582,
+      6.116851528791585
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 77,
+    "task": "auxiliary_2",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      6.116851528791582,
+      6.116851528791585
+    ],
+    "intended_material_cm": [
+      11.185078885894772,
+      5.789965706943697
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 78,
+    "task": "auxiliary_2",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      11.185078885894772,
+      5.789965706943697
+    ],
+    "intended_material_cm": [
+      14.999999999999998,
+      5.451051003571266
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 79,
+    "task": "auxiliary_2",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      14.999999999999998,
+      5.451051003571266
+    ],
+    "intended_material_cm": [
+      19.10085312229779,
+      5.099664774848636
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 80,
+    "task": "auxiliary_2",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      19.10085312229779,
+      5.099664774848636
+    ],
+    "intended_material_cm": [
+      25.26465191164291,
+      4.735348088357085
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 81,
+    "task": "auxiliary_2",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      25.26465191164291,
+      4.735348088357085
+    ],
+    "intended_material_cm": [
+      25.642374876309674,
+      10.591783990373836
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 82,
+    "task": "auxiliary_2",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      25.642374876309674,
+      10.591783990373836
+    ],
+    "intended_material_cm": [
+      26.03399744899673,
+      14.999999999999998
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 83,
+    "task": "auxiliary_2",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      26.03399744899673,
+      14.999999999999998
+    ],
+    "intended_material_cm": [
+      26.440031113307654,
+      19.738616041102212
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 84,
+    "task": "auxiliary_2",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      26.440031113307654,
+      19.738616041102212
+    ],
+    "intended_material_cm": [
+      26.861006174634102,
+      26.8610061746341
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 85,
+    "task": "auxiliary_2",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      26.861006174634102,
+      26.8610061746341
+    ],
+    "intended_material_cm": [
+      20.093779872846,
+      27.297472452767877
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 86,
+    "task": "auxiliary_2",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      20.093779872846,
+      27.297472452767877
+    ],
+    "intended_material_cm": [
+      15.000000000000002,
+      27.75
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 87,
+    "task": "auxiliary_2",
+    "phase": "auxiliary",
+    "start_material_cm": [
+      15.000000000000002,
+      27.75
+    ],
+    "intended_material_cm": [
+      15.0,
+      15.0
+    ],
+    "silk": false,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 88,
+    "task": "capture_0",
+    "phase": "capture",
+    "start_material_cm": [
+      15.0,
+      15.0
+    ],
+    "intended_material_cm": [
+      15.000000000000002,
+      27.75
+    ],
+    "silk": false,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 89,
+    "task": "capture_0",
+    "phase": "capture",
+    "start_material_cm": [
+      15.000000000000002,
+      27.75
+    ],
+    "intended_material_cm": [
+      9.752755536031454,
+      27.66796875
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 90,
+    "task": "capture_0",
+    "phase": "capture",
+    "start_material_cm": [
+      9.752755536031454,
+      27.66796875
+    ],
+    "intended_material_cm": [
+      2.4140625000000036,
+      27.5859375
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 91,
+    "task": "capture_0",
+    "phase": "capture",
+    "start_material_cm": [
+      2.4140625000000036,
+      27.5859375
+    ],
+    "intended_material_cm": [
+      2.4960937499999982,
+      20.17928755139171
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 92,
+    "task": "capture_0",
+    "phase": "capture",
+    "start_material_cm": [
+      2.4960937499999982,
+      20.17928755139171
+    ],
+    "intended_material_cm": [
+      2.578125,
+      15.000000000000002
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 93,
+    "task": "capture_0",
+    "phase": "capture",
+    "start_material_cm": [
+      2.578125,
+      15.000000000000002
+    ],
+    "intended_material_cm": [
+      2.66015625,
+      9.88866936118513
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 94,
+    "task": "capture_0",
+    "phase": "capture",
+    "start_material_cm": [
+      2.66015625,
+      9.88866936118513
+    ],
+    "intended_material_cm": [
+      2.7421875000000018,
+      2.7421875000000053
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 95,
+    "task": "capture_0",
+    "phase": "capture",
+    "start_material_cm": [
+      2.7421875000000018,
+      2.7421875000000053
+    ],
+    "intended_material_cm": [
+      9.956626273761955,
+      2.82421875
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 96,
+    "task": "capture_0",
+    "phase": "capture",
+    "start_material_cm": [
+      9.956626273761955,
+      2.82421875
+    ],
+    "intended_material_cm": [
+      14.999999999999996,
+      2.90625
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 97,
+    "task": "capture_0",
+    "phase": "capture",
+    "start_material_cm": [
+      14.999999999999996,
+      2.90625
+    ],
+    "intended_material_cm": [
+      19.975416813661205,
+      2.98828125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 98,
+    "task": "capture_0",
+    "phase": "capture",
+    "start_material_cm": [
+      19.975416813661205,
+      2.98828125
+    ],
+    "intended_material_cm": [
+      26.929687499999993,
+      3.0703125000000018
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 99,
+    "task": "capture_0",
+    "phase": "capture",
+    "start_material_cm": [
+      26.929687499999993,
+      3.0703125000000018
+    ],
+    "intended_material_cm": [
+      26.84765625,
+      10.092540098915627
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 100,
+    "task": "capture_0",
+    "phase": "capture",
+    "start_material_cm": [
+      26.84765625,
+      10.092540098915627
+    ],
+    "intended_material_cm": [
+      26.765625,
+      14.999999999999996
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 101,
+    "task": "capture_0",
+    "phase": "capture",
+    "start_material_cm": [
+      26.765625,
+      14.999999999999996
+    ],
+    "intended_material_cm": [
+      26.68359375,
+      19.839502988507533
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 102,
+    "task": "capture_0",
+    "phase": "capture",
+    "start_material_cm": [
+      26.68359375,
+      19.839502988507533
+    ],
+    "intended_material_cm": [
+      26.6015625,
+      26.601562499999993
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 103,
+    "task": "capture_0",
+    "phase": "capture",
+    "start_material_cm": [
+      26.6015625,
+      26.601562499999993
+    ],
+    "intended_material_cm": [
+      19.771546075930704,
+      26.51953125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 104,
+    "task": "capture_1",
+    "phase": "capture",
+    "start_material_cm": [
+      19.771546075930704,
+      26.51953125
+    ],
+    "intended_material_cm": [
+      15.000000000000002,
+      26.4375
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 105,
+    "task": "capture_1",
+    "phase": "capture",
+    "start_material_cm": [
+      15.000000000000002,
+      26.4375
+    ],
+    "intended_material_cm": [
+      10.296410836646142,
+      26.35546875
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 106,
+    "task": "capture_1",
+    "phase": "capture",
+    "start_material_cm": [
+      10.296410836646142,
+      26.35546875
+    ],
+    "intended_material_cm": [
+      3.7265625000000018,
+      26.2734375
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 107,
+    "task": "capture_1",
+    "phase": "capture",
+    "start_material_cm": [
+      3.7265625000000018,
+      26.2734375
+    ],
+    "intended_material_cm": [
+      3.8085937499999982,
+      19.63563225077702
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 108,
+    "task": "capture_1",
+    "phase": "capture",
+    "start_material_cm": [
+      3.8085937499999982,
+      19.63563225077702
+    ],
+    "intended_material_cm": [
+      3.890625,
+      15.000000000000002
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 109,
+    "task": "capture_1",
+    "phase": "capture",
+    "start_material_cm": [
+      3.890625,
+      15.000000000000002
+    ],
+    "intended_material_cm": [
+      3.97265625,
+      10.432324661799818
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 110,
+    "task": "capture_1",
+    "phase": "capture",
+    "start_material_cm": [
+      3.97265625,
+      10.432324661799818
+    ],
+    "intended_material_cm": [
+      4.0546875,
+      4.0546875000000036
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 111,
+    "task": "capture_1",
+    "phase": "capture",
+    "start_material_cm": [
+      4.0546875,
+      4.0546875000000036
+    ],
+    "intended_material_cm": [
+      10.500281574376643,
+      4.136718749999998
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 112,
+    "task": "capture_1",
+    "phase": "capture",
+    "start_material_cm": [
+      10.500281574376643,
+      4.136718749999998
+    ],
+    "intended_material_cm": [
+      14.999999999999998,
+      4.21875
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 113,
+    "task": "capture_1",
+    "phase": "capture",
+    "start_material_cm": [
+      14.999999999999998,
+      4.21875
+    ],
+    "intended_material_cm": [
+      19.431761513046517,
+      4.30078125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 114,
+    "task": "capture_1",
+    "phase": "capture",
+    "start_material_cm": [
+      19.431761513046517,
+      4.30078125
+    ],
+    "intended_material_cm": [
+      25.617187499999993,
+      4.382812500000002
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 115,
+    "task": "capture_1",
+    "phase": "capture",
+    "start_material_cm": [
+      25.617187499999993,
+      4.382812500000002
+    ],
+    "intended_material_cm": [
+      25.53515625,
+      10.636195399530315
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 116,
+    "task": "capture_1",
+    "phase": "capture",
+    "start_material_cm": [
+      25.53515625,
+      10.636195399530315
+    ],
+    "intended_material_cm": [
+      25.453125,
+      14.999999999999998
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 117,
+    "task": "capture_1",
+    "phase": "capture",
+    "start_material_cm": [
+      25.453125,
+      14.999999999999998
+    ],
+    "intended_material_cm": [
+      25.37109375,
+      19.295847687892845
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 118,
+    "task": "capture_1",
+    "phase": "capture",
+    "start_material_cm": [
+      25.37109375,
+      19.295847687892845
+    ],
+    "intended_material_cm": [
+      25.2890625,
+      25.289062499999993
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 119,
+    "task": "capture_1",
+    "phase": "capture",
+    "start_material_cm": [
+      25.2890625,
+      25.289062499999993
+    ],
+    "intended_material_cm": [
+      19.227890775316016,
+      25.20703125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 120,
+    "task": "capture_2",
+    "phase": "capture",
+    "start_material_cm": [
+      19.227890775316016,
+      25.20703125
+    ],
+    "intended_material_cm": [
+      15.000000000000002,
+      25.125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 121,
+    "task": "capture_2",
+    "phase": "capture",
+    "start_material_cm": [
+      15.000000000000002,
+      25.125
+    ],
+    "intended_material_cm": [
+      10.84006613726083,
+      25.04296875
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 122,
+    "task": "capture_2",
+    "phase": "capture",
+    "start_material_cm": [
+      10.84006613726083,
+      25.04296875
+    ],
+    "intended_material_cm": [
+      5.039062500000002,
+      24.9609375
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 123,
+    "task": "capture_2",
+    "phase": "capture",
+    "start_material_cm": [
+      5.039062500000002,
+      24.9609375
+    ],
+    "intended_material_cm": [
+      5.12109375,
+      19.091976950162334
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 124,
+    "task": "capture_2",
+    "phase": "capture",
+    "start_material_cm": [
+      5.12109375,
+      19.091976950162334
+    ],
+    "intended_material_cm": [
+      5.203125,
+      15.000000000000002
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 125,
+    "task": "capture_2",
+    "phase": "capture",
+    "start_material_cm": [
+      5.203125,
+      15.000000000000002
+    ],
+    "intended_material_cm": [
+      5.28515625,
+      10.975979962414504
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 126,
+    "task": "capture_2",
+    "phase": "capture",
+    "start_material_cm": [
+      5.28515625,
+      10.975979962414504
+    ],
+    "intended_material_cm": [
+      5.3671875,
+      5.3671875000000036
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 127,
+    "task": "capture_2",
+    "phase": "capture",
+    "start_material_cm": [
+      5.3671875,
+      5.3671875000000036
+    ],
+    "intended_material_cm": [
+      11.043936874991331,
+      5.449218749999998
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 128,
+    "task": "capture_2",
+    "phase": "capture",
+    "start_material_cm": [
+      11.043936874991331,
+      5.449218749999998
+    ],
+    "intended_material_cm": [
+      14.999999999999998,
+      5.53125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 129,
+    "task": "capture_2",
+    "phase": "capture",
+    "start_material_cm": [
+      14.999999999999998,
+      5.53125
+    ],
+    "intended_material_cm": [
+      18.88810621243183,
+      5.61328125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 130,
+    "task": "capture_2",
+    "phase": "capture",
+    "start_material_cm": [
+      18.88810621243183,
+      5.61328125
+    ],
+    "intended_material_cm": [
+      24.304687499999996,
+      5.6953125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 131,
+    "task": "capture_2",
+    "phase": "capture",
+    "start_material_cm": [
+      24.304687499999996,
+      5.6953125
+    ],
+    "intended_material_cm": [
+      24.22265625,
+      11.179850700145003
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 132,
+    "task": "capture_2",
+    "phase": "capture",
+    "start_material_cm": [
+      24.22265625,
+      11.179850700145003
+    ],
+    "intended_material_cm": [
+      24.140625,
+      14.999999999999998
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 133,
+    "task": "capture_2",
+    "phase": "capture",
+    "start_material_cm": [
+      24.140625,
+      14.999999999999998
+    ],
+    "intended_material_cm": [
+      24.05859375,
+      18.752192387278157
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 134,
+    "task": "capture_2",
+    "phase": "capture",
+    "start_material_cm": [
+      24.05859375,
+      18.752192387278157
+    ],
+    "intended_material_cm": [
+      23.9765625,
+      23.976562499999993
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 135,
+    "task": "capture_2",
+    "phase": "capture",
+    "start_material_cm": [
+      23.9765625,
+      23.976562499999993
+    ],
+    "intended_material_cm": [
+      18.684235474701328,
+      23.89453125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 136,
+    "task": "capture_3",
+    "phase": "capture",
+    "start_material_cm": [
+      18.684235474701328,
+      23.89453125
+    ],
+    "intended_material_cm": [
+      15.000000000000002,
+      23.8125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 137,
+    "task": "capture_3",
+    "phase": "capture",
+    "start_material_cm": [
+      15.000000000000002,
+      23.8125
+    ],
+    "intended_material_cm": [
+      11.383721437875518,
+      23.73046875
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 138,
+    "task": "capture_3",
+    "phase": "capture",
+    "start_material_cm": [
+      11.383721437875518,
+      23.73046875
+    ],
+    "intended_material_cm": [
+      6.351562500000002,
+      23.6484375
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 139,
+    "task": "capture_3",
+    "phase": "capture",
+    "start_material_cm": [
+      6.351562500000002,
+      23.6484375
+    ],
+    "intended_material_cm": [
+      6.43359375,
+      18.548321649547646
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 140,
+    "task": "capture_3",
+    "phase": "capture",
+    "start_material_cm": [
+      6.43359375,
+      18.548321649547646
+    ],
+    "intended_material_cm": [
+      6.515625,
+      15.000000000000002
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 141,
+    "task": "capture_3",
+    "phase": "capture",
+    "start_material_cm": [
+      6.515625,
+      15.000000000000002
+    ],
+    "intended_material_cm": [
+      6.59765625,
+      11.51963526302919
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 142,
+    "task": "capture_3",
+    "phase": "capture",
+    "start_material_cm": [
+      6.59765625,
+      11.51963526302919
+    ],
+    "intended_material_cm": [
+      6.679687500000002,
+      6.6796875000000036
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 143,
+    "task": "capture_3",
+    "phase": "capture",
+    "start_material_cm": [
+      6.679687500000002,
+      6.6796875000000036
+    ],
+    "intended_material_cm": [
+      11.58759217560602,
+      6.76171875
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 144,
+    "task": "capture_3",
+    "phase": "capture",
+    "start_material_cm": [
+      11.58759217560602,
+      6.76171875
+    ],
+    "intended_material_cm": [
+      14.999999999999998,
+      6.84375
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 145,
+    "task": "capture_3",
+    "phase": "capture",
+    "start_material_cm": [
+      14.999999999999998,
+      6.84375
+    ],
+    "intended_material_cm": [
+      18.34445091181714,
+      6.92578125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 146,
+    "task": "capture_3",
+    "phase": "capture",
+    "start_material_cm": [
+      18.34445091181714,
+      6.92578125
+    ],
+    "intended_material_cm": [
+      22.992187499999996,
+      7.007812500000001
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 147,
+    "task": "capture_3",
+    "phase": "capture",
+    "start_material_cm": [
+      22.992187499999996,
+      7.007812500000001
+    ],
+    "intended_material_cm": [
+      22.91015625,
+      11.723506000759691
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 148,
+    "task": "capture_3",
+    "phase": "capture",
+    "start_material_cm": [
+      22.91015625,
+      11.723506000759691
+    ],
+    "intended_material_cm": [
+      22.828125,
+      14.999999999999998
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 149,
+    "task": "capture_3",
+    "phase": "capture",
+    "start_material_cm": [
+      22.828125,
+      14.999999999999998
+    ],
+    "intended_material_cm": [
+      22.74609375,
+      18.20853708666347
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 150,
+    "task": "capture_3",
+    "phase": "capture",
+    "start_material_cm": [
+      22.74609375,
+      18.20853708666347
+    ],
+    "intended_material_cm": [
+      22.6640625,
+      22.664062499999996
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 151,
+    "task": "capture_3",
+    "phase": "capture",
+    "start_material_cm": [
+      22.6640625,
+      22.664062499999996
+    ],
+    "intended_material_cm": [
+      18.140580174086637,
+      22.58203125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 152,
+    "task": "capture_4",
+    "phase": "capture",
+    "start_material_cm": [
+      18.140580174086637,
+      22.58203125
+    ],
+    "intended_material_cm": [
+      15.0,
+      22.5
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 153,
+    "task": "capture_4",
+    "phase": "capture",
+    "start_material_cm": [
+      15.0,
+      22.5
+    ],
+    "intended_material_cm": [
+      11.927376738490205,
+      22.41796875
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 154,
+    "task": "capture_4",
+    "phase": "capture",
+    "start_material_cm": [
+      11.927376738490205,
+      22.41796875
+    ],
+    "intended_material_cm": [
+      7.664062500000002,
+      22.3359375
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 155,
+    "task": "capture_4",
+    "phase": "capture",
+    "start_material_cm": [
+      7.664062500000002,
+      22.3359375
+    ],
+    "intended_material_cm": [
+      7.746093749999999,
+      18.004666348932957
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 156,
+    "task": "capture_4",
+    "phase": "capture",
+    "start_material_cm": [
+      7.746093749999999,
+      18.004666348932957
+    ],
+    "intended_material_cm": [
+      7.828125,
+      15.0
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 157,
+    "task": "capture_4",
+    "phase": "capture",
+    "start_material_cm": [
+      7.828125,
+      15.0
+    ],
+    "intended_material_cm": [
+      7.91015625,
+      12.063290563643879
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 158,
+    "task": "capture_4",
+    "phase": "capture",
+    "start_material_cm": [
+      7.91015625,
+      12.063290563643879
+    ],
+    "intended_material_cm": [
+      7.992187500000001,
+      7.992187500000003
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 159,
+    "task": "capture_4",
+    "phase": "capture",
+    "start_material_cm": [
+      7.992187500000001,
+      7.992187500000003
+    ],
+    "intended_material_cm": [
+      12.131247476220707,
+      8.07421875
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 160,
+    "task": "capture_4",
+    "phase": "capture",
+    "start_material_cm": [
+      12.131247476220707,
+      8.07421875
+    ],
+    "intended_material_cm": [
+      14.999999999999998,
+      8.15625
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 161,
+    "task": "capture_4",
+    "phase": "capture",
+    "start_material_cm": [
+      14.999999999999998,
+      8.15625
+    ],
+    "intended_material_cm": [
+      17.800795611202453,
+      8.23828125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 162,
+    "task": "capture_4",
+    "phase": "capture",
+    "start_material_cm": [
+      17.800795611202453,
+      8.23828125
+    ],
+    "intended_material_cm": [
+      21.679687499999996,
+      8.3203125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 163,
+    "task": "capture_4",
+    "phase": "capture",
+    "start_material_cm": [
+      21.679687499999996,
+      8.3203125
+    ],
+    "intended_material_cm": [
+      21.59765625,
+      12.26716130137438
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 164,
+    "task": "capture_4",
+    "phase": "capture",
+    "start_material_cm": [
+      21.59765625,
+      12.26716130137438
+    ],
+    "intended_material_cm": [
+      21.515625,
+      14.999999999999998
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 165,
+    "task": "capture_4",
+    "phase": "capture",
+    "start_material_cm": [
+      21.515625,
+      14.999999999999998
+    ],
+    "intended_material_cm": [
+      21.43359375,
+      17.66488178604878
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 166,
+    "task": "capture_4",
+    "phase": "capture",
+    "start_material_cm": [
+      21.43359375,
+      17.66488178604878
+    ],
+    "intended_material_cm": [
+      21.3515625,
+      21.351562499999996
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 167,
+    "task": "capture_4",
+    "phase": "capture",
+    "start_material_cm": [
+      21.3515625,
+      21.351562499999996
+    ],
+    "intended_material_cm": [
+      17.59692487347195,
+      21.26953125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 168,
+    "task": "capture_5",
+    "phase": "capture",
+    "start_material_cm": [
+      17.59692487347195,
+      21.26953125
+    ],
+    "intended_material_cm": [
+      15.0,
+      21.1875
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 169,
+    "task": "capture_5",
+    "phase": "capture",
+    "start_material_cm": [
+      15.0,
+      21.1875
+    ],
+    "intended_material_cm": [
+      12.471032039104891,
+      21.10546875
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 170,
+    "task": "capture_5",
+    "phase": "capture",
+    "start_material_cm": [
+      12.471032039104891,
+      21.10546875
+    ],
+    "intended_material_cm": [
+      8.976562500000002,
+      21.0234375
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 171,
+    "task": "capture_5",
+    "phase": "capture",
+    "start_material_cm": [
+      8.976562500000002,
+      21.0234375
+    ],
+    "intended_material_cm": [
+      9.05859375,
+      17.461011048318273
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 172,
+    "task": "capture_5",
+    "phase": "capture",
+    "start_material_cm": [
+      9.05859375,
+      17.461011048318273
+    ],
+    "intended_material_cm": [
+      9.140625,
+      15.0
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 173,
+    "task": "capture_5",
+    "phase": "capture",
+    "start_material_cm": [
+      9.140625,
+      15.0
+    ],
+    "intended_material_cm": [
+      9.22265625,
+      12.606945864258565
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 174,
+    "task": "capture_5",
+    "phase": "capture",
+    "start_material_cm": [
+      9.22265625,
+      12.606945864258565
+    ],
+    "intended_material_cm": [
+      9.3046875,
+      9.304687500000002
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 175,
+    "task": "capture_5",
+    "phase": "capture",
+    "start_material_cm": [
+      9.3046875,
+      9.304687500000002
+    ],
+    "intended_material_cm": [
+      12.674902776835395,
+      9.38671875
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 176,
+    "task": "capture_5",
+    "phase": "capture",
+    "start_material_cm": [
+      12.674902776835395,
+      9.38671875
+    ],
+    "intended_material_cm": [
+      14.999999999999998,
+      9.46875
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 177,
+    "task": "capture_5",
+    "phase": "capture",
+    "start_material_cm": [
+      14.999999999999998,
+      9.46875
+    ],
+    "intended_material_cm": [
+      17.257140310587765,
+      9.55078125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 178,
+    "task": "capture_5",
+    "phase": "capture",
+    "start_material_cm": [
+      17.257140310587765,
+      9.55078125
+    ],
+    "intended_material_cm": [
+      20.3671875,
+      9.6328125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 179,
+    "task": "capture_5",
+    "phase": "capture",
+    "start_material_cm": [
+      20.3671875,
+      9.6328125
+    ],
+    "intended_material_cm": [
+      20.28515625,
+      12.810816601989067
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 180,
+    "task": "capture_5",
+    "phase": "capture",
+    "start_material_cm": [
+      20.28515625,
+      12.810816601989067
+    ],
+    "intended_material_cm": [
+      20.203125,
+      14.999999999999998
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 181,
+    "task": "capture_5",
+    "phase": "capture",
+    "start_material_cm": [
+      20.203125,
+      14.999999999999998
+    ],
+    "intended_material_cm": [
+      20.12109375,
+      17.121226485434093
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 182,
+    "task": "capture_5",
+    "phase": "capture",
+    "start_material_cm": [
+      20.12109375,
+      17.121226485434093
+    ],
+    "intended_material_cm": [
+      20.0390625,
+      20.039062499999996
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 183,
+    "task": "capture_5",
+    "phase": "capture",
+    "start_material_cm": [
+      20.0390625,
+      20.039062499999996
+    ],
+    "intended_material_cm": [
+      17.05326957285726,
+      19.95703125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 184,
+    "task": "capture_6",
+    "phase": "capture",
+    "start_material_cm": [
+      17.05326957285726,
+      19.95703125
+    ],
+    "intended_material_cm": [
+      15.0,
+      19.875
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 185,
+    "task": "capture_6",
+    "phase": "capture",
+    "start_material_cm": [
+      15.0,
+      19.875
+    ],
+    "intended_material_cm": [
+      13.014687339719579,
+      19.79296875
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 186,
+    "task": "capture_6",
+    "phase": "capture",
+    "start_material_cm": [
+      13.014687339719579,
+      19.79296875
+    ],
+    "intended_material_cm": [
+      10.2890625,
+      19.7109375
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 187,
+    "task": "capture_6",
+    "phase": "capture",
+    "start_material_cm": [
+      10.2890625,
+      19.7109375
+    ],
+    "intended_material_cm": [
+      10.37109375,
+      16.917355747703585
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 188,
+    "task": "capture_6",
+    "phase": "capture",
+    "start_material_cm": [
+      10.37109375,
+      16.917355747703585
+    ],
+    "intended_material_cm": [
+      10.453125,
+      15.0
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 189,
+    "task": "capture_6",
+    "phase": "capture",
+    "start_material_cm": [
+      10.453125,
+      15.0
+    ],
+    "intended_material_cm": [
+      10.53515625,
+      13.150601164873251
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 190,
+    "task": "capture_6",
+    "phase": "capture",
+    "start_material_cm": [
+      10.53515625,
+      13.150601164873251
+    ],
+    "intended_material_cm": [
+      10.6171875,
+      10.6171875
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 191,
+    "task": "capture_6",
+    "phase": "capture",
+    "start_material_cm": [
+      10.6171875,
+      10.6171875
+    ],
+    "intended_material_cm": [
+      13.218558077450083,
+      10.69921875
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 192,
+    "task": "capture_6",
+    "phase": "capture",
+    "start_material_cm": [
+      13.218558077450083,
+      10.69921875
+    ],
+    "intended_material_cm": [
+      14.999999999999998,
+      10.78125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 193,
+    "task": "capture_6",
+    "phase": "capture",
+    "start_material_cm": [
+      14.999999999999998,
+      10.78125
+    ],
+    "intended_material_cm": [
+      16.713485009973077,
+      10.86328125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 194,
+    "task": "capture_6",
+    "phase": "capture",
+    "start_material_cm": [
+      16.713485009973077,
+      10.86328125
+    ],
+    "intended_material_cm": [
+      19.0546875,
+      10.9453125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 195,
+    "task": "capture_6",
+    "phase": "capture",
+    "start_material_cm": [
+      19.0546875,
+      10.9453125
+    ],
+    "intended_material_cm": [
+      18.97265625,
+      13.354471902603755
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 196,
+    "task": "capture_6",
+    "phase": "capture",
+    "start_material_cm": [
+      18.97265625,
+      13.354471902603755
+    ],
+    "intended_material_cm": [
+      18.890625,
+      14.999999999999998
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 197,
+    "task": "capture_6",
+    "phase": "capture",
+    "start_material_cm": [
+      18.890625,
+      14.999999999999998
+    ],
+    "intended_material_cm": [
+      18.80859375,
+      16.577571184819405
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 198,
+    "task": "capture_6",
+    "phase": "capture",
+    "start_material_cm": [
+      18.80859375,
+      16.577571184819405
+    ],
+    "intended_material_cm": [
+      18.7265625,
+      18.726562499999996
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 199,
+    "task": "capture_6",
+    "phase": "capture",
+    "start_material_cm": [
+      18.7265625,
+      18.726562499999996
+    ],
+    "intended_material_cm": [
+      16.509614272242572,
+      18.64453125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 200,
+    "task": "capture_7",
+    "phase": "capture",
+    "start_material_cm": [
+      16.509614272242572,
+      18.64453125
+    ],
+    "intended_material_cm": [
+      15.0,
+      18.5625
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 201,
+    "task": "capture_7",
+    "phase": "capture",
+    "start_material_cm": [
+      15.0,
+      18.5625
+    ],
+    "intended_material_cm": [
+      13.558342640334267,
+      18.48046875
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 202,
+    "task": "capture_7",
+    "phase": "capture",
+    "start_material_cm": [
+      13.558342640334267,
+      18.48046875
+    ],
+    "intended_material_cm": [
+      11.6015625,
+      18.3984375
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 203,
+    "task": "capture_7",
+    "phase": "capture",
+    "start_material_cm": [
+      11.6015625,
+      18.3984375
+    ],
+    "intended_material_cm": [
+      11.68359375,
+      16.373700447088897
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 204,
+    "task": "capture_7",
+    "phase": "capture",
+    "start_material_cm": [
+      11.68359375,
+      16.373700447088897
+    ],
+    "intended_material_cm": [
+      11.765625,
+      15.0
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 205,
+    "task": "capture_7",
+    "phase": "capture",
+    "start_material_cm": [
+      11.765625,
+      15.0
+    ],
+    "intended_material_cm": [
+      11.84765625,
+      13.694256465487939
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 206,
+    "task": "capture_7",
+    "phase": "capture",
+    "start_material_cm": [
+      11.84765625,
+      13.694256465487939
+    ],
+    "intended_material_cm": [
+      11.9296875,
+      11.9296875
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 207,
+    "task": "capture_7",
+    "phase": "capture",
+    "start_material_cm": [
+      11.9296875,
+      11.9296875
+    ],
+    "intended_material_cm": [
+      13.762213378064772,
+      12.01171875
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 208,
+    "task": "capture_7",
+    "phase": "capture",
+    "start_material_cm": [
+      13.762213378064772,
+      12.01171875
+    ],
+    "intended_material_cm": [
+      15.0,
+      12.09375
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 209,
+    "task": "capture_7",
+    "phase": "capture",
+    "start_material_cm": [
+      15.0,
+      12.09375
+    ],
+    "intended_material_cm": [
+      16.16982970935839,
+      12.17578125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 210,
+    "task": "capture_7",
+    "phase": "capture",
+    "start_material_cm": [
+      16.16982970935839,
+      12.17578125
+    ],
+    "intended_material_cm": [
+      17.7421875,
+      12.2578125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 211,
+    "task": "capture_7",
+    "phase": "capture",
+    "start_material_cm": [
+      17.7421875,
+      12.2578125
+    ],
+    "intended_material_cm": [
+      17.66015625,
+      13.898127203218444
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 212,
+    "task": "capture_7",
+    "phase": "capture",
+    "start_material_cm": [
+      17.66015625,
+      13.898127203218444
+    ],
+    "intended_material_cm": [
+      17.578125,
+      15.0
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 213,
+    "task": "capture_7",
+    "phase": "capture",
+    "start_material_cm": [
+      17.578125,
+      15.0
+    ],
+    "intended_material_cm": [
+      17.49609375,
+      16.033915884204717
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 214,
+    "task": "capture_7",
+    "phase": "capture",
+    "start_material_cm": [
+      17.49609375,
+      16.033915884204717
+    ],
+    "intended_material_cm": [
+      17.4140625,
+      17.4140625
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 215,
+    "task": "capture_7",
+    "phase": "capture",
+    "start_material_cm": [
+      17.4140625,
+      17.4140625
+    ],
+    "intended_material_cm": [
+      15.965958971627884,
+      17.33203125
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 216,
+    "task": "capture_7",
+    "phase": "capture",
+    "start_material_cm": [
+      15.965958971627884,
+      17.33203125
+    ],
+    "intended_material_cm": [
+      15.0,
+      17.25
+    ],
+    "silk": true,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  },
+  {
+    "index": 217,
+    "task": "capture_7",
+    "phase": "capture",
+    "start_material_cm": [
+      15.0,
+      17.25
+    ],
+    "intended_material_cm": [
+      15.0,
+      15.0
+    ],
+    "silk": false,
+    "fixed": "not reached",
+    "local": "not reached",
+    "filtered": "not reached",
+    "local_repair": "not reached",
+    "full": "not reached",
+    "predictive": "not reached"
+  }
+]

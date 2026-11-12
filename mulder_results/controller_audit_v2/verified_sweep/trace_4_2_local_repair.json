@@ -1,0 +1,485 @@
+[
+  {
+    "event": "decision",
+    "time_s": 0.0,
+    "index": 0,
+    "task": "frame_0",
+    "controller": "local_repair",
+    "drift_cm": 0.0,
+    "filtered_drift_cm": 0.0,
+    "filter_reset": true,
+    "event_threshold_cm": 2.0,
+    "support_changed": false,
+    "margin_cm": null,
+    "scope": null,
+    "reason": null,
+    "skipped_proactive_after_retry": false,
+    "target_age_s": 0.0,
+    "plan_id": 1
+  },
+  {
+    "event": "action",
+    "time_s": 21.713203435596427,
+    "index": 0,
+    "task": "frame_0",
+    "phase": "frame",
+    "accepted": true,
+    "error_cm": 0.0,
+    "correction_cm": 0.0,
+    "travel_cm": 23.822745659286213,
+    "silk": false,
+    "start_material_cm": [
+      15.0,
+      15.0
+    ],
+    "end_material_cm": [
+      0.0,
+      30.0
+    ],
+    "attempt": 1,
+    "target_created_s": 0.0,
+    "plan_id": 1,
+    "target_age_s": 0.0,
+    "start_time_s": 0.0,
+    "arrival_time_s": 21.713203435596427,
+    "end_time_s": 21.713203435596427,
+    "duration_s": 21.713203435596427,
+    "target_world_cm": [
+      0.0,
+      30.0
+    ],
+    "target_at_departure_cm": [
+      0.0,
+      30.0
+    ],
+    "target_at_arrival_cm": [
+      0.0,
+      30.0
+    ],
+    "target_at_finish_cm": [
+      0.0,
+      30.0
+    ],
+    "target_motion_during_correction_cm": 0.0,
+    "error_before_correction_cm": 0.0,
+    "requested_correction_cm": 0.0,
+    "correction_limit_cm": 4.0,
+    "correction_saturated": false,
+    "feedback": true,
+    "intended_material_cm": [
+      0.0,
+      30.0
+    ],
+    "tolerance_cm": 0.5
+  },
+  {
+    "event": "decision",
+    "time_s": 21.713203435596427,
+    "index": 1,
+    "task": "frame_0",
+    "controller": "local_repair",
+    "drift_cm": 0.0,
+    "filtered_drift_cm": 0.0,
+    "filter_reset": false,
+    "event_threshold_cm": 2.0,
+    "support_changed": true,
+    "margin_cm": null,
+    "scope": null,
+    "reason": null,
+    "skipped_proactive_after_retry": false,
+    "target_age_s": 21.713203435596427,
+    "plan_id": 1
+  },
+  {
+    "event": "action",
+    "time_s": 52.21320343559643,
+    "index": 1,
+    "task": "frame_0",
+    "phase": "frame",
+    "accepted": true,
+    "error_cm": 0.0,
+    "correction_cm": 0.0,
+    "travel_cm": 30.0,
+    "silk": true,
+    "start_material_cm": [
+      0.0,
+      30.0
+    ],
+    "end_material_cm": [
+      30.0,
+      30.0
+    ],
+    "attempt": 1,
+    "target_created_s": 0.0,
+    "plan_id": 1,
+    "target_age_s": 21.713203435596427,
+    "start_time_s": 21.713203435596427,
+    "arrival_time_s": 52.21320343559643,
+    "end_time_s": 52.21320343559643,
+    "duration_s": 30.5,
+    "target_world_cm": [
+      30.0,
+      30.0
+    ],
+    "target_at_departure_cm": [
+      30.0,
+      30.0
+    ],
+    "target_at_arrival_cm": [
+      30.0,
+      30.0
+    ],
+    "target_at_finish_cm": [
+      30.0,
+      30.0
+    ],
+    "target_motion_during_correction_cm": 0.0,
+    "error_before_correction_cm": 0.0,
+    "requested_correction_cm": 0.0,
+    "correction_limit_cm": 4.0,
+    "correction_saturated": false,
+    "feedback": true,
+    "intended_material_cm": [
+      30.0,
+      30.0
+    ],
+    "tolerance_cm": 0.5
+  },
+  {
+    "event": "decision",
+    "time_s": 52.21320343559643,
+    "index": 2,
+    "task": "frame_1",
+    "controller": "local_repair",
+    "drift_cm": 1.8188194836379878,
+    "filtered_drift_cm": 1.8188194836379878,
+    "filter_reset": true,
+    "event_threshold_cm": 2.0,
+    "support_changed": true,
+    "margin_cm": null,
+    "scope": null,
+    "reason": null,
+    "skipped_proactive_after_retry": false,
+    "target_age_s": 52.21320343559643,
+    "plan_id": 1
+  },
+  {
+    "event": "action",
+    "time_s": 84.49863245042597,
+    "index": 2,
+    "task": "frame_1",
+    "phase": "frame",
+    "accepted": false,
+    "error_cm": 4.963601713287062,
+    "correction_cm": 3.4606890292624435,
+    "travel_cm": 47.69930330829803,
+    "silk": true,
+    "start_material_cm": [
+      30.0,
+      30.0
+    ],
+    "end_material_cm": [
+      25.036398286712938,
+      0.0
+    ],
+    "attempt": 1,
+    "target_created_s": 0.0,
+    "plan_id": 1,
+    "target_age_s": 52.21320343559643,
+    "start_time_s": 52.21320343559643,
+    "arrival_time_s": 82.76828793579475,
+    "end_time_s": 84.49863245042597,
+    "duration_s": 32.285429014829546,
+    "target_world_cm": [
+      27.272552306071557,
+      0.0
+    ],
+    "target_at_departure_cm": [
+      29.091371789709545,
+      0.0
+    ],
+    "target_at_arrival_cm": [
+      30.733241335334,
+      0.0
+    ],
+    "target_at_finish_cm": [
+      35.69684304862106,
+      0.0
+    ],
+    "target_motion_during_correction_cm": 4.963601713287062,
+    "error_before_correction_cm": 3.4606890292624435,
+    "requested_correction_cm": 3.4606890292624435,
+    "correction_limit_cm": 4.0,
+    "correction_saturated": false,
+    "feedback": true,
+    "intended_material_cm": [
+      30.0,
+      0.0
+    ],
+    "tolerance_cm": 0.5
+  },
+  {
+    "event": "repair",
+    "time_s": 84.69863245042598,
+    "index": 2,
+    "task": "frame_1",
+    "scope": "component",
+    "reason": "attachment_miss",
+    "margin_cm": null,
+    "start_time_s": 84.49863245042597,
+    "end_time_s": 84.69863245042598,
+    "plan_id": 2,
+    "updated_indices": [
+      2
+    ]
+  },
+  {
+    "event": "decision",
+    "time_s": 84.69863245042598,
+    "index": 2,
+    "task": "frame_1",
+    "controller": "local_repair",
+    "drift_cm": 0.0,
+    "filtered_drift_cm": 0.0,
+    "filter_reset": false,
+    "event_threshold_cm": 2.0,
+    "support_changed": true,
+    "margin_cm": null,
+    "scope": null,
+    "reason": null,
+    "skipped_proactive_after_retry": true,
+    "target_age_s": 0.0,
+    "plan_id": 2
+  },
+  {
+    "event": "action",
+    "time_s": 90.6243757243779,
+    "index": 2,
+    "task": "frame_1",
+    "phase": "frame",
+    "accepted": false,
+    "error_cm": 1.0681823405500772,
+    "correction_cm": 0.9242831213297364,
+    "travel_cm": 9.19503377550014,
+    "silk": true,
+    "start_material_cm": [
+      25.036398286712938,
+      0.0
+    ],
+    "end_material_cm": [
+      31.068182340550077,
+      0.0
+    ],
+    "attempt": 2,
+    "target_created_s": 84.69863245042598,
+    "plan_id": 2,
+    "target_age_s": 0.0,
+    "start_time_s": 84.69863245042598,
+    "arrival_time_s": 90.16223416371304,
+    "end_time_s": 90.6243757243779,
+    "duration_s": 5.925743273951923,
+    "target_world_cm": [
+      36.19179121216592,
+      0.0
+    ],
+    "target_at_departure_cm": [
+      36.19179121216592,
+      0.0
+    ],
+    "target_at_arrival_cm": [
+      37.11607433349565,
+      0.0
+    ],
+    "target_at_finish_cm": [
+      36.04789199294558,
+      0.0
+    ],
+    "target_motion_during_correction_cm": 1.0681823405500737,
+    "error_before_correction_cm": 0.9242831213297364,
+    "requested_correction_cm": 0.9242831213297364,
+    "correction_limit_cm": 4.0,
+    "correction_saturated": false,
+    "feedback": true,
+    "intended_material_cm": [
+      30.0,
+      0.0
+    ],
+    "tolerance_cm": 0.5
+  },
+  {
+    "event": "repair",
+    "time_s": 90.8243757243779,
+    "index": 2,
+    "task": "frame_1",
+    "scope": "component",
+    "reason": "attachment_miss",
+    "margin_cm": null,
+    "start_time_s": 90.6243757243779,
+    "end_time_s": 90.8243757243779,
+    "plan_id": 3,
+    "updated_indices": [
+      2
+    ]
+  },
+  {
+    "event": "decision",
+    "time_s": 90.8243757243779,
+    "index": 2,
+    "task": "frame_1",
+    "controller": "local_repair",
+    "drift_cm": 0.0,
+    "filtered_drift_cm": 0.0,
+    "filter_reset": false,
+    "event_threshold_cm": 2.0,
+    "support_changed": true,
+    "margin_cm": null,
+    "scope": null,
+    "reason": null,
+    "skipped_proactive_after_retry": true,
+    "target_age_s": 0.0,
+    "plan_id": 3
+  },
+  {
+    "event": "action",
+    "time_s": 94.39255806492798,
+    "index": 2,
+    "task": "frame_1",
+    "phase": "frame",
+    "accepted": false,
+    "error_cm": 6.433651763270518,
+    "correction_cm": 4.0,
+    "travel_cm": 5.365469422720441,
+    "silk": true,
+    "start_material_cm": [
+      31.068182340550077,
+      0.0
+    ],
+    "end_material_cm": [
+      36.43365176327052,
+      0.0
+    ],
+    "attempt": 3,
+    "target_created_s": 90.8243757243779,
+    "plan_id": 3,
+    "target_age_s": 0.0,
+    "start_time_s": 90.8243757243779,
+    "arrival_time_s": 92.39255806492798,
+    "end_time_s": 94.39255806492798,
+    "duration_s": 3.5681823405500808,
+    "target_world_cm": [
+      35.546363966992274,
+      0.0
+    ],
+    "target_at_departure_cm": [
+      35.546363966992274,
+      0.0
+    ],
+    "target_at_arrival_cm": [
+      31.049266028552026,
+      0.0
+    ],
+    "target_at_finish_cm": [
+      25.112712203721753,
+      0.0
+    ],
+    "target_motion_during_correction_cm": 5.936553824830273,
+    "error_before_correction_cm": 4.497097938440248,
+    "requested_correction_cm": 4.497097938440248,
+    "correction_limit_cm": 4.0,
+    "correction_saturated": true,
+    "feedback": true,
+    "intended_material_cm": [
+      30.0,
+      0.0
+    ],
+    "tolerance_cm": 0.5
+  },
+  {
+    "event": "repair",
+    "time_s": 94.59255806492799,
+    "index": 2,
+    "task": "frame_1",
+    "scope": "component",
+    "reason": "attachment_miss",
+    "margin_cm": null,
+    "start_time_s": 94.39255806492798,
+    "end_time_s": 94.59255806492799,
+    "plan_id": 4,
+    "updated_indices": [
+      2
+    ]
+  },
+  {
+    "event": "decision",
+    "time_s": 94.59255806492799,
+    "index": 2,
+    "task": "frame_1",
+    "controller": "local_repair",
+    "drift_cm": 0.0,
+    "filtered_drift_cm": 0.0,
+    "filter_reset": false,
+    "event_threshold_cm": 2.0,
+    "support_changed": true,
+    "margin_cm": null,
+    "scope": null,
+    "reason": null,
+    "skipped_proactive_after_retry": true,
+    "target_age_s": 0.0,
+    "plan_id": 4
+  },
+  {
+    "event": "action",
+    "time_s": 102.12805482781295,
+    "index": 2,
+    "task": "frame_1",
+    "phase": "frame",
+    "accepted": false,
+    "error_cm": 1.7431087956448081,
+    "correction_cm": 1.2036899992288959,
+    "travel_cm": 12.242827278816712,
+    "silk": true,
+    "start_material_cm": [
+      36.43365176327052,
+      0.0
+    ],
+    "end_material_cm": [
+      28.256891204355192,
+      0.0
+    ],
+    "attempt": 4,
+    "target_created_s": 94.59255806492799,
+    "plan_id": 4,
+    "target_age_s": 0.0,
+    "start_time_s": 94.59255806492799,
+    "arrival_time_s": 101.5262098281985,
+    "end_time_s": 102.12805482781295,
+    "duration_s": 7.535496762884961,
+    "target_world_cm": [
+      24.585109562329365,
+      0.0
+    ],
+    "target_at_departure_cm": [
+      24.585109562329365,
+      0.0
+    ],
+    "target_at_arrival_cm": [
+      25.78879956155826,
+      0.0
+    ],
+    "target_at_finish_cm": [
+      27.53190835720307,
+      0.0
+    ],
+    "target_motion_during_correction_cm": 1.7431087956448081,
+    "error_before_correction_cm": 1.2036899992288959,
+    "requested_correction_cm": 1.2036899992288959,
+    "correction_limit_cm": 4.0,
+    "correction_saturated": false,
+    "feedback": true,
+    "intended_material_cm": [
+      30.0,
+      0.0
+    ],
+    "tolerance_cm": 0.5
+  }
+]

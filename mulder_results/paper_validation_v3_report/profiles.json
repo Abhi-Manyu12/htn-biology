@@ -1,0 +1,634 @@
+[
+  {
+    "name": "endpoint",
+    "settings": {
+      "execution_mode": "endpoint",
+      "method_policy": "direct",
+      "width_cm": 30.0,
+      "height_cm": 30.0,
+      "amplitude_cm": 10.0,
+      "frequency_hz": 0.049,
+      "radial_count": 16,
+      "auxiliary_turns": 3,
+      "capture_turns": 8,
+      "inner_radius_fraction": 0.15,
+      "outer_radius_fraction": 0.85,
+      "speed_cm_s": 1.0,
+      "attachment_time_s": 0.5,
+      "integration_step_s": 0.25,
+      "attachment_tolerance_cm": 0.5,
+      "correction_limit_cm": 4.0,
+      "correction_speed_cm_s": 2.0,
+      "repair_delay_s": 0.2,
+      "max_repairs_per_action": 3,
+      "max_elapsed_s": 20000.0,
+      "event_threshold_cm": 2.0,
+      "filter_tau_s": 10.0,
+      "prediction_samples": 17,
+      "prediction_horizon_s": 20.0,
+      "sensor_tau_s": 0,
+      "max_action_time_s": 120.0,
+      "max_method_wait_s": 5.0,
+      "web_width_fraction": 1.0,
+      "web_height_fraction": 1.0
+    },
+    "controllers": [
+      "fixed",
+      "local",
+      "filtered",
+      "local_repair",
+      "full",
+      "predictive"
+    ],
+    "conditions": [
+      [
+        0,
+        0
+      ],
+      [
+        5,
+        0.049
+      ],
+      [
+        5,
+        0.05
+      ],
+      [
+        10,
+        0.049
+      ],
+      [
+        10,
+        0.05
+      ]
+    ],
+    "seeds": 30,
+    "hierarchy": "htn"
+  },
+  {
+    "name": "tracking",
+    "settings": {
+      "execution_mode": "tracking",
+      "method_policy": "direct",
+      "width_cm": 30.0,
+      "height_cm": 30.0,
+      "amplitude_cm": 10.0,
+      "frequency_hz": 0.049,
+      "radial_count": 16,
+      "auxiliary_turns": 3,
+      "capture_turns": 8,
+      "inner_radius_fraction": 0.15,
+      "outer_radius_fraction": 0.85,
+      "speed_cm_s": 1.0,
+      "attachment_time_s": 0.5,
+      "integration_step_s": 0.25,
+      "attachment_tolerance_cm": 0.5,
+      "correction_limit_cm": 4.0,
+      "correction_speed_cm_s": 2.0,
+      "repair_delay_s": 0.2,
+      "max_repairs_per_action": 3,
+      "max_elapsed_s": 20000.0,
+      "event_threshold_cm": 2.0,
+      "filter_tau_s": 10.0,
+      "prediction_samples": 17,
+      "prediction_horizon_s": 20.0,
+      "sensor_tau_s": 0,
+      "max_action_time_s": 120.0,
+      "max_method_wait_s": 5.0,
+      "web_width_fraction": 1.0,
+      "web_height_fraction": 1.0
+    },
+    "controllers": [
+      "fixed",
+      "local",
+      "filtered",
+      "local_repair",
+      "full",
+      "predictive"
+    ],
+    "conditions": [
+      [
+        0,
+        0
+      ],
+      [
+        5,
+        0.049
+      ],
+      [
+        5,
+        0.05
+      ],
+      [
+        10,
+        0.049
+      ],
+      [
+        10,
+        0.05
+      ]
+    ],
+    "seeds": 30,
+    "hierarchy": "htn"
+  },
+  {
+    "name": "tracking_dt_half",
+    "settings": {
+      "execution_mode": "tracking",
+      "method_policy": "direct",
+      "width_cm": 30.0,
+      "height_cm": 30.0,
+      "amplitude_cm": 10.0,
+      "frequency_hz": 0.049,
+      "radial_count": 16,
+      "auxiliary_turns": 3,
+      "capture_turns": 8,
+      "inner_radius_fraction": 0.15,
+      "outer_radius_fraction": 0.85,
+      "speed_cm_s": 1.0,
+      "attachment_time_s": 0.5,
+      "integration_step_s": 0.125,
+      "attachment_tolerance_cm": 0.5,
+      "correction_limit_cm": 4.0,
+      "correction_speed_cm_s": 2.0,
+      "repair_delay_s": 0.2,
+      "max_repairs_per_action": 3,
+      "max_elapsed_s": 20000.0,
+      "event_threshold_cm": 2.0,
+      "filter_tau_s": 10.0,
+      "prediction_samples": 17,
+      "prediction_horizon_s": 20.0,
+      "sensor_tau_s": 0,
+      "max_action_time_s": 120.0,
+      "max_method_wait_s": 5.0,
+      "web_width_fraction": 1.0,
+      "web_height_fraction": 1.0
+    },
+    "controllers": [
+      "local",
+      "predictive"
+    ],
+    "conditions": [
+      [
+        0,
+        0
+      ],
+      [
+        10,
+        0.05
+      ]
+    ],
+    "seeds": 12,
+    "hierarchy": "htn"
+  },
+  {
+    "name": "tracking_slow",
+    "settings": {
+      "execution_mode": "tracking",
+      "method_policy": "direct",
+      "width_cm": 30.0,
+      "height_cm": 30.0,
+      "amplitude_cm": 10.0,
+      "frequency_hz": 0.049,
+      "radial_count": 16,
+      "auxiliary_turns": 3,
+      "capture_turns": 8,
+      "inner_radius_fraction": 0.15,
+      "outer_radius_fraction": 0.85,
+      "speed_cm_s": 0.5,
+      "attachment_time_s": 0.5,
+      "integration_step_s": 0.25,
+      "attachment_tolerance_cm": 0.5,
+      "correction_limit_cm": 4.0,
+      "correction_speed_cm_s": 2.0,
+      "repair_delay_s": 0.2,
+      "max_repairs_per_action": 3,
+      "max_elapsed_s": 20000.0,
+      "event_threshold_cm": 2.0,
+      "filter_tau_s": 10.0,
+      "prediction_samples": 17,
+      "prediction_horizon_s": 20.0,
+      "sensor_tau_s": 0,
+      "max_action_time_s": 120.0,
+      "max_method_wait_s": 5.0,
+      "web_width_fraction": 1.0,
+      "web_height_fraction": 1.0
+    },
+    "controllers": [
+      "local",
+      "predictive"
+    ],
+    "conditions": [
+      [
+        0,
+        0
+      ],
+      [
+        10,
+        0.05
+      ]
+    ],
+    "seeds": 12,
+    "hierarchy": "htn"
+  },
+  {
+    "name": "tracking_fast",
+    "settings": {
+      "execution_mode": "tracking",
+      "method_policy": "direct",
+      "width_cm": 30.0,
+      "height_cm": 30.0,
+      "amplitude_cm": 10.0,
+      "frequency_hz": 0.049,
+      "radial_count": 16,
+      "auxiliary_turns": 3,
+      "capture_turns": 8,
+      "inner_radius_fraction": 0.15,
+      "outer_radius_fraction": 0.85,
+      "speed_cm_s": 2.0,
+      "attachment_time_s": 0.5,
+      "integration_step_s": 0.25,
+      "attachment_tolerance_cm": 0.5,
+      "correction_limit_cm": 4.0,
+      "correction_speed_cm_s": 2.0,
+      "repair_delay_s": 0.2,
+      "max_repairs_per_action": 3,
+      "max_elapsed_s": 20000.0,
+      "event_threshold_cm": 2.0,
+      "filter_tau_s": 10.0,
+      "prediction_samples": 17,
+      "prediction_horizon_s": 20.0,
+      "sensor_tau_s": 0,
+      "max_action_time_s": 120.0,
+      "max_method_wait_s": 5.0,
+      "web_width_fraction": 1.0,
+      "web_height_fraction": 1.0
+    },
+    "controllers": [
+      "local",
+      "predictive"
+    ],
+    "conditions": [
+      [
+        0,
+        0
+      ],
+      [
+        10,
+        0.05
+      ]
+    ],
+    "seeds": 12,
+    "hierarchy": "htn"
+  },
+  {
+    "name": "sensor_lag_1s",
+    "settings": {
+      "execution_mode": "tracking",
+      "method_policy": "direct",
+      "width_cm": 30.0,
+      "height_cm": 30.0,
+      "amplitude_cm": 10.0,
+      "frequency_hz": 0.049,
+      "radial_count": 16,
+      "auxiliary_turns": 3,
+      "capture_turns": 8,
+      "inner_radius_fraction": 0.15,
+      "outer_radius_fraction": 0.85,
+      "speed_cm_s": 1.0,
+      "attachment_time_s": 0.5,
+      "integration_step_s": 0.25,
+      "attachment_tolerance_cm": 0.5,
+      "correction_limit_cm": 4.0,
+      "correction_speed_cm_s": 2.0,
+      "repair_delay_s": 0.2,
+      "max_repairs_per_action": 3,
+      "max_elapsed_s": 20000.0,
+      "event_threshold_cm": 2.0,
+      "filter_tau_s": 10.0,
+      "prediction_samples": 17,
+      "prediction_horizon_s": 20.0,
+      "sensor_tau_s": 1.0,
+      "max_action_time_s": 120.0,
+      "max_method_wait_s": 5.0,
+      "web_width_fraction": 1.0,
+      "web_height_fraction": 1.0
+    },
+    "controllers": [
+      "local",
+      "predictive"
+    ],
+    "conditions": [
+      [
+        0,
+        0
+      ],
+      [
+        10,
+        0.05
+      ]
+    ],
+    "seeds": 12,
+    "hierarchy": "htn"
+  },
+  {
+    "name": "sensor_lag_5s",
+    "settings": {
+      "execution_mode": "tracking",
+      "method_policy": "direct",
+      "width_cm": 30.0,
+      "height_cm": 30.0,
+      "amplitude_cm": 10.0,
+      "frequency_hz": 0.049,
+      "radial_count": 16,
+      "auxiliary_turns": 3,
+      "capture_turns": 8,
+      "inner_radius_fraction": 0.15,
+      "outer_radius_fraction": 0.85,
+      "speed_cm_s": 1.0,
+      "attachment_time_s": 0.5,
+      "integration_step_s": 0.25,
+      "attachment_tolerance_cm": 0.5,
+      "correction_limit_cm": 4.0,
+      "correction_speed_cm_s": 2.0,
+      "repair_delay_s": 0.2,
+      "max_repairs_per_action": 3,
+      "max_elapsed_s": 20000.0,
+      "event_threshold_cm": 2.0,
+      "filter_tau_s": 10.0,
+      "prediction_samples": 17,
+      "prediction_horizon_s": 20.0,
+      "sensor_tau_s": 5.0,
+      "max_action_time_s": 120.0,
+      "max_method_wait_s": 5.0,
+      "web_width_fraction": 1.0,
+      "web_height_fraction": 1.0
+    },
+    "controllers": [
+      "local",
+      "predictive"
+    ],
+    "conditions": [
+      [
+        0,
+        0
+      ],
+      [
+        10,
+        0.05
+      ]
+    ],
+    "seeds": 12,
+    "hierarchy": "htn"
+  },
+  {
+    "name": "tracking_tight",
+    "settings": {
+      "execution_mode": "tracking",
+      "method_policy": "direct",
+      "width_cm": 30.0,
+      "height_cm": 30.0,
+      "amplitude_cm": 10.0,
+      "frequency_hz": 0.049,
+      "radial_count": 16,
+      "auxiliary_turns": 3,
+      "capture_turns": 8,
+      "inner_radius_fraction": 0.15,
+      "outer_radius_fraction": 0.85,
+      "speed_cm_s": 1.0,
+      "attachment_time_s": 0.5,
+      "integration_step_s": 0.25,
+      "attachment_tolerance_cm": 0.1,
+      "correction_limit_cm": 4.0,
+      "correction_speed_cm_s": 2.0,
+      "repair_delay_s": 0.2,
+      "max_repairs_per_action": 3,
+      "max_elapsed_s": 20000.0,
+      "event_threshold_cm": 2.0,
+      "filter_tau_s": 10.0,
+      "prediction_samples": 17,
+      "prediction_horizon_s": 20.0,
+      "sensor_tau_s": 0,
+      "max_action_time_s": 120.0,
+      "max_method_wait_s": 5.0,
+      "web_width_fraction": 1.0,
+      "web_height_fraction": 1.0
+    },
+    "controllers": [
+      "local",
+      "predictive"
+    ],
+    "conditions": [
+      [
+        0,
+        0
+      ],
+      [
+        10,
+        0.05
+      ]
+    ],
+    "seeds": 12,
+    "hierarchy": "htn"
+  },
+  {
+    "name": "repair_delay_1s",
+    "settings": {
+      "execution_mode": "tracking",
+      "method_policy": "direct",
+      "width_cm": 30.0,
+      "height_cm": 30.0,
+      "amplitude_cm": 10.0,
+      "frequency_hz": 0.049,
+      "radial_count": 16,
+      "auxiliary_turns": 3,
+      "capture_turns": 8,
+      "inner_radius_fraction": 0.15,
+      "outer_radius_fraction": 0.85,
+      "speed_cm_s": 1.0,
+      "attachment_time_s": 0.5,
+      "integration_step_s": 0.25,
+      "attachment_tolerance_cm": 0.5,
+      "correction_limit_cm": 4.0,
+      "correction_speed_cm_s": 2.0,
+      "repair_delay_s": 1.0,
+      "max_repairs_per_action": 3,
+      "max_elapsed_s": 20000.0,
+      "event_threshold_cm": 2.0,
+      "filter_tau_s": 10.0,
+      "prediction_samples": 17,
+      "prediction_horizon_s": 20.0,
+      "sensor_tau_s": 0,
+      "max_action_time_s": 120.0,
+      "max_method_wait_s": 5.0,
+      "web_width_fraction": 1.0,
+      "web_height_fraction": 1.0
+    },
+    "controllers": [
+      "local",
+      "predictive"
+    ],
+    "conditions": [
+      [
+        0,
+        0
+      ],
+      [
+        10,
+        0.05
+      ]
+    ],
+    "seeds": 12,
+    "hierarchy": "htn"
+  },
+  {
+    "name": "flat_tracking",
+    "settings": {
+      "execution_mode": "tracking",
+      "method_policy": "direct",
+      "width_cm": 30.0,
+      "height_cm": 30.0,
+      "amplitude_cm": 10.0,
+      "frequency_hz": 0.049,
+      "radial_count": 16,
+      "auxiliary_turns": 3,
+      "capture_turns": 8,
+      "inner_radius_fraction": 0.15,
+      "outer_radius_fraction": 0.85,
+      "speed_cm_s": 1.0,
+      "attachment_time_s": 0.5,
+      "integration_step_s": 0.25,
+      "attachment_tolerance_cm": 0.5,
+      "correction_limit_cm": 4.0,
+      "correction_speed_cm_s": 2.0,
+      "repair_delay_s": 0.2,
+      "max_repairs_per_action": 3,
+      "max_elapsed_s": 20000.0,
+      "event_threshold_cm": 2.0,
+      "filter_tau_s": 10.0,
+      "prediction_samples": 17,
+      "prediction_horizon_s": 20.0,
+      "sensor_tau_s": 0,
+      "max_action_time_s": 120.0,
+      "max_method_wait_s": 5.0,
+      "web_width_fraction": 1.0,
+      "web_height_fraction": 1.0
+    },
+    "controllers": [
+      "local",
+      "predictive"
+    ],
+    "conditions": [
+      [
+        0,
+        0
+      ],
+      [
+        10,
+        0.05
+      ]
+    ],
+    "seeds": 12,
+    "hierarchy": "flat"
+  },
+  {
+    "name": "phase_wait",
+    "settings": {
+      "execution_mode": "tracking",
+      "method_policy": "phase_wait",
+      "width_cm": 30.0,
+      "height_cm": 30.0,
+      "amplitude_cm": 10.0,
+      "frequency_hz": 0.049,
+      "radial_count": 16,
+      "auxiliary_turns": 3,
+      "capture_turns": 8,
+      "inner_radius_fraction": 0.15,
+      "outer_radius_fraction": 0.85,
+      "speed_cm_s": 0.5,
+      "attachment_time_s": 0.5,
+      "integration_step_s": 0.25,
+      "attachment_tolerance_cm": 0.5,
+      "correction_limit_cm": 4.0,
+      "correction_speed_cm_s": 2.0,
+      "repair_delay_s": 0.2,
+      "max_repairs_per_action": 3,
+      "max_elapsed_s": 20000.0,
+      "event_threshold_cm": 2.0,
+      "filter_tau_s": 10.0,
+      "prediction_samples": 17,
+      "prediction_horizon_s": 20.0,
+      "sensor_tau_s": 0,
+      "max_action_time_s": 120.0,
+      "max_method_wait_s": 5.0,
+      "web_width_fraction": 1.0,
+      "web_height_fraction": 1.0
+    },
+    "controllers": [
+      "local",
+      "predictive"
+    ],
+    "conditions": [
+      [
+        0,
+        0
+      ],
+      [
+        10,
+        0.05
+      ]
+    ],
+    "seeds": 12,
+    "hierarchy": "htn"
+  },
+  {
+    "name": "flat_slow",
+    "settings": {
+      "execution_mode": "tracking",
+      "method_policy": "direct",
+      "width_cm": 30.0,
+      "height_cm": 30.0,
+      "amplitude_cm": 10.0,
+      "frequency_hz": 0.049,
+      "radial_count": 16,
+      "auxiliary_turns": 3,
+      "capture_turns": 8,
+      "inner_radius_fraction": 0.15,
+      "outer_radius_fraction": 0.85,
+      "speed_cm_s": 0.5,
+      "attachment_time_s": 0.5,
+      "integration_step_s": 0.25,
+      "attachment_tolerance_cm": 0.5,
+      "correction_limit_cm": 4.0,
+      "correction_speed_cm_s": 2.0,
+      "repair_delay_s": 0.2,
+      "max_repairs_per_action": 3,
+      "max_elapsed_s": 20000.0,
+      "event_threshold_cm": 2.0,
+      "filter_tau_s": 10.0,
+      "prediction_samples": 17,
+      "prediction_horizon_s": 20.0,
+      "sensor_tau_s": 0,
+      "max_action_time_s": 120.0,
+      "max_method_wait_s": 5.0,
+      "web_width_fraction": 1.0,
+      "web_height_fraction": 1.0
+    },
+    "controllers": [
+      "local",
+      "predictive"
+    ],
+    "conditions": [
+      [
+        0,
+        0
+      ],
+      [
+        10,
+        0.05
+      ]
+    ],
+    "seeds": 12,
+    "hierarchy": "flat"
+  }
+]
