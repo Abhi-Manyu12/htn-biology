@@ -1,0 +1,2884 @@
+{
+  "snapshot_date": "2026-10-20",
+  "model_version": 3,
+  "total_trials": 2280,
+  "input_directory": "mulder_results/paper_validation_v3_report",
+  "input_sha256": {
+    "trials.json": "1b8ab80ce7671824806d0a9d6795169743c05b1ead8f1f4feb29f352c6f7671d",
+    "comparisons.json": "9c7a829b709954a4445b37a47544f5350ceff094677d93b935c3550a920a84b8",
+    "profiles.json": "4952200f6bb516a44a5db27b2f5d2ca29dc9d66168ea67c11a570a7268589e87",
+    "provenance.json": "7dda842aab12770680eb89292f878ba58ec88b53093e67ebdad5e5d68fbcfc07",
+    "calibration.json": "f0344fba6b4fe4c4b604576f4d753bef14b348c724c199ddb20d6ead0cbd8b9f"
+  },
+  "original_provenance": {
+    "model_version": 3,
+    "paper": {
+      "doi": "10.1007/s00114-021-01725-1",
+      "source_url": "https://link.springer.com/article/10.1007/s00114-021-01725-1",
+      "title": "Dynamic environments do not appear to constrain spider web building behaviour",
+      "apparatus": {
+        "frame_width_cm": 30,
+        "frame_height_cm": 30,
+        "frequency_hz": 0.05,
+        "bottom_motion_description": "approximately 10 cm left and right",
+        "reported_shear_between_extrema_degrees": 40,
+        "inferred_peak_amplitude_from_shear_cm": 10.919107,
+        "preferred_peak_amplitude_cm": 10,
+        "amplitude_convention_note": "For affine shear, a 40 degree swing gives 30*tan(20 degrees) = 10.92 cm peak displacement. This supports the approximately 10 cm peak convention; 5 cm remains an apparatus-sensitivity condition. Flexible-frame deformation is not exactly affine."
+      },
+      "sampling_interval_s": 10,
+      "design": "RRMRM repeated builds; five spiders completed the full regime",
+      "sample_sizes": {
+        "spiders_attempted": 26,
+        "spiders_completing_regime": 5,
+        "temporal_rigid": 15,
+        "temporal_moving": 9,
+        "spatial_rigid": 15,
+        "spatial_moving": 10,
+        "geometry_rigid": 11,
+        "geometry_moving": 9
+      },
+      "published_p_values": {
+        "elapsed_s": 0.65,
+        "travel_cm": 0.61,
+        "radials_time_pct": 0.82,
+        "auxiliary_time_pct": 0.67,
+        "capture_time_pct": 0.83,
+        "web_area_cm2": 0.11,
+        "capture_spiral_area_cm2": 0.02,
+        "eccentricity": 0.07,
+        "mean_mesh_space_cm": 0.98,
+        "mean_capture_spiral_count": 0.34,
+        "radial_count_measured": 0.13
+      },
+      "geometry_significance_threshold": 0.008,
+      "raw_data_status": "Not supplied with this repository. The publication states data are available from the corresponding author upon reasonable request.",
+      "quantitative_calibration_status": "unavailable_without_reference_data",
+      "measurement_notes": {
+        "eccentricity": "sqrt((1 - web_width / web_height)^2), Table 1; not conic eccentricity",
+        "mean_mesh_space_cm": "(north capture width + south capture width) / (north capture count + south capture count - 2)",
+        "capture_spiral_area_cm2": "hub plus capture spiral area minus hub area"
+      },
+      "provenance": "Apparatus and sampling: pages 2-3; Table 1: page 3; sample sizes and results: pages 4-6; data availability: page 7. Checked against the supplied PDF."
+    },
+    "bootstrap_resamples": 2000,
+    "bootstrap_seed": 20261020,
+    "python": "3.12.0",
+    "numpy": "2.2.6",
+    "uncertainty_unit": "initial motion phase; not biological individual",
+    "source_sha256": {
+      "__init__.py": "c651831e79d85fa12ad6f76165cc0c3a28f3ca069a5e557d2156b4656585fdf4",
+      "__main__.py": "f91c4ca53a88e177f0e28034eb6c73d1dfb73729b3605f9883b193e223e3732d",
+      "diagnostics.py": "ae09e406b41bdb79d512d00f258867c6f24ef99d08ab44d1d2df58889f7c48c2",
+      "experiment.py": "3885010cd4e736698035ceb781b5364723f71ce5e21a888831c6f9a4b5ae5e82",
+      "measurements.py": "f7366ea272274d97aa16531e5e33a68b6511f54b93ad1b782064a5c0aff1e963",
+      "model.py": "7255eaf5671dad8e9e0c58b587d8daed6374bb9dea27a93c0c77dffc7fe77a19",
+      "reference.py": "5efbfdbff5ca3ddce885290d530ec6d3df252e3629c882178bdfabca41af583d",
+      "tracking.py": "00ec281e150297e0d7a7478d65097c4c03af39860cf2fcd105a4f0ba739af9ac",
+      "validation.py": "9059ccb10add2d90ea4789ed30f722984c95bc45f0f41c81b79ab0fe355a21c5"
+    },
+    "reanalysis": {
+      "input_trials_sha256": "1b8ab80ce7671824806d0a9d6795169743c05b1ead8f1f4feb29f352c6f7671d",
+      "analysis_source_sha256": "669d7706d54344d676c977113b1ec0e563031eda34777ea4cf092535a3879d89",
+      "bootstrap_resamples": 2000,
+      "simulation_rerun": false
+    }
+  },
+  "profiles": [
+    {
+      "name": "endpoint",
+      "settings": {
+        "execution_mode": "endpoint",
+        "method_policy": "direct",
+        "width_cm": 30.0,
+        "height_cm": 30.0,
+        "amplitude_cm": 10.0,
+        "frequency_hz": 0.049,
+        "radial_count": 16,
+        "auxiliary_turns": 3,
+        "capture_turns": 8,
+        "inner_radius_fraction": 0.15,
+        "outer_radius_fraction": 0.85,
+        "speed_cm_s": 1.0,
+        "attachment_time_s": 0.5,
+        "integration_step_s": 0.25,
+        "attachment_tolerance_cm": 0.5,
+        "correction_limit_cm": 4.0,
+        "correction_speed_cm_s": 2.0,
+        "repair_delay_s": 0.2,
+        "max_repairs_per_action": 3,
+        "max_elapsed_s": 20000.0,
+        "event_threshold_cm": 2.0,
+        "filter_tau_s": 10.0,
+        "prediction_samples": 17,
+        "prediction_horizon_s": 20.0,
+        "sensor_tau_s": 0,
+        "max_action_time_s": 120.0,
+        "max_method_wait_s": 5.0,
+        "web_width_fraction": 1.0,
+        "web_height_fraction": 1.0
+      },
+      "controllers": [
+        "fixed",
+        "local",
+        "filtered",
+        "local_repair",
+        "full",
+        "predictive"
+      ],
+      "conditions": [
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          0.049
+        ],
+        [
+          5,
+          0.05
+        ],
+        [
+          10,
+          0.049
+        ],
+        [
+          10,
+          0.05
+        ]
+      ],
+      "seeds": 30,
+      "hierarchy": "htn"
+    },
+    {
+      "name": "tracking",
+      "settings": {
+        "execution_mode": "tracking",
+        "method_policy": "direct",
+        "width_cm": 30.0,
+        "height_cm": 30.0,
+        "amplitude_cm": 10.0,
+        "frequency_hz": 0.049,
+        "radial_count": 16,
+        "auxiliary_turns": 3,
+        "capture_turns": 8,
+        "inner_radius_fraction": 0.15,
+        "outer_radius_fraction": 0.85,
+        "speed_cm_s": 1.0,
+        "attachment_time_s": 0.5,
+        "integration_step_s": 0.25,
+        "attachment_tolerance_cm": 0.5,
+        "correction_limit_cm": 4.0,
+        "correction_speed_cm_s": 2.0,
+        "repair_delay_s": 0.2,
+        "max_repairs_per_action": 3,
+        "max_elapsed_s": 20000.0,
+        "event_threshold_cm": 2.0,
+        "filter_tau_s": 10.0,
+        "prediction_samples": 17,
+        "prediction_horizon_s": 20.0,
+        "sensor_tau_s": 0,
+        "max_action_time_s": 120.0,
+        "max_method_wait_s": 5.0,
+        "web_width_fraction": 1.0,
+        "web_height_fraction": 1.0
+      },
+      "controllers": [
+        "fixed",
+        "local",
+        "filtered",
+        "local_repair",
+        "full",
+        "predictive"
+      ],
+      "conditions": [
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          0.049
+        ],
+        [
+          5,
+          0.05
+        ],
+        [
+          10,
+          0.049
+        ],
+        [
+          10,
+          0.05
+        ]
+      ],
+      "seeds": 30,
+      "hierarchy": "htn"
+    },
+    {
+      "name": "tracking_dt_half",
+      "settings": {
+        "execution_mode": "tracking",
+        "method_policy": "direct",
+        "width_cm": 30.0,
+        "height_cm": 30.0,
+        "amplitude_cm": 10.0,
+        "frequency_hz": 0.049,
+        "radial_count": 16,
+        "auxiliary_turns": 3,
+        "capture_turns": 8,
+        "inner_radius_fraction": 0.15,
+        "outer_radius_fraction": 0.85,
+        "speed_cm_s": 1.0,
+        "attachment_time_s": 0.5,
+        "integration_step_s": 0.125,
+        "attachment_tolerance_cm": 0.5,
+        "correction_limit_cm": 4.0,
+        "correction_speed_cm_s": 2.0,
+        "repair_delay_s": 0.2,
+        "max_repairs_per_action": 3,
+        "max_elapsed_s": 20000.0,
+        "event_threshold_cm": 2.0,
+        "filter_tau_s": 10.0,
+        "prediction_samples": 17,
+        "prediction_horizon_s": 20.0,
+        "sensor_tau_s": 0,
+        "max_action_time_s": 120.0,
+        "max_method_wait_s": 5.0,
+        "web_width_fraction": 1.0,
+        "web_height_fraction": 1.0
+      },
+      "controllers": [
+        "local",
+        "predictive"
+      ],
+      "conditions": [
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          0.05
+        ]
+      ],
+      "seeds": 12,
+      "hierarchy": "htn"
+    },
+    {
+      "name": "tracking_slow",
+      "settings": {
+        "execution_mode": "tracking",
+        "method_policy": "direct",
+        "width_cm": 30.0,
+        "height_cm": 30.0,
+        "amplitude_cm": 10.0,
+        "frequency_hz": 0.049,
+        "radial_count": 16,
+        "auxiliary_turns": 3,
+        "capture_turns": 8,
+        "inner_radius_fraction": 0.15,
+        "outer_radius_fraction": 0.85,
+        "speed_cm_s": 0.5,
+        "attachment_time_s": 0.5,
+        "integration_step_s": 0.25,
+        "attachment_tolerance_cm": 0.5,
+        "correction_limit_cm": 4.0,
+        "correction_speed_cm_s": 2.0,
+        "repair_delay_s": 0.2,
+        "max_repairs_per_action": 3,
+        "max_elapsed_s": 20000.0,
+        "event_threshold_cm": 2.0,
+        "filter_tau_s": 10.0,
+        "prediction_samples": 17,
+        "prediction_horizon_s": 20.0,
+        "sensor_tau_s": 0,
+        "max_action_time_s": 120.0,
+        "max_method_wait_s": 5.0,
+        "web_width_fraction": 1.0,
+        "web_height_fraction": 1.0
+      },
+      "controllers": [
+        "local",
+        "predictive"
+      ],
+      "conditions": [
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          0.05
+        ]
+      ],
+      "seeds": 12,
+      "hierarchy": "htn"
+    },
+    {
+      "name": "tracking_fast",
+      "settings": {
+        "execution_mode": "tracking",
+        "method_policy": "direct",
+        "width_cm": 30.0,
+        "height_cm": 30.0,
+        "amplitude_cm": 10.0,
+        "frequency_hz": 0.049,
+        "radial_count": 16,
+        "auxiliary_turns": 3,
+        "capture_turns": 8,
+        "inner_radius_fraction": 0.15,
+        "outer_radius_fraction": 0.85,
+        "speed_cm_s": 2.0,
+        "attachment_time_s": 0.5,
+        "integration_step_s": 0.25,
+        "attachment_tolerance_cm": 0.5,
+        "correction_limit_cm": 4.0,
+        "correction_speed_cm_s": 2.0,
+        "repair_delay_s": 0.2,
+        "max_repairs_per_action": 3,
+        "max_elapsed_s": 20000.0,
+        "event_threshold_cm": 2.0,
+        "filter_tau_s": 10.0,
+        "prediction_samples": 17,
+        "prediction_horizon_s": 20.0,
+        "sensor_tau_s": 0,
+        "max_action_time_s": 120.0,
+        "max_method_wait_s": 5.0,
+        "web_width_fraction": 1.0,
+        "web_height_fraction": 1.0
+      },
+      "controllers": [
+        "local",
+        "predictive"
+      ],
+      "conditions": [
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          0.05
+        ]
+      ],
+      "seeds": 12,
+      "hierarchy": "htn"
+    },
+    {
+      "name": "sensor_lag_1s",
+      "settings": {
+        "execution_mode": "tracking",
+        "method_policy": "direct",
+        "width_cm": 30.0,
+        "height_cm": 30.0,
+        "amplitude_cm": 10.0,
+        "frequency_hz": 0.049,
+        "radial_count": 16,
+        "auxiliary_turns": 3,
+        "capture_turns": 8,
+        "inner_radius_fraction": 0.15,
+        "outer_radius_fraction": 0.85,
+        "speed_cm_s": 1.0,
+        "attachment_time_s": 0.5,
+        "integration_step_s": 0.25,
+        "attachment_tolerance_cm": 0.5,
+        "correction_limit_cm": 4.0,
+        "correction_speed_cm_s": 2.0,
+        "repair_delay_s": 0.2,
+        "max_repairs_per_action": 3,
+        "max_elapsed_s": 20000.0,
+        "event_threshold_cm": 2.0,
+        "filter_tau_s": 10.0,
+        "prediction_samples": 17,
+        "prediction_horizon_s": 20.0,
+        "sensor_tau_s": 1.0,
+        "max_action_time_s": 120.0,
+        "max_method_wait_s": 5.0,
+        "web_width_fraction": 1.0,
+        "web_height_fraction": 1.0
+      },
+      "controllers": [
+        "local",
+        "predictive"
+      ],
+      "conditions": [
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          0.05
+        ]
+      ],
+      "seeds": 12,
+      "hierarchy": "htn"
+    },
+    {
+      "name": "sensor_lag_5s",
+      "settings": {
+        "execution_mode": "tracking",
+        "method_policy": "direct",
+        "width_cm": 30.0,
+        "height_cm": 30.0,
+        "amplitude_cm": 10.0,
+        "frequency_hz": 0.049,
+        "radial_count": 16,
+        "auxiliary_turns": 3,
+        "capture_turns": 8,
+        "inner_radius_fraction": 0.15,
+        "outer_radius_fraction": 0.85,
+        "speed_cm_s": 1.0,
+        "attachment_time_s": 0.5,
+        "integration_step_s": 0.25,
+        "attachment_tolerance_cm": 0.5,
+        "correction_limit_cm": 4.0,
+        "correction_speed_cm_s": 2.0,
+        "repair_delay_s": 0.2,
+        "max_repairs_per_action": 3,
+        "max_elapsed_s": 20000.0,
+        "event_threshold_cm": 2.0,
+        "filter_tau_s": 10.0,
+        "prediction_samples": 17,
+        "prediction_horizon_s": 20.0,
+        "sensor_tau_s": 5.0,
+        "max_action_time_s": 120.0,
+        "max_method_wait_s": 5.0,
+        "web_width_fraction": 1.0,
+        "web_height_fraction": 1.0
+      },
+      "controllers": [
+        "local",
+        "predictive"
+      ],
+      "conditions": [
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          0.05
+        ]
+      ],
+      "seeds": 12,
+      "hierarchy": "htn"
+    },
+    {
+      "name": "tracking_tight",
+      "settings": {
+        "execution_mode": "tracking",
+        "method_policy": "direct",
+        "width_cm": 30.0,
+        "height_cm": 30.0,
+        "amplitude_cm": 10.0,
+        "frequency_hz": 0.049,
+        "radial_count": 16,
+        "auxiliary_turns": 3,
+        "capture_turns": 8,
+        "inner_radius_fraction": 0.15,
+        "outer_radius_fraction": 0.85,
+        "speed_cm_s": 1.0,
+        "attachment_time_s": 0.5,
+        "integration_step_s": 0.25,
+        "attachment_tolerance_cm": 0.1,
+        "correction_limit_cm": 4.0,
+        "correction_speed_cm_s": 2.0,
+        "repair_delay_s": 0.2,
+        "max_repairs_per_action": 3,
+        "max_elapsed_s": 20000.0,
+        "event_threshold_cm": 2.0,
+        "filter_tau_s": 10.0,
+        "prediction_samples": 17,
+        "prediction_horizon_s": 20.0,
+        "sensor_tau_s": 0,
+        "max_action_time_s": 120.0,
+        "max_method_wait_s": 5.0,
+        "web_width_fraction": 1.0,
+        "web_height_fraction": 1.0
+      },
+      "controllers": [
+        "local",
+        "predictive"
+      ],
+      "conditions": [
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          0.05
+        ]
+      ],
+      "seeds": 12,
+      "hierarchy": "htn"
+    },
+    {
+      "name": "repair_delay_1s",
+      "settings": {
+        "execution_mode": "tracking",
+        "method_policy": "direct",
+        "width_cm": 30.0,
+        "height_cm": 30.0,
+        "amplitude_cm": 10.0,
+        "frequency_hz": 0.049,
+        "radial_count": 16,
+        "auxiliary_turns": 3,
+        "capture_turns": 8,
+        "inner_radius_fraction": 0.15,
+        "outer_radius_fraction": 0.85,
+        "speed_cm_s": 1.0,
+        "attachment_time_s": 0.5,
+        "integration_step_s": 0.25,
+        "attachment_tolerance_cm": 0.5,
+        "correction_limit_cm": 4.0,
+        "correction_speed_cm_s": 2.0,
+        "repair_delay_s": 1.0,
+        "max_repairs_per_action": 3,
+        "max_elapsed_s": 20000.0,
+        "event_threshold_cm": 2.0,
+        "filter_tau_s": 10.0,
+        "prediction_samples": 17,
+        "prediction_horizon_s": 20.0,
+        "sensor_tau_s": 0,
+        "max_action_time_s": 120.0,
+        "max_method_wait_s": 5.0,
+        "web_width_fraction": 1.0,
+        "web_height_fraction": 1.0
+      },
+      "controllers": [
+        "local",
+        "predictive"
+      ],
+      "conditions": [
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          0.05
+        ]
+      ],
+      "seeds": 12,
+      "hierarchy": "htn"
+    },
+    {
+      "name": "flat_tracking",
+      "settings": {
+        "execution_mode": "tracking",
+        "method_policy": "direct",
+        "width_cm": 30.0,
+        "height_cm": 30.0,
+        "amplitude_cm": 10.0,
+        "frequency_hz": 0.049,
+        "radial_count": 16,
+        "auxiliary_turns": 3,
+        "capture_turns": 8,
+        "inner_radius_fraction": 0.15,
+        "outer_radius_fraction": 0.85,
+        "speed_cm_s": 1.0,
+        "attachment_time_s": 0.5,
+        "integration_step_s": 0.25,
+        "attachment_tolerance_cm": 0.5,
+        "correction_limit_cm": 4.0,
+        "correction_speed_cm_s": 2.0,
+        "repair_delay_s": 0.2,
+        "max_repairs_per_action": 3,
+        "max_elapsed_s": 20000.0,
+        "event_threshold_cm": 2.0,
+        "filter_tau_s": 10.0,
+        "prediction_samples": 17,
+        "prediction_horizon_s": 20.0,
+        "sensor_tau_s": 0,
+        "max_action_time_s": 120.0,
+        "max_method_wait_s": 5.0,
+        "web_width_fraction": 1.0,
+        "web_height_fraction": 1.0
+      },
+      "controllers": [
+        "local",
+        "predictive"
+      ],
+      "conditions": [
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          0.05
+        ]
+      ],
+      "seeds": 12,
+      "hierarchy": "flat"
+    },
+    {
+      "name": "phase_wait",
+      "settings": {
+        "execution_mode": "tracking",
+        "method_policy": "phase_wait",
+        "width_cm": 30.0,
+        "height_cm": 30.0,
+        "amplitude_cm": 10.0,
+        "frequency_hz": 0.049,
+        "radial_count": 16,
+        "auxiliary_turns": 3,
+        "capture_turns": 8,
+        "inner_radius_fraction": 0.15,
+        "outer_radius_fraction": 0.85,
+        "speed_cm_s": 0.5,
+        "attachment_time_s": 0.5,
+        "integration_step_s": 0.25,
+        "attachment_tolerance_cm": 0.5,
+        "correction_limit_cm": 4.0,
+        "correction_speed_cm_s": 2.0,
+        "repair_delay_s": 0.2,
+        "max_repairs_per_action": 3,
+        "max_elapsed_s": 20000.0,
+        "event_threshold_cm": 2.0,
+        "filter_tau_s": 10.0,
+        "prediction_samples": 17,
+        "prediction_horizon_s": 20.0,
+        "sensor_tau_s": 0,
+        "max_action_time_s": 120.0,
+        "max_method_wait_s": 5.0,
+        "web_width_fraction": 1.0,
+        "web_height_fraction": 1.0
+      },
+      "controllers": [
+        "local",
+        "predictive"
+      ],
+      "conditions": [
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          0.05
+        ]
+      ],
+      "seeds": 12,
+      "hierarchy": "htn"
+    },
+    {
+      "name": "flat_slow",
+      "settings": {
+        "execution_mode": "tracking",
+        "method_policy": "direct",
+        "width_cm": 30.0,
+        "height_cm": 30.0,
+        "amplitude_cm": 10.0,
+        "frequency_hz": 0.049,
+        "radial_count": 16,
+        "auxiliary_turns": 3,
+        "capture_turns": 8,
+        "inner_radius_fraction": 0.15,
+        "outer_radius_fraction": 0.85,
+        "speed_cm_s": 0.5,
+        "attachment_time_s": 0.5,
+        "integration_step_s": 0.25,
+        "attachment_tolerance_cm": 0.5,
+        "correction_limit_cm": 4.0,
+        "correction_speed_cm_s": 2.0,
+        "repair_delay_s": 0.2,
+        "max_repairs_per_action": 3,
+        "max_elapsed_s": 20000.0,
+        "event_threshold_cm": 2.0,
+        "filter_tau_s": 10.0,
+        "prediction_samples": 17,
+        "prediction_horizon_s": 20.0,
+        "sensor_tau_s": 0,
+        "max_action_time_s": 120.0,
+        "max_method_wait_s": 5.0,
+        "web_width_fraction": 1.0,
+        "web_height_fraction": 1.0
+      },
+      "controllers": [
+        "local",
+        "predictive"
+      ],
+      "conditions": [
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          0.05
+        ]
+      ],
+      "seeds": 12,
+      "hierarchy": "flat"
+    }
+  ],
+  "calibration": {
+    "status": "not empirically calibrated: raw observations unavailable",
+    "fitted_parameters": {}
+  },
+  "selected_comparisons": [
+    {
+      "profile": "endpoint",
+      "controller": "fixed",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "completion",
+      "paired_n": 30,
+      "moving_mean": 0.0,
+      "control_mean": 1,
+      "mean_difference": -1,
+      "ci95": [
+        -1.0,
+        -1.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "fixed",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "fixed",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "travel_cm",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "fixed",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "sampled_travel_10s_cm",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "completion",
+      "paired_n": 30,
+      "moving_mean": 0.0,
+      "control_mean": 1,
+      "mean_difference": -1,
+      "ci95": [
+        -1.0,
+        -1.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "travel_cm",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "sampled_travel_10s_cm",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "filtered",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "completion",
+      "paired_n": 30,
+      "moving_mean": 0.0,
+      "control_mean": 1,
+      "mean_difference": -1,
+      "ci95": [
+        -1.0,
+        -1.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "filtered",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "filtered",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "travel_cm",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "filtered",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "sampled_travel_10s_cm",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "local_repair",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "completion",
+      "paired_n": 30,
+      "moving_mean": 0.0,
+      "control_mean": 1,
+      "mean_difference": -1,
+      "ci95": [
+        -1.0,
+        -1.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "local_repair",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "local_repair",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "travel_cm",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "local_repair",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "sampled_travel_10s_cm",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "full",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "completion",
+      "paired_n": 30,
+      "moving_mean": 0.0,
+      "control_mean": 1,
+      "mean_difference": -1,
+      "ci95": [
+        -1.0,
+        -1.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "full",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "full",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "travel_cm",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "full",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "sampled_travel_10s_cm",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "completion",
+      "paired_n": 30,
+      "moving_mean": 0.0,
+      "control_mean": 1,
+      "mean_difference": -1,
+      "ci95": [
+        -1.0,
+        -1.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "travel_cm",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "endpoint",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "sampled_travel_10s_cm",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "tracking",
+      "controller": "fixed",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "completion",
+      "paired_n": 30,
+      "moving_mean": 0.0,
+      "control_mean": 1,
+      "mean_difference": -1,
+      "ci95": [
+        -1.0,
+        -1.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "tracking",
+      "controller": "fixed",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "tracking",
+      "controller": "fixed",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "travel_cm",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "tracking",
+      "controller": "fixed",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "metric": "sampled_travel_10s_cm",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "tracking",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "metric": "completion",
+      "paired_n": 30,
+      "moving_mean": 1.0,
+      "control_mean": 1,
+      "mean_difference": 0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "tracking",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 30,
+      "moving_mean": 1491.0769021052715,
+      "control_mean": 1476.5957322160543,
+      "mean_difference": 14.481169889217199,
+      "ci95": [
+        14.246443920552228,
+        14.721454204332316
+      ],
+      "percent_difference": 0.9807132428511127,
+      "percent_ci95": [
+        0.9634288957273107,
+        0.9964025725671621
+      ]
+    },
+    {
+      "profile": "tracking",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "metric": "travel_cm",
+      "paired_n": 30,
+      "moving_mean": 1367.5957322160539,
+      "control_mean": 1367.595732216054,
+      "mean_difference": -1.2884508275116483e-13,
+      "ci95": [
+        -1.8947806286936006e-13,
+        -6.821210263296962e-14
+      ],
+      "percent_difference": -9.421284354433021e-15,
+      "percent_ci95": [
+        -1.3300636735670154e-14,
+        -4.987738775876306e-15
+      ]
+    },
+    {
+      "profile": "tracking",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "metric": "sampled_travel_10s_cm",
+      "paired_n": 30,
+      "moving_mean": 1136.0203325830705,
+      "control_mean": 1123.3262468316266,
+      "mean_difference": 12.694085751443952,
+      "ci95": [
+        12.179899674749857,
+        13.277798849759915
+      ],
+      "percent_difference": 1.1300444360886233,
+      "percent_ci95": [
+        1.0796180751593563,
+        1.1807343376435857
+      ]
+    },
+    {
+      "profile": "tracking",
+      "controller": "filtered",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "metric": "completion",
+      "paired_n": 30,
+      "moving_mean": 1.0,
+      "control_mean": 1,
+      "mean_difference": 0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "tracking",
+      "controller": "filtered",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 30,
+      "moving_mean": 1508.8387142916906,
+      "control_mean": 1476.5957322160543,
+      "mean_difference": 32.24298207563629,
+      "ci95": [
+        31.87145705343266,
+        32.6033456807682
+      ],
+      "percent_difference": 2.183602550932913,
+      "percent_ci95": [
+        2.1570911804795965,
+        2.207634885334503
+      ]
+    },
+    {
+      "profile": "tracking",
+      "controller": "filtered",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "metric": "travel_cm",
+      "paired_n": 30,
+      "moving_mean": 1367.5957322160539,
+      "control_mean": 1367.595732216054,
+      "mean_difference": -1.5916157281026243e-13,
+      "ci95": [
+        -2.349527979580065e-13,
+        -8.337034766251842e-14
+      ],
+      "percent_difference": -1.163805714371138e-14,
+      "percent_ci95": [
+        -1.7179989116907278e-14,
+        -6.096125170515484e-15
+      ]
+    },
+    {
+      "profile": "tracking",
+      "controller": "filtered",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "metric": "sampled_travel_10s_cm",
+      "paired_n": 30,
+      "moving_mean": 1125.835689760778,
+      "control_mean": 1123.3262468316266,
+      "mean_difference": 2.5094429291514566,
+      "ci95": [
+        1.5866916700765938,
+        3.4911606988957975
+      ],
+      "percent_difference": 0.22339395489328337,
+      "percent_ci95": [
+        0.1431846121148498,
+        0.30741605401460664
+      ]
+    },
+    {
+      "profile": "tracking",
+      "controller": "local_repair",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "metric": "completion",
+      "paired_n": 30,
+      "moving_mean": 1.0,
+      "control_mean": 1,
+      "mean_difference": 0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "tracking",
+      "controller": "local_repair",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 30,
+      "moving_mean": 1491.0769021052715,
+      "control_mean": 1476.5957322160543,
+      "mean_difference": 14.481169889217199,
+      "ci95": [
+        14.235822848695936,
+        14.730031748881153
+      ],
+      "percent_difference": 0.9807132428511127,
+      "percent_ci95": [
+        0.9644043995430586,
+        0.9973407883558842
+      ]
+    },
+    {
+      "profile": "tracking",
+      "controller": "local_repair",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "metric": "travel_cm",
+      "paired_n": 30,
+      "moving_mean": 1367.5957322160539,
+      "control_mean": 1367.595732216054,
+      "mean_difference": -1.2884508275116483e-13,
+      "ci95": [
+        -1.8189894035458566e-13,
+        -6.821210263296962e-14
+      ],
+      "percent_difference": -9.421284354433021e-15,
+      "percent_ci95": [
+        -1.3300636735670152e-14,
+        -4.987738775876306e-15
+      ]
+    },
+    {
+      "profile": "tracking",
+      "controller": "local_repair",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "metric": "sampled_travel_10s_cm",
+      "paired_n": 30,
+      "moving_mean": 1136.0203325830705,
+      "control_mean": 1123.3262468316266,
+      "mean_difference": 12.694085751443952,
+      "ci95": [
+        12.175648996827212,
+        13.25334027658074
+      ],
+      "percent_difference": 1.1300444360886233,
+      "percent_ci95": [
+        1.0804969126387167,
+        1.1811329642358417
+      ]
+    },
+    {
+      "profile": "tracking",
+      "controller": "full",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "metric": "completion",
+      "paired_n": 30,
+      "moving_mean": 1.0,
+      "control_mean": 1,
+      "mean_difference": 0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "tracking",
+      "controller": "full",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 30,
+      "moving_mean": 1534.535355702967,
+      "control_mean": 1476.5957322160543,
+      "mean_difference": 57.93962348691277,
+      "ci95": [
+        57.46345944622422,
+        58.39884451794077
+      ],
+      "percent_difference": 3.923865024312226,
+      "percent_ci95": [
+        3.893371546551422,
+        3.95371934281758
+      ]
+    },
+    {
+      "profile": "tracking",
+      "controller": "full",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "metric": "travel_cm",
+      "paired_n": 30,
+      "moving_mean": 1367.595732216054,
+      "control_mean": 1367.595732216054,
+      "mean_difference": -7.579122514774402e-14,
+      "ci95": [
+        -1.3642420526593923e-13,
+        -1.5158245029548804e-14
+      ],
+      "percent_difference": -5.541931973195895e-15,
+      "percent_ci95": [
+        -9.975477551752613e-15,
+        -5.541931973195895e-16
+      ]
+    },
+    {
+      "profile": "tracking",
+      "controller": "full",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "metric": "sampled_travel_10s_cm",
+      "paired_n": 30,
+      "moving_mean": 1141.120173896647,
+      "control_mean": 1123.3262468316266,
+      "mean_difference": 17.79392706502029,
+      "ci95": [
+        16.48854721625285,
+        18.91738108148397
+      ],
+      "percent_difference": 1.5840391084254077,
+      "percent_ci95": [
+        1.4727766315254707,
+        1.6891661737182795
+      ]
+    },
+    {
+      "profile": "tracking",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "metric": "completion",
+      "paired_n": 30,
+      "moving_mean": 1.0,
+      "control_mean": 1,
+      "mean_difference": 0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "tracking",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 30,
+      "moving_mean": 1491.0769021052715,
+      "control_mean": 1476.5957322160543,
+      "mean_difference": 14.481169889217199,
+      "ci95": [
+        14.243177164324656,
+        14.718791263484903
+      ],
+      "percent_difference": 0.9807132428511127,
+      "percent_ci95": [
+        0.9640027795192024,
+        0.997572234453841
+      ]
+    },
+    {
+      "profile": "tracking",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "metric": "travel_cm",
+      "paired_n": 30,
+      "moving_mean": 1367.5957322160539,
+      "control_mean": 1367.595732216054,
+      "mean_difference": -1.2884508275116483e-13,
+      "ci95": [
+        -1.8189894035458566e-13,
+        -7.579122514774402e-14
+      ],
+      "percent_difference": -9.421284354433021e-15,
+      "percent_ci95": [
+        -1.3314491565603143e-14,
+        -4.987738775876306e-15
+      ]
+    },
+    {
+      "profile": "tracking",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "metric": "sampled_travel_10s_cm",
+      "paired_n": 30,
+      "moving_mean": 1136.0203325830705,
+      "control_mean": 1123.3262468316266,
+      "mean_difference": 12.694085751443952,
+      "ci95": [
+        12.126437584156692,
+        13.263562563295965
+      ],
+      "percent_difference": 1.1300444360886233,
+      "percent_ci95": [
+        1.0790174285650787,
+        1.1802274399482258
+      ]
+    },
+    {
+      "profile": "tracking_dt_half",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "completion",
+      "paired_n": 12,
+      "moving_mean": 1.0,
+      "control_mean": 1,
+      "mean_difference": 0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "tracking_dt_half",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 12,
+      "moving_mean": 1489.928532461353,
+      "control_mean": 1476.595732216053,
+      "mean_difference": 13.332800245300007,
+      "ci95": [
+        12.980619153999076,
+        13.679789273838475
+      ],
+      "percent_difference": 0.9029418109783061,
+      "percent_ci95": [
+        0.8792336203678744,
+        0.9254651053264187
+      ]
+    },
+    {
+      "profile": "tracking_dt_half",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "completion",
+      "paired_n": 12,
+      "moving_mean": 1.0,
+      "control_mean": 1,
+      "mean_difference": 0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "tracking_dt_half",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 12,
+      "moving_mean": 1489.928532461353,
+      "control_mean": 1476.595732216053,
+      "mean_difference": 13.332800245300007,
+      "ci95": [
+        12.967411237296968,
+        13.671091193988232
+      ],
+      "percent_difference": 0.9029418109783061,
+      "percent_ci95": [
+        0.8792157850491379,
+        0.9258734920461587
+      ]
+    },
+    {
+      "profile": "tracking_slow",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "completion",
+      "paired_n": 12,
+      "moving_mean": 1.0,
+      "control_mean": 1,
+      "mean_difference": 0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "tracking_slow",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 12,
+      "moving_mean": 2872.8483500802454,
+      "control_mean": 2844.191464432106,
+      "mean_difference": 28.65688564813941,
+      "ci95": [
+        28.427261307558798,
+        28.89522816313445
+      ],
+      "percent_difference": 1.007558246570481,
+      "percent_ci95": [
+        0.9995407098047623,
+        1.0153448995150711
+      ]
+    },
+    {
+      "profile": "tracking_slow",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "completion",
+      "paired_n": 12,
+      "moving_mean": 1.0,
+      "control_mean": 1,
+      "mean_difference": 0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "tracking_slow",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 12,
+      "moving_mean": 2872.8483500802454,
+      "control_mean": 2844.191464432106,
+      "mean_difference": 28.65688564813941,
+      "ci95": [
+        28.430464202454353,
+        28.892911118241802
+      ],
+      "percent_difference": 1.007558246570481,
+      "percent_ci95": [
+        0.9996933140838257,
+        1.015767185524831
+      ]
+    },
+    {
+      "profile": "tracking_fast",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "completion",
+      "paired_n": 12,
+      "moving_mean": 1.0,
+      "control_mean": 1,
+      "mean_difference": 0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "tracking_fast",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 12,
+      "moving_mean": 800.3407441490019,
+      "control_mean": 792.7978661080274,
+      "mean_difference": 7.542878040974557,
+      "ci95": [
+        7.375829151837488,
+        7.70369933629378
+      ],
+      "percent_difference": 0.9514251189907664,
+      "percent_ci95": [
+        0.9304472838130605,
+        0.9715565439217594
+      ]
+    },
+    {
+      "profile": "tracking_fast",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "completion",
+      "paired_n": 12,
+      "moving_mean": 1.0,
+      "control_mean": 1,
+      "mean_difference": 0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "tracking_fast",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 12,
+      "moving_mean": 800.3407441490019,
+      "control_mean": 792.7978661080274,
+      "mean_difference": 7.542878040974557,
+      "ci95": [
+        7.3783550157490305,
+        7.696675033891442
+      ],
+      "percent_difference": 0.9514251189907664,
+      "percent_ci95": [
+        0.9304679313493205,
+        0.9715159887025314
+      ]
+    },
+    {
+      "profile": "sensor_lag_1s",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        2.7755575615628914e-17,
+        0.24249400665524085
+      ],
+      "metric": "completion",
+      "paired_n": 12,
+      "moving_mean": 0.0,
+      "control_mean": 1,
+      "mean_difference": -1,
+      "ci95": [
+        -1.0,
+        -1.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "sensor_lag_1s",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        2.7755575615628914e-17,
+        0.24249400665524085
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "sensor_lag_1s",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        2.7755575615628914e-17,
+        0.24249400665524085
+      ],
+      "metric": "completion",
+      "paired_n": 12,
+      "moving_mean": 0.0,
+      "control_mean": 1,
+      "mean_difference": -1,
+      "ci95": [
+        -1.0,
+        -1.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "sensor_lag_1s",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        2.7755575615628914e-17,
+        0.24249400665524085
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "sensor_lag_5s",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        2.7755575615628914e-17,
+        0.24249400665524085
+      ],
+      "metric": "completion",
+      "paired_n": 12,
+      "moving_mean": 0.0,
+      "control_mean": 1,
+      "mean_difference": -1,
+      "ci95": [
+        -1.0,
+        -1.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "sensor_lag_5s",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        2.7755575615628914e-17,
+        0.24249400665524085
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "sensor_lag_5s",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        2.7755575615628914e-17,
+        0.24249400665524085
+      ],
+      "metric": "completion",
+      "paired_n": 12,
+      "moving_mean": 0.0,
+      "control_mean": 1,
+      "mean_difference": -1,
+      "ci95": [
+        -1.0,
+        -1.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "sensor_lag_5s",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        2.7755575615628914e-17,
+        0.24249400665524085
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 0,
+      "moving_mean": null,
+      "control_mean": null,
+      "mean_difference": null,
+      "ci95": null,
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "tracking_tight",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "completion",
+      "paired_n": 12,
+      "moving_mean": 1.0,
+      "control_mean": 1,
+      "mean_difference": 0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "tracking_tight",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 12,
+      "moving_mean": 1491.071378901524,
+      "control_mean": 1476.5957322160543,
+      "mean_difference": 14.475646685469542,
+      "ci95": [
+        14.117998728247398,
+        14.819856239856138
+      ],
+      "percent_difference": 0.9803391930264279,
+      "percent_ci95": [
+        0.9569096882311264,
+        1.0031368001254701
+      ]
+    },
+    {
+      "profile": "tracking_tight",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "completion",
+      "paired_n": 12,
+      "moving_mean": 1.0,
+      "control_mean": 1,
+      "mean_difference": 0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "tracking_tight",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 12,
+      "moving_mean": 1491.071378901524,
+      "control_mean": 1476.5957322160543,
+      "mean_difference": 14.475646685469542,
+      "ci95": [
+        14.125199183395319,
+        14.827743326632076
+      ],
+      "percent_difference": 0.9803391930264279,
+      "percent_ci95": [
+        0.9562892491230034,
+        1.0032127273578695
+      ]
+    },
+    {
+      "profile": "repair_delay_1s",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "completion",
+      "paired_n": 12,
+      "moving_mean": 1.0,
+      "control_mean": 1,
+      "mean_difference": 0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "repair_delay_1s",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 12,
+      "moving_mean": 1491.071378901524,
+      "control_mean": 1476.5957322160543,
+      "mean_difference": 14.475646685469542,
+      "ci95": [
+        14.133032005711213,
+        14.81341035183818
+      ],
+      "percent_difference": 0.9803391930264279,
+      "percent_ci95": [
+        0.9571046645915937,
+        1.003685585174494
+      ]
+    },
+    {
+      "profile": "repair_delay_1s",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "completion",
+      "paired_n": 12,
+      "moving_mean": 1.0,
+      "control_mean": 1,
+      "mean_difference": 0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "repair_delay_1s",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 12,
+      "moving_mean": 1491.071378901524,
+      "control_mean": 1476.5957322160543,
+      "mean_difference": 14.475646685469542,
+      "ci95": [
+        14.137831584231805,
+        14.824827265330812
+      ],
+      "percent_difference": 0.9803391930264279,
+      "percent_ci95": [
+        0.9565246902660991,
+        1.0023707276609721
+      ]
+    },
+    {
+      "profile": "flat_tracking",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "completion",
+      "paired_n": 12,
+      "moving_mean": 1.0,
+      "control_mean": 1,
+      "mean_difference": 0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "flat_tracking",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 12,
+      "moving_mean": 1491.071378901524,
+      "control_mean": 1476.5957322160543,
+      "mean_difference": 14.475646685469542,
+      "ci95": [
+        14.129374583794778,
+        14.833191547243347
+      ],
+      "percent_difference": 0.9803391930264279,
+      "percent_ci95": [
+        0.9554157816722624,
+        1.003263131965866
+      ]
+    },
+    {
+      "profile": "flat_tracking",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "completion",
+      "paired_n": 12,
+      "moving_mean": 1.0,
+      "control_mean": 1,
+      "mean_difference": 0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "flat_tracking",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 12,
+      "moving_mean": 1491.071378901524,
+      "control_mean": 1476.5957322160543,
+      "mean_difference": 14.475646685469542,
+      "ci95": [
+        14.11690350268171,
+        14.834430748922747
+      ],
+      "percent_difference": 0.9803391930264279,
+      "percent_ci95": [
+        0.9571180308893242,
+        1.0027341481798564
+      ]
+    },
+    {
+      "profile": "phase_wait",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "completion",
+      "paired_n": 12,
+      "moving_mean": 1.0,
+      "control_mean": 1,
+      "mean_difference": 0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "phase_wait",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 12,
+      "moving_mean": 2895.551640789356,
+      "control_mean": 2844.191464432106,
+      "mean_difference": 51.360176357250225,
+      "ci95": [
+        49.018191352129755,
+        53.452545472289195
+      ],
+      "percent_difference": 1.8057918040867622,
+      "percent_ci95": [
+        1.7229669459339187,
+        1.8816511845154338
+      ]
+    },
+    {
+      "profile": "phase_wait",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "completion",
+      "paired_n": 12,
+      "moving_mean": 1.0,
+      "control_mean": 1,
+      "mean_difference": 0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "phase_wait",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 12,
+      "moving_mean": 2895.551640789356,
+      "control_mean": 2844.191464432106,
+      "mean_difference": 51.360176357250225,
+      "ci95": [
+        49.07523265062372,
+        53.427580256552986
+      ],
+      "percent_difference": 1.8057918040867622,
+      "percent_ci95": [
+        1.7250344232744679,
+        1.884506510106728
+      ]
+    },
+    {
+      "profile": "flat_slow",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "completion",
+      "paired_n": 12,
+      "moving_mean": 1.0,
+      "control_mean": 1,
+      "mean_difference": 0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "flat_slow",
+      "controller": "local",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 12,
+      "moving_mean": 2872.8483500802454,
+      "control_mean": 2844.191464432106,
+      "mean_difference": 28.65688564813941,
+      "ci95": [
+        28.432507041776965,
+        28.88610270255606
+      ],
+      "percent_difference": 1.007558246570481,
+      "percent_ci95": [
+        0.9996171805624554,
+        1.0160832258237655
+      ]
+    },
+    {
+      "profile": "flat_slow",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "completion",
+      "paired_n": 12,
+      "moving_mean": 1.0,
+      "control_mean": 1,
+      "mean_difference": 0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "percent_difference": null,
+      "percent_ci95": null
+    },
+    {
+      "profile": "flat_slow",
+      "controller": "predictive",
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "trials": 12,
+      "successes": 12,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "metric": "elapsed_s",
+      "paired_n": 12,
+      "moving_mean": 2872.8483500802454,
+      "control_mean": 2844.191464432106,
+      "mean_difference": 28.65688564813941,
+      "ci95": [
+        28.435091145962485,
+        28.901533059932056
+      ],
+      "percent_difference": 1.007558246570481,
+      "percent_ci95": [
+        0.9997184740039986,
+        1.0154639953009217
+      ]
+    }
+  ],
+  "matched_ablation_checks": [
+    {
+      "alternative": "flat_tracking",
+      "baseline": "tracking",
+      "controller": "local",
+      "paired_n": 12,
+      "mean_duration_difference_s": 0.0,
+      "maximum_absolute_duration_difference_s": 0.0
+    },
+    {
+      "alternative": "phase_wait",
+      "baseline": "tracking_slow",
+      "controller": "local",
+      "paired_n": 12,
+      "mean_duration_difference_s": 22.703290709110814,
+      "maximum_absolute_duration_difference_s": 27.28692059590503
+    }
+  ],
+  "snapshot_generator_sha256": "e6849268130aafba28c68c81ff166311414da55f6fa874688bfe34af46ea21f2",
+  "historical_search_strategy": "Not explicitly pinned or recorded by the original runner; see the separate current-environment audit.",
+  "uncertainty_unit": "Initial forcing phase, not biological individual",
+  "qualifications": [
+    "Ideal geometry/true corrected distance partly imposed by target generation",
+    "Continuous outcomes conditional on both paired runs succeeding",
+    "No raw biological observations supplied for calibration",
+    "No IPyHOP or retained-tree recovery implemented"
+  ]
+}

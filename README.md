@@ -1,5 +1,27 @@
 # Zschokke 1996 — Orb Web Construction HTN Planner
 
+The [research record](docs/research/README.md) and
+[manuscript staging](docs/manuscript/README.md) track experiments, evidence,
+limitations and literature assessments across ongoing repository work.
+
+Planner-strategy caveat: installed GTPyhop 1.9.7 defaults to iterative greedy
+search; the historical Mulder runners do not explicitly pin full backtracking. Read the
+[recovery audit](docs/research/BANSOD_REENTRANT_REVIEW.md) before interpreting
+the older generic backtracking descriptions below as measured behaviour.
+
+The [Mulder HTN IPyHOP integration](docs/manuscript/mulder_reentrant_results.md)
+now compares retained-tree recovery with fresh IPyHOP and the legacy backend
+using the actual Mulder construction/execution model and all six policies.
+Run `python3 -m spider_web_mulder.recovery_comparison --seeds 10 --output mulder_results/new_reentrant_run`
+with a new output directory. Historical v3 outputs remain preserved.
+
+The separate [retained-tree recovery experiment](spider_web_recovery/README.md)
+uses pinned upstream IPyHOP and explicit DFS baselines for anchor, route,
+dependency and resource failures. It preserves the earlier Mulder study.
+
+The moving-support experiments inspired by Mulder et al. (2021) are documented
+in [spider_web_mulder/README.md](spider_web_mulder/README.md).
+
 A Hierarchical Task Network (HTN) planner built with [GTPyhop](https://github.com/dananau/GTPyhop) that models the orb web construction behaviour of *Araneus diadematus* (European garden spider) as documented in:
 
 > **Zschokke, S. (1996).** Early stages of orb web construction in *Araneus diadematus* Clerck. *Revue Suisse de Zoologie*, vol. hors série, 709–720.
