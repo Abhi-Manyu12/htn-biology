@@ -99,6 +99,17 @@ def _is_available(state, node):
     return True
 
 
+def _has_capacity(state, dist):
+    """
+    True if spending *dist* more cm of silk stays within state.silk_capacity
+    (Way-Forward Part 1, Formal Evaluation Protocol — "Resource Depletion"
+    stress test, perturbations.py). state.silk_capacity defaults to
+    float('inf') in create_initial_state, so this is a no-op precondition
+    unless a perturbation trial has set a finite ceiling.
+    """
+    return state.energy_expended + dist <= state.silk_capacity
+
+
 # ── primitive operators ─────────────────────────────────────────────────────
 
 def walk(state, start, end):
@@ -114,6 +125,8 @@ def walk(state, start, end):
         return False
 
     dist = _movement_cost(state, start, end)
+    if not _has_capacity(state, dist):
+        return False
     state.energy_expended += dist
     state.spider_pos = end
     return state
@@ -146,10 +159,12 @@ def lay_thread(state, n1, n2, thread_type):
     if not _is_available(state, n2):
         return False
 
+    dist = _movement_cost(state, n1, n2)
+    if not _has_capacity(state, dist):
+        return False
     state.nodes.add(n1)
     state.nodes.add(n2)
     state.threads.append((n1, n2, thread_type))
-    dist = _movement_cost(state, n1, n2)
     state.energy_expended += dist
     state.spider_pos = n2
     return state
@@ -192,9 +207,11 @@ def drop_down(state, from_node, to_node):
     if not _is_available(state, to_node):
         return False
 
+    dist = _movement_cost(state, from_node, to_node)
+    if not _has_capacity(state, dist):
+        return False
     state.nodes.add(to_node)
     state.threads.append((from_node, to_node, "dragline"))
-    dist = _movement_cost(state, from_node, to_node)
     state.energy_expended += dist
     state.spider_pos = to_node
     return state
@@ -214,9 +231,11 @@ def swing_tarzan(state, from_node, to_node):
     if not _is_available(state, to_node):
         return False
 
+    dist = _movement_cost(state, from_node, to_node)
+    if not _has_capacity(state, dist):
+        return False
     state.nodes.add(to_node)
     state.threads.append((from_node, to_node, "dragline"))
-    dist = _movement_cost(state, from_node, to_node)
     state.energy_expended += dist
     state.spider_pos = to_node
     return state
@@ -236,6 +255,8 @@ def reel_up(state, from_node, to_node):
         return False
 
     dist = _movement_cost(state, from_node, to_node)
+    if not _has_capacity(state, dist):
+        return False
     state.energy_expended += dist
     state.spider_pos = to_node
     return state
@@ -288,9 +309,11 @@ def lay_frame_thread(state, n1, n2):
     if not _is_available(state, n2):
         return False
 
+    dist = _movement_cost(state, n1, n2)
+    if not _has_capacity(state, dist):
+        return False
     state.nodes.add(n2)
     state.threads.append((n1, n2, "frame"))
-    dist = _movement_cost(state, n1, n2)
     state.energy_expended += dist
     state.spider_pos = n2
     state.frame_count += 1
@@ -304,8 +327,10 @@ def lay_radius(state, hub, anchor_node):
     if not _is_available(state, anchor_node):
         return False
 
-    state.threads.append((hub, anchor_node, "radius"))
     dist = _movement_cost(state, hub, anchor_node)
+    if not _has_capacity(state, dist):
+        return False
+    state.threads.append((hub, anchor_node, "radius"))
     state.energy_expended += dist
     state.spider_pos = anchor_node
     state.radii_count += 1
@@ -324,8 +349,11 @@ def build_spiral_segment(state, n1, n2, spiral_type):
     if not _is_available(state, n2):
         return False
 
-    state.threads.append((n1, n2, spiral_type))
     dist = _movement_cost(state, n1, n2)
+    if not _has_capacity(state, dist):
+        return False
+    state.nodes.add(n2)
+    state.threads.append((n1, n2, spiral_type))
     state.energy_expended += dist
     state.spider_pos = n2
     return state
@@ -334,4 +362,22 @@ def build_spiral_segment(state, n1, n2, spiral_type):
 def mark_web_complete(state):
     """Mark the web as complete."""
     state.web_complete = True
+    return state
+
+
+def flee_from_predator(state):
+    """
+    Spider stops construction and hides/flees in response to a predator
+    (Way-Forward Part 1, Section 4.3, "Temporal Constraint" stress test).
+
+    A small fixed energy cost models the flight itself; no web progress is
+    made or lost. Only applicable while state.predator_present is set (by
+    perturbations.apply_predator_interrupt) — build_web's top-level method
+    inserts this action ahead of resuming construction whenever the flag
+    is set (methods.py).
+    """
+    if not state.predator_present:
+        return False
+    state.energy_expended += 3.0
+    state.predator_present = False
     return state

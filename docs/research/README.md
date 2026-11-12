@@ -5,6 +5,7 @@ repository. It supplements the implementation notes and generated reports.
 
 | Record | Purpose |
 |---|---|
+| [SPIDER_HTN_LITERATURE.md](SPIDER_HTN_LITERATURE.md) | Verified spider literature, proposed HTN connections and prioritized experiment opportunities |
 | [MULDER_OBJECTIVE_ROADMAP.md](MULDER_OBJECTIVE_ROADMAP.md) | Original objective, remaining gaps and proposed validation/publication route |
 | [WORK_LOG.md](WORK_LOG.md) | What changed, why, checks performed, and experiment locations |
 | [CLAIMS.md](CLAIMS.md) | Supported claims, limitations, and claims not yet supported |
@@ -41,9 +42,9 @@ before integration into the combined manuscript.
 The current detailed record covers `spider_web_mulder` versions 1–3 and a
 literature/code audit, the separate `spider_web_recovery` v1 study, and the
 integrated Mulder v4 comparison.
-The user's earlier adaptive-planner
-work remains in a stash from branch creation; it must not be presented as code
-currently executed on feat_mulder.
+The user's earlier adaptive-planner work was restored from its stash and its
+original branch on 2026-11-12. It is separate from the recorded Mulder and
+recovery studies and has not been independently audited for manuscript claims.
 
 ## Important current correction
 

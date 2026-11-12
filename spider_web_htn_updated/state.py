@@ -108,4 +108,17 @@ def create_initial_state(name="web_state_0", seed=None):
     # Energy tracking (Zschokke's distance-as-cost metric, in cm)
     s.energy_expended = 0.0
 
+    # Resource capacity (Way-Forward Part 1, Formal Evaluation Protocol,
+    # "Agent Initialization: initial resource capacities (S_initial)").
+    # Unconstrained by default (float('inf') — no behaviour change for any
+    # existing run); perturbation trials (perturbations.py) set a finite
+    # value and can cut it mid-run to simulate resource depletion. Movement
+    # operators refuse to spend past this ceiling (see operators._has_capacity).
+    s.silk_capacity = float("inf")
+
+    # Temporal-constraint perturbation ("Predator Presence" — future
+    # plan.pdf Part 1, Section 4.3): when true, build_web's top-level method
+    # inserts a flee_from_predator action before resuming construction.
+    s.predator_present = False
+
     return s

@@ -253,3 +253,54 @@ execution timestamps were not reconstructed retroactively.
   and restoration instructions alongside the archive.
 - No model changes or new scientific runs were made for this backup. The last
   reported software check passed 176 tests on 2026-10-24.
+
+
+## 2026-11-12 — Spider literature and proposed HTN experiments
+
+- Followed the external researcher role selected by AGENTS.md. User requested
+  relevant spider papers for the manuscript, including experiment opportunities.
+- Added docs/research/SPIDER_HTN_LITERATURE.md with 11 candidate sources, source
+  access depth, biological versus proposed HTN distinctions, code mappings,
+  manuscript placement and three proposed computational experiment directions.
+- Added 11 entries to docs/manuscript/references.bib, preserving the three
+  existing entries. Updated indexes and CLAIMS.md with interpretation limits.
+- Established .ai-memory research pointers and archived task record; roadmap
+  marks the literature task done. Source graph absent; direct reads used.
+- Validation: checked primary publisher/author metadata and abstracts, selected
+  full-text sections, 14 unique bibliography keys, balanced braces, report key
+  references and memory links. Some full texts and the Corver data-archive DOI
+  were inaccessible; the report records these limits. This was not a complete
+  systematic review or full algorithm replication audit.
+- No models or datasets changed, no simulation seeds generated, and no software
+  tests or biological validation performed. E1/E2/E3 remain proposed. Existing
+  claims of no demonstrated hierarchy/re-entrancy advantage are unchanged.
+- Recommendation: contextualize the current manuscript with prior rule-based
+  models; consider observed-structure recovery first, stage-sequence comparison
+  second. Next role: data-scientist for feasibility and a fixed analysis protocol.
+
+## 2026-11-12 — Restore literature and adaptive-planner work
+
+- Restored the literature/manuscript changes from the `feat_mulder` stash and
+  the earlier adaptive-planner changes from its stash. Both stashes remain
+  intact. The latter depended on the committed adaptive branch at `3a51a8b`,
+  so its spiral geometry, instrumentation, configuration and associated
+  tests/visualization were also integrated into the current checkout.
+- Resolved the spiral operator conflict by calculating movement cost and
+  enforcing the resource bound before creating the dynamic waypoint or thread.
+  Added a regression test covering rejection without mutation and success.
+- Kept the original `wind_sensitivity.csv` after verifying that branch changes
+  only altered whitespace. Recovered `perturbation_trials.csv` has SHA-256
+  `c9d30b18118b930c1bf3b8a9ad3c86364193e3ec6d4fb1afc3a4fb22cdc9e2f8`;
+  the historical run's full settings and source provenance have not been
+  verified, so its values are not evidence for manuscript claims.
+- Verification: `python3 -m pytest -q spider_web_mulder/tests
+  spider_web_recovery/tests spider_web_htn_updated/tests` passed 177 tests.
+  A one-seed command-line smoke check used `python3 -m
+  spider_web_htn_updated.perturbations --n-runs 1 --seed 0 --out
+  /private/tmp/htn_perturbation_restore_check.csv`; Python 3.12.0, GTPyhop
+  1.9.7 and NetworkX 3.4.2. This is software verification, not a new study;
+  the baseline did not reach the event in these cases, and the result is not
+  an equal-exposure comparison. The E1 experiment remains unimplemented.
+- No prior Mulder or recovery evidence was changed. An independent audit of
+  the adaptive-planner model, benchmark design and its old outputs is needed
+  before adding quantitative claims to the manuscript.

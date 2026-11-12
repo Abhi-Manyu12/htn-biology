@@ -6,6 +6,9 @@ versions, evidence status and caveats remain explicit when incorporating them.
 - [mulder_methods_results.md](mulder_methods_results.md): reusable Methods,
   Results, recovery description and limitations for the Mulder study.
 - [references.bib](references.bib): bibliography entries used by these fragments.
+  Also contains candidate spider references from the 2026-11-12
+  [literature search](../research/SPIDER_HTN_LITERATURE.md); include only sources
+  actually cited in the eventual article.
 - [recovery_methods_results.md](recovery_methods_results.md): the separate
   IPyHOP-backed dependency-changing recovery study.
 - [mulder_reentrant_results.md](mulder_reentrant_results.md): IPyHOP integrated

@@ -106,7 +106,16 @@ def enumerate_candidate_actions(state, rng):
     """
     Return a list of (operator_function, args) candidates given the current
     state. The random walker samples uniformly from this list each step.
+
+    Predator interrupt (Way-Forward Part 1, Section 4.3): while
+    state.predator_present, fleeing is the ONLY candidate offered, so the
+    walker is forced to prioritize it exactly as build_web does for the
+    HTN group (methods.py), rather than picking it up only by chance
+    alongside every other action.
     """
+    if state.predator_present:
+        return [(ops.flee_from_predator, ())]
+
     pos = state.spider_pos
     hub = state.proto_hub_pos or _DEFAULT_HUB_NAME
     known_nodes = list(state.nodes)

@@ -1,6 +1,6 @@
 # Manuscript claim ledger
 
-Last updated 2026-10-20. Each claim must remain tied to a model version and
+Last updated 2026-11-12 (literature interpretation note; numerical evidence unchanged). Each claim must remain tied to a model version and
 evidence source. The combined manuscript must not merge versions as one study.
 
 | ID | Candidate statement | Status and evidence | Permitted interpretation |
@@ -33,8 +33,19 @@ evidence source. The combined manuscript must not merge versions as one study.
 | C25 | Retained IPyHOP improves physical outcomes over fresh IPyHOP in Mulder | Not supported: all 720 pairs have identical completion, repairs, time and travel | Scoped to the declared direct-method profiles and two construction sizes |
 | C26 | Fewer method calls mean faster retained planning in Mulder | Contradicted in primary full/filtered comparisons | Full saves 1.67% method calls but increases measured planning wall time; adapters/instrumentation included |
 | C27 | Lagged filtered completion can improve with whole-suffix refresh | Tested, configured-size 0/10 legacy versus 5/10 each IPyHOP mode and GTPyhop root control | Ten diagnostic root-control trials match IPyHOP physical outcomes; gain is not unique to re-entrancy; small-size case regresses 3/10 to 2/10 |
+| C28 | Restored adaptive-planner perturbation CSV demonstrates an HTN advantage | Not established; historical CSV and code were recovered from a local stash without a contemporaneous provenance manifest | Treat as historical, unaudited output; a one-seed CLI smoke check is software verification, not a scientific comparison |
 
 ## Evidence locations
+
+### Literature interpretation, 2026-11-12
+
+The [spider/HTN literature search](SPIDER_HTN_LITERATURE.md) supports discussing
+behavioral stages, cue-dependent construction and existing rule-based models.
+It does not establish HTN cognition, algorithmic novelty, or an HTN performance
+advantage. Corver et al.'s hierarchical hidden Markov model is not an HTN.
+Proposed partial-web transfer, flexible stage-order and emergent-geometry
+experiments remain unimplemented and untested. C06, C09, C12, C17 and C25 retain
+their existing limitations. No existing quantitative claim was upgraded.
 
 - [mulder_v3_summary.json](evidence/mulder_v3_summary.json): selected exact
   comparisons, source manifests and input hashes.

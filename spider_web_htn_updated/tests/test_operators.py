@@ -13,6 +13,25 @@ from spider_web_htn_updated.config_loader import CONFIG
 HUB = CONFIG["domain"]["default_hub_name"]
 
 
+def test_spiral_segment_honors_capacity_before_creating_waypoint(fresh_state):
+    from spider_web_htn_updated.utils import AUXILIARY_SPIRAL_WAYPOINTS
+
+    waypoint = AUXILIARY_SPIRAL_WAYPOINTS[0][0]
+    start = fresh_state.spider_pos
+    fresh_state.silk_capacity = 0
+    old_nodes = set(fresh_state.nodes)
+    assert ops.build_spiral_segment(fresh_state, start, waypoint, "auxiliary_spiral") is False
+    assert fresh_state.nodes == old_nodes
+    assert fresh_state.threads == []
+    assert fresh_state.spider_pos == start
+    assert fresh_state.energy_expended == 0
+
+    fresh_state.silk_capacity = float("inf")
+    assert ops.build_spiral_segment(fresh_state, start, waypoint, "auxiliary_spiral") is fresh_state
+    assert waypoint in fresh_state.nodes
+    assert (start, waypoint, "auxiliary_spiral") in fresh_state.threads
+
+
 # ---------------------------------------------------------------------------
 # walk()
 # ---------------------------------------------------------------------------

@@ -50,6 +50,9 @@ from .state import create_initial_state
 from . import operators as ops
 from . import methods as mtd
 from .baseline import run_baseline
+from .main import _ACTION_FUNCS
+from .instrumentation import count_calls_all, get_decomposition_counter, reset_decomposition_counter
+from .utils import efficiency_ratio
 
 _BASELINE_MAX_STEPS = 3000
 
@@ -69,33 +72,41 @@ def _setup_domain():
         ops.remove_thread, ops.drop_down, ops.swing_tarzan, ops.reel_up,
         ops.insert_radius, ops.mark_proto_hub, ops.lay_frame_thread,
         ops.lay_radius, ops.build_spiral_segment, ops.mark_web_complete,
+        ops.flee_from_predator,
         mtd.mark_high_thread_done, mtd.mark_auxiliary_spiral_done,
         mtd.mark_capture_spiral_done,
     )
 
-    gtpyhop.declare_task_methods("build_web", mtd.build_web)
-    gtpyhop.declare_task_methods("explore_and_bridge", mtd.explore_bridge_walk_detour)
+    # Methods are wrapped with count_calls() so decomposition-node counts
+    # (Way-Forward "Decomposition Depth (D)") can be read per trial via
+    # get_decomposition_counter() — same instrumentation as main.py.
+    gtpyhop.declare_task_methods("build_web", *count_calls_all(mtd.build_web))
+    gtpyhop.declare_task_methods("explore_and_bridge", *count_calls_all(mtd.explore_bridge_walk_detour))
     gtpyhop.declare_task_methods(
         "establish_high_thread",
-        mtd.establish_high_thread_direct, mtd.establish_high_thread_via_climb,
+        *count_calls_all(mtd.establish_high_thread_direct, mtd.establish_high_thread_via_climb),
     )
     gtpyhop.declare_task_methods(
         "establish_proto_hub",
-        mtd.establish_proto_hub_done, mtd.establish_proto_hub_via_walk,
-        mtd.establish_proto_hub_via_drop, mtd.establish_proto_hub_via_tarzan,
+        *count_calls_all(
+            mtd.establish_proto_hub_done, mtd.establish_proto_hub_via_walk,
+            mtd.establish_proto_hub_via_drop, mtd.establish_proto_hub_via_tarzan,
+        ),
     )
-    gtpyhop.declare_task_methods("build_remaining_web", mtd.build_remaining_web)
-    gtpyhop.declare_task_methods("build_frame", mtd.build_frame_method)
-    gtpyhop.declare_task_methods("build_radii", mtd.build_radii_method)
-    gtpyhop.declare_task_methods("build_auxiliary_spiral", mtd.build_auxiliary_spiral_method)
-    gtpyhop.declare_task_methods("build_capture_spiral", mtd.build_capture_spiral_method)
-    gtpyhop.declare_task_methods("finalise_web", mtd.finalise_web)
+    gtpyhop.declare_task_methods("build_remaining_web", *count_calls_all(mtd.build_remaining_web))
+    gtpyhop.declare_task_methods("build_frame", *count_calls_all(mtd.build_frame_method))
+    gtpyhop.declare_task_methods("build_radii", *count_calls_all(mtd.build_radii_method))
+    gtpyhop.declare_task_methods("build_auxiliary_spiral", *count_calls_all(mtd.build_auxiliary_spiral_method))
+    gtpyhop.declare_task_methods("build_capture_spiral", *count_calls_all(mtd.build_capture_spiral_method))
+    gtpyhop.declare_task_methods("finalise_web", *count_calls_all(mtd.finalise_web))
 
     return domain
 
 
 def _run_once_htn(seed):
-    """Run the HTN planner (Group A) once with the given seed. Returns (success, energy).
+    """Run the HTN planner (Group A) once with the given seed.
+
+    Returns (success, energy, decomposition_depth, eta).
 
     IMPORTANT: gtpyhop.find_plan never mutates the state object passed to it —
     internally it deep-copies state on every action application (see
@@ -114,42 +125,47 @@ def _run_once_htn(seed):
     search (it's advanced by however many branches the search tried, not by
     the accepted plan). This is deterministic and reproducible per seed, and
     it's an honest "cost of actually walking this plan once," not a
-    re-randomized number pretending to be the search-time cost.
+    re-randomized number pretending to be the search-time cost. Applying the
+    real operator functions (rather than just summing distances) also
+    populates exec_state.threads, needed for the eta = S_used/Area_web
+    efficiency ratio.
     """
     _setup_domain()
     state = create_initial_state(seed=seed)
     with contextlib.redirect_stdout(io.StringIO()):
         gtpyhop.set_verbose_level(0)
+        reset_decomposition_counter()
         plan = gtpyhop.find_plan(state, [("build_web",)])
+        depth = get_decomposition_counter()
 
     if plan is False or plan is None:
-        return False, None
+        return False, None, depth, None
 
     exec_state = create_initial_state(seed=seed)
     exec_state.rng = random.Random(f"htn-exec-{seed}")
 
-    energy = 0.0
     for action in plan:
-        name = action[0]
-        if name in ("walk", "lay_thread", "lay_frame_thread", "lay_radius",
-                     "drop_down", "swing_tarzan", "reel_up", "build_spiral_segment"):
-            if len(action) >= 3:
-                energy += ops._movement_cost(exec_state, action[1], action[2])
-    return True, energy
+        name, args = action[0], action[1:]
+        result = _ACTION_FUNCS[name](exec_state, *args)
+        if result is not False:
+            exec_state = result
+    return True, exec_state.energy_expended, depth, efficiency_ratio(exec_state)
 
 
 def _run_once_baseline(seed):
     """Run the flat-state random walker (Group B) once with the given seed.
 
-    Returns (success, energy). Uses the SAME seed as the paired HTN trial so
-    both groups see identical anchor-removal/wind draws for a given trial —
-    the walker's own action-selection randomness is separately (but still
-    deterministically) derived from the same seed inside run_baseline.
+    Returns (success, energy, decomposition_depth, eta) — same shape as
+    _run_once_htn, with decomposition_depth always 0 (no task hierarchy).
+    Uses the SAME seed as the paired HTN trial so both groups see identical
+    anchor-removal/wind draws for a given trial — the walker's own
+    action-selection randomness is separately (but still deterministically)
+    derived from the same seed inside run_baseline.
     """
     result = run_baseline(seed=seed, max_steps=_BASELINE_MAX_STEPS)
     if not result["success"]:
-        return False, None
-    return True, result["energy_expended"]
+        return False, None, 0, None
+    return True, result["energy_expended"], 0, efficiency_ratio(result["final_state"])
 
 
 # ---------------------------------------------------------------------------
@@ -208,17 +224,27 @@ def run_sensitivity_sweep(
                 for group, runner in runners.items():
                     successes = 0
                     energies = []
+                    depths = []
+                    etas = []
                     for trial in range(n_runs):
                         seed = base_seed + trial
-                        ok, energy = runner(seed)
+                        ok, energy, depth, eta = runner(seed)
+                        depths.append(depth)
                         if ok:
                             successes += 1
                             energies.append(energy)
-                    per_group[group] = {"successes": successes, "energies": energies}
+                            if eta is not None:
+                                etas.append(eta)
+                    per_group[group] = {
+                        "successes": successes, "energies": energies,
+                        "depths": depths, "etas": etas,
+                    }
 
                 for group, data in per_group.items():
                     successes = data["successes"]
                     energies = data["energies"]
+                    depths = [d for d in data["depths"] if d is not None]
+                    etas = data["etas"]
                     success_rate = successes / n_runs
                     row = {
                         "group": group,
@@ -230,6 +256,8 @@ def run_sensitivity_sweep(
                         "energy_mean": statistics.mean(energies) if energies else None,
                         "energy_median": statistics.median(energies) if energies else None,
                         "energy_stdev": statistics.stdev(energies) if len(energies) > 1 else 0.0,
+                        "decomposition_depth_mean": statistics.mean(depths) if depths else None,
+                        "eta_mean": statistics.mean(etas) if etas else None,
                     }
                     results.append(row)
 
@@ -253,6 +281,7 @@ def _write_csv(results, path):
     fieldnames = [
         "group", "removal_prob", "wind_std", "n_runs", "successes", "success_rate",
         "energy_mean", "energy_median", "energy_stdev",
+        "decomposition_depth_mean", "eta_mean",
     ]
     with open(path, "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
