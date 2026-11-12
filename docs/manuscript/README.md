@@ -13,6 +13,13 @@ versions, evidence status and caveats remain explicit when incorporating them.
   IPyHOP-backed dependency-changing recovery study.
 - [mulder_reentrant_results.md](mulder_reentrant_results.md): IPyHOP integrated
   into the actual Mulder HTN, with same-engine and legacy comparisons.
+- [e1_methods_results.md](e1_methods_results.md): observed-structure recovery and
+  aligned partial-web transfer; 1,920 trials comparing state rules, cached plans,
+  fresh and retained HTN. No measured HTN physical-outcome advantage.
+- [E1 rerun details](../research/E1_RERUN_RESULTS.md): same-seed reproduction,
+  full scenario, size, timing and resource breakdown; do not pool as new cases.
+- [e1_expanded_results.md](e1_expanded_results.md): 5,280 new trials with larger
+  webs, silk limits and support motion; four figures and explicit limitations.
 - [figures/](figures/): curated figures from the version-3 study.
 - [../research/WORK_LOG.md](../research/WORK_LOG.md): research history and commands.
 - [../research/CLAIMS.md](../research/CLAIMS.md): claim/evidence ledger.

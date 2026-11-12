@@ -1,6 +1,6 @@
 # Manuscript claim ledger
 
-Last updated 2026-11-12 (literature interpretation note; numerical evidence unchanged). Each claim must remain tied to a model version and
+Last updated 2026-11-12 (E1 implemented and measured). Each claim must remain tied to a model version and
 evidence source. The combined manuscript must not merge versions as one study.
 
 | ID | Candidate statement | Status and evidence | Permitted interpretation |
@@ -34,6 +34,14 @@ evidence source. The combined manuscript must not merge versions as one study.
 | C26 | Fewer method calls mean faster retained planning in Mulder | Contradicted in primary full/filtered comparisons | Full saves 1.67% method calls but increases measured planning wall time; adapters/instrumentation included |
 | C27 | Lagged filtered completion can improve with whole-suffix refresh | Tested, configured-size 0/10 legacy versus 5/10 each IPyHOP mode and GTPyhop root control | Ten diagnostic root-control trials match IPyHOP physical outcomes; gain is not unique to re-entrancy; small-size case regresses 3/10 to 2/10 |
 | C28 | Restored adaptive-planner perturbation CSV demonstrates an HTN advantage | Not established; historical CSV and code were recovered from a local stash without a contemporaneous provenance manifest | Treat as historical, unaudited output; a one-seed CLI smoke check is software verification, not a scientific comparison |
+| C29 | E1 controllers recover using observed structure after damage or aligned partial-web transfer | Implemented/tested: 1,920 trials, 480 identical-exposure cases; each capable controller completes all 240 feasible disrupted trials and 80 intact trials | Scoped to the prescribed sector model and shared authored repair knowledge; history ablation completes only intact cases |
+| C30 | E1 HTN recovery improves completion or physical cost over current-state rules | Not supported: each of three contrasts has 480/480 equal completion outcomes and 320/320 exactly equal successful-pair time, travel and silk costs | Preserve this negative result; observed-state repair suffices without HTN in the declared benchmark |
+| C31 | Retained E1 planning is always faster because it uses fewer method calls | Not supported: in the original E1 study it used fewer mean calls in feasible disruptions but higher mean decision wall time; in the expanded 24-sector case its mean was slightly lower, with an interval spanning zero | Source/adapter-specific timings on one machine, with tree snapshots excluded; no general complexity claim |
+| C32 | E1 quantitatively reproduces Peters or Eberhard's animal results | Not established | Literature-inspired computational test only; aligned donor transfer, geometry, stock costs and ideal sensing are imposed assumptions |
+| C33 | E1 produces the same results when repeated with the same inputs and code | Tested: 1,920/1,920 matching trial records agree in every non-timing field; source hash manifests identical | Same-seed software reproducibility, not independent biological or additional simulation evidence; wall times vary |
+| C34 | State rules and fresh/retained HTN differ in physical outcomes in the expanded E1 sweep | Not supported in 5,280 trials: for each of three contrasts, 1,320/1,320 completion matches and 830/830 both-successful pairs have exactly equal time, travel and actor silk | Tested sizes 4–32, stocks and support motions under shared authored repair choices; not a general equivalence claim |
+| C35 | E1 has a biologically validated silk-repair threshold | Not established; modeled stock margins produce different completion rates, including partial success at +20 cm | Prescribed 19 cm/sector intact requirement and seed cases; no empirical spider-silk measurement |
+| C36 | Target position explains partial success at the +20 cm E1 stock margin | Tested post hoc: all 30 single-damage state-rule trials match the last-completed-sector condition, with both HTNs agreeing | Consequence of checkpoint, adjacent dependencies and imposed 14 cm radius/5 cm capture costs; not a biological threshold or a size trend |
 
 ## Evidence locations
 
@@ -43,9 +51,11 @@ The [spider/HTN literature search](SPIDER_HTN_LITERATURE.md) supports discussing
 behavioral stages, cue-dependent construction and existing rule-based models.
 It does not establish HTN cognition, algorithmic novelty, or an HTN performance
 advantage. Corver et al.'s hierarchical hidden Markov model is not an HTN.
-Proposed partial-web transfer, flexible stage-order and emergent-geometry
-experiments remain unimplemented and untested. C06, C09, C12, C17 and C25 retain
-their existing limitations. No existing quantitative claim was upgraded.
+At the literature-search stage these experiments were proposed. E1 partial-web
+transfer and observed-structure recovery are now implemented and tested under
+the [fixed protocol](E1_PROTOCOL.md); see C29–C32. Flexible stage-order and
+emergent-geometry experiments remain unimplemented and untested. C06, C09, C12,
+C17 and C25 retain their existing limitations.
 
 - [mulder_v3_summary.json](evidence/mulder_v3_summary.json): selected exact
   comparisons, source manifests and input hashes.
@@ -60,3 +70,11 @@ their existing limitations. No existing quantitative claim was upgraded.
   integrated Mulder sweep, same-engine checks, manifests and paired contrasts.
 - [mulder_suffix_control.json](evidence/mulder_suffix_control.json): original
   GTPyhop domain with whole-suffix refresh, ten diagnostic lag trials.
+- [e1_v1_summary.json](evidence/e1_v1_summary.json): 1,920-trial E1 study,
+  exact paired audit, full trial table, manifests and retained evidence links.
+- [E1_RERUN_RESULTS.md](E1_RERUN_RESULTS.md): independently executed same-seed
+  rerun, detailed breakdown, run-to-run audit and curated raw records.
+- [e1_expanded_v1_summary.json](evidence/e1_expanded_v1_summary.json): 5,280
+  new trials, matched exposure and physical-cost audit, curated inputs/figures.
+- [E1_EXPANDED_ANALYSIS.md](E1_EXPANDED_ANALYSIS.md): post-hoc explanation of
+  resource failures and descriptive matched-seed movement comparisons.

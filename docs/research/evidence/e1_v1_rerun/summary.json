@@ -1,0 +1,1826 @@
+[
+  {
+    "scenario": "damage_multi",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 3.55,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.005089816718827933,
+    "mean_recovery_policy_wall_s": 0.002202291658613831,
+    "mean_method_calls": 85.1
+  },
+  {
+    "scenario": "damage_multi",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "history",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 1,
+    "mean_policy_wall_s": 0.0028288021683692934,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 47
+  },
+  {
+    "scenario": "damage_multi",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 3.55,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.005684220977127552,
+    "mean_recovery_policy_wall_s": 0.002915345900692046,
+    "mean_method_calls": 74.65
+  },
+  {
+    "scenario": "damage_multi",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 3.55,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0003835884504951537,
+    "mean_recovery_policy_wall_s": 0.00013648946769535543,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "damage_multi",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 3.55,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.00546518531627953,
+    "mean_recovery_policy_wall_s": 0.002287418663036078,
+    "mean_method_calls": 85.1
+  },
+  {
+    "scenario": "damage_multi",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "history",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 1,
+    "mean_policy_wall_s": 0.0029959876323118807,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 47
+  },
+  {
+    "scenario": "damage_multi",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 3.55,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.006185358320362866,
+    "mean_recovery_policy_wall_s": 0.003174085367936641,
+    "mean_method_calls": 74.65
+  },
+  {
+    "scenario": "damage_multi",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 3.55,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0004230135935358703,
+    "mean_recovery_policy_wall_s": 0.0001474244403652847,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "damage_multi",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 4.3,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.012597939488478005,
+    "mean_recovery_policy_wall_s": 0.0047731540747918185,
+    "mean_method_calls": 150.6
+  },
+  {
+    "scenario": "damage_multi",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "history",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0.45,
+    "mean_policy_wall_s": 0.007894958253018558,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 91
+  },
+  {
+    "scenario": "damage_multi",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 4.3,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.016571310395374895,
+    "mean_recovery_policy_wall_s": 0.006676593713928014,
+    "mean_method_calls": 128.9
+  },
+  {
+    "scenario": "damage_multi",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 4.3,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.001499740337021649,
+    "mean_recovery_policy_wall_s": 0.00035537531366571786,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "damage_multi",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 4.3,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.012336366588715463,
+    "mean_recovery_policy_wall_s": 0.004624347749631852,
+    "mean_method_calls": 150.6
+  },
+  {
+    "scenario": "damage_multi",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "history",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0.45,
+    "mean_policy_wall_s": 0.007570258190389723,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 91
+  },
+  {
+    "scenario": "damage_multi",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 4.3,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.01397513720439747,
+    "mean_recovery_policy_wall_s": 0.006357541459146887,
+    "mean_method_calls": 128.9
+  },
+  {
+    "scenario": "damage_multi",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 4.3,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.001426059822551906,
+    "mean_recovery_policy_wall_s": 0.000340957788284868,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "damage_resource",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.002933179039973766,
+    "mean_recovery_policy_wall_s": 0.00013467284152284263,
+    "mean_method_calls": 48
+  },
+  {
+    "scenario": "damage_resource",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "history",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0.45,
+    "mean_policy_wall_s": 0.0027748520602472126,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 47
+  },
+  {
+    "scenario": "damage_resource",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.005645223031751812,
+    "mean_recovery_policy_wall_s": 0.0028521646629087625,
+    "mean_method_calls": 62
+  },
+  {
+    "scenario": "damage_resource",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0002527939039282501,
+    "mean_recovery_policy_wall_s": 2.11251899600029e-06,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "damage_resource",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.003076352085918188,
+    "mean_recovery_policy_wall_s": 0.00014207508647814393,
+    "mean_method_calls": 48
+  },
+  {
+    "scenario": "damage_resource",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "history",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0.45,
+    "mean_policy_wall_s": 0.002875456225592643,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 47
+  },
+  {
+    "scenario": "damage_resource",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.006098485505208373,
+    "mean_recovery_policy_wall_s": 0.0030166020151227713,
+    "mean_method_calls": 62
+  },
+  {
+    "scenario": "damage_resource",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0002687394968234003,
+    "mean_recovery_policy_wall_s": 2.2312160581350327e-06,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "damage_resource",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.007872920983936637,
+    "mean_recovery_policy_wall_s": 0.0001750187831930816,
+    "mean_method_calls": 92
+  },
+  {
+    "scenario": "damage_resource",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "history",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0.25,
+    "mean_policy_wall_s": 0.00744949186919257,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 91
+  },
+  {
+    "scenario": "damage_resource",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.014634831354487687,
+    "mean_recovery_policy_wall_s": 0.006932997936382889,
+    "mean_method_calls": 120
+  },
+  {
+    "scenario": "damage_resource",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0010765645885840059,
+    "mean_recovery_policy_wall_s": 3.4187687560915947e-06,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "damage_resource",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.008263068657834082,
+    "mean_recovery_policy_wall_s": 0.00018644151277840136,
+    "mean_method_calls": 92
+  },
+  {
+    "scenario": "damage_resource",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "history",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0.25,
+    "mean_policy_wall_s": 0.007719139626715332,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 91
+  },
+  {
+    "scenario": "damage_resource",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.015058179176412523,
+    "mean_recovery_policy_wall_s": 0.0071441812440752985,
+    "mean_method_calls": 120
+  },
+  {
+    "scenario": "damage_resource",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0011475330218672752,
+    "mean_recovery_policy_wall_s": 3.670819569379091e-06,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "damage_single",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.55,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0047223792062141,
+    "mean_recovery_policy_wall_s": 0.0017763625597581266,
+    "mean_method_calls": 79.1
+  },
+  {
+    "scenario": "damage_single",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "history",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0.45,
+    "mean_policy_wall_s": 0.0028690728475339712,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 47
+  },
+  {
+    "scenario": "damage_single",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.55,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0054795457166619595,
+    "mean_recovery_policy_wall_s": 0.0026294208131730557,
+    "mean_method_calls": 67.65
+  },
+  {
+    "scenario": "damage_single",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.55,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0003355827182531357,
+    "mean_recovery_policy_wall_s": 7.700239075347781e-05,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "damage_single",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.55,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.004810656304471195,
+    "mean_recovery_policy_wall_s": 0.00187345010926947,
+    "mean_method_calls": 79.1
+  },
+  {
+    "scenario": "damage_single",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "history",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0.45,
+    "mean_policy_wall_s": 0.002981081116013229,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 47
+  },
+  {
+    "scenario": "damage_single",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.55,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.005409551982302219,
+    "mean_recovery_policy_wall_s": 0.0025887999567203225,
+    "mean_method_calls": 67.65
+  },
+  {
+    "scenario": "damage_single",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.55,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0003295651637017727,
+    "mean_recovery_policy_wall_s": 7.980859372764826e-05,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "damage_single",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.75,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.012259160540997982,
+    "mean_recovery_policy_wall_s": 0.004228243848774582,
+    "mean_method_calls": 143.5
+  },
+  {
+    "scenario": "damage_single",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "history",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0.25,
+    "mean_policy_wall_s": 0.008659214572981,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 91
+  },
+  {
+    "scenario": "damage_single",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.75,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.014300223044119775,
+    "mean_recovery_policy_wall_s": 0.006152837467379868,
+    "mean_method_calls": 120.25
+  },
+  {
+    "scenario": "damage_single",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.75,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0013838023878633976,
+    "mean_recovery_policy_wall_s": 0.00022237704833969474,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "damage_single",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.75,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.011775312793906778,
+    "mean_recovery_policy_wall_s": 0.004081654327455908,
+    "mean_method_calls": 143.5
+  },
+  {
+    "scenario": "damage_single",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "history",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0.25,
+    "mean_policy_wall_s": 0.007862683397252112,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 91
+  },
+  {
+    "scenario": "damage_single",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.75,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.014609381358604878,
+    "mean_recovery_policy_wall_s": 0.005918045889120549,
+    "mean_method_calls": 120.25
+  },
+  {
+    "scenario": "damage_single",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.75,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0013052174472250044,
+    "mean_recovery_policy_wall_s": 0.00019756668480113148,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "damage_unavailable",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0029192311922088265,
+    "mean_recovery_policy_wall_s": 0.00013091034488752485,
+    "mean_method_calls": 48
+  },
+  {
+    "scenario": "damage_unavailable",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "history",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0.45,
+    "mean_policy_wall_s": 0.002800012507941574,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 47
+  },
+  {
+    "scenario": "damage_unavailable",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.00566641460172832,
+    "mean_recovery_policy_wall_s": 0.002823783259373158,
+    "mean_method_calls": 62
+  },
+  {
+    "scenario": "damage_unavailable",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.00025260879192501307,
+    "mean_recovery_policy_wall_s": 1.154246274381876e-06,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "damage_unavailable",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0031275541987270117,
+    "mean_recovery_policy_wall_s": 0.00013720422284677625,
+    "mean_method_calls": 48
+  },
+  {
+    "scenario": "damage_unavailable",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "history",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0.45,
+    "mean_policy_wall_s": 0.0028261104365810753,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 47
+  },
+  {
+    "scenario": "damage_unavailable",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.005667731119319797,
+    "mean_recovery_policy_wall_s": 0.002879651985131204,
+    "mean_method_calls": 62
+  },
+  {
+    "scenario": "damage_unavailable",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0002543296432122588,
+    "mean_recovery_policy_wall_s": 1.1185999028384686e-06,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "damage_unavailable",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.011072591715492307,
+    "mean_recovery_policy_wall_s": 0.0001991459052078426,
+    "mean_method_calls": 92
+  },
+  {
+    "scenario": "damage_unavailable",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "history",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0.25,
+    "mean_policy_wall_s": 0.007998443697579205,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 91
+  },
+  {
+    "scenario": "damage_unavailable",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.01594671669881791,
+    "mean_recovery_policy_wall_s": 0.007578699954319745,
+    "mean_method_calls": 120
+  },
+  {
+    "scenario": "damage_unavailable",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0011696689180098474,
+    "mean_recovery_policy_wall_s": 1.541757956147194e-06,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "damage_unavailable",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.008463875087909401,
+    "mean_recovery_policy_wall_s": 0.00017246254719793797,
+    "mean_method_calls": 92
+  },
+  {
+    "scenario": "damage_unavailable",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "history",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0.25,
+    "mean_policy_wall_s": 0.007489053998142481,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 91
+  },
+  {
+    "scenario": "damage_unavailable",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.014414241735357792,
+    "mean_recovery_policy_wall_s": 0.006896191602572798,
+    "mean_method_calls": 120
+  },
+  {
+    "scenario": "damage_unavailable",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0010786244180053472,
+    "mean_recovery_policy_wall_s": 1.408334355801344e-06,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "intact",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0030296104261651633,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 47
+  },
+  {
+    "scenario": "intact",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "history",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0030342103214934467,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 47
+  },
+  {
+    "scenario": "intact",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0029394416022114457,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 47
+  },
+  {
+    "scenario": "intact",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0002707582898437977,
+    "mean_recovery_policy_wall_s": 8.033413905650377e-06,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "intact",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0032378810457885264,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 47
+  },
+  {
+    "scenario": "intact",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "history",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.003193587518762797,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 47
+  },
+  {
+    "scenario": "intact",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.003101189632434398,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 47
+  },
+  {
+    "scenario": "intact",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.00031755686504766347,
+    "mean_recovery_policy_wall_s": 8.883397094905377e-06,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "intact",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.007951743819285184,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 91
+  },
+  {
+    "scenario": "intact",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "history",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.008005595894064754,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 91
+  },
+  {
+    "scenario": "intact",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.007919070788193493,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 91
+  },
+  {
+    "scenario": "intact",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.001174880936741829,
+    "mean_recovery_policy_wall_s": 2.5024928618222475e-05,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "intact",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.007560602121520788,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 91
+  },
+  {
+    "scenario": "intact",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "history",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.007518998009618372,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 91
+  },
+  {
+    "scenario": "intact",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.007529508403968066,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 91
+  },
+  {
+    "scenario": "intact",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0011040513403713704,
+    "mean_recovery_policy_wall_s": 2.3499771486967802e-05,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "transfer_partial",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.55,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.005444058473221958,
+    "mean_recovery_policy_wall_s": 0.0019731333712115886,
+    "mean_method_calls": 78.1
+  },
+  {
+    "scenario": "transfer_partial",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "history",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 1,
+    "mean_policy_wall_s": 0.002811545843724161,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 47
+  },
+  {
+    "scenario": "transfer_partial",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.55,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.005258128966670483,
+    "mean_recovery_policy_wall_s": 0.002517885318957269,
+    "mean_method_calls": 66.65
+  },
+  {
+    "scenario": "transfer_partial",
+    "sectors": 4,
+    "amplitude_cm": 0,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.55,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.00033460488775745035,
+    "mean_recovery_policy_wall_s": 8.074372308328748e-05,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "transfer_partial",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.55,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.004865033412352204,
+    "mean_recovery_policy_wall_s": 0.0018503292463719844,
+    "mean_method_calls": 78.1
+  },
+  {
+    "scenario": "transfer_partial",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "history",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 1,
+    "mean_policy_wall_s": 0.003031516692135483,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 47
+  },
+  {
+    "scenario": "transfer_partial",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.55,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.005552974960301072,
+    "mean_recovery_policy_wall_s": 0.0026185478549450637,
+    "mean_method_calls": 66.65
+  },
+  {
+    "scenario": "transfer_partial",
+    "sectors": 4,
+    "amplitude_cm": 10,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.55,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0003414497012272477,
+    "mean_recovery_policy_wall_s": 8.436664938926697e-05,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "transfer_partial",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.75,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.012303233344573528,
+    "mean_recovery_policy_wall_s": 0.0043504770961590115,
+    "mean_method_calls": 142.5
+  },
+  {
+    "scenario": "transfer_partial",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "history",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 1,
+    "mean_policy_wall_s": 0.0083178834291175,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 91
+  },
+  {
+    "scenario": "transfer_partial",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.75,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.014167360262945294,
+    "mean_recovery_policy_wall_s": 0.005981899902690202,
+    "mean_method_calls": 119.25
+  },
+  {
+    "scenario": "transfer_partial",
+    "sectors": 8,
+    "amplitude_cm": 0,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.75,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.0013716811663471162,
+    "mean_recovery_policy_wall_s": 0.0002137692179530859,
+    "mean_method_calls": null
+  },
+  {
+    "scenario": "transfer_partial",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "fresh_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.75,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.011419966956600547,
+    "mean_recovery_policy_wall_s": 0.003934102307539433,
+    "mean_method_calls": 142.5
+  },
+  {
+    "scenario": "transfer_partial",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "history",
+    "trials": 20,
+    "successes": 0,
+    "success_ci95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 0,
+    "mean_stale_preconditions": 1,
+    "mean_policy_wall_s": 0.007529731176327914,
+    "mean_recovery_policy_wall_s": 0.0,
+    "mean_method_calls": 91
+  },
+  {
+    "scenario": "transfer_partial",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "retained_htn",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.75,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.013283577060792594,
+    "mean_recovery_policy_wall_s": 0.005634070839732885,
+    "mean_method_calls": 119.25
+  },
+  {
+    "scenario": "transfer_partial",
+    "sectors": 8,
+    "amplitude_cm": 10,
+    "controller": "state_rules",
+    "trials": 20,
+    "successes": 20,
+    "success_ci95": [
+      0.8388748419471806,
+      1.0
+    ],
+    "events_fired": 20,
+    "mean_unnecessary_repeats": 0,
+    "mean_restorations": 2.75,
+    "mean_stale_preconditions": 0,
+    "mean_policy_wall_s": 0.001265074743423611,
+    "mean_recovery_policy_wall_s": 0.0001901081996038556,
+    "mean_method_calls": null
+  }
+]

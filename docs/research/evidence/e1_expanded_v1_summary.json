@@ -1,0 +1,77 @@
+{
+  "trials": 5280,
+  "suites": {
+    "scaling": 2400,
+    "resource": 1920,
+    "movement": 960
+  },
+  "exposure": {
+    "matched_cases": 1320,
+    "identical_exposed_cases": 1200,
+    "all_unexposed_cases": 120
+  },
+  "paired_comparisons": [
+    {
+      "contrast": "fresh_htn_minus_state_rules",
+      "attempted": 1320,
+      "equal_success": 1320,
+      "both_success": 830,
+      "equal_physical": 830
+    },
+    {
+      "contrast": "retained_htn_minus_state_rules",
+      "attempted": 1320,
+      "equal_success": 1320,
+      "both_success": 830,
+      "equal_physical": 830
+    },
+    {
+      "contrast": "retained_htn_minus_fresh_htn",
+      "attempted": 1320,
+      "equal_success": 1320,
+      "both_success": 830,
+      "equal_physical": 830
+    }
+  ],
+  "total_unnecessary_repeats": 0,
+  "max_stock_conservation_error_cm": 0.0,
+  "failure_counts": {
+    "history": {
+      "unsatisfied_goal": 481,
+      "stale_precondition": 449,
+      "planning_infeasible": 120
+    },
+    "state_rules": {
+      "planning_infeasible": 490
+    },
+    "fresh_htn": {
+      "planning_infeasible": 490
+    },
+    "retained_htn": {
+      "planning_infeasible": 490
+    }
+  },
+  "bulk_artifacts_verified": 545,
+  "resource_figure_source_sha256": "d05a34f655b59d74fea07591f3724d0149619eb2f6b740ace12647c304f96796",
+  "curated_sha256": {
+    "artifact_sha256.json": "5cc547e588b54c8a6740719af5190edad7e524f5bfbb920b6c3e7e4c0b389b54",
+    "exposure.json": "78a0fcf57fde950d3e197707f1742db08a4b46d4f353f7d24b47b5b2b60c2722",
+    "paired.csv": "3b4d3e38bb9ab6b0b148e063395aa273743550f3bca054a3d7f7db798a16dd59",
+    "provenance.json": "8e20c65fd4058ac2c9a3d89f06fdc7899ee13c8d63406f2bf42c1d2d557dc14e",
+    "summary.json": "f7f254788609206256587948029932b96decc4a0295fa8b5bddbad4b2652ea60",
+    "trials.csv": "47d87df6f97ed3cafc2ab01ca4a285b69d5fd695eb7e7d3daaebf324b6aadfbf"
+  },
+  "figure_sha256": {
+    "e1_expanded_movement_stress.png": "f71b5547fbe6d9600216bee884e02e83c660e4c5d1b37d07d9faf8bd8c93ea4d",
+    "e1_expanded_movement_stress.svg": "b9221d64d9d254726edce1401e04d24dbb0641f276b45b511bbd5eeb39767aad",
+    "e1_expanded_resource_completion.png": "aef1bfcf68df89606e338598756efd2b4339bc940f85774d0811df110cd1f022",
+    "e1_expanded_resource_completion.svg": "a8bc99356a9d80e6200359e315486ecd9e9a6c0821546a2d1491b9164204a2f1",
+    "e1_expanded_scaling_decision_time.png": "54c4e125579e2d0a15ab166964b75582c1a973a4e41e698edb63ced6970d06df",
+    "e1_expanded_scaling_decision_time.svg": "95d5163b041a5f811a4f4fbb76f16ca0d1ebc4a9c3c1078687e13e5caad4ea2a",
+    "e1_expanded_scaling_repair_cost.png": "ade6fb6bde4f200285604a0e5af4b37755c0a14dd751400a4668de2e37700420",
+    "e1_expanded_scaling_repair_cost.svg": "b04ca572ffc98533d459dfa8acaa7082883604deed647c06d91811636406d36c"
+  },
+  "note": "Original generated resource graph is in the bulk output. Curated resource graph was regenerated after the sweep with a separate script, using saved trials and Wilson intervals; all other figures are byte-identical copies.",
+  "figure_matplotlib_version": "3.8.4",
+  "figure_regeneration_validation": "Curated CSV reproduces the archived resource PNG byte for byte on the recorded runtime."
+}

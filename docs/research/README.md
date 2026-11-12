@@ -6,6 +6,15 @@ repository. It supplements the implementation notes and generated reports.
 | Record | Purpose |
 |---|---|
 | [SPIDER_HTN_LITERATURE.md](SPIDER_HTN_LITERATURE.md) | Verified spider literature, proposed HTN connections and prioritized experiment opportunities |
+| [E1_PROTOCOL.md](E1_PROTOCOL.md) | Fixed observed-structure recovery and partial-web transfer protocol |
+| [E1_REVIEW.md](E1_REVIEW.md) | E1 acceptance criteria, software validation and review |
+| [E1_RERUN_RESULTS.md](E1_RERUN_RESULTS.md) | Detailed same-seed rerun results, reproducibility and costs by scenario/size |
+| [E1_EXPANDED_PROTOCOL.md](E1_EXPANDED_PROTOCOL.md) | Prespecified larger webs, silk budget and movement experiments |
+| [E1_EXPANDED_ANALYSIS.md](E1_EXPANDED_ANALYSIS.md) | Post-hoc interpretation of repair dependencies, controller effort and movement |
+| [evidence/e1_expanded_v1_summary.json](evidence/e1_expanded_v1_summary.json) | 5,280 expanded trials, audits and curated evidence/figure hashes |
+| [../manuscript/e1_expanded_results.md](../manuscript/e1_expanded_results.md) | Expanded analysis, four standalone figures and manuscript captions |
+| [evidence/e1_v1_summary.json](evidence/e1_v1_summary.json) | Curated 1,920-trial E1 results, exact pair audit and provenance |
+| [../manuscript/e1_methods_results.md](../manuscript/e1_methods_results.md) | E1 methods, results and limitations: no HTN advantage over state rules |
 | [MULDER_OBJECTIVE_ROADMAP.md](MULDER_OBJECTIVE_ROADMAP.md) | Original objective, remaining gaps and proposed validation/publication route |
 | [WORK_LOG.md](WORK_LOG.md) | What changed, why, checks performed, and experiment locations |
 | [CLAIMS.md](CLAIMS.md) | Supported claims, limitations, and claims not yet supported |
@@ -42,6 +51,10 @@ before integration into the combined manuscript.
 The current detailed record covers `spider_web_mulder` versions 1–3 and a
 literature/code audit, the separate `spider_web_recovery` v1 study, and the
 integrated Mulder v4 comparison.
+It now also covers the separate E1 observed-structure study: current-state rules
+and both HTN variants have identical completion and successful physical costs
+in the declared 1,920 trials. This is computational evidence, not biological
+validation or a new planner algorithm.
 The user's earlier adaptive-planner work was restored from its stash and its
 original branch on 2026-11-12. It is separate from the recorded Mulder and
 recovery studies and has not been independently audited for manuscript claims.

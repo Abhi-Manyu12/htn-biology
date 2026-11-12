@@ -201,6 +201,12 @@ are not evidence of an advantage. No additional animal experiment is assumed.
 
 ### E1: recovery determined by current web structure
 
+Status update, 2026-11-12: implemented and tested on `development/E1` under the
+[fixed E1 protocol](E1_PROTOCOL.md). The [1,920-trial results](../manuscript/e1_methods_results.md)
+show equal completion and successful physical costs for state rules and both
+HTN variants. The proposal below records the original motivation; it is no
+longer unimplemented. Biological protocol replication remains unperformed.
+
 Motivation: Peters and Eberhard. Start from the separate recovery domain; extend
 its physical-effect abstraction before attempting a Mulder integration. Define
 partial-web transfer separately from actual damage so experimental causes remain
@@ -276,5 +282,6 @@ public-data statement in Corver is promising, not confirmation of downloaded dat
 No biological parameters, sample sizes or effect sizes were imported into our
 model by this literature task.
 
-Recommended next role: **data-scientist**, to assess feasibility of E1/E2 and
-write a fixed analysis protocol before implementation. Research-only task complete.
+Original literature-task handoff: **data-scientist**, to assess feasibility and
+write a fixed analysis protocol. E1 has since completed that workflow, including
+implementation and measurement; E2/E3 remain proposed.

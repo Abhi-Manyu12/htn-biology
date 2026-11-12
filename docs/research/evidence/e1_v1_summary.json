@@ -1,0 +1,343 @@
+{
+  "study": "E1 observed-structure recovery v1",
+  "trials": 1920,
+  "exposure": {
+    "matched_cases": 480,
+    "identical_exposed_cases": 480,
+    "all_controllers_unexposed_cases": 0,
+    "mismatches": 0
+  },
+  "aggregate": [
+    {
+      "scenario": "intact",
+      "controller": "history",
+      "trials": 80,
+      "successes": 80,
+      "failures": {},
+      "mean_policy_wall_s": 0.005403777121682651,
+      "mean_recovery_policy_wall_s": 0.0,
+      "mean_method_calls": 69
+    },
+    {
+      "scenario": "intact",
+      "controller": "state_rules",
+      "trials": 80,
+      "successes": 80,
+      "failures": {},
+      "mean_policy_wall_s": 0.000695561949396506,
+      "mean_recovery_policy_wall_s": 1.5296353376470505e-05,
+      "mean_method_calls": null
+    },
+    {
+      "scenario": "intact",
+      "controller": "fresh_htn",
+      "trials": 80,
+      "successes": 80,
+      "failures": {},
+      "mean_policy_wall_s": 0.005348553191288375,
+      "mean_recovery_policy_wall_s": 0.0,
+      "mean_method_calls": 69
+    },
+    {
+      "scenario": "intact",
+      "controller": "retained_htn",
+      "trials": 80,
+      "successes": 80,
+      "failures": {},
+      "mean_policy_wall_s": 0.005334586469689384,
+      "mean_recovery_policy_wall_s": 0.0,
+      "mean_method_calls": 69
+    },
+    {
+      "scenario": "damage_single",
+      "controller": "history",
+      "trials": 80,
+      "successes": 0,
+      "failures": {
+        "stale_precondition": 28,
+        "unsatisfied_goal": 52
+      },
+      "mean_policy_wall_s": 0.005463162998785265,
+      "mean_recovery_policy_wall_s": 0.0,
+      "mean_method_calls": 69
+    },
+    {
+      "scenario": "damage_single",
+      "controller": "state_rules",
+      "trials": 80,
+      "successes": 80,
+      "failures": {},
+      "mean_policy_wall_s": 0.0008386538800550624,
+      "mean_recovery_policy_wall_s": 0.0001395037368638441,
+      "mean_method_calls": null
+    },
+    {
+      "scenario": "damage_single",
+      "controller": "fresh_htn",
+      "trials": 80,
+      "successes": 80,
+      "failures": {},
+      "mean_policy_wall_s": 0.00894577770086471,
+      "mean_recovery_policy_wall_s": 0.0030311937734950334,
+      "mean_method_calls": 111.3
+    },
+    {
+      "scenario": "damage_single",
+      "controller": "retained_htn",
+      "trials": 80,
+      "successes": 80,
+      "failures": {},
+      "mean_policy_wall_s": 0.00989168384403456,
+      "mean_recovery_policy_wall_s": 0.0043160583183635024,
+      "mean_method_calls": 93.95
+    },
+    {
+      "scenario": "damage_multi",
+      "controller": "history",
+      "trials": 80,
+      "successes": 0,
+      "failures": {
+        "stale_precondition": 58,
+        "unsatisfied_goal": 22
+      },
+      "mean_policy_wall_s": 0.00525780312018469,
+      "mean_recovery_policy_wall_s": 0.0,
+      "mean_method_calls": 69
+    },
+    {
+      "scenario": "damage_multi",
+      "controller": "state_rules",
+      "trials": 80,
+      "successes": 80,
+      "failures": {},
+      "mean_policy_wall_s": 0.0009264695807360112,
+      "mean_recovery_policy_wall_s": 0.00024291737645398825,
+      "mean_method_calls": null
+    },
+    {
+      "scenario": "damage_multi",
+      "controller": "fresh_htn",
+      "trials": 80,
+      "successes": 80,
+      "failures": {},
+      "mean_policy_wall_s": 0.009251600012066773,
+      "mean_recovery_policy_wall_s": 0.0039009994303341954,
+      "mean_method_calls": 117.85
+    },
+    {
+      "scenario": "damage_multi",
+      "controller": "retained_htn",
+      "trials": 80,
+      "successes": 80,
+      "failures": {},
+      "mean_policy_wall_s": 0.010433846834348514,
+      "mean_recovery_policy_wall_s": 0.004748266117530875,
+      "mean_method_calls": 101.775
+    },
+    {
+      "scenario": "transfer_partial",
+      "controller": "history",
+      "trials": 80,
+      "successes": 0,
+      "failures": {
+        "stale_precondition": 80
+      },
+      "mean_policy_wall_s": 0.005298612499609589,
+      "mean_recovery_policy_wall_s": 0.0,
+      "mean_method_calls": 69
+    },
+    {
+      "scenario": "transfer_partial",
+      "controller": "state_rules",
+      "trials": 80,
+      "successes": 80,
+      "failures": {},
+      "mean_policy_wall_s": 0.0008221827447414398,
+      "mean_recovery_policy_wall_s": 0.00014993700315244496,
+      "mean_method_calls": null
+    },
+    {
+      "scenario": "transfer_partial",
+      "controller": "fresh_htn",
+      "trials": 80,
+      "successes": 80,
+      "failures": {},
+      "mean_policy_wall_s": 0.00861009435611777,
+      "mean_recovery_policy_wall_s": 0.0030105156387435273,
+      "mean_method_calls": 110.3
+    },
+    {
+      "scenario": "transfer_partial",
+      "controller": "retained_htn",
+      "trials": 80,
+      "successes": 80,
+      "failures": {},
+      "mean_policy_wall_s": 0.009472824982367456,
+      "mean_recovery_policy_wall_s": 0.004178286978276447,
+      "mean_method_calls": 92.95
+    },
+    {
+      "scenario": "damage_unavailable",
+      "controller": "history",
+      "trials": 80,
+      "successes": 0,
+      "failures": {
+        "stale_precondition": 28,
+        "unsatisfied_goal": 52
+      },
+      "mean_policy_wall_s": 0.005246254743542522,
+      "mean_recovery_policy_wall_s": 0.0,
+      "mean_method_calls": 69
+    },
+    {
+      "scenario": "damage_unavailable",
+      "controller": "state_rules",
+      "trials": 80,
+      "successes": 0,
+      "failures": {
+        "planning_infeasible": 80
+      },
+      "mean_policy_wall_s": 0.0006824814510764555,
+      "mean_recovery_policy_wall_s": 1.2912030797451735e-06,
+      "mean_method_calls": null
+    },
+    {
+      "scenario": "damage_unavailable",
+      "controller": "fresh_htn",
+      "trials": 80,
+      "successes": 0,
+      "failures": {
+        "planning_infeasible": 80
+      },
+      "mean_policy_wall_s": 0.00581302655627951,
+      "mean_recovery_policy_wall_s": 0.0001603880402399227,
+      "mean_method_calls": 70
+    },
+    {
+      "scenario": "damage_unavailable",
+      "controller": "retained_htn",
+      "trials": 80,
+      "successes": 0,
+      "failures": {
+        "planning_infeasible": 80
+      },
+      "mean_policy_wall_s": 0.010217688995180652,
+      "mean_recovery_policy_wall_s": 0.004974066602881066,
+      "mean_method_calls": 91
+    },
+    {
+      "scenario": "damage_resource",
+      "controller": "history",
+      "trials": 80,
+      "successes": 0,
+      "failures": {
+        "stale_precondition": 28,
+        "unsatisfied_goal": 52
+      },
+      "mean_policy_wall_s": 0.00518790673231706,
+      "mean_recovery_policy_wall_s": 0.0,
+      "mean_method_calls": 69
+    },
+    {
+      "scenario": "damage_resource",
+      "controller": "state_rules",
+      "trials": 80,
+      "successes": 0,
+      "failures": {
+        "planning_infeasible": 80
+      },
+      "mean_policy_wall_s": 0.0006787048740079626,
+      "mean_recovery_policy_wall_s": 2.8187147108837963e-06,
+      "mean_method_calls": null
+    },
+    {
+      "scenario": "damage_resource",
+      "controller": "fresh_htn",
+      "trials": 80,
+      "successes": 0,
+      "failures": {
+        "planning_infeasible": 80
+      },
+      "mean_policy_wall_s": 0.0054775963420979675,
+      "mean_recovery_policy_wall_s": 0.00015988174127414822,
+      "mean_method_calls": 70
+    },
+    {
+      "scenario": "damage_resource",
+      "controller": "retained_htn",
+      "trials": 80,
+      "successes": 0,
+      "failures": {
+        "planning_infeasible": 80
+      },
+      "mean_policy_wall_s": 0.010308581238496118,
+      "mean_recovery_policy_wall_s": 0.004963398992549628,
+      "mean_method_calls": 91
+    }
+  ],
+  "exact_pair_audit": [
+    {
+      "contrast": "fresh_htn_minus_state_rules",
+      "attempted_pairs": 480,
+      "identical_success_pairs": 480,
+      "both_complete_pairs": 320,
+      "identical_physical_pairs": 320,
+      "max_absolute_physical_difference": {
+        "elapsed_s": 0.0,
+        "travel_cm": 0.0,
+        "silk_used_cm": 0.0
+      }
+    },
+    {
+      "contrast": "retained_htn_minus_state_rules",
+      "attempted_pairs": 480,
+      "identical_success_pairs": 480,
+      "both_complete_pairs": 320,
+      "identical_physical_pairs": 320,
+      "max_absolute_physical_difference": {
+        "elapsed_s": 0.0,
+        "travel_cm": 0.0,
+        "silk_used_cm": 0.0
+      }
+    },
+    {
+      "contrast": "retained_htn_minus_fresh_htn",
+      "attempted_pairs": 480,
+      "identical_success_pairs": 480,
+      "both_complete_pairs": 320,
+      "identical_physical_pairs": 320,
+      "max_absolute_physical_difference": {
+        "elapsed_s": 0.0,
+        "travel_cm": 0.0,
+        "silk_used_cm": 0.0
+      }
+    }
+  ],
+  "unnecessary_repeats": 0,
+  "max_actor_stock_conservation_error_cm": 0.0,
+  "provenance": "e1_v1/provenance.json",
+  "bulk_output": "mulder_results/e1_v1_20261112",
+  "artifact_sha256": "e1_v1/artifact_sha256.json",
+  "curated_sha256": {
+    "research/evidence/e1_v1/artifact_sha256.json": "7f064e3df8e8422f4461d9b72c8419fcf59fa105e67088a04910e4e4f8a055bd",
+    "research/evidence/e1_v1/diagnostics/transfer_partial.json": "72f2732ce8f8795bc508a290c93f5b5fdad92952ed0fe89012b8e26263ee87e9",
+    "research/evidence/e1_v1/exposure.json": "ed3da082ea8d8d7ae10eb6879d579a430bbd16bf26e7a30323f143065743c9a3",
+    "research/evidence/e1_v1/paired.csv": "268113a9433b9c03261835910b54f2e7ac578b7cb224ebdabd1df79ed41fd404",
+    "research/evidence/e1_v1/provenance.json": "d68283d88fc50bd93e26883d8cd558339acacc2e25eb6cabb007cc31df946791",
+    "research/evidence/e1_v1/report.md": "a20e22da10dc4519958e63119ef9849acbbd326bf02b7727204b3dc056edcf4e",
+    "research/evidence/e1_v1/summary.json": "06c79d6fd21f116819ce89833d0d464f8664fb07e057155a2c062f12d3b7c39b",
+    "research/evidence/e1_v1/traces/case3_transfer_partial_retained_htn.json": "922084d6d38dcf3d0331b027fc5ec29fb26a294c7808a26c2deb24f98ba57982",
+    "research/evidence/e1_v1/traces/case3_transfer_partial_state_rules.json": "e1e0c887d777a380a8f505f79a3276acaf2283f66834f9b408ca926723d4c097",
+    "research/evidence/e1_v1/trials.csv": "963bcab21a3f47f99de9ca3959e9c755b28883617af50de262d327d5d5cfe4a7"
+  },
+  "figure_sha256": {
+    "e1_completion.svg": "4b02a599f75e270acb0a3e043a4d3ee2e868eee791c6a9a85b0be4d11961b245",
+    "e1_completion.png": "9238bf6614bd66fd4674d83407c3269185509d86ad2c6de650e9272bcc375262"
+  },
+  "limitations": [
+    "Synthetic prescribed sector geometry; no empirical biological validation.",
+    "Strong state-rule baseline shares authored routing and repair knowledge.",
+    "Timings are implementation wall times on one machine; not biological cost or complexity results.",
+    "Pointwise stratified descriptive intervals; seeds are forcing phases and target sectors, not animals."
+  ]
+}

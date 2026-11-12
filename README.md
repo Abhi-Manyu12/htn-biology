@@ -4,6 +4,11 @@ The [research record](docs/research/README.md) and
 [manuscript staging](docs/manuscript/README.md) track experiments, evidence,
 limitations and literature assessments across ongoing repository work.
 
+The [E1 observed-structure study](docs/manuscript/e1_methods_results.md) adds
+damage and partial-web transfer experiments with a current-state rule baseline.
+Across 1,920 trials, both HTN variants match that baseline's completion and
+physical costs; the evidence does not show an HTN performance advantage.
+
 Planner-strategy caveat: installed GTPyhop 1.9.7 defaults to iterative greedy
 search; the historical Mulder runners do not explicitly pin full backtracking. Read the
 [recovery audit](docs/research/BANSOD_REENTRANT_REVIEW.md) before interpreting

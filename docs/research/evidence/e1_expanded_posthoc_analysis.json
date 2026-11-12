@@ -1,0 +1,245 @@
+{
+  "scope": "Post-hoc descriptive analysis of expanded E1, not additional trials",
+  "input_sha256": {
+    "docs/research/evidence/e1_expanded_v1/trials.csv": "47d87df6f97ed3cafc2ab01ca4a285b69d5fd695eb7e7d3daaebf324b6aadfbf",
+    "docs/research/evidence/e1_expanded_v1/paired.csv": "3b4d3e38bb9ab6b0b148e063395aa273743550f3bca054a3d7f7db798a16dd59"
+  },
+  "resource_plus20": [
+    {
+      "sectors": 8,
+      "total": 10,
+      "successes": 3,
+      "successful_targets": [
+        {
+          "seed": 24,
+          "sector": 3
+        },
+        {
+          "seed": 25,
+          "sector": 3
+        },
+        {
+          "seed": 27,
+          "sector": 3
+        }
+      ],
+      "success_condition": "target equals last previously completed capture sector"
+    },
+    {
+      "sectors": 16,
+      "total": 10,
+      "successes": 1,
+      "successful_targets": [
+        {
+          "seed": 27,
+          "sector": 7
+        }
+      ],
+      "success_condition": "target equals last previously completed capture sector"
+    },
+    {
+      "sectors": 32,
+      "total": 10,
+      "successes": 1,
+      "successful_targets": [
+        {
+          "seed": 27,
+          "sector": 15
+        }
+      ],
+      "success_condition": "target equals last previously completed capture sector"
+    }
+  ],
+  "movement_matched_vs_stationary": [
+    {
+      "sectors": 8,
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "n": 10,
+      "stationary_mean_s": 331.3339602118083,
+      "mean_difference_s": 2.136485256198091,
+      "percent_difference": 0.6448132436627755,
+      "pointwise_bootstrap_ci95_s": [
+        1.552925238539693,
+        2.7702135622069504
+      ]
+    },
+    {
+      "sectors": 8,
+      "amplitude_cm": 20,
+      "frequency_hz": 0.05,
+      "n": 10,
+      "stationary_mean_s": 331.3339602118083,
+      "mean_difference_s": 7.548604262310522,
+      "percent_difference": 2.278246472980013,
+      "pointwise_bootstrap_ci95_s": [
+        6.684605222591782,
+        8.410146204583354
+      ]
+    },
+    {
+      "sectors": 8,
+      "amplitude_cm": 30,
+      "frequency_hz": 0.05,
+      "n": 10,
+      "stationary_mean_s": 331.3339602118083,
+      "mean_difference_s": 18.785761519746803,
+      "percent_difference": 5.6697362104801545,
+      "pointwise_bootstrap_ci95_s": [
+        15.925550629484635,
+        21.802157624116845
+      ]
+    },
+    {
+      "sectors": 24,
+      "amplitude_cm": 10,
+      "frequency_hz": 0.05,
+      "n": 10,
+      "stationary_mean_s": 915.8077167024894,
+      "mean_difference_s": 7.529021458707246,
+      "percent_difference": 0.8221181500650244,
+      "pointwise_bootstrap_ci95_s": [
+        5.893951046413783,
+        9.166936058920117
+      ]
+    },
+    {
+      "sectors": 24,
+      "amplitude_cm": 20,
+      "frequency_hz": 0.05,
+      "n": 10,
+      "stationary_mean_s": 915.8077167024894,
+      "mean_difference_s": 17.43065352908303,
+      "percent_difference": 1.9033093094961961,
+      "pointwise_bootstrap_ci95_s": [
+        14.251036660696602,
+        20.680748863930084
+      ]
+    },
+    {
+      "sectors": 24,
+      "amplitude_cm": 30,
+      "frequency_hz": 0.05,
+      "n": 10,
+      "stationary_mean_s": 915.8077167024894,
+      "mean_difference_s": 50.134095827603005,
+      "percent_difference": 5.474303711713497,
+      "pointwise_bootstrap_ci95_s": [
+        48.810410328122636,
+        51.43752942654924
+      ]
+    }
+  ],
+  "retained_minus_fresh_multi": [
+    {
+      "sectors": 4,
+      "metric": "policy_wall_s",
+      "n": 10,
+      "mean_difference": 0.0005275208270177246,
+      "ci95": [
+        0.0002604803530266509,
+        0.0007785307546146214
+      ]
+    },
+    {
+      "sectors": 4,
+      "metric": "method_calls",
+      "n": 10,
+      "mean_difference": -10.4,
+      "ci95": [
+        -10.7,
+        -10.1
+      ]
+    },
+    {
+      "sectors": 8,
+      "metric": "policy_wall_s",
+      "n": 10,
+      "mean_difference": 0.0038896041456609964,
+      "ci95": [
+        0.0017192469030851499,
+        0.007587820569169707
+      ]
+    },
+    {
+      "sectors": 8,
+      "metric": "method_calls",
+      "n": 10,
+      "mean_difference": -21.7,
+      "ci95": [
+        -22.3,
+        -21.2
+      ]
+    },
+    {
+      "sectors": 16,
+      "metric": "policy_wall_s",
+      "n": 10,
+      "mean_difference": 0.005315912840887904,
+      "ci95": [
+        0.004589802447007969,
+        0.006198945916839875
+      ]
+    },
+    {
+      "sectors": 16,
+      "metric": "method_calls",
+      "n": 10,
+      "mean_difference": -45.4,
+      "ci95": [
+        -45.9,
+        -45.0
+      ]
+    },
+    {
+      "sectors": 24,
+      "metric": "policy_wall_s",
+      "n": 10,
+      "mean_difference": -0.0009371998021379113,
+      "ci95": [
+        -0.011961169830174185,
+        0.008241477402043526
+      ]
+    },
+    {
+      "sectors": 24,
+      "metric": "method_calls",
+      "n": 10,
+      "mean_difference": -69.7,
+      "ci95": [
+        -70.3,
+        -69.2
+      ]
+    },
+    {
+      "sectors": 32,
+      "metric": "policy_wall_s",
+      "n": 10,
+      "mean_difference": 0.0216017127269879,
+      "ci95": [
+        0.009784718174487353,
+        0.035946271583670746
+      ]
+    },
+    {
+      "sectors": 32,
+      "metric": "method_calls",
+      "n": 10,
+      "mean_difference": -93.2,
+      "ci95": [
+        -93.6,
+        -93.0
+      ]
+    }
+  ],
+  "bootstrap": {
+    "method": "paired mean percentile bootstrap; exploratory",
+    "seed": 20261114,
+    "resamples": 2000
+  },
+  "limitations": [
+    "Seeds are deterministic and phase/sector draws are coupled; no animal sampling.",
+    "Multiple comparisons are not adjusted; intervals descriptive.",
+    "Motion differences compare suites with same configuration/seed except amplitude; observational across predefined configurations."
+  ]
+}

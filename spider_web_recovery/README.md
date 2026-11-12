@@ -4,6 +4,24 @@ This package integrates the **actual upstream IPyHOP planner** with an observed-
 state construction actor. It is separate from the six-controller Mulder v3
 experiment: existing outputs and its execution policies are unchanged.
 
+## E1: observed-structure recovery
+
+The separate E1 entry point compares cached execution, current-state rules,
+fresh IPyHOP and retained IPyHOP after damage or an aligned partial-web transfer:
+
+```sh
+python3 -m spider_web_recovery.e1_benchmark --output mulder_results/e1_new_run
+```
+
+Defaults run the fixed 1,920-trial design. For a smoke run, add `--seeds 1
+--sectors 4 --amplitudes 0`. E1 requires a **new** output directory and saves
+trial tables, checkpoint hashes, source provenance, paired comparisons, a report
+and completion figures. First-seed traces and separately timed tree diagnostics
+are automatic. See the [protocol](../docs/research/E1_PROTOCOL.md),
+[results](../docs/manuscript/e1_methods_results.md) and
+[review](../docs/research/E1_REVIEW.md). The measured capable controllers tie on
+completion and physical costs; E1 demonstrates no HTN advantage over state rules.
+
 ## Run
 
 ```sh
