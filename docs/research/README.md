@@ -5,6 +5,7 @@ repository. It supplements the implementation notes and generated reports.
 
 | Record | Purpose |
 |---|---|
+| [DEMO_UI_REVIEW.md](DEMO_UI_REVIEW.md) | Saved-trace demo UI, matched comparison fidelity, video export and verification |
 | [SPIDER_HTN_LITERATURE.md](SPIDER_HTN_LITERATURE.md) | Verified spider literature, proposed HTN connections and prioritized experiment opportunities |
 | [E1_PROTOCOL.md](E1_PROTOCOL.md) | Fixed observed-structure recovery and partial-web transfer protocol |
 | [E1_REVIEW.md](E1_REVIEW.md) | E1 acceptance criteria, software validation and review |

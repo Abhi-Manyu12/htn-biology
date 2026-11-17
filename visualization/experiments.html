@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Replay saved spider-web construction experiments and compare matched controller runs with synchronized simulations and video export.">
+  <title>Spider Web Lab · Experiment demos</title>
+  <link rel="stylesheet" href="experiments.css">
+  <script defer src="experiment_catalog.js"></script>
+  <script defer src="experiment_replay.js"></script>
+  <script defer src="experiment_viewer.js"></script>
+</head>
+<body>
+  <header class="lab-header">
+    <a class="brand" href="experiments.html"><span class="brand-mark" aria-hidden="true">✳</span><span>Spider Web Lab<small>CONSTRUCTION & RECOVERY</small></span></a>
+    <div class="header-right"><span class="simulation-tag">● COMPUTATIONAL MODEL</span><a href="index_updated.html">Construction viewer ↗</a></div>
+  </header>
+  <main>
+    <section class="intro">
+      <p class="eyebrow">EXPERIMENT EXPLORER</p>
+      <h1>Watch the web take shape.</h1>
+      <p class="lede">Replay the recorded construction. Compare the controllers. Inspect the evidence.</p>
+    </section>
+    <div id="study-tabs" class="study-tabs" role="tablist" aria-label="Experiment studies"></div>
+    <section id="study-panel" role="tabpanel" tabindex="0">
+      <div class="study-heading"><div><h2 id="study-title"></h2><p id="study-description"></p></div><a id="evidence-link" class="text-link">Study methods & results ↗</a></div>
+      <div id="study-summary" class="study-summary"></div>
+      <div id="construction-panel" hidden>
+        <label class="construction-choice">Construction model<select id="construction-select"><option value="index_updated.html">Updated HTN · spiral geometry</option><option value="index.html">Original HTN</option><option value="index_astar.html">A* construction</option></select></label>
+        <p class="note">Historical plan animations are shown in their original viewers. Matched experiments and video export are available in the other tabs.</p>
+        <iframe id="construction-frame" title="Original interactive construction viewer"></iframe>
+      </div>
+      <div id="replay-panel">
+        <div class="selection-bar">
+          <label>Scenario<select id="scenario-select"></select></label>
+          <label class="conditions-field">Recorded conditions<select id="case-select"></select></label>
+          <label class="compare-switch"><input id="compare-toggle" type="checkbox" checked> Side by side</label>
+        </div>
+        <div class="run-selectors">
+          <label><span class="controller-dot left-dot"></span> Left controller<select id="left-select"></select></label>
+          <span class="match-caption">SAME CASE · SAME SEED · SHARED CLOCK</span>
+          <label id="right-field"><span class="controller-dot right-dot"></span> Right controller<select id="right-select"></select></label>
+        </div>
+        <div id="message" class="message" role="status" aria-live="polite"></div>
+        <div id="viewer" class="viewer">
+          <div class="viewer-top"><span id="case-caption"></span><span class="trace-tag">SAVED TRACE REPLAY</span></div>
+          <canvas id="replay-canvas" width="1440" height="720" aria-label="Synchronized spider web construction. Recorded outcomes are also shown below."></canvas>
+          <div class="playback">
+            <button id="restart" class="icon-button" aria-label="Restart replay" title="Restart">↺</button>
+            <button id="play" class="primary-button" aria-label="Play replay">▶ Play</button>
+            <output id="clock" for="timeline">0.0 / 0.0 s</output>
+            <label class="timeline-label"><span class="sr-only">Simulation time</span><input id="timeline" type="range" min="0" max="1" step="0.01" value="0"></label>
+            <label class="speed-label"><span class="sr-only">Playback speed</span><select id="speed"><option value="1">1×</option><option value="5">5×</option><option value="10">10×</option><option value="25" selected>25×</option><option value="50">50×</option><option value="100">100×</option></select></label>
+            <button id="export" class="export-button">↓ Export video</button>
+            <button id="stop-export" class="export-button" hidden>Stop & save</button>
+          </div>
+          <div id="recording-progress" class="note" hidden></div>
+          <div class="viewer-bottom"><div class="legend"><span><i class="swatch scaffold"></i> Scaffold</span><span><i class="swatch radius"></i> Radius / frame</span><span><i class="swatch auxiliary"></i> Auxiliary</span><span><i class="swatch capture"></i> Capture</span><span><i class="swatch failed"></i> Damage / blocked</span></div><span id="render-note"></span></div>
+        </div>
+        <div class="event-strip"><span class="eyebrow">RECORDED EVENTS</span><div id="event-markers"></div></div>
+        <section class="results-section" aria-labelledby="run-results-heading">
+          <div class="section-heading"><h3 id="run-results-heading">This recorded pair</h3><span id="pair-verdict" class="verdict"></span></div>
+          <p class="note">Representative saved runs, not study averages. Failed runs retain the costs incurred before failure.</p>
+          <div id="outcomes" class="outcomes"></div>
+        </section>
+        <details class="aggregate-section" open>
+          <summary>Across seeds under these same conditions</summary>
+          <p class="note">Completion includes every attempted run. Physical means include successful runs only; planning means include failures. These descriptive averages do not establish statistical significance.</p>
+          <div class="table-scroll"><table><thead><tr><th scope="col">Controller</th><th scope="col">Completed / attempted</th><th scope="col">Simulated time (s)</th><th scope="col">Travel (cm)</th><th id="aggregate-silk-label" scope="col">Actor silk (cm)</th><th scope="col">Planning wall time (ms)</th></tr></thead><tbody id="aggregate-body"></tbody></table></div>
+        </details>
+        <details class="provenance-section"><summary>Replay provenance & interpretation</summary><p id="study-caveat"></p><p class="note">Spider movement is interpolated between recorded positions. Geometry is a schematic of the model, not observed animal behavior. Video speed is a presentation choice; planning wall time is never added to the simulation clock.</p><div id="sources"></div><a href="experiments/manifest.json">Replay source hashes ↗</a></details>
+      </div>
+    </section>
+    <footer class="page-footer">Model simulations from saved experiments · Construction geometry and disturbances are imposed assumptions · No empirical biological validation</footer>
+  </main>
+</body>
+</html>

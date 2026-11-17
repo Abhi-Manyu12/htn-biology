@@ -1,7 +1,11 @@
 # Project memory
 
-- Verification command recorded in the research work log:
-  `python3 -m pytest -q spider_web_mulder/tests spider_web_recovery/tests spider_web_htn_updated/tests`.
+- Verification command (updated 2026-11-17 to include replay checks):
+  `python3 -m pytest -q spider_web_mulder/tests spider_web_recovery/tests spider_web_htn_updated/tests visualization/tests`.
+- Replay asset build: `python3 -m visualization.export_experiments`.
+  [Demo UI, coverage, architecture and optional browser checks](../visualization/README.md).
+  Committed replay bundles work without ignored raw output directories;
+  regeneration requires original saved ledgers and matching domain hashes.
 - Main recovery experiment:
   `python3 -m spider_web_mulder.recovery_comparison --seeds 10 --trace --output mulder_results/NEW_UNIQUE_DIRECTORY`.
   Preserve historical directories; choose a new output path for each study.
@@ -18,7 +22,7 @@
   Fixed protocol: `docs/research/E1_PROTOCOL.md`; 1,920-trial result:
   `docs/manuscript/e1_methods_results.md`; curated evidence under
   `docs/research/evidence/e1_v1/`. All capable controllers tie on physical
-  outcomes; do not claim an HTN advantage. Full verification now has 226 tests.
+  outcomes; do not claim an HTN advantage. E1-stage verification had 226 tests.
 - E1 provenance records uncommitted source hashes above base HEAD `61d18d8`;
   do not treat the base commit alone as the tested E1 implementation.
 - Expanded E1: `python3 -m spider_web_recovery.e1_expanded --output

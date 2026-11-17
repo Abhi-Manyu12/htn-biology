@@ -501,3 +501,29 @@ execution timestamps were not reconstructed retroactively.
   evidence, not a new experiment or empirical biological validation. No tests
   rerun because the analysis changed no implementation. Existing 231-test
   result applies to the previously tested code.
+
+## 2026-11-17 — Saved experiment demos and comparisons
+
+- User confirmed simulated videos from experiment traces. Added
+  `visualization/experiments.html` and navigation from the three existing
+  construction viewers; their original generators/renderers remain intact.
+- Added five tabs, synchronized single/paired replay, event jumps, playback
+  speed, raw outcomes, all-matching-seed descriptive summaries and labeled
+  native-browser video export. Study/configuration/scenario/seed matching
+  prevents unrelated controller runs from being compared as a matched pair.
+- Offline exporter reads historical moving-support v4, recovery v1, E1 and
+  expanded E1 ledgers: 59 cases / 232 representative saved runs. Committed
+  bundles and source/output hashes are in `visualization/experiments/`.
+  Sector geometry hashes must agree with original provenance; final observed
+  state, duration and travel are checked against saved outcomes. No experiment
+  rerun, model change or historical artifact modification occurred.
+- Preserved physical ties, failed/unexposed cases, success-conditioned physical
+  means and separate planning timings. Donor silk remains distinct from actor
+  expenditure; Mulder chord length is labeled separately. Schematic links and
+  interpolated movement do not constitute new geometry or biological evidence.
+- Validation: 240 Python tests passed, including nine new replay checks;
+  30 browser assertions on desktop and 390 px, including native video
+  encode/download/decode and load/error/race paths. Frontend/security
+  adversarial review and focused rework are recorded in
+  `docs/research/DEMO_UI_REVIEW.md`. No claim-ledger change is warranted.
+- Usage/coverage/rebuild instructions: `visualization/README.md`.

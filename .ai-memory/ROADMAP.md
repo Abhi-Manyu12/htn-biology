@@ -2,6 +2,7 @@
 
 ## Done
 
+- 2026-11-17 — Experiment trace demos and matched comparison UI: [task](TASKS/_archive/experiment-demos.md), [spec](wiki/spec-experiment-demos.md), [review](../docs/research/DEMO_UI_REVIEW.md); labeled video export and 232 saved-run replays.
 - 2026-11-12 — Spider/HTN literature search and experiment recommendations:
   [task](TASKS/_archive/spider-htn-literature.md),
   [research report](../docs/research/SPIDER_HTN_LITERATURE.md).

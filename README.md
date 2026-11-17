@@ -4,6 +4,12 @@ The [research record](docs/research/README.md) and
 [manuscript staging](docs/manuscript/README.md) track experiments, evidence,
 limitations and literature assessments across ongoing repository work.
 
+Open the [experiment demos](visualization/experiments.html) to replay saved
+construction traces, compare matched controllers side by side, and export
+labeled videos. Tabs cover the existing construction viewers, moving-support
+construction, recovery, E1 and expanded E1. See the
+[demo guide](visualization/README.md) for replay coverage and controls.
+
 The [E1 observed-structure study](docs/manuscript/e1_methods_results.md) adds
 damage and partial-web transfer experiments with a current-state rule baseline.
 Across 1,920 trials, both HTN variants match that baseline's completion and
