@@ -1,0 +1,187 @@
+% synthesis.tex -- revised discussion and conclusions for the updated report.
+% Every number here is taken from the section it cites; nothing is introduced for the first time.
+
+\section{Revised Discussion and Conclusions}
+\label{sec:synthesis}
+
+Sections~\ref{sec:orig-discussion} and~\ref{sec:orig-summary} are the discussion and summary as they stood at
+Checkpoint~2. This section replaces them for the present state of the project. It first sets the main
+conclusions of Checkpoint~2 against what the repository now shows, then draws the new studies together.
+
+\subsection{The Checkpoint 2 conclusions, revisited}
+\label{sec:synthesis-revisited}
+
+Table~\ref{tab:synthesis-revisited} lists the conclusions of Checkpoint~2 and their present standing. The
+complete list of corrected statements, including individual table entries, is
+Table~\ref{tab:core-corrections}.
+
+\begingroup
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}p{0.27\linewidth}p{0.50\linewidth}p{0.17\linewidth}@{}}
+\caption{The main conclusions of the Checkpoint~2 report and their standing at commit \texttt{61d18d8}.}
+\label{tab:synthesis-revisited}\\
+\toprule
+Checkpoint 2 conclusion & Standing now & Evidence \\
+\midrule
+\endfirsthead
+\toprule
+Checkpoint 2 conclusion & Standing now & Evidence \\
+\midrule
+\endhead
+Zschokke's construction sequence can be written as an executable HTN
+(Sections~\ref{sec:orig-prelim}--\ref{sec:orig-energy})
+& Stands. The model now also generates explicit spiral geometry (logarithmic auxiliary spiral, Archimedean
+capture spiral), and exists in a configurable form with 56 passing tests.
+& Sections~\ref{sec:core-plans}, \ref{sec:core-spiral}, \ref{sec:core-tests} \\
+\addlinespace
+Early-stage variability is reproduced by backtracking over three proto-hub strategies
+(Sections~\ref{sec:orig-htn}, \ref{sec:orig-protohub})
+& Encoded, but not exercised. The planner as configured is greedy and does not backtrack, and only the
+\textit{via-walk} strategy has ever appeared in a generated plan.
+& Sections~\ref{sec:recovery-strategy}, \ref{sec:core-config} \\
+\addlinespace
+The default plan has 70 actions and costs 600.1\,cm (Section~\ref{sec:orig-vis})
+& The plan with that cost has 71 actions and came from the configurable package as it then stood. The current
+plan of that package has 105 actions and 701.6\,cm; the original package's plan has 128 actions and
+751.6\,cm.
+& Section~\ref{sec:core-plans} \\
+\addlinespace
+The HTN agent uses about 14.3 times less locomotory energy than a random walker
+(Section~\ref{sec:orig-comparison})
+& The order-of-magnitude gap stands: over 1{,}000 trials per condition the ratio of mean energies is
+13.2--14.7 and of medians 10.3--11.5. The particular figures of Table~\ref{tab:orig-comparison} do not: its
+HTN run had anchor removal switched on, and its baseline column cannot be reproduced.
+& Sections~\ref{sec:core-anchor}, \ref{sec:core-compare} \\
+\addlinespace
+The HTN agent stays more reliable than the baseline as anchors are removed
+(Sections~\ref{sec:orig-anchor-removal}, \ref{sec:orig-discussion})
+& Not supported. The two success rates use different criteria; the HTN rate equals the probability that at
+least one removable anchor survives, and the baseline's rate is higher from 60\,\% removal onwards.
+& Section~\ref{sec:core-anchor} \\
+\addlinespace
+Wind is not yet swept (Table~\ref{tab:orig-roadmap})
+& A wind sweep exists. In this model wind changes the cost that is reported and nothing else: success is
+unchanged at every noise level for both agents.
+& Section~\ref{sec:core-wind} \\
+\addlinespace
+The random-walker comparison isolates the effect of hierarchy (Section~\ref{sec:orig-baseline})
+& It does not. Under a stricter flat baseline, the same action sequence without compound tasks, the HTN
+agent and the flat agent perform identically in the moving-support benchmark (claim C06).
+& Sections~\ref{sec:core-compare}, \ref{sec:mulder-claims} \\
+\addlinespace
+The task hierarchy reaches an efficient plan at a fraction of the search cost of a flat-state search
+(Section~\ref{sec:orig-discussion})
+& Not measured. The repository's flat-state planner (A*) solves a much weaker goal at the commit where it
+works, and returns no plan at the current commit because of a defect in its heuristic.
+& Sections~\ref{sec:astar_fap-effort}, \ref{sec:astar_fap-compare} \\
+\bottomrule
+\end{longtable}
+\endgroup
+
+\subsection{What the work since Checkpoint 2 shows}
+\label{sec:synthesis-new}
+
+\paragraph{The model itself.}
+The HTN formalisation has become a configurable, tested and instrumented package whose plan contains real
+spiral geometry rather than a placeholder polygon (Section~\ref{sec:core}). Auditing it against its own
+committed results also showed where the earlier account was loose: which plan the published numbers
+described, what ``success'' meant for each agent, and which stochastic settings were active.
+
+\paragraph{Alternative formulations.}
+Two non-HTN formulations exist beside the HTN models (Section~\ref{sec:astar_fap}). The fixed-action-pattern
+model is a method library with exactly one method per task: it expands to a fixed 61-action sequence and has
+no alternative when a precondition fails. The A* formulation searches a flat state space; as committed it
+finds a 26-action plan for a goal that only counts threads, and since a later change to a shared distance
+function its heuristic evaluates to zero and the search finds no plan within its budget. The four planners
+are therefore described side by side but not ranked (claim C17).
+
+\paragraph{Construction on moving supports.}
+The moving-support benchmark (Section~\ref{sec:mulder}) gives the clearest result of the project so far, and
+it is about feedback rather than hierarchy. Executing a precomputed plan to fixed end points fails as soon as
+the supports move appreciably: no policy completes any of 30 trials at 10\,cm amplitude. With continuous
+tracking of the moving target, all five feedback policies complete 30 of 30 trials in every moving condition,
+while the open-loop policy completes none of 120. The cost of motion under ideal tracking is small (about
+1\,\% more construction time for local feedback at 10\,cm and 0.05\,Hz). The same study records what did
+\emph{not} help: predictive repair and frequent full replanning add planning work without improving
+completion (claims C07, C08), the HTN agent and a flat agent given the same sequence behave identically
+(C06), and completion collapses when sensing lags by one second or more (C10).
+
+\paragraph{Recovery from execution failure.}
+The recovery benchmark (Section~\ref{sec:recovery}) separates search backtracking from recovery during
+execution and tests the latter with the re-entrant planner IPyHOP. All four back-ends complete every trial
+in the five feasible failure scenarios and correctly report the two infeasible ones. Retaining the solution
+tree reduces method calls in most scenarios but increases them when silk runs out, and it does not reduce
+planning time as implemented (claims C21, C26). Integrated into the moving-support model, retained and fresh
+IPyHOP give identical physical outcomes in all 720 paired trials (C25).
+
+\paragraph{A physical picture of the planned web.}
+The simulation of Section~\ref{sec:sim} adds what the planner's straight-line drawings leave out: threads
+that hang under gravity, belly in wind and deform with moving supports. Its cable solver reproduces the exact elastic catenary to within 0.02\,\% of the sag on a
+16\,cm span. With the illustrative silk values used, such a span sags only 0.037\,cm, so the figures
+multiply the silk's weight by a stated factor to make the curvature visible. The simulation is an
+illustration layered on the planner's output and feeds no claim in the ledger.
+
+\paragraph{The research record.}
+Since October the project keeps a dated work log, a claim ledger and hashed evidence files
+(Sections~\ref{sec:record} and~\ref{sec:record-b}). Of the 28 claims the ledger tracks, 11 are supported, 10
+were tested and found negative, 6 are not established and 1 is explicitly not claimed. All 177 tests pass.
+
+\subsection{Discussion}
+\label{sec:synthesis-discussion}
+
+Three points follow from taking these results together.
+
+First, what the HTN encodes is knowledge of the construction order, and that is what the comparison with a
+random walker measures. The tenfold energy gap is real and stable, but it separates an agent that knows the
+order from one that does not. Where a flat agent was handed the same action sequence, in the moving-support
+benchmark, it performed identically to the HTN agent. No experiment in the repository yet shows a benefit
+that comes from the hierarchy as such.
+
+Second, robustness in these models comes from closing the loop during execution. Fixed plans fail under
+moving supports whatever planner produced them, and simple local feedback is sufficient under ideal sensing.
+More elaborate replanning has so far bought nothing measurable, and the benefit of retaining a solution tree
+is confined to planning effort in particular failure scenarios.
+
+Third, the biological reading must stay modest. The literature review (Section~\ref{sec:record-related})
+supports describing web building in stages with cue-dependent behaviour, which is what an HTN can express,
+but it does not establish that spiders plan hierarchically, and the simulator is not calibrated against
+measured construction data (claim C12). The link to a caloric optimisation proposed at the end of
+Section~\ref{sec:orig-discussion} remains a proposal: the pruning heuristic it relies on is not implemented.
+
+\subsection{Issues found while preparing this update}
+\label{sec:synthesis-issues}
+
+Checking every number against the repository surfaced the following defects. None is fixed in commit
+\texttt{61d18d8}; each is small and would make the affected result reproducible or comparable.
+
+\begin{enumerate}
+\item The A* heuristic passes coordinates to a distance function that expects node names, so it is constant
+or zero rather than informative, and it is not admissible even when corrected because two rig nodes share a
+position (Section~\ref{sec:astar_fap-effort}).
+\item The random-walker baseline enumerates candidate actions from a Python set, so its results depend on
+the interpreter's hash seed and the committed baseline rows cannot be regenerated exactly
+(Section~\ref{sec:core-anchor}).
+\item The HTN agent and the baseline are scored by different completion criteria in the sensitivity sweeps
+(Section~\ref{sec:core-anchor}).
+\item No runner of the original or updated HTN model selects a GTPyhop search strategy, so the documented
+backtracking is not what executes (Section~\ref{sec:recovery-strategy}).
+\item The spiral generator steps through seven directions while the configuration assumes eight per turn, so
+the spirals make more rotations than configured and one radius receives no spiral attachment
+(Section~\ref{sec:core-spiral}).
+\item The \texttt{empirical:} configuration block and \texttt{empirical\_data.md} are not read by any code
+(Sections~\ref{sec:core-config}, \ref{sec:astar_fap-empirical}).
+\end{enumerate}
+
+\subsection{Conclusions}
+\label{sec:synthesis-conclusions}
+
+The project now has an executable and configurable HTN model of orb-web construction after Zschokke, two
+alternative formulations, a moving-support benchmark with six execution policies, a recovery benchmark built
+on a re-entrant planner, and a physical simulation of the planned web. The formalisation of Checkpoint~2
+stands. Its comparative claims are narrowed: the energy advantage over undirected search is confirmed, the
+reliability advantage is withdrawn, and backtracking over alternative strategies is encoded but has not been
+exercised. The new experiments show that closed-loop execution, not hierarchical structure, is what carries
+construction through disturbance in these models, and they record the negative results as carefully as the
+positive ones. The open questions and the experiments proposed to address them are listed in
+Section~\ref{sec:record-limits}.

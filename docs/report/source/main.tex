@@ -1,0 +1,70 @@
+% ======================================================================================
+% Updated BTP report.
+%   Part I  : the Checkpoint 2 report (compiled 2026-09-18), re-typeset verbatim from its PDF,
+%             with dated update notes where the repository now says otherwise.
+%   Part II : everything the repository contains that Checkpoint 2 does not.
+% Repository state: https://github.com/Abhi-Manyu12/htn-biology, commit 61d18d8 (2026-11-12).
+% Build: pdflatex main; bibtex main; pdflatex main; pdflatex main
+% ======================================================================================
+\documentclass[11pt]{article}
+\input{preamble}
+\input{sections/orig_front}
+
+% Update notes attached to Checkpoint 2 text (Part I). Rendered as footnotes so that the
+% original wording stays exactly as it was.
+\newcommand{\cpnote}[1]{\footnote{\textbf{Update, November 2026.} #1}}
+\newcommand{\inputifexists}[1]{\IfFileExists{#1.tex}{\input{#1}}{\section{[pending: #1]}}}
+\setcounter{tocdepth}{2}
+
+\title{\origtitle\\[1.5ex]
+  \large Updated report: the Checkpoint~2 text, with all repository work up to commit \texttt{61d18d8}}
+\author{}
+\date{17 November 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\origabstract
+
+\medskip
+\noindent\textbf{This updated version.}
+\input{sections/abstract_update}
+\end{abstract}
+
+\clearpage
+\tableofcontents
+\clearpage
+
+\input{sections/whatsnew}
+
+\clearpage
+\part{The Checkpoint 2 Report}
+\label{part:cp2}
+\input{sections/part1_preface}
+\input{sections/orig_annotated}
+
+\clearpage
+\part{Work since Checkpoint 2}
+\label{part:new}
+\inputifexists{sections/record_a}
+\clearpage
+\inputifexists{sections/core}
+\clearpage
+\inputifexists{sections/astar_fap}
+\clearpage
+\inputifexists{sections/mulder}
+\clearpage
+\inputifexists{sections/recovery}
+\clearpage
+\inputifexists{sections/sim}
+\clearpage
+\inputifexists{sections/record_b}
+\clearpage
+\inputifexists{sections/synthesis}
+
+\clearpage
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+\end{document}

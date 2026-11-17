@@ -1,0 +1,68 @@
+% whatsnew.tex -- reader's guide to the updated report. \newfigcount and \newtabcount come from
+% sections/_counts.tex, which tools/assemble.py generates by counting the figure/table environments of Part II.
+\input{sections/_counts}
+
+\section*{What is new in this version}
+\addcontentsline{toc}{section}{What is new in this version}
+
+The Checkpoint~2 report was compiled on 18~September 2026. This version brings it level with the project
+repository\footnote{\url{https://github.com/Abhi-Manyu12/htn-biology}, branch \texttt{main}, commit
+\texttt{61d18d8} of 12~November 2026, which was still the head of the branch on 17~November 2026.} by
+comparing the report against every package, result file and document the repository contains.
+The table below is a guide to what was added. Part~\ref{part:new} contains \newfigcount{} figures
+and \newtabcount{} tables that Checkpoint~2 did not have.
+
+\begin{table}[H]
+\centering
+\small
+\caption*{Guide to this version. Sections, algorithms, tables and figures of Checkpoint~2 keep their original numbers.}
+\begin{tabularx}{\linewidth}{@{}p{0.30\linewidth}X@{}}
+\toprule
+Section & What it contains \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{Part~\ref{part:cp2}: the Checkpoint 2 report}} \\
+Sections~\ref{sec:orig-prelim}--\ref{sec:orig-summary}
+  & The Checkpoint~2 text, unchanged, with 15 dated update notes where the repository now shows that a
+    statement is out of date or was incorrect. \\
+\addlinespace
+\multicolumn{2}{@{}l}{\textit{Part~\ref{part:new}: work since Checkpoint 2}} \\
+\ref{sec:record}\quad Project record
+  & What was built and when; the structure of the repository; the roadmap status table of Checkpoint~2
+    brought up to date; related work and positioning. \\
+\ref{sec:core}\quad Core HTN model
+  & The three plans that exist and which one Checkpoint~2 showed; spiral geometry; the anchor-removal sweep to
+    80\,\% and the wind sweep; the baseline comparison re-examined; the simulated webs of the interactive
+    viewer; a table of corrections. \\
+\ref{sec:astar_fap}\quad A* and fixed action pattern
+  & Two formulations Checkpoint~2 does not mention, measured and compared descriptively with the HTN plans. \\
+\ref{sec:mulder}\quad Moving supports
+  & A benchmark after Mulder et al.: six execution policies building a web while its supports move; pilot,
+    controller audit and validation studies; galleries of the simulated webs. \\
+\ref{sec:recovery}\quad Re-entrant recovery
+  & Recovery from failures during execution with IPyHOP; solution trees before and after repair; the audit
+    showing that the planner as configured does not backtrack. \\
+\ref{sec:sim}\quad Physical simulation
+  & A two-dimensional simulation of the planned web in which threads sag under gravity and respond to wind,
+    moving supports and anchor loss, with its validation against the analytic catenary. \\
+\ref{sec:record-b}\quad Claims and limitations
+  & The repository's ledger of 28 claims with the status of each; how results are kept reproducible; what
+    remains open. \\
+\ref{sec:synthesis}\quad Revised discussion
+  & The conclusions of Checkpoint~2 set against the present evidence; issues found while preparing this
+    update; conclusions. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\paragraph{How the figures were made.}
+Every plotted value comes from a file committed in the repository or from a re-run of the repository's own
+code at a stated commit, and each caption names its source. The scripts that produced the figures, and a
+manifest listing the source data of each one, are kept with the source of this report under \texttt{scripts/} and
+\texttt{figures/}. Drawings of simulated webs are either the repository's own renderings, converted
+unchanged, or redrawn from the plan and trace data it stores.
+
+\paragraph{How to read the results.}
+The repository keeps a ledger of what may and may not be claimed (Section~\ref{sec:record-claims}), and this
+report follows it. Several of the new results are negative. They are reported in the same detail as the
+positive ones, because they change what the earlier conclusions can bear
+(Table~\ref{tab:synthesis-revisited}).

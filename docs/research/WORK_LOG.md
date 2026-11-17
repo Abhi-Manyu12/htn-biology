@@ -304,3 +304,40 @@ execution timestamps were not reconstructed retroactively.
 - No prior Mulder or recovery evidence was changed. An independent audit of
   the adaptive-planner model, benchmark design and its old outputs is needed
   before adding quantitative claims to the manuscript.
+
+## 2026-11-17 — Updated Checkpoint 2 report and physical web simulation
+
+- Added `docs/report/`: the Checkpoint 2 report re-typeset from its PDF
+  (Part I, unchanged wording, 15 dated update notes) plus the work in this
+  repository that the report did not cover (Part II: updated HTN model, A* and
+  FAP packages, Mulder v1–v3, recovery v1 and Mulder v4, research record,
+  claim ledger). `BTP_Checkpoint2_updated.pdf` is 128 pages; LaTeX source and
+  figures are under `docs/report/source/`, figure scripts and per-area
+  `MANIFEST.md` files under `docs/report/scripts/` and
+  `docs/report/source/figures/`. All text and figures describe commit
+  `61d18d8`; sweep CSVs are reported as results of `39b89f3`.
+- Added `visualization/orb_web_sim.html`: a self-contained 2D tension-only
+  cable simulation of the planned web (`plan_data_updated.js`, 105 actions)
+  under gravity, in-plane wind, Mulder-style support shear and anchor removal.
+  Silk density, stiffness, drag and spider mass are illustrative, and silk
+  weight is multiplied by an explicit exaggeration factor (default 2000) so
+  that sag is visible. Its single-span solver matches the elastic catenary to
+  0.02% of the sag (16 cm span, 40 segments). It is an illustration and
+  supports no entry in `CLAIMS.md`.
+- Checks made while preparing the report, run in private checkouts: `pytest`
+  over the three test directories passed 177 tests (Python 3.13.3); HTN rows
+  of `sensitivity_comparison.csv` and `wind_sensitivity.csv` reproduce at
+  `39b89f3`, baseline rows do not (candidate actions are enumerated from a
+  Python set, so they depend on `PYTHONHASHSEED`).
+- Findings recorded in the report but not yet reflected in `CLAIMS.md` or
+  fixed in code: HTN "success" in the anchor-removal sweep means a plan was
+  returned and equals the chance that one removable anchor survives; the A*
+  heuristic passes coordinates to `calculate_distance`, which expects node
+  names, so A* returns no plan at `61d18d8`; the `empirical:` config block is
+  read by no computation; the spiral generator uses seven directions against a
+  configured eight steps per turn. These are observations for the team to
+  audit, not new manuscript claims.
+- The figure scripts under `docs/report/scripts/` contain absolute paths of
+  the workspace in which they were run and need those paths changed before
+  re-use. No model, planner, experiment output or existing evidence file was
+  modified.

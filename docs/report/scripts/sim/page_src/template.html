@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orb-web cable simulation</title>
+<style>
+* { box-sizing: border-box; border-radius: 0; }
+html, body { margin: 0; background: #fff; color: #111; }
+body { font: 12px/1.35 "Helvetica Neue", Helvetica, Arial, sans-serif; font-variant-numeric: tabular-nums; padding: 8px 12px 6px; display: flex; flex-direction: column; height: 100vh; }
+h1 { font-size: 14px; font-weight: 600; margin: 0; }
+p.sub { margin: 2px 0 6px; color: #444; }
+p.sub code, td code, .src code { font: 11px Menlo, Consolas, monospace; }
+#main { display: grid; grid-template-columns: minmax(420px, 1fr) 372px 300px; gap: 0 14px; flex: 1 1 auto; min-height: 0; }
+#figcol { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+#canvasbox { flex: 1 1 auto; min-height: 0; position: relative; border-top: 1px solid #000; border-bottom: 1px solid #000; }
+canvas { display: block; }
+#web { position: absolute; left: 0; top: 0; }
+#transport { display: flex; gap: 4px; align-items: center; padding: 5px 0 2px; flex-wrap: nowrap; }
+#transport button { flex: 0 0 auto; white-space: nowrap; }
+#transport input[type=range] { flex: 1 1 60px; min-width: 60px; }
+#bPlay { width: 52px; text-align: center; padding-left: 0; padding-right: 0; }
+#bRun { width: 82px; text-align: center; padding-left: 0; padding-right: 0; }
+#stepl { flex: 0 0 auto; min-width: 64px; text-align: right; white-space: nowrap; }
+#status { padding: 1px 0 3px; color: #222; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#legend { padding: 3px 0 0; border-top: 1px solid #bbb; display: flex; flex-wrap: wrap; gap: 1px 10px; color: #222; font-size: 11px; }
+.ls { display: inline-block; width: 22px; height: 0; vertical-align: middle; margin-right: 4px; }
+.sq { display: inline-block; width: 6px; height: 6px; background: #000; vertical-align: middle; margin: 0 4px 0 8px; }
+.sqo { display: inline-block; width: 7px; height: 7px; border: 1px solid #000; vertical-align: middle; margin: 0 4px 0 8px; }
+.col { overflow-y: auto; min-height: 0; border-top: 1px solid #000; }
+table { border-collapse: collapse; width: 100%; }
+th, td { padding: 1px 3px; text-align: left; vertical-align: middle; font-weight: normal; }
+tr.h th { font-weight: 600; padding-top: 7px; border-bottom: 1px solid #000; }
+tr.h:first-child th { padding-top: 3px; }
+.src { font-weight: normal; color: #555; font-size: 11px; }
+td.u { color: #444; white-space: nowrap; }
+td.n { text-align: right; white-space: nowrap; }
+td.note, p.note { color: #555; font-size: 11px; }
+p.note { margin: 3px 3px 0; }
+input[type=number], input[type=text] { width: 66px; font: inherit; font-variant-numeric: tabular-nums; border: 1px solid #888; padding: 1px 3px; background: #fff; color: #111; text-align: right; border-radius: 0; }
+input[type=number]:focus, input[type=text]:focus, select:focus { outline: 1px solid #000; outline-offset: 0; }
+table.mat input[type=number] { width: 52px; }
+input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; min-width: 70px; height: 15px; background: transparent; margin: 0; border-radius: 0; }
+input[type=range]::-webkit-slider-runnable-track { height: 1px; background: #000; border: 0; }
+input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 7px; height: 13px; background: #fff; border: 1px solid #000; border-radius: 0; margin-top: -6px; }
+input[type=range]::-moz-range-track { height: 1px; background: #000; border: 0; }
+input[type=range]::-moz-range-thumb { width: 7px; height: 13px; background: #fff; border: 1px solid #000; border-radius: 0; }
+input[type=range]:focus { outline: none; }
+input[type=range]:focus-visible::-webkit-slider-thumb { background: #000; }
+input[type=checkbox] { -webkit-appearance: none; appearance: none; width: 11px; height: 11px; border: 1px solid #000; background: #fff; margin: 0 4px 0 0; vertical-align: -1px; border-radius: 0; }
+input[type=checkbox]:checked { background: #000; }
+select { -webkit-appearance: none; appearance: none; font: inherit; border: 1px solid #888; background: #fff; color: #111; padding: 1px 16px 1px 3px; border-radius: 0; }
+.selw { position: relative; display: inline-block; }
+.selw::after { content: "\25BE"; position: absolute; right: 4px; top: 1px; pointer-events: none; }
+button { font: inherit; background: #fff; color: #111; border: 1px solid #000; padding: 1px 7px; cursor: pointer; border-radius: 0; }
+button:hover { background: #ececec; }
+button.on { background: #000; color: #fff; }
+button:focus-visible { outline: 1px dotted #000; outline-offset: 1px; }
+.seg { display: inline-flex; }
+.seg button + button { border-left: 0; }
+#plots canvas { width: 100%; height: 66px; margin-top: 2px; }
+.plabel { color: #333; margin-top: 6px; }
+body.noui { padding: 0; }
+body.noui header, body.noui #params, body.noui #readouts, body.noui #transport, body.noui #status, body.noui #legend { display: none; }
+body.noui #main { display: block; height: 100vh; min-height: 0; flex: none; }
+body.noui #figcol { height: 100vh; }
+body.noui #canvasbox { border: 0; }
+@media (max-width: 1240px) {
+  body { height: auto; display: block; }
+  #main { grid-template-columns: minmax(420px, 1fr) 372px; }
+  #figcol { height: calc(100vh - 60px); min-height: 560px; }
+  #readouts { grid-column: 1 / -1; max-height: none; }
+  #params { max-height: calc(100vh - 52px); }
+}
+@media (max-width: 860px) {
+  #transport { flex-wrap: wrap; }
+  #main { display: block; }
+  #figcol { height: 88vh; }
+  .col { max-height: none; margin-top: 10px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Orb-web construction as a 2D cable network: gravity, wind and moving supports applied to the HTN plan</h1>
+  <p class="sub">Topology and order: <code>visualization/plan_data_updated.js</code> (105 actions). Rig: <code>spider_web_htn_updated/config.yaml</code> (16 &times; 18 cm). Values are illustrative unless a repository source is named.</p>
+</header>
+<div id="main">
+  <section id="figcol">
+    <div id="canvasbox"><canvas id="web"></canvas></div>
+    <div id="transport">
+      <button id="bReset" title="rebuild at step 0">Step 0</button>
+      <button id="bBack">Step &minus;1</button>
+      <button id="bPlay">Play</button>
+      <button id="bFwd">Step +1</button>
+      <button id="bEnd" title="finished web">Finished</button>
+      <input type="range" id="scrub" min="0" max="105" step="1" value="105" aria-label="plan step">
+      <span id="stepl">105 / 105</span>
+      <button id="bRun" class="on" title="integrate the equations of motion in real time">Physics on</button>
+      <button id="bSettle" title="static equilibrium">Settle</button>
+    </div>
+    <div id="status">&nbsp;</div>
+    <div id="legend"></div>
+  </section>
+
+  <section id="params" class="col">
+    <table id="ptab">
+      <tr class="h"><th colspan="4">Display</th></tr>
+      <tr><td>Panel</td><td colspan="3"><span class="seg"><button data-k="panel" data-v="web">Web</button><button data-k="panel" data-v="validate">Validation: single span</button></span></td></tr>
+      <tr><td>Thread colour</td><td colspan="3"><span class="seg"><button data-k="tmap" data-v="0">Type</button><button data-k="tmap" data-v="1">Tension (log)</button></span></td></tr>
+      <tr><td>Straight-line plan</td><td colspan="3"><label><input type="checkbox" id="ghost">overlay (as drawn by <code>index_updated.html</code>)</label></td></tr>
+
+      <tr class="h"><th colspan="4">Construction <span class="src">plan_data_updated.js</span></th></tr>
+      <tr><td>Mode</td><td colspan="3"><span class="seg"><button data-k="mode" data-v="final">Finished web</button><button data-k="mode" data-v="play">Construction playback</button></span></td></tr>
+      <tr data-p="speed"><td>Spider speed</td><td></td><td></td><td class="u">cm/s</td></tr>
+      <tr><td colspan="4" class="note">1.0 cm/s in <code>spider_web_mulder/config.yaml</code>; default plays 20&times; faster. Action duration = plan distance / speed.</td></tr>
+      <tr data-p="spider"><td>Spider mass</td><td></td><td></td><td class="u">mg</td></tr>
+      <tr data-p="cap"><td>Silk capacity</td><td></td><td></td><td class="u">cm</td></tr>
+      <tr><td colspan="4" class="note">Construction stops where the plan's cumulative distance exceeds it (<code>operators._has_capacity</code>; 2200 cm in <code>perturbations.py</code>). 0 = unlimited. No replanning.</td></tr>
+
+      <tr class="h"><th colspan="4">Gravity and silk <span class="src">illustrative values</span></th></tr>
+      <tr data-p="g"><td>Gravity g</td><td></td><td></td><td class="u">m/s&sup2;</td></tr>
+      <tr data-p="exag"><td>Sag exaggeration X</td><td></td><td></td><td class="u">&times; weight</td></tr>
+      <tr><td colspan="4" class="note">Silk mass and weight per length are multiplied by X. At X = 1 a 16 cm thread with these values sags about 0.04 cm, too little to see.</td></tr>
+      <tr data-p="ds"><td>Segment length</td><td></td><td></td><td class="u">cm</td></tr>
+      <tr><td colspan="4">
+        <table class="mat" id="mattab"><tr><th>thread type</th><th>&mu; &micro;g/cm</th><th>EA mN</th><th>slack %</th></tr></table>
+      </td></tr>
+      <tr><td colspan="4" class="note">&mu;: linear density; EA: axial stiffness; slack: rest length / laid chord &minus; 1. Tension-only (no compression).</td></tr>
+
+      <tr class="h"><th colspan="4">Wind <span class="src">stochastic.py, config.yaml</span></th></tr>
+      <tr data-p="wind"><td>Mean speed U</td><td></td><td></td><td class="u">m/s</td></tr>
+      <tr data-p="dir"><td>Direction</td><td></td><td></td><td class="u">deg (0 = +x)</td></tr>
+      <tr data-p="gust"><td>Gust noise_std</td><td></td><td></td><td class="u">relative</td></tr>
+      <tr data-p="gtau"><td>Gust time scale</td><td></td><td></td><td class="u">s</td></tr>
+      <tr data-p="cn"><td>Drag coeff. c<sub>n</sub></td><td></td><td></td><td class="u">N s/m&sup2;</td></tr>
+      <tr><td colspan="4" class="note">The repo applies seeded multiplicative noise 1 + N(0, noise_std), floored at 0.1, to movement cost (default 0.08). Here the same factor multiplies the wind speed, as an Ornstein&ndash;Uhlenbeck process. Drag is linear (low Reynolds number); c<sub>t</sub> = c<sub>n</sub>/2. Only the in-plane wind component is modelled.</td></tr>
+
+      <tr class="h"><th colspan="4">Moving supports <span class="src">spider_web_mulder/model.py</span></th></tr>
+      <tr data-p="amp"><td>Amplitude A</td><td></td><td></td><td class="u">cm</td></tr>
+      <tr data-p="freq"><td>Frequency f</td><td></td><td></td><td class="u">Hz</td></tr>
+      <tr data-p="phase"><td>Phase</td><td></td><td></td><td class="u">deg</td></tr>
+      <tr><td>Presets</td><td colspan="3"><span class="seg"><button data-amp="0" data-freq="0.05">static</button><button data-amp="5" data-freq="0.05">5 cm, 0.05 Hz</button><button data-amp="10" data-freq="0.05">10 cm, 0.05 Hz</button><button data-amp="10" data-freq="0.1">10 cm, 0.1 Hz</button></span></td></tr>
+      <tr><td colspan="4" class="note">Affine shear as in the Mulder package: x += (1 &minus; y/18 cm) A sin(2&pi;ft + phase). The top bar is fixed and the bottom bar moves. Config default: A = 10 cm, f = 0.049 Hz.</td></tr>
+
+      <tr class="h"><th colspan="4">Anchor availability <span class="src">stochastic.select_available_anchors</span></th></tr>
+      <tr data-p="drop"><td>Removal probability</td><td></td><td></td><td class="u"></td></tr>
+      <tr data-p="seed"><td>Seed</td><td></td><td></td><td class="u"></td></tr>
+      <tr><td colspan="4" class="note">Same draws as Python <code>random.Random(seed)</code> over the sorted removable anchors (seed 7107 in config). Threads ending on a removed anchor, or on a waypoint of its radius, are not built. The planner would replan; this page does not.</td></tr>
+      <tr><td>Detach after build</td><td colspan="3"><span class="selw"><select id="detsel"></select></span> <button id="bDetach">Detach</button> <button id="bRestore">Restore</button></td></tr>
+      <tr><td colspan="4" class="note">Structural failure (<code>perturbations.py</code>): the anchor lets go and its threads fall under load.</td></tr>
+
+      <tr class="h"><th colspan="4">Solver</th></tr>
+      <tr data-p="sub"><td>Sub-steps per frame</td><td></td><td></td><td class="u">&times; 1/60 s</td></tr>
+      <tr data-p="damp"><td>Numerical damping</td><td></td><td></td><td class="u">1/s</td></tr>
+      <tr><td colspan="4" class="note">Backward Euler, Newton iterations with line search on the incremental potential, exact sparse block elimination. Settle uses damped Newton to static equilibrium.</td></tr>
+
+      <tr class="h vrow"><th colspan="4">Validation span</th></tr>
+      <tr class="vrow" data-p="vL"><td>Span L</td><td></td><td></td><td class="u">cm</td></tr>
+      <tr class="vrow" data-p="vslack"><td>Slack</td><td></td><td></td><td class="u">%</td></tr>
+      <tr class="vrow" data-p="vN"><td>Segments N</td><td></td><td></td><td class="u"></td></tr>
+      <tr class="vrow"><td>Material of</td><td colspan="3"><span class="selw"><select id="vtype"></select></span> (&mu;, EA above; g and X above)</td></tr>
+    </table>
+  </section>
+
+  <section id="readouts" class="col">
+    <table id="rtab"></table>
+    <div id="plots">
+      <div class="plabel">Kinetic energy (J, log scale), last 20 s</div><canvas id="pKE"></canvas>
+      <div class="plabel">Wind speed now (m/s)</div><canvas id="pW"></canvas>
+      <div class="plabel">Maximum thread sag (cm)</div><canvas id="pS"></canvas>
+      <div class="plabel">Maximum tension (mN)</div><canvas id="pT"></canvas>
+    </div>
+    <table id="rtab2"></table>
+
+  </section>
+</div>
+<script>
+const REPO = /*__REPO_DATA__*/null;
+</script>
+<script>
+/*__CORE_JS__*/
+</script>
+<script>
+/*__UI_JS__*/
+</script>
+</body>
+</html>
